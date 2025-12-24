@@ -1,0 +1,272 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: FUSION
+
+
+BO_ 2583568724 IVI_CE100_0: 8 FUSION
+ SG_ IVI_Second_Sta : 32|6@1+ (1,0) [0|60] "second" Vector__XXX
+ SG_ IVI_Minute_Sta : 26|6@1+ (1,0) [0|60] "minute" Vector__XXX
+ SG_ IVI_Hour_Sta : 20|6@1+ (1,0) [0|23] "hour" Vector__XXX
+ SG_ IVI_Day_Sta : 14|6@1+ (1,0) [0|31] "day" Vector__XXX
+ SG_ IVI_Month_Sta : 8|6@1+ (1,0) [0|13] "month" Vector__XXX
+ SG_ IVI_Year_Sta : 0|8@1+ (1,2000) [2000|2127] "year" Vector__XXX
+
+BO_ 2566831883 EBC2: 8 FUSION
+ SG_ FASpeed : 0|16@1+ (0.00390625,0) [0|255.99609375] "km/h" Vector__XXX
+ SG_ RelaSpdFALWheel : 16|8@1+ (0.0625,-7.8125) [-7.8125|7.8125] "km/h" Vector__XXX
+ SG_ RelaSpdFARWheel : 24|8@1+ (0.0625,-7.8125) [-7.8125|7.8125] "km/h" Vector__XXX
+ SG_ RelaSpdRA1LWheel : 32|8@1+ (0.0625,-7.8125) [-7.8125|7.8125] "km/h" Vector__XXX
+ SG_ RelaSpdRA1RWheel : 40|8@1+ (0.0625,-7.8125) [-7.8125|7.8125] "km/h" Vector__XXX
+ SG_ RelaSpdRA2LWheel : 48|8@1+ (0.0625,-7.8125) [-7.8125|7.8125] "km/h" Vector__XXX
+ SG_ RelaSpdRA2RWheel : 56|8@1+ (0.0625,-7.8125) [-7.8125|7.8125] "km/h" Vector__XXX
+
+BO_ 524 FD6_C200_0: 32 FUSION
+ SG_ SysPowerMode : 0|4@1+ (1,0) [0|15] "" Vector__XXX
+
+BO_ 2000 DiagFuncReqFT: 8 FUSION
+ SG_ DiagFuncReqFT : 7|64@0+ (1,0) [0|1.84467440737096E+019] "" Vector__XXX
+
+BO_ 1280 NMm_FUSION: 8 FUSION
+ SG_ NM_FUSION_Node_ID : 7|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ NM_FUSION_ERROR_State : 31|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ NM_FUSION_Active_WU : 12|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ NM_FUSION_CSB : 11|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ NM_FUSION_PNI : 14|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ NM_FUSION_Rpt_Msg_Req : 8|1@0+ (1,0) [0|1] "" Vector__XXX
+
+
+
+CM_ SG_ 2583568724 IVI_Second_Sta "IVI_GPS Satellite Time_Second";
+CM_ SG_ 2583568724 IVI_Minute_Sta "IVI_GPS Satellite Time_Minute";
+CM_ SG_ 2583568724 IVI_Hour_Sta "IVI_GPS Satellite Time_Hour";
+CM_ SG_ 2583568724 IVI_Day_Sta "IVI_GPS Satellite Time_Day";
+CM_ SG_ 2583568724 IVI_Month_Sta "IVI_GPS Satellite Time_Month";
+CM_ SG_ 2583568724 IVI_Year_Sta "IVI_GPS Satellite Time_Year";
+CM_ SG_ 2566831883 FASpeed "Front Axle Vehicle Speed(64256~65535=Error)";
+CM_ SG_ 2566831883 RelaSpdFALWheel "The speed of the front axle, left wheel relative to the front axle speed, SPN 904.";
+CM_ SG_ 2566831883 RelaSpdFARWheel "The speed of the front axle, right wheel relative to the front axle speed, SPN 904.";
+CM_ SG_ 2566831883 RelaSpdRA1LWheel "The speed of the rear axle #1, left wheel relative to the front axle speed, SPN 904.";
+CM_ SG_ 2566831883 RelaSpdRA1RWheel "The speed of the rear axle #1, right wheel relative to the front axle speed, SPN 904.";
+CM_ SG_ 2566831883 RelaSpdRA2LWheel "The speed of the rear axle #2, left wheel relative to the front axle speed, SPN 904.";
+CM_ SG_ 2566831883 RelaSpdRA2RWheel "The speed of the rear axle #2, right wheel relative to the front axle speed, SPN 904.";
+CM_ BO_ 524 "FPT1_104.4_Draft¡AVCU3";
+CM_ SG_ 524 SysPowerMode "HV system current power mode";
+CM_ SG_ 2000 DiagFuncReqFT "Diagnostic Functional Request from Tester";
+CM_ SG_ 1280 NM_FUSION_Node_ID "Source Node Identifier";
+CM_ SG_ 1280 NM_FUSION_ERROR_State "Defined Error states of the CAN Controller";
+CM_ SG_ 1280 NM_FUSION_Active_WU "Active Wakeup Bit";
+CM_ SG_ 1280 NM_FUSION_CSB "NM Coordinator Sleep Bit";
+CM_ SG_ 1280 NM_FUSION_PNI "Partial Network Information Bit (PNI)";
+CM_ SG_ 1280 NM_FUSION_Rpt_Msg_Req "Repeat Message Request";
+BA_DEF_ SG_  "GenSigInvalidValue" HEX 0 0;
+BA_DEF_ SG_  "GenSigStartValue" HEX 0 0;
+BA_DEF_ SG_  "GenSigInactiveValue" HEX 0 0;
+BA_DEF_ SG_  "GenSigRoutingTimeoutValue_String" STRING ;
+BA_DEF_ SG_  "DataCenterDataType" STRING ;
+BA_DEF_ SG_  "GenSigRoutingTimeoutValue" HEX 0 0;
+BA_DEF_ SG_  "GenSigSendType" ENUM  "Cycle","OnWrite","OnWriteWithRepetition","OnChange","OnChangeWithRepetition","IfActive","IfActiveWithRepetition","NoSigSendType","vector_leerstring";
+BA_DEF_ SG_  "E2EProfile" STRING ;
+BA_DEF_ SG_  "GenSigDataID" STRING ;
+BA_DEF_ SG_  "SigType" ENUM  "Default","Range","RangeSigned","ASCII","Discrete","Control","ReferencePGN","DTC","StringDelimiter","StringLength","StringLengthControl","MessageCounter","MessageChecksum";
+BA_DEF_ SG_  "GenSigILSupport" ENUM  "No","Yes";
+BA_DEF_ SG_  "GenSigLongName" STRING ;
+BA_DEF_ SG_  "SPN" INT 0 0;
+BA_DEF_ BU_  "TerminalNode" ENUM  "No","Yes";
+BA_DEF_ BU_  "NodeLayerModules" STRING ;
+BA_DEF_ BU_  "NmStationAddress" HEX 0 127;
+BA_DEF_ BU_  "NmNode" ENUM  "Yes","No";
+BA_DEF_ BU_  "NmCAN" INT 1 2;
+BA_DEF_ BU_  "ILUsed" ENUM  "No","Yes";
+BA_DEF_ BU_  "CANoeStartDelay" INT 0 10;
+BA_DEF_ BU_  "CANoeJitterMin" INT 0 0;
+BA_DEF_ BU_  "CANoeJitterMax" INT 0 0;
+BA_DEF_ BU_  "CANoeDrift" INT 0 0;
+BA_DEF_ BU_  "NmNodeAddress" HEX 0 127;
+BA_DEF_ BU_  "ECU" STRING ;
+BA_DEF_ BU_  "CANFD_CANFD_Gateway" ENUM  "Yes","No";
+BA_DEF_ BU_  "CAN_CANFD_Gateway" ENUM  "Yes","No";
+BA_DEF_ BU_  "CANFD_LIN_Gateway" ENUM  "Yes","No";
+BA_DEF_ BU_  "ECUDisplayName" STRING ;
+BA_DEF_ BU_  "CAN_LIN_Gateway" ENUM  "Yes","No";
+BA_DEF_ BU_  "CAN_CAN_Gateway" ENUM  "Yes","No";
+BA_DEF_ BU_  "BootloaderNode" ENUM  "No","Yes";
+BA_DEF_  "NmType" STRING ;
+BA_DEF_  "VersionYear" INT 2010 2999;
+BA_DEF_  "VersionNumber" INT 0 99;
+BA_DEF_  "VersionMonth" INT 0 12;
+BA_DEF_  "VersionDay" INT 0 31;
+BA_DEF_  "ProtocolType" STRING ;
+BA_DEF_  "NmMessageCount" INT 0 255;
+BA_DEF_  "NmBaseAddress" HEX 1280 1407;
+BA_DEF_  "Manufacturer" STRING ;
+BA_DEF_  "ILTxTimeout" INT 0 100;
+BA_DEF_  "DBName" STRING ;
+BA_DEF_  "BusType" STRING ;
+BA_DEF_  "Baudrate" INT 0 1000000;
+BA_DEF_  "DatabaseVersion" STRING ;
+BA_DEF_  "Datarate" INT 0 2000000;
+BA_DEF_  "MultiplexExtEnabled" ENUM  "No","Yes";
+BA_DEF_ BO_  "StartDelay" INT 0 0;
+BA_DEF_ BO_  "GenMsgStartDelayTime" INT 0 0;
+BA_DEF_ BO_  "GenMsgSendType" ENUM  "Cycle","NoMsgSendType","IfActive","Event","CA","CE";
+BA_DEF_ BO_  "GenMsgNrOfRepetition" INT 0 0;
+BA_DEF_ BO_  "GenMsgILSupport" ENUM  "No","Yes";
+BA_DEF_ BO_  "GenMsgDelayTime" INT 0 0;
+BA_DEF_ BO_  "GenMsgCycleTimeFast" INT 0 0;
+BA_DEF_ BO_  "GenMsgCycleTime" INT 0 0;
+BA_DEF_ BO_  "DiagState" ENUM  "No","Yes";
+BA_DEF_ BO_  "DiagResponse" ENUM  "No","Yes";
+BA_DEF_ BO_  "DiagRequest" ENUM  "No","Yes";
+BA_DEF_ BO_  "NmMessage" ENUM  "No","Yes";
+BA_DEF_ BO_  "VFrameFormat" ENUM  "StandardCAN","ExtendedCAN","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","StandardCAN_FD","ExtendedCAN_FD";
+BA_DEF_ BO_  "DataID" STRING ;
+BA_DEF_ BO_  "DoIPLogicalAddress" STRING ;
+BA_DEF_ BO_  "GenMsgFastOnStart" INT 0 100000;
+BA_DEF_ BO_  "GenMsgRequestable" INT 0 0;
+BA_DEF_ BO_  "CANFD_BRS" ENUM  "0","1";
+BA_DEF_DEF_  "GenSigInvalidValue" 0;
+BA_DEF_DEF_  "GenSigStartValue" 0;
+BA_DEF_DEF_  "GenSigInactiveValue" 0;
+BA_DEF_DEF_  "GenSigRoutingTimeoutValue_String" "";
+BA_DEF_DEF_  "DataCenterDataType" "";
+BA_DEF_DEF_  "GenSigRoutingTimeoutValue" 0;
+BA_DEF_DEF_  "GenSigSendType" "Cycle";
+BA_DEF_DEF_  "E2EProfile" "";
+BA_DEF_DEF_  "GenSigDataID" "";
+BA_DEF_DEF_  "SigType" "Default";
+BA_DEF_DEF_  "GenSigILSupport" "Yes";
+BA_DEF_DEF_  "GenSigLongName" "";
+BA_DEF_DEF_  "SPN" 0;
+BA_DEF_DEF_  "TerminalNode" "No";
+BA_DEF_DEF_  "NodeLayerModules" "CANoeILNLVector.dll";
+BA_DEF_DEF_  "NmStationAddress" 0;
+BA_DEF_DEF_  "NmNode" "No";
+BA_DEF_DEF_  "NmCAN" 2;
+BA_DEF_DEF_  "ILUsed" "Yes";
+BA_DEF_DEF_  "CANoeStartDelay" 0;
+BA_DEF_DEF_  "CANoeJitterMin" 0;
+BA_DEF_DEF_  "CANoeJitterMax" 0;
+BA_DEF_DEF_  "CANoeDrift" 0;
+BA_DEF_DEF_  "NmNodeAddress" 0;
+BA_DEF_DEF_  "ECU" "";
+BA_DEF_DEF_  "CANFD_CANFD_Gateway" "No";
+BA_DEF_DEF_  "CAN_CANFD_Gateway" "No";
+BA_DEF_DEF_  "CANFD_LIN_Gateway" "No";
+BA_DEF_DEF_  "ECUDisplayName" "";
+BA_DEF_DEF_  "CAN_LIN_Gateway" "No";
+BA_DEF_DEF_  "CAN_CAN_Gateway" "No";
+BA_DEF_DEF_  "BootloaderNode" "No";
+BA_DEF_DEF_  "NmType" "AUTOSAR";
+BA_DEF_DEF_  "VersionYear" 2024;
+BA_DEF_DEF_  "VersionNumber" 0;
+BA_DEF_DEF_  "VersionMonth" 0;
+BA_DEF_DEF_  "VersionDay" 0;
+BA_DEF_DEF_  "ProtocolType" "CAN";
+BA_DEF_DEF_  "NmMessageCount" 128;
+BA_DEF_DEF_  "NmBaseAddress" 1280;
+BA_DEF_DEF_  "Manufacturer" "";
+BA_DEF_DEF_  "ILTxTimeout" 0;
+BA_DEF_DEF_  "DBName" "";
+BA_DEF_DEF_  "BusType" "CAN";
+BA_DEF_DEF_  "Baudrate" 500000;
+BA_DEF_DEF_  "DatabaseVersion" "";
+BA_DEF_DEF_  "Datarate" 2000000;
+BA_DEF_DEF_  "MultiplexExtEnabled" "No";
+BA_DEF_DEF_  "StartDelay" 0;
+BA_DEF_DEF_  "GenMsgStartDelayTime" 0;
+BA_DEF_DEF_  "GenMsgSendType" "Cycle";
+BA_DEF_DEF_  "GenMsgNrOfRepetition" 0;
+BA_DEF_DEF_  "GenMsgILSupport" "Yes";
+BA_DEF_DEF_  "GenMsgDelayTime" 0;
+BA_DEF_DEF_  "GenMsgCycleTimeFast" 0;
+BA_DEF_DEF_  "GenMsgCycleTime" 100;
+BA_DEF_DEF_  "DiagState" "No";
+BA_DEF_DEF_  "DiagResponse" "No";
+BA_DEF_DEF_  "DiagRequest" "No";
+BA_DEF_DEF_  "NmMessage" "No";
+BA_DEF_DEF_  "VFrameFormat" "StandardCAN";
+BA_DEF_DEF_  "DataID" "";
+BA_DEF_DEF_  "DoIPLogicalAddress" "";
+BA_DEF_DEF_  "GenMsgFastOnStart" 0;
+BA_DEF_DEF_  "GenMsgRequestable" 1;
+BA_DEF_DEF_  "CANFD_BRS" "1";
+BA_ "BusType" "CAN FD";
+BA_ "ProtocolType" "CAN FD";
+BA_ "DBName" "CAN6";
+BA_ "CAN_CAN_Gateway" BU_ FUSION 0;
+BA_ "CANFD_CANFD_Gateway" BU_ FUSION 0;
+BA_ "CAN_CANFD_Gateway" BU_ FUSION 0;
+BA_ "GenMsgNrOfRepetition" BO_ 2583568724 1;
+BA_ "VFrameFormat" BO_ 2583568724 1;
+BA_ "GenMsgSendType" BO_ 2583568724 5;
+BA_ "VFrameFormat" BO_ 2566831883 1;
+BA_ "GenMsgCycleTime" BO_ 524 200;
+BA_ "VFrameFormat" BO_ 524 14;
+BA_ "GenMsgCycleTime" BO_ 2000 0;
+BA_ "GenMsgSendType" BO_ 2000 3;
+BA_ "DoIPLogicalAddress" BO_ 2000 "0xEFFF";
+BA_ "GenMsgCycleTime" BO_ 1280 0;
+BA_ "GenMsgSendType" BO_ 1280 3;
+BA_ "GenSigInvalidValue" SG_ 2583568724 IVI_Second_Sta 60;
+BA_ "GenSigSendType" SG_ 2583568724 IVI_Second_Sta 3;
+BA_ "GenSigInvalidValue" SG_ 2583568724 IVI_Minute_Sta 60;
+BA_ "GenSigSendType" SG_ 2583568724 IVI_Minute_Sta 3;
+BA_ "GenSigStartValue" SG_ 2583568724 IVI_Hour_Sta 0;
+BA_ "GenSigSendType" SG_ 2583568724 IVI_Hour_Sta 3;
+BA_ "GenSigSendType" SG_ 2583568724 IVI_Day_Sta 3;
+BA_ "GenSigSendType" SG_ 2583568724 IVI_Month_Sta 3;
+BA_ "GenSigSendType" SG_ 2583568724 IVI_Year_Sta 3;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 2566831883 FASpeed "0xFB00";
+BA_ "GenSigRoutingTimeoutValue" SG_ 2566831883 FASpeed 64256;
+BA_ "GenSigInvalidValue" SG_ 524 SysPowerMode 15;
+BA_ "GenSigSendType" SG_ 2000 DiagFuncReqFT 3;
+BA_ "GenSigSendType" SG_ 1280 NM_FUSION_Node_ID 7;
+BA_ "GenSigSendType" SG_ 1280 NM_FUSION_ERROR_State 7;
+BA_ "GenSigSendType" SG_ 1280 NM_FUSION_Active_WU 7;
+BA_ "GenSigSendType" SG_ 1280 NM_FUSION_CSB 7;
+BA_ "GenSigSendType" SG_ 1280 NM_FUSION_PNI 7;
+BA_ "GenSigSendType" SG_ 1280 NM_FUSION_Rpt_Msg_Req 7;
+VAL_ 2583568724 IVI_Second_Sta 60 "Invalid Value" ;
+VAL_ 2583568724 IVI_Minute_Sta 60 "Invalid Value" ;
+VAL_ 2583568724 IVI_Month_Sta 13 "Invalid Value" ;
+VAL_ 2566831883 FASpeed 64256 "Invalid Value" ;
+VAL_ 524 SysPowerMode 8 "LV Batt Charge" 7 "Charge" 6 "Afterrun" 5 "sleep" 4 "Power down" 3 "Drive" 2 "Power up" 1 "stand by" 0 "self checking" ;
+VAL_ 1280 NM_FUSION_ERROR_State 8 "BUS OFF_L2" 4 "BUS OFF_L1" 2 "ERROR PASSIVE" 1 "ERROR ACTIVE" 0 "Inactive" ;
+VAL_ 1280 NM_FUSION_Active_WU 1 "Node has woken up the network (active Wakeup)" 0 "Node has not woken up the network (passive wakeup)" ;
+VAL_ 1280 NM_FUSION_CSB 1 "Start of synchronized shutdown is requested by main coordinator" 0 "Start of synchronized shutdown is not requested by main coordinator" ;
+VAL_ 1280 NM_FUSION_PNI 1 "NM PDU contains Partial Network request information" 0 "NM PDU contains no Partial Network request information" ;
+VAL_ 1280 NM_FUSION_Rpt_Msg_Req 1 "Repeat Message State requested" 0 "Repeat Message State not requested" ;
+

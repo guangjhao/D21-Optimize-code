@@ -1,0 +1,91 @@
+%===========$Update Time :  2024-08-29 16:58:20 $=========
+disp('Loading $Id: inp_tpms_var.m  2024-08-29 16:58:20    foxtron $      FVT_export_businfo_v2.0 2021-11-02')
+%% Calibration Name, Units, Min, Max, Data Type, Comment
+a2l_par('KINP_TPMSDataIn_flg_ovrdflg', 	'flg',    0,    1,    'boolean',    '');
+a2l_par('KINP_TPMSDataIn_flg_ovrdval', 	'flg',    0,    1,    'boolean',    '');
+a2l_par('KINP_TPMSID_raw_ovrdflg', 	'flg',    0,    1,    'boolean',    '');
+a2l_par('KINP_TPMSID_raw_ovrdval', 	'raw',    0,    4294967295,    'uint32',    '');
+a2l_par('KINP_TPMSPressure_raw_ovrdflg', 	'flg',    0,    1,    'uint8',    '');
+a2l_par('KINP_TPMSPressure_raw_ovrdval', 	'raw',    0,    255,    'uint8',    '');
+a2l_par('KINP_TPMSTemp_raw_ovrdflg', 	'flg',    0,    1,    'boolean',    '');
+a2l_par('KINP_TPMSTemp_raw_ovrdval', 	'raw',    0,    255,    'uint8',    '');
+a2l_par('KINP_TPMSSta_enum_ovrdflg', 	'flg',    0,    1,    'boolean',    '');
+a2l_par('KINP_TPMSSta_enum_ovrdval', 	'enum',    0,    255,    'uint8',    '');
+a2l_par('KINP_TPMSPressureMi_raw_ovrdflg', 	'flg',    0,    1,    'boolean',    '');
+a2l_par('KINP_TPMSPressureMi_raw_ovrdval', 	'raw',    0,    255,    'uint8',    '');
+a2l_par('KINP_TPMSCRC_crc_ovrdflg', 	'flg',    0,    1,    'boolean',    '');
+a2l_par('KINP_TPMSCRC_crc_ovrdval', 	'crc',    0,    255,    'uint8',    '');
+a2l_par('KINP_TPMSCRCCalc_crc_ovrdflg', 	'flg',    0,    1,    'boolean',    '');
+a2l_par('KINP_TPMSCRCCalc_crc_ovrdval', 	'crc',    0,    255,    'uint8',    '');
+a2l_par('KINP_TPMSFAT_flg_ovrflg', 	'flg',    0,    1,    'boolean',    '');
+a2l_par('KINP_TPMSFAT_flg_ovrdval', 	'flg',    0,    1,    'boolean',    '');
+a2l_par('KINP_TPMSBattLow_flg_ovrflg', 	'flg',    0,    1,    'boolean',    '');
+a2l_par('KINP_TPMSBattLow_flg_ovrdval', 	'flg',    0,    1,    'boolean',    '');
+a2l_par('KINP_TPMSStorge_flg_ovrflg', 	'flg',    0,    1,    'boolean',    '');
+a2l_par('KINP_TPMSStorge_flg_ovrdval', 	'flg',    0,    1,    'boolean',    '');
+a2l_par('KINP_LFID_raw_ovrdval', 	'raw',    0,    4294967295,    'uint32',    '');
+a2l_par('KINP_LFID_raw_ovrflg', 	'raw',    0,    4294967295,    'uint32',    '');
+a2l_par('KINP_RFID_raw_ovrdval', 	'raw',    0,    4294967295,    'uint32',    '');
+a2l_par('KINP_RFID_raw_ovrflg', 	'raw',    0,    4294967295,    'uint32',    '');
+a2l_par('KINP_LRID_raw_ovrdval', 	'raw',    0,    4294967295,    'uint32',    '');
+a2l_par('KINP_LRID_raw_ovrflg', 	'raw',    0,    4294967295,    'uint32',    '');
+a2l_par('KINP_RRID_raw_ovrdval', 	'raw',    0,    4294967295,    'uint32',    '');
+a2l_par('KINP_RRID_raw_ovrflg', 	'raw',    0,    4294967295,    'uint32',    '');
+
+%% Monitored Signals
+% Internal Signals %
+
+%% Outputs Signals
+% Outputs Signals %
+a2l_mon('VINP_TPMSDataIn_flg', 	'flg',    0,    1,    'boolean',    '');
+a2l_mon('VINP_TPMSID_raw', 	'raw',    0,    4294967295,    'uint32',    '');
+a2l_mon('VINP_TPMSPressure_raw', 	'raw',    0,    255,    'uint8',    '');
+a2l_mon('VINP_TPMSTemp_raw', 	'raw',    0,    255,    'uint8',    '');
+a2l_mon('VINP_TPMSSta_enum', 	'enum',    0,    255,    'uint8',    '');
+a2l_mon('VINP_TPMSPressureMi_raw', 	'raw',    0,    255,    'uint8',    '');
+a2l_mon('VINP_TPMSCRC_crc', 	'crc',    0,    255,    'uint8',    '');
+a2l_mon('VINP_TPMSCRCCalc_crc', 	'crc',    0,    255,    'uint8',    '');
+a2l_mon('VINP_TPMSFAT_flg', 	'flg',    0,    1,    'boolean',    '');
+a2l_mon('VINP_TPMSBattLow_flg', 	'flg',    0,    1,    'boolean',    '');
+a2l_mon('VINP_TPMSStorge_flg', 	'flg',    0,    1,    'boolean',    '');
+a2l_mon('VINP_LFID_raw', 	'raw',    0,    4294967295,    'uint32',    '');
+a2l_mon('VINP_RFID_raw', 	'raw',    0,    4294967295,    'uint32',    '');
+a2l_mon('VINP_LRID_raw', 	'raw',    0,    4294967295,    'uint32',    '');
+a2l_mon('VINP_RRID_raw', 	'raw',    0,    4294967295,    'uint32',    '');
+a2l_mon('VINP_ChkStorge_flg', 	'flg',    0,    1,    'boolean',    '');
+a2l_mon('VINP_ChkLFID_raw', 	'raw',    0,    4294967295,    'uint32',    '');
+a2l_mon('VINP_ChkRFID_raw', 	'raw',    0,    4294967295,    'uint32',    '');
+a2l_mon('VINP_ChkLRID_raw', 	'raw',    0,    4294967295,    'uint32',    '');
+a2l_mon('VINP_ChkRRID_raw', 	'raw',    0,    4294967295,    'uint32',    '');
+a2l_mon('VINP_FlashLFSensorFail_flg', 	'flg',    0,    1,    'boolean',    '');
+a2l_mon('VINP_FlashRFSensorFail_flg', 	'flg',    0,    1,    'boolean',    '');
+a2l_mon('VINP_FlashLRSensorFail_flg', 	'flg',    0,    1,    'boolean',    '');
+a2l_mon('VINP_FlashRRSensorFail_flg', 	'flg',    0,    1,    'boolean',    '');
+a2l_mon('VINP_FlashLFWheelPSW_raw8', 	'raw8',    0,    255,    'uint8',    '');
+a2l_mon('VINP_FlashRFWheelPSW_raw8', 	'raw8',    0,    255,    'uint8',    '');
+a2l_mon('VINP_FlashLRWheelPSW_raw8', 	'raw8',    0,    255,    'uint8',    '');
+a2l_mon('VINP_FlashRRWheelPSW_raw8', 	'raw8',    0,    255,    'uint8',    '');
+a2l_mon('VINP_FlashLFPindi_enum', 	'enum',    0,    255,    'uint8',    '');
+a2l_mon('VINP_FlashRFPindi_enum', 	'enum',    0,    255,    'uint8',    '');
+a2l_mon('VINP_FlashLRPindi_enum', 	'enum',    0,    255,    'uint8',    '');
+a2l_mon('VINP_FlashRRPindi_enum', 	'enum',    0,    255,    'uint8',    '');
+a2l_mon('VINP_FlashLFP20_raw8', 	'raw8',    0,    255,    'uint8',    '');
+a2l_mon('VINP_FlashRFP20_raw8', 	'raw8',    0,    255,    'uint8',    '');
+a2l_mon('VINP_FlashLRP20_raw8', 	'raw8',    0,    255,    'uint8',    '');
+a2l_mon('VINP_FlashRRP20_raw8', 	'raw8',    0,    255,    'uint8',    '');
+a2l_mon('VINP_FlashLFWheelPress_raw8', 	'raw8',    0,    255,    'uint8',    '');
+a2l_mon('VINP_FlashRFWheelPress_raw8', 	'raw8',    0,    255,    'uint8',    '');
+a2l_mon('VINP_FlashLRWheelPress_raw8', 	'raw8',    0,    255,    'uint8',    '');
+a2l_mon('VINP_FlashRRWheelPress_raw8', 	'raw8',    0,    255,    'uint8',    '');
+a2l_mon('VINP_FlashLFWheelTemp_C', 	'C',    0,    255,    'uint8',    '');
+a2l_mon('VINP_FlashRFWheelTemp_C', 	'C',    0,    255,    'uint8',    '');
+a2l_mon('VINP_FlashLRWheelTemp_C', 	'C',    0,    255,    'uint8',    '');
+a2l_mon('VINP_FlashRRWheelTemp_C', 	'C',    0,    255,    'uint8',    '');
+a2l_mon('VINP_FlashunlearnSfali_flg', 	'flg',    0,    1,    'boolean',    '');
+a2l_mon('VINP_S1ID_raw', 	'raw',    0,    4294967295,    'uint32',    '');
+a2l_mon('VINP_S2ID_raw', 	'raw',    0,    4294967295,    'uint32',    '');
+a2l_mon('VINP_S3ID_raw', 	'raw',    0,    4294967295,    'uint32',    '');
+a2l_mon('VINP_S4ID_raw', 	'raw',    0,    4294967295,    'uint32',    '');
+a2l_mon('VINP_Prepresstemptrust_flg', 	'flg',    0,    1,    'boolean',    '');
+a2l_mon('VINP_TPMSSensorIDRegSta_enum', 	'enum',    0,    4,    'uint8',    '');
+a2l_mon('VINP_TPMSTrigger_flg', 	'flg',    0,    1,    'boolean',    '');

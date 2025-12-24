@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-3-0.xsd">
+  <ADMIN-DATA>
+    <SDGS>
+      <SDG>
+        <SD GID="ScriptVersion">0.0.1</SD>
+		<SD GID="InputFile_DBC">dbc</SD>
+		<SD GID="InputFile_Msglink">Messagelink</SD>
+      </SDG>
+    </SDGS>
+  </ADMIN-DATA>
+  <AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>NmConfig</SHORT-NAME>
+      <ELEMENTS>
+        <NM-CONFIG>
+          <SHORT-NAME>NmConfig</SHORT-NAME>
+          <NM-CLUSTERS>
+            <CAN-NM-CLUSTER>
+              <SHORT-NAME>CAN1</SHORT-NAME>
+              <COMMUNICATION-CLUSTER-REF DEST="CAN-CLUSTER">/CAN1/Cluster/CAN1</COMMUNICATION-CLUSTER-REF>
+              <NM-CHANNEL-ID>0</NM-CHANNEL-ID>
+              <NM-CHANNEL-SLEEP-MASTER>false</NM-CHANNEL-SLEEP-MASTER>
+              <NM-NODES>
+                <CAN-NM-NODE>
+                  <SHORT-NAME>FUSION</SHORT-NAME>
+                  <CONTROLLER-REF DEST="CAN-COMMUNICATION-CONTROLLER">/ECU/FUSION/CAN1</CONTROLLER-REF>
+                  <NM-IF-ECU-REF DEST="NM-ECU">/NmConfig/NmConfig/FUSION</NM-IF-ECU-REF>
+                  <NM-NODE-ID>0</NM-NODE-ID>
+                  <NM-PASSIVE-MODE-ENABLED>false</NM-PASSIVE-MODE-ENABLED>
+				  <RX-NM-PDU-REFS>
+                    <RX-NM-PDU-REF DEST="NM-PDU">/CAN1/PDU/CAN1_NMm_ABM</RX-NM-PDU-REF>
+                    <RX-NM-PDU-REF DEST="NM-PDU">/CAN1/PDU/CAN1_NMm_EPAS</RX-NM-PDU-REF>
+                    <RX-NM-PDU-REF DEST="NM-PDU">/CAN1/PDU/CAN1_NMm_ESC</RX-NM-PDU-REF>
+                    <RX-NM-PDU-REF DEST="NM-PDU">/CAN1/PDU/CAN1_NMm_FCM</RX-NM-PDU-REF>
+                    <RX-NM-PDU-REF DEST="NM-PDU">/CAN1/PDU/CAN1_NMm_SRR_M</RX-NM-PDU-REF>
+                    <RX-NM-PDU-REF DEST="NM-PDU">/CAN1/PDU/CAN1_NMm_eBST</RX-NM-PDU-REF>
+                  </RX-NM-PDU-REFS>
+                  <TX-NM-PDU-REFS>
+                    <TX-NM-PDU-REF DEST="NM-PDU">/CAN1/PDU/CAN1_NMm_FUSION</TX-NM-PDU-REF>
+                  </TX-NM-PDU-REFS>
+                  <NM-MSG-CYCLE-OFFSET>0</NM-MSG-CYCLE-OFFSET>
+                  <NM-MSG-REDUCED-TIME>0.001</NM-MSG-REDUCED-TIME>
+                  <NM-RANGE-CONFIG>
+                    <LOWER-CAN-ID>0</LOWER-CAN-ID>
+                    <UPPER-CAN-ID>0</UPPER-CAN-ID>
+                  </NM-RANGE-CONFIG>
+                </CAN-NM-NODE>
+              </NM-NODES>
+              <NM-SYNCHRONIZING-NETWORK>false</NM-SYNCHRONIZING-NETWORK>
+              <NM-BUSLOAD-REDUCTION-ACTIVE>false</NM-BUSLOAD-REDUCTION-ACTIVE>
+              <NM-CAR-WAKE-UP-FILTER-ENABLED>false</NM-CAR-WAKE-UP-FILTER-ENABLED>
+              <NM-CAR-WAKE-UP-RX-ENABLED>false</NM-CAR-WAKE-UP-RX-ENABLED>
+              <NM-CBV-POSITION>1</NM-CBV-POSITION>
+              <NM-CHANNEL-ACTIVE>false</NM-CHANNEL-ACTIVE>
+              <NM-IMMEDIATE-NM-CYCLE-TIME>0.02</NM-IMMEDIATE-NM-CYCLE-TIME>
+              <NM-IMMEDIATE-NM-TRANSMISSIONS>5</NM-IMMEDIATE-NM-TRANSMISSIONS>
+              <NM-MSG-CYCLE-TIME>0.7</NM-MSG-CYCLE-TIME>
+              <NM-NETWORK-TIMEOUT>1.0</NM-NETWORK-TIMEOUT>
+              <NM-NID-POSITION>0</NM-NID-POSITION>
+              <NM-REPEAT-MESSAGE-TIME>2</NM-REPEAT-MESSAGE-TIME>
+              <NM-USER-DATA-LENGTH>6</NM-USER-DATA-LENGTH>
+              <NM-WAIT-BUS-SLEEP-TIME>0.5</NM-WAIT-BUS-SLEEP-TIME>
+            </CAN-NM-CLUSTER>
+          </NM-CLUSTERS>
+          <NM-CLUSTER-COUPLINGS>
+            <CAN-NM-CLUSTER-COUPLING>
+              <COUPLED-CLUSTER-REFS>
+                <COUPLED-CLUSTER-REF DEST="CAN-NM-CLUSTER">/NmConfig/NmConfig/CAN1</COUPLED-CLUSTER-REF>
+              </COUPLED-CLUSTER-REFS>
+              <NM-BUSLOAD-REDUCTION-ENABLED>false</NM-BUSLOAD-REDUCTION-ENABLED>
+              <NM-IMMEDIATE-RESTART-ENABLED>false</NM-IMMEDIATE-RESTART-ENABLED>
+            </CAN-NM-CLUSTER-COUPLING>
+          </NM-CLUSTER-COUPLINGS>
+          <NM-IF-ECUS>
+            <NM-ECU>
+              <SHORT-NAME>FUSION</SHORT-NAME>
+              <BUS-SPECIFIC-NM-ECU>
+                <CAN-NM-ECU>
+                  <NM-REPEAT-MSG-INDICATION-ENABLED>true</NM-REPEAT-MSG-INDICATION-ENABLED>
+                </CAN-NM-ECU>
+              </BUS-SPECIFIC-NM-ECU>
+              <ECU-INSTANCE-REF DEST="ECU-INSTANCE">/ECU/FUSION</ECU-INSTANCE-REF>
+              <NM-BUS-SYNCHRONIZATION-ENABLED>false</NM-BUS-SYNCHRONIZATION-ENABLED>
+              <NM-COM-CONTROL-ENABLED>true</NM-COM-CONTROL-ENABLED>
+              <NM-CYCLETIME-MAIN-FUNCTION>0.02</NM-CYCLETIME-MAIN-FUNCTION>
+              <NM-NODE-DETECTION-ENABLED>true</NM-NODE-DETECTION-ENABLED>
+              <NM-NODE-ID-ENABLED>true</NM-NODE-ID-ENABLED>
+              <NM-PASSIVE-MODE-ENABLED>false</NM-PASSIVE-MODE-ENABLED>
+              <NM-PDU-RX-INDICATION-ENABLED>false</NM-PDU-RX-INDICATION-ENABLED>
+              <NM-REMOTE-SLEEP-IND-ENABLED>false</NM-REMOTE-SLEEP-IND-ENABLED>
+              <NM-REPEAT-MSG-IND-ENABLED>true</NM-REPEAT-MSG-IND-ENABLED>
+              <NM-STATE-CHANGE-IND-ENABLED>true</NM-STATE-CHANGE-IND-ENABLED>
+              <NM-USER-DATA-ENABLED>true</NM-USER-DATA-ENABLED>
+            </NM-ECU>
+          </NM-IF-ECUS>
+        </NM-CONFIG>
+      </ELEMENTS>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

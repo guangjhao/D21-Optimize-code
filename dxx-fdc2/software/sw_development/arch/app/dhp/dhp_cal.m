@@ -1,0 +1,48 @@
+%===========$Update Time :  2024-04-01 11:13:40 $=========
+disp('Loading $Id: dhp_cal.m  2024-04-01 11:13:40    foxtron $      FVT_export_businfo_v2.0 2021-11-02')
+
+a2l_cal('KDHP_EAPS1BADLow_pct',     13); 
+a2l_cal('KDHP_EAPS1BADHigh_pct',     86); 
+a2l_cal('KDHP_EAPS2BADLow_pct',     6.5); 
+a2l_cal('KDHP_EAPS2BADHigh_pct',     43); 
+a2l_cal('KDHP_EAPS1BADTime_s',     0.5); 
+a2l_cal('KDHP_EAPS2BADTime_s',     0.5); 
+a2l_cal('KDHP_EAPS2Scaler_gain',     2); 
+a2l_cal('KDHP_EAPS2Offset_pct',     0); 
+a2l_cal('KDHP_EAPS12Disagree_pct',     8); 
+a2l_cal('KDHP_EAPS12DisagreeTime_s',     0.5); 
+a2l_cal('KDHP_EAPSLearnDwLow_pct',     13); 
+a2l_cal('KDHP_EAPSLearnDwHigh_pct',     17); 
+a2l_cal('KDHP_EAPSLearnDwMAX_pct',     3); 
+a2l_cal('KDHP_GetNRMBaseTime_s',     0.5); 
+a2l_cal('KDHP_EAPSStableThrsh_pct',     0.6); 
+a2l_cal('KDHP_EAPSStableTime_s',     1.56); 
+a2l_cal('KDHP_EAPSLearnUpHigh_pct',     50); 
+a2l_cal('KDHP_EAPSLearnUpLow_pct',     20); 
+a2l_cal('KDHP_EAPSLearnUpOffset_pct',     0.03); 
+a2l_cal('KDHP_EAPS1MINInitUpLim_pct',     17); 
+a2l_cal('KDHP_EAPS1MINInitLowLim_pct',     13); 
+a2l_cal('KDHP_EAPS2MINInitUpLim_pct',     17); 
+a2l_cal('KDHP_EAPS2MINInitLowLim_pct',     13); 
+a2l_cal('KDHP_EAPS1Min_pct_ovrdflg',     0); 
+a2l_cal('KDHP_EAPS1Min_pct_ovrdval',     17); 
+a2l_cal('KDHP_EAPS2Min_pct_ovrdflg',     0); 
+a2l_cal('KDHP_EAPS2Min_pct_ovrdval',     17); 
+a2l_cal('KDHP_AcceleratorLoadScalr_gain',     1.73); 
+a2l_cal('KDHP_EAPS1WT_gain',     0.669); 
+a2l_cal('KDHP_EAPS2WT_gain',     0.331); 
+a2l_cal('KDHP_DeadBand_pct',     0.5); 
+a2l_cal('KDHP_EPEDPOSNUpLimit_pct',     100); 
+a2l_cal('KDHP_AccPedalDepressed_pct',     1.5); 
+a2l_cal('KDHP_AccPedalReleased_pct',     0); 
+a2l_cal('KDHP_ActAPSPosn_pct_ovrdflg',     0); 
+a2l_cal('KDHP_ActAPSPosn_pct_ovrdval',     0); 
+a2l_cal('KDHP_EAPS11OutWT_gain',     0); 
+a2l_cal('KDHP_EAPS21OutWT_gain',     0); 
+a2l_cal('KDHP_EAPS12OutWT_gain',     0); 
+a2l_cal('KDHP_EAPS22OutWT_gain',     0); 
+a2l_cal('KDHP_EAPS1AOutWT_gain',     0); 
+a2l_cal('KDHP_EAPS2AOutWT_gain',     0); 
+a2l_cal('KDHP_EAPSCRBadWDSP_pct',     0); 
+a2l_cal('ADHP_HysOffset_X_pct',     [0 10 20 30 40 50 60 70 80 90 100 105]);
+a2l_cal('MDHP_HysOffset_Y_pct',     [0.75 1 1.25 1.5 1.75 1.75 1.75 1.75 1.75 1.75 1.75 1.75]);

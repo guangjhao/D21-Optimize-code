@@ -1,0 +1,1335 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: FUSION IVI CMS_L CMS_R IVI_F IVI_M METER
+
+
+BO_ 2566624094 IVI_C100_0: 8 IVI
+ SG_ IVI_ACTempSet_Cmd : 24|8@1+ (1,-40) [-40|215] "degC" FUSION
+ SG_ IVI_ACPwrReq_Cmd : 22|1@1+ (1,0) [0|1] "" FUSION
+ SG_ IVI_ACFanSpdReq_Cmd : 18|2@1+ (1,0) [0|3] "" FUSION
+ SG_ IVI_ACMODEReq_Cmd : 16|2@1+ (1,0) [0|3] "" FUSION
+ SG_ IVI_ACOutCycleReq_Cmd : 58|2@1+ (1,0) [0|3] "" FUSION
+ SG_ IVI_ACRemoteReq_Cmd : 56|2@1+ (1,0) [0|3] "" FUSION
+ SG_ IVI_ACCoolTempSetupReq_Cmd : 48|8@1+ (0.5,-40) [-40|32] "degC" FUSION
+ SG_ IVI_ACHeatTempSetDownReq_Cmd : 32|8@1+ (0.5,-40) [-40|32] "degC" FUSION
+ SG_ IVI_ACHeatTempSetUPReq_Cmd : 40|8@1+ (0.5,-40) [-40|32] "degC" FUSION
+ SG_ IVI_ACCoolTempSetdownReq_Cmd : 7|8@0+ (0.5,-40) [-40|32] "Deg^C" FUSION
+
+BO_ 2566522135 FD2_C500_0: 8 FUSION
+ SG_ IGNKeySta : 18|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ VCU_VehicleSpd : 48|16@1+ (0.00390625,0) [0|255.99609375] "km/h" IVI
+ SG_ VSPFunc : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 2365535578 FD2_C50_0: 8 FUSION
+ SG_ ExtDischgReq : 38|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ EVSysRls : 12|2@1+ (1,0) [0|3] "" IVI
+ SG_ ElecSysRdy : 14|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ EVEHCMSGCS : 60|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ EVEHCMSGCnt : 56|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ RecuperLimOrReq : 16|8@1+ (1,0) [0|255] "%" Vector__XXX
+ SG_ ExtWorkshopMReq : 36|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ ExtDriveMReq : 32|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ ExtAccLimReq : 24|8@1+ (0.01,0) [0|2.55] "ms/s?" Vector__XXX
+
+BO_ 521 FD2_CE100_0: 32 FUSION
+ SG_ FDC_BCM_TurnBuzzerEN_Sta : 7|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ FDC_BCM_EmSV_Cmd : 6|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ FDC_BCM_MDCloseSV_Cmd : 5|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ FDC_BCM_MDOpenSV_Cmd : 4|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ FDC_BCM_FDCloseSV_Cmd : 3|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ FDC_BCM_FDOpenSV_Cmd : 2|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ FDC_BCM_OutDoorOpenSW_Sta : 1|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ FDC_BCM_HazardSW_Sta : 15|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ FDC_BCM_RTurnSW_Sta : 14|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ FDC_BCM_LTurnSW_Sta : 13|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ FDC_BCM_HelpIND_Cmd : 12|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ FDC_BCM_RoomLpSet_Sta : 11|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ FDC_BCM_RoomLpAmbSet_Sta : 10|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ FDC_BCM_EmExitSW_Sta : 9|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ FDC_BCM_InnerBuzzer_Cmd : 8|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ FDC_BCM_InnerBuzzerMode_Sta : 23|3@0+ (1,0) [0|7] "" Vector__XXX
+ SG_ FDC_BCM_CallBell_Cmd : 20|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ FDC_BCM_InnerCallBell_Cmd : 19|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ FDC_BCM_STOPBALL_Cmd : 18|1@0+ (1,0) [0|1] "" IVI
+ SG_ FDC_BCM_TurnLpPattern_Sta : 17|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ FDC_BCM_RFLamp_Cmd : 31|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ FDC_BCM_Brake_Cmd : 30|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ FDC_BCM_SLTLp_Cmd : 29|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ FDC_BCM_SRTLp_Cmd : 28|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ FDC_BCM_SMKR_Cmd : 27|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ FDC_BCM_SMKL_Cmd : 26|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ FDC_BCM_RoomLpAmb_Cmd : 25|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ FDC_BCM_Stop_IND_Cmd : 24|1@0+ (1,0) [0|1] "" IVI
+ SG_ FDC_BCM_BSD_Buzzer_Cmd : 39|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ FDC_BCM_RBSDY_Cmd : 38|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ FDC_BCM_RBSDR_Cmd : 37|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ FDC_BCM_LBSDY_Cmd : 36|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ FDC_BCM_LBSDR_Cmd : 35|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ FDC_BCM_Washer_Cmd : 34|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ FDC_BCM_WiperL_Cmd : 33|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ FDC_BCM_WiperH_Cmd : 32|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ FDC_BCM_RGear_Sta : 47|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ FDC_BCM_RDoor_Sta : 46|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ FDC_BCM_FDoor_Sta : 45|1@0+ (1,0) [0|1] "" IVI
+ SG_ FDC_BCM_MDoor_Sta : 44|1@0+ (1,0) [0|1] "" IVI
+ SG_ FDC_BCM_RDRL_Cmd : 43|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ FDC_BCM_LDRL_Cmd : 42|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ FDC_BCM_PLamp_Cmd : 41|1@0+ (1,0) [0|1] "" IVI,CMS_L,CMS_R
+ SG_ FDC_BCM_HBeam_Cmd : 40|1@0+ (1,0) [0|1] "" IVI
+ SG_ FDC_BCM_LBeam_Cmd : 55|1@0+ (1,0) [0|1] "" IVI
+ SG_ FDC_BCM_LTurnLp_Cmd : 54|1@0+ (1,0) [0|1] "" CMS_L,CMS_R
+ SG_ FDC_BCM_RTurnLp_Cmd : 53|1@0+ (1,0) [0|1] "" CMS_L,CMS_R
+ SG_ FDC_BCM_DVRSignalL_Cmd : 52|1@0+ (1,0) [0|1] "" IVI_F,IVI_M
+ SG_ FDC_BCM_DVRSignalR_Cmd : 51|1@0+ (1,0) [0|1] "" IVI_F,IVI_M
+ SG_ FDC_BCM_MRoomLpSet_Sta : 63|7@0+ (1,0) [0|100] "%" Vector__XXX
+ SG_ FDC_BCM_RRoomLpSet_Sta : 71|7@0+ (1,0) [0|100] "%" Vector__XXX
+ SG_ FDC_BCM_FRoomLpSet_Sta : 79|7@0+ (1,0) [0|100] "%" Vector__XXX
+
+BO_ 523 GW2_C100_0: 32 FUSION
+ SG_ B2VSOH : 7|8@0+ (0.4,0) [0|100] "%" IVI
+ SG_ B2VBI1BattType : 15|4@0+ (1,0) [0|15] "" IVI
+ SG_ B2THVRlySta : 11|2@0+ (1,0) [0|3] "" IVI
+ SG_ B2VBI1RateCap : 23|16@0+ (0.1,0) [0|6553.5] "Ah" IVI
+ SG_ B2VBI1RateHVolt : 39|16@0+ (0.1,0) [0|6553.5] "V" IVI
+ SG_ B2VBI1RatePower : 55|16@0+ (0.1,0) [0|6553.5] "kWh" IVI
+ SG_ B2VChgMode : 9|2@0+ (1,0) [0|3] "" IVI
+ SG_ B2VChgSta : 71|2@0+ (1,0) [0|3] "" IVI
+ SG_ B2VDCChgConnSta : 69|2@0+ (1,0) [0|3] "" IVI
+ SG_ B2VPChrgConnSta : 67|1@0+ (1,0) [0|1] "" IVI
+ SG_ ACTempSetSta : 79|8@0+ (1,-40) [-40|215] "degC" IVI
+ SG_ B2VSOC : 87|8@0+ (0.4,0) [0|100] "%" IVI,METER
+ SG_ B2VFaultCode : 95|8@0+ (1,0) [0|255] "" IVI,METER
+ SG_ TransReqGear : 103|8@0+ (1,0) [0|255] "" IVI,METER
+ SG_ GearFlashInd : 66|1@0+ (1,0) [0|1] "" IVI,METER
+ SG_ ASRBrakeCtrlAtc : 65|2@0+ (1,0) [0|3] "" IVI
+ SG_ ASREngCtrlAtc : 111|2@0+ (1,0) [0|3] "" IVI
+ SG_ ABSFullyOper : 109|2@0+ (1,0) [0|3] "" IVI,METER
+ SG_ EBSAmWarnLampSta : 107|2@0+ (1,0) [0|3] "" IVI,METER
+ SG_ EBSRedWarnLampSta : 105|2@0+ (1,0) [0|3] "" IVI,METER
+ SG_ WhlSpeed_FL : 119|16@0+ (0.00390625,0) [0|255.99609375] "km/h" IVI,METER
+ SG_ WhlSpeed_FR : 135|16@0+ (0.00390625,0) [0|255.99609375] "km/h" IVI,METER
+ SG_ WhlSpeed_RL : 151|16@0+ (0.00390625,0) [0|255.99609375] "km/h" IVI,METER
+ SG_ WhlSpeed_RR : 167|16@0+ (0.00390625,0) [0|255.99609375] "km/h" IVI,METER
+ SG_ ASC1KneelingInfo : 183|4@0+ (1,0) [0|15] "" IVI
+ SG_ ECASAWarmLampSta : 179|2@0+ (1,0) [0|3] "" IVI
+ SG_ EHPS_ErrLv_Sta : 191|3@0+ (1,0) [0|7] "" METER
+ SG_ MCUFailGrade : 188|4@0+ (1,0) [0|15] "" IVI
+ SG_ AirPressureRC1 : 207|8@0+ (8,0) [0|2008] "kPa" IVI
+ SG_ CACTempWarn : 177|1@0+ (1,0) [0|1] "" IVI
+ SG_ EBSBrakeSw : 215|2@0+ (1,0) [0|3] "" IVI_F,IVI_M
+ SG_ DCDC_En_Sta : 213|2@0+ (1,0) [0|3] "" METER
+ SG_ ParkBrakeSW : 211|2@0+ (1,0) [0|3] "" IVI,METER
+ SG_ ZFR_CHASSIS_LiningWearFL_Sta : 176|1@0+ (1,0) [0|1] "" IVI
+ SG_ ZFR_CHASSIS_LiningWearFR_Sta : 184|1@0+ (1,0) [0|1] "" IVI
+ SG_ ZRR_CHASSIS_LiningWearRL_Sta : 209|1@0+ (1,0) [0|1] "" IVI
+ SG_ ZRR_CHASSIS_LiningWearRR_Sta : 208|1@0+ (1,0) [0|1] "" IVI
+ SG_ LVBattLow : 223|2@0+ (1,0) [0|3] "enum" IVI,METER
+ SG_ PweLmtInd : 221|1@0+ (1,0) [0|1] "" IVI,METER
+ SG_ VCUWarnInd : 220|3@0+ (1,0) [0|7] "" IVI
+ SG_ VCUnoPBInd : 217|1@0+ (1,0) [0|1] "enum" IVI
+ SG_ DACStatus : 231|2@0+ (1,0) [0|3] "" IVI
+ SG_ VDCBrakeLightReq : 229|2@0+ (1,0) [0|3] "" IVI
+
+BO_ 526 FD2_C1000_0: 64 FUSION
+ SG_ VCUVehSpdlimit : 7|8@0+ (1,0) [0|255] "km/h" IVI
+ SG_ VCUVehAcclLimit : 15|8@0+ (0.01,0) [0|2.55] "m/s 2" IVI
+ SG_ LBIPressIndi : 23|2@0+ (1,0) [0|3] "" IVI
+ SG_ RFPressIndi : 21|2@0+ (1,0) [0|3] "" IVI
+ SG_ LFPressIndi : 19|2@0+ (1,0) [0|3] "" IVI
+ SG_ RBOPressIndi : 17|2@0+ (1,0) [0|3] "" IVI
+ SG_ LBOPressIndi : 31|2@0+ (1,0) [0|3] "" IVI
+ SG_ ACMODESta : 29|2@0+ (1,0) [0|3] "" IVI
+ SG_ LBIWheelTemp : 39|8@0+ (1,-40) [-40|125] "deg C" IVI
+ SG_ RBOSensorFail : 27|1@0+ (1,0) [0|1] "" IVI
+ SG_ LBOSensorFail : 26|1@0+ (1,0) [0|1] "" IVI
+ SG_ RBISensorFail : 25|1@0+ (1,0) [0|1] "" IVI
+ SG_ LBISensorFail : 24|1@0+ (1,0) [0|1] "" IVI
+ SG_ RFBatWarn : 47|1@0+ (1,0) [0|1] "" IVI
+ SG_ LFBatWarn : 46|1@0+ (1,0) [0|1] "" IVI
+ SG_ THCM_Faultlv_Sta : 45|2@0+ (1,0) [0|3] "" IVI
+ SG_ LFSensorFail : 43|1@0+ (1,0) [0|1] "" IVI
+ SG_ RFSensorFail : 42|1@0+ (1,0) [0|1] "" IVI
+ SG_ LBIWheelTmpIndi : 41|1@0+ (1,0) [0|1] "" IVI
+ SG_ RBIWheelTmpIndi : 40|1@0+ (1,0) [0|1] "" IVI
+ SG_ LFWheelTmpIndi : 55|1@0+ (1,0) [0|1] "" IVI
+ SG_ RFWheelTmpIndi : 54|1@0+ (1,0) [0|1] "" IVI
+ SG_ RBIPressIndi : 53|2@0+ (1,0) [0|3] "" IVI
+ SG_ LBOWheelTmpIndi : 51|1@0+ (1,0) [0|1] "" IVI
+ SG_ RBOBatWarn : 50|1@0+ (1,0) [0|1] "" IVI
+ SG_ RBOWheelTmpIndi : 49|1@0+ (1,0) [0|1] "" IVI
+ SG_ RBOWheelPress : 63|8@0+ (1,0) [0|255] "psi" IVI
+ SG_ LFWheelPress : 71|8@0+ (1,0) [0|255] "psi" IVI
+ SG_ RFWheelPress : 79|8@0+ (1,0) [0|255] "psi" IVI
+ SG_ TPMSWarnIndi : 87|2@0+ (1,0) [0|3] "" IVI
+ SG_ LBIBatWarn : 48|1@0+ (1,0) [0|1] "" IVI
+ SG_ LBOBatWarn : 85|1@0+ (1,0) [0|1] "" IVI
+ SG_ RBIBatWarn : 84|1@0+ (1,0) [0|1] "" IVI
+ SG_ LBIWheelPress : 95|8@0+ (1,0) [0|255] "psi" IVI
+ SG_ RBIWheelPress : 103|8@0+ (1,0) [0|255] "psi" IVI
+ SG_ RFWheelTemp : 111|8@0+ (1,-40) [-40|125] "deg C" IVI
+ SG_ LFWheelTemp : 119|8@0+ (1,-40) [-40|125] "deg C" IVI
+ SG_ RBOWheelTemp : 127|8@0+ (1,-40) [-40|125] "deg C" IVI
+ SG_ LBOWheelTemp : 135|8@0+ (1,-40) [-40|125] "deg C" IVI
+ SG_ LBOWheelPress : 143|8@0+ (1,0) [0|255] "psi" IVI
+
+BO_ 2355220689 FD2_C10_0: 8 FUSION
+ SG_ TUpASta : 41|2@1+ (1,0) [0|3] "" IVI
+ SG_ RecuperHighSta : 43|1@1+ (1,0) [0|1] "" IVI
+ SG_ EVECU1MSGCS : 60|4@1+ (1,0) [0|15] "" IVI
+ SG_ EVECU1MSGCnt : 56|4@1+ (1,0) [0|15] "" IVI
+ SG_ EMotorSpd : 8|16@1+ (1,0) [0|65535] "rpm" IVI
+ SG_ EMotorPerformance : 24|12@1+ (1,-125) [-125|3970] "%" IVI
+ SG_ EMotorOverSpd : 48|2@1+ (1,0) [0|3] "" IVI
+ SG_ EBrakeTorqLow : 38|1@1+ (1,0) [0|1] "" IVI
+ SG_ CreeperSta : 39|2@1+ (1,0) [0|3] "" IVI
+ SG_ CeTraxSysReady : 36|1@1+ (1,0) [0|1] "" IVI
+ SG_ VehActDriveDirect : 0|2@1+ (1,0) [0|3] "" IVI
+ SG_ ActDriveMode : 2|2@1+ (1,0) [0|3] "" IVI
+ SG_ WheelSlipdet : 4|4@1+ (1,0) [0|15] "" IVI
+
+BO_ 517 ZFR_CE100_0: 32 FUSION
+ SG_ ZFR_BCM_Seatbelt_Sta : 7|1@0+ (1,0) [0|1] "" IVI
+ SG_ ZFR_BCM_Brake_Sta : 6|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ZFR_BCM_DVRSignalR_Sta : 5|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ZFR_BCM_DVRSignalL_Sta : 4|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ZFR_BCM_TurnBuzzer_Sta : 3|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ZFR_BCM_RBSDY_Sta : 2|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ZFR_BCM_LBSDY_Sta : 1|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ZFR_BCM_RBSDR_Sta : 0|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ZFR_BCM_LBSDR_Sta : 15|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ZFR_BCM_RFogLp_SW_Sta : 14|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ZFR_BCM_Washer_Sta : 13|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ZFR_BCM_WiperAS_Sta : 12|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ZFR_BCM_WiperL_Sta : 11|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ZFR_BCM_WiperH_Sta : 10|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ZFR_BCM_DVRMidDoor_Sta : 9|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ZFR_BCM_RFTurnLp_Sta : 8|1@0+ (1,0) [0|1] "" IVI,METER
+ SG_ ZFR_BCM_LFTurnLp_Sta : 23|1@0+ (1,0) [0|1] "" IVI,METER
+ SG_ ZFR_BCM_RDRL_Sta : 22|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ZFR_BCM_LDRL_Sta : 21|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ZFR_BCM_PLamp_Sta : 19|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ZFR_BCM_HBeam_Sta : 18|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ZFR_BCM_LBeam_Sta : 17|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ZFR_BCM_LightSensorV_Sta : 31|8@0+ (0.0196,0) [0|4.998] "V" Vector__XXX
+ SG_ ZFR_BCM_HBeamSW_Sta : 16|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ZFR_BCM_AutoLightSW_Sta : 39|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ZFR_BCM_PosLpSW_Sta : 38|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ZFR_BCM_HeadLpSW_Sta : 37|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ZFR_BCM_WiperHSW_Sta : 36|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ZFR_BCM_WiperLSW_Sta : 35|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ZFR_BCM_WasherSW_Sta : 34|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ZFR_BCM_HornSW_Sta : 33|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ ZFR_BCM_RFTurnLpC_Sta : 47|8@0+ (0.025,0) [0|6.375] "A" Vector__XXX
+ SG_ ZFR_BCM_LFTurnLpC_Sta : 55|8@0+ (0.025,0) [0|6.375] "A" Vector__XXX
+ SG_ ZFR_BCM_BSD_Dimmer_Sta : 63|7@0+ (1,0) [0|127] "%" Vector__XXX
+ SG_ ZFR_BCM_BacklightDuty_Sta : 71|7@0+ (1,0) [0|127] "%" Vector__XXX
+ SG_ AirPressureFC2 : 79|8@0+ (8,0) [0|2008] "kPa" IVI
+ SG_ ZFR_BCM_DVRSignalReverse_Sta : 32|1@0+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 2583568724 IVI_CE100_0: 8 IVI
+ SG_ IVI_Second_Sta : 32|6@1+ (1,0) [0|60] "second" FUSION
+ SG_ IVI_Minute_Sta : 26|6@1+ (1,0) [0|60] "minute" FUSION
+ SG_ IVI_Hour_Sta : 20|6@1+ (1,0) [0|23] "hour" FUSION
+ SG_ IVI_Day_Sta : 14|6@1+ (1,0) [0|31] "day" FUSION
+ SG_ IVI_Month_Sta : 8|6@1+ (1,0) [0|13] "month" FUSION
+ SG_ IVI_Year_Sta : 0|8@1+ (1,2000) [2000|2127] "year" FUSION
+
+BO_ 2566831883 EBC2: 8 FUSION
+ SG_ FASpeed : 0|16@1+ (0.00390625,0) [0|255.99609375] "km/h" IVI,CMS_L,CMS_R,METER,IVI_F,IVI_M
+ SG_ RelaSpdFALWheel : 16|8@1+ (0.0625,-7.8125) [-7.8125|7.8125] "km/h" Vector__XXX
+ SG_ RelaSpdFARWheel : 24|8@1+ (0.0625,-7.8125) [-7.8125|7.8125] "km/h" Vector__XXX
+ SG_ RelaSpdRA1LWheel : 32|8@1+ (0.0625,-7.8125) [-7.8125|7.8125] "km/h" Vector__XXX
+ SG_ RelaSpdRA1RWheel : 40|8@1+ (0.0625,-7.8125) [-7.8125|7.8125] "km/h" Vector__XXX
+ SG_ RelaSpdRA2LWheel : 48|8@1+ (0.0625,-7.8125) [-7.8125|7.8125] "km/h" Vector__XXX
+ SG_ RelaSpdRA2RWheel : 56|8@1+ (0.0625,-7.8125) [-7.8125|7.8125] "km/h" Vector__XXX
+
+BO_ 2000 DiagFuncReqFT: 8 FUSION
+ SG_ DiagFuncReqFT : 7|64@0+ (1,0) [0|1.8446744073709551E19] "" IVI,CMS_L,CMS_R,METER,IVI_F,IVI_M
+
+BO_ 1568 DiagRespFromIVI: 64 IVI
+ SG_ DiagResFromIVI : 7|64@0+ (1,0) [0|1.8446744073709551E19] "" FUSION
+
+BO_ 1696 DiagPhysReqToIVI: 64 FUSION
+ SG_ DiagPhysReqToIVI : 7|64@0+ (1,0) [0|1.8446744073709551E19] "" IVI
+
+BO_ 1666 DiagPhysReqToMETER: 64 FUSION
+ SG_ DiagPhysReqToMETER : 7|64@0+ (1,0) [0|1.8446744073709551E19] "" METER
+
+BO_ 1760 DiagPhysReqToIVI_F: 64 FUSION
+ SG_ DiagPhysReqToIVI_F : 7|64@0+ (1,0) [0|1.8446744073709551E19] "" IVI_F
+
+BO_ 1632 DiagRespFromIVI_F: 64 IVI_F
+ SG_ DiagResFromIVI_F : 7|64@0+ (1,0) [0|1.8446744073709551E19] "" FUSION
+
+BO_ 1538 DiagRespFromMETER: 64 METER
+ SG_ DiagResFromMETER : 7|64@0+ (1,0) [0|1.8446744073709551E19] "" FUSION
+
+BO_ 1761 DiagPhysReqToIVI_M: 64 FUSION
+ SG_ DiagPhysReqToIVI_M : 7|64@0+ (1,0) [0|1.8446744073709551E19] "" IVI_M
+
+BO_ 1633 DiagRespFromIVI_M: 64 IVI_M
+ SG_ DiagResFromIVI_M : 7|64@0+ (1,0) [0|1.8446744073709551E19] "" FUSION
+
+BO_ 1762 DiagPhysReqToCMS_L: 64 FUSION
+ SG_ DiagPhysReqToCMS_L : 7|64@0+ (1,0) [0|1.8446744073709551E19] "" CMS_L
+
+BO_ 1634 DiagRespFromCMS_L: 64 CMS_L
+ SG_ DiagResFromCMS_L : 7|64@0+ (1,0) [0|1.8446744073709551E19] "" FUSION
+
+BO_ 1763 DiagPhysReqToCMS_R: 64 FUSION
+ SG_ DiagPhysReqToCMS_R : 7|64@0+ (1,0) [0|1.8446744073709551E19] "" CMS_R
+
+BO_ 1635 DiagRespFromCMS_R: 64 CMS_R
+ SG_ DiagResFromCMS_R : 7|64@0+ (1,0) [0|1.8446744073709551E19] "" FUSION
+
+BO_ 527 FD2_C200_0: 32 FUSION
+ SG_ FDC_VCU_VCUDRM_Sta : 7|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ CACPresWarn : 5|1@0+ (1,0) [0|1] "" IVI
+ SG_ SysPowerMode : 4|4@0+ (1,0) [0|15] "" IVI,CMS_L,CMS_R,METER,IVI_F,IVI_M
+
+BO_ 1280 NMm_FUSION: 8 FUSION
+ SG_ NM_FUSION_Node_ID : 7|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ NM_FUSION_ERROR_State : 31|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ NM_FUSION_Active_WU : 12|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ NM_FUSION_CSB : 11|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ NM_FUSION_PNI : 14|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ NM_FUSION_Rpt_Msg_Req : 8|1@0+ (1,0) [0|1] "" Vector__XXX
+
+
+CM_ BO_ 2566522135 "FPT1_104.4_Draft，VSP1";
+CM_ BO_ 2365535578 "FPT1_104.4_Draft，EVEHC_MSG01";
+CM_ BO_ 523 "routing from CAN1、CAN3、CAN4";
+CM_ SG_ 2566624094 IVI_ACCoolTempSetupReq_Cmd "Remote control of  upper limit setting temperature on cooling mode
+Max Tempture ：32℃
+Min Tempture : 16℃
+resloution:0.5℃
+Actual Tempture =Setting Max /2-40";
+CM_ SG_ 2566624094 IVI_ACHeatTempSetDownReq_Cmd "Remote control of  lower limit setting temperature on heating  mode
+Max Tempture ：32℃
+Min Tempture : 16℃
+resloution:0.5℃
+Actual Tempture =Setting Max /2-40";
+CM_ SG_ 2566624094 IVI_ACHeatTempSetUPReq_Cmd "Remote control of  upper limit setting temperature on heating mode
+Max Tempture ：32℃
+Min Tempture : 16℃
+resloution:0.5℃
+Actual Tempture =Setting Max /2-40";
+CM_ SG_ 2566624094 IVI_ACCoolTempSetdownReq_Cmd "Max Tempture ：32℃
+Min Tempture : 16℃
+resloution:0.5℃
+Actual Tempture =Setting Max /2-40";
+CM_ SG_ 2566522135 IGNKeySta "鑰匙狀態";
+CM_ SG_ 2566522135 VCU_VehicleSpd "車速";
+CM_ SG_ 2566522135 VSPFunc "功能啟動 function enable";
+CM_ SG_ 2365535578 ExtDischgReq "External Request for discharging the HV 
+DC-Link by the Inverter";
+CM_ SG_ 2365535578 EVSysRls "Additional Release Request by the Driver  or Vehicle Controller (comparable to Kl50) to release the Driveline";
+CM_ SG_ 2365535578 ElecSysRdy "Status of the HV System (including ESS, Vehicle control Unit, …) which indicates the Vehicle is possible to drive (for example, on Error case VECU, charging Batterie, the Signal status can be set to “0“)";
+CM_ SG_ 2365535578 EVEHCMSGCS "Message Checksum; Because this Message contains Safety Relevant Signals, it will use a separate CRC / Counter to ensure the Message / Signals are valid
+SPN 4207";
+CM_ SG_ 2365535578 EVEHCMSGCnt "Message Counter; Because this Message contains Safety Relevant Signals, it will use a separate CRC / Counter to ensure the Message / Signals are valid
+count 0~7";
+CM_ SG_ 2365535578 RecuperLimOrReq "Signal which can include different type of retarder lever values  (e.g. relative value from 0-100%, sts-values or enable bit value) for limitation or request of recuperation;
+The signal is mandatory for driving “One Pedal“-Driving Strategy 
+Relative value=0-100 %, Lever Status Signal=0 - 8, Switch value=on / off";
+CM_ SG_ 2365535578 ExtWorkshopMReq "Acitvates Workshop Mode, which disables ZF EVCU specific functions (ZF ASR); Activation will only work limited time";
+CM_ SG_ 2365535578 ExtDriveMReq "External Request for EVCU Power limitation";
+CM_ SG_ 2365535578 ExtAccLimReq "External Request for EVCU Acceleration Limitation.
+2,55 = no limitation";
+CM_ SG_ 521 FDC_BCM_TurnBuzzerEN_Sta "TurnBuzzerEN Status of FDC";
+CM_ SG_ 521 FDC_BCM_EmSV_Cmd "緊急電磁閥做動狀態
+0=Door Can_Open ,1=Door Can not Open";
+CM_ SG_ 521 FDC_BCM_MDCloseSV_Cmd "後門關閉電磁閥做動狀態";
+CM_ SG_ 521 FDC_BCM_MDOpenSV_Cmd "後門開啟電磁閥做動狀態";
+CM_ SG_ 521 FDC_BCM_FDCloseSV_Cmd "前門關閉電磁閥做動狀態";
+CM_ SG_ 521 FDC_BCM_FDOpenSV_Cmd "Front Door OpenSV Command of FDC";
+CM_ SG_ 521 FDC_BCM_OutDoorOpenSW_Sta "外部車門開啟開關狀態";
+CM_ SG_ 521 FDC_BCM_HazardSW_Sta "Hazard Switch Status of FDC";
+CM_ SG_ 521 FDC_BCM_RTurnSW_Sta "Right Turn Switch Status of FDC
+
+";
+CM_ SG_ 521 FDC_BCM_LTurnSW_Sta "FDC_BCM_LTurnSW_Sta";
+CM_ SG_ 521 FDC_BCM_HelpIND_Cmd "Help IND Command of FDC";
+CM_ SG_ 521 FDC_BCM_RoomLpSet_Sta "Room Lamp Set Status of FDC";
+CM_ SG_ 521 FDC_BCM_RoomLpAmbSet_Sta "室內燈間接";
+CM_ SG_ 521 FDC_BCM_EmExitSW_Sta "FDC_BCM_EmExitSW_Sta";
+CM_ SG_ 521 FDC_BCM_InnerBuzzer_Cmd "InnerBuzzer Command of FDC";
+CM_ SG_ 521 FDC_BCM_InnerBuzzerMode_Sta "Inner Buzzer Mode ";
+CM_ SG_ 521 FDC_BCM_CallBell_Cmd "CallBell Command of FDC";
+CM_ SG_ 521 FDC_BCM_InnerCallBell_Cmd "InnerCallBell Command of FDC";
+CM_ SG_ 521 FDC_BCM_STOPBALL_Cmd "下車鈴響鈴狀態";
+CM_ SG_ 521 FDC_BCM_TurnLpPattern_Sta " Turn Lamp Pattern Status of FDC";
+CM_ SG_ 521 FDC_BCM_RFLamp_Cmd "Rear Fog Indicator
+後霧燈指示燈";
+CM_ SG_ 521 FDC_BCM_Brake_Cmd "BCM Brake Lamp Command of FDC";
+CM_ SG_ 521 FDC_BCM_SLTLp_Cmd "Suppout Turn Lamp Right";
+CM_ SG_ 521 FDC_BCM_SRTLp_Cmd "Suppout Turn Lamp Left";
+CM_ SG_ 521 FDC_BCM_SMKR_Cmd "右側方標示燈";
+CM_ SG_ 521 FDC_BCM_SMKL_Cmd "左側方標示燈";
+CM_ SG_ 521 FDC_BCM_RoomLpAmb_Cmd "Ambient Lamp Command of FDC";
+CM_ SG_ 521 FDC_BCM_Stop_IND_Cmd "StopRequest";
+CM_ SG_ 521 FDC_BCM_BSD_Buzzer_Cmd "BSD Buzzer Command of FDC";
+CM_ SG_ 521 FDC_BCM_RBSDY_Cmd "Right BSD Yellow";
+CM_ SG_ 521 FDC_BCM_RBSDR_Cmd "Right BSD Red";
+CM_ SG_ 521 FDC_BCM_LBSDY_Cmd "Left BSD Yellow";
+CM_ SG_ 521 FDC_BCM_LBSDR_Cmd "Left BSD Red";
+CM_ SG_ 521 FDC_BCM_Washer_Cmd "Wiper Washer Command of FDC";
+CM_ SG_ 521 FDC_BCM_WiperL_Cmd "Wiper Low speed Command of FDC";
+CM_ SG_ 521 FDC_BCM_WiperH_Cmd "Wiper High speed Command of FDC";
+CM_ SG_ 521 FDC_BCM_RGear_Sta "BCM RGear Status of FDC";
+CM_ SG_ 521 FDC_BCM_RDoor_Sta "Rear Door_Sta Status of FDC";
+CM_ SG_ 521 FDC_BCM_FDoor_Sta "Front Door Open Indicaor
+前門開啟指示燈";
+CM_ SG_ 521 FDC_BCM_MDoor_Sta "Middle Door Open Indicaor
+中門開啟指示燈";
+CM_ SG_ 521 FDC_BCM_RDRL_Cmd "右晝行燈狀態";
+CM_ SG_ 521 FDC_BCM_LDRL_Cmd "左晝行燈狀態";
+CM_ SG_ 521 FDC_BCM_PLamp_Cmd "Postion Lamp Indicator
+小燈(位置燈)指示燈";
+CM_ SG_ 521 FDC_BCM_HBeam_Cmd "Hi Beam Indicaotr
+遠光燈指示燈";
+CM_ SG_ 521 FDC_BCM_LBeam_Cmd "Low Beam Indicator
+近光燈指示燈";
+CM_ SG_ 521 FDC_BCM_LTurnLp_Cmd "Left Turn Indicator
+左方向燈指示燈";
+CM_ SG_ 521 FDC_BCM_RTurnLp_Cmd "Right Turn Indicator
+右方向燈指示燈";
+CM_ SG_ 521 FDC_BCM_DVRSignalL_Cmd "Turn Lamp Left Acitve";
+CM_ SG_ 521 FDC_BCM_DVRSignalR_Cmd "Turn Lamp Right Acitve";
+CM_ SG_ 521 FDC_BCM_MRoomLpSet_Sta "0x0~0x64 = 0~100% , 0x65~0x7F = no used";
+CM_ SG_ 521 FDC_BCM_RRoomLpSet_Sta "Rear-Room-Lamp brightness Set Status of FD-BCM 0x0~0x64 = 0~100% , 0x65~0x7F = no used";
+CM_ SG_ 521 FDC_BCM_FRoomLpSet_Sta "0x0~0x64 = 0~100% , 0x65~0x7F = no used";
+CM_ SG_ 523 B2VSOH "電池包SOH
+SOH";
+CM_ SG_ 523 B2VBI1BattType "電池類型
+Type of battery
+0xa~0xD:Reserved";
+CM_ SG_ 523 B2THVRlySta "BCU高壓繼電器狀態
+BCU high-voltage contactor status
+0x2~0x3:Invalid";
+CM_ SG_ 523 B2VBI1RateCap "電池包額定容量
+Rated Capacity of Battery";
+CM_ SG_ 523 B2VBI1RateHVolt "電池包額定電壓
+Rated Voltage of Battery";
+CM_ SG_ 523 B2VBI1RatePower "電池包額定總能量
+Rated total energy of Battery";
+CM_ SG_ 523 B2VChgMode "BCU當前充電模式
+BCU charge mode";
+CM_ SG_ 523 B2VChgSta "充電狀態
+BCU charge status";
+CM_ SG_ 523 B2VDCChgConnSta "直流充電槍連接狀態
+DC-Charge gun connect status";
+CM_ SG_ 523 B2VPChrgConnSta "集電弓充電槍連接狀態
+Pantograph Charge gun connect status";
+CM_ SG_ 523 ACTempSetSta "AC Temp Set Stauts
+溫度設定反饋";
+CM_ SG_ 523 B2VSOC "電池包SOC
+SOC";
+CM_ SG_ 523 B2VFaultCode "故障碼
+Fault code";
+CM_ SG_ 523 TransReqGear "Requested Vehicle Direction (D,N,R) (only necessary if no ZF-Shiftlever is used)";
+CM_ SG_ 523 GearFlashInd "Gear indicator flash request
+HMI新增入檔狀態警示, VCU送出信號給HMI進行顯示狀態判斷";
+CM_ SG_ 523 ASRBrakeCtrlAtc "State signal which indicates that ASR brake control is active. Active means that ASR actually controls wheel brake pressure at one or more wheels of the driven axle(s).
+
+00b = ASR brake control passive but installed
+01b = ASR brake control active
+10b = Reserved
+11b = Not available";
+CM_ SG_ 523 ASREngCtrlAtc "State signal which indicates that ASR engine control has been commanded to be active. Active means that ASR actually tries to control the engine. This state signal is independent of other control commands to the engine (e.g., from the transmission) which may have higher priority.
+
+00b = ASR engine control passive but installed
+01b = ASR engine control active
+10b = Reserved
+11b = Not available";
+CM_ SG_ 523 ABSFullyOper "Signal which indicates whether an ABS system is fully operational or whether its functionality is reduced by a defect or by an intended action (e.g., by activation of an ABS-off-road switch or during special diagnostic procedures).  There are cases where the signal is necessary to fulfill legal regulations for special applications (e.g., switching off integrated retarders).
+
+00b = Not Fully Operational
+01b = Fully Operational
+10b = Reserved
+11b = Not available";
+CM_ SG_ 523 EBSAmWarnLampSta "This parameter commands the ABS/EBS amber/yellow optical warning signal
+
+00b = Off
+01b = On
+10b = Reserved
+11b = Take no action";
+CM_ SG_ 523 EBSRedWarnLampSta "This parameter commands the EBS red optical warning signal
+
+00b = Off
+01b = On
+10b = Reserved
+11b = Take no action";
+CM_ SG_ 523 WhlSpeed_FL "High resolution measurement of the speed of the left wheel on the front axle.";
+CM_ SG_ 523 WhlSpeed_FR "High resolution measurement of the speed of the right wheel on the front axle.";
+CM_ SG_ 523 WhlSpeed_RL "High resolution measurement of the speed of the left wheel on the rear axle.";
+CM_ SG_ 523 WhlSpeed_RR "High resolution measurement of the speed of the right wheel on the rear axle.";
+CM_ SG_ 523 ASC1KneelingInfo "Kneeling information
+ECAS側傾指示";
+CM_ SG_ 523 ECASAWarmLampSta "Diagnostic Message 1-
+Amber warning lamp status";
+CM_ SG_ 523 EHPS_ErrLv_Sta "EHPS故障等級
+EHPS fault level";
+CM_ SG_ 523 MCUFailGrade "0：無故障
+1：警告報警（電機需要降功率處理，整車也需要降速運行）
+2：故障（零轉矩輸出，建議停車處理）
+3：嚴重故障（需要關斷電機，停車處理）";
+CM_ SG_ 523 AirPressureRC1 "The pneumatic pressure in the primary service brake circuit or reservoir, supplying the rear axle";
+CM_ SG_ 523 CACTempWarn "Chasis Air Compressor over Temperature warning";
+CM_ SG_ 523 EBSBrakeSw "Switch signal which indicates that the brake pedal is being pressed.  The EBS brake switch is independent of the brake light switch and has no provisions for external connections.
+
+00b = Brake pedal is not being pressed
+01b = Brake pedal is being pressed
+10b = Error
+11b = Not available";
+CM_ SG_ 523 DCDC_En_Sta "DCDC狀態
+DCDC state";
+CM_ SG_ 523 ParkBrakeSW "Parking brake switch(SPN70)";
+CM_ SG_ 523 ZFR_CHASSIS_LiningWearFL_Sta "Status of FL Brake Lining";
+CM_ SG_ 523 ZFR_CHASSIS_LiningWearFR_Sta "Status of FR Brake Lining";
+CM_ SG_ 523 ZRR_CHASSIS_LiningWearRL_Sta "Status of RL Brake Lining";
+CM_ SG_ 523 ZRR_CHASSIS_LiningWearRR_Sta "Status of RR Brake Lining";
+CM_ SG_ 523 LVBattLow "Low voltage battery low voltage indicator
+低壓電瓶電壓過低警示";
+CM_ SG_ 523 PweLmtInd "inform HMI that vehicle limits drive power and show on the HMI(烏龜燈)";
+CM_ SG_ 523 VCUWarnInd "VCU warning indicator 
+對應VCU診斷功能, 需新增一信號供Meter響應警示燈";
+CM_ SG_ 523 VCUnoPBInd "no parking brake warnging indicator
+手煞車未拉警示";
+CM_ SG_ 523 DACStatus "Status of DAC function
+DAC 狀態";
+CM_ SG_ 523 VDCBrakeLightReq "Indicates whether VDC requests to turn the vehicle brake lights on";
+CM_ SG_ 526 VCUVehSpdlimit "VCU顯示目前限速的目標值
+254=disable, 255=error";
+CM_ SG_ 526 VCUVehAcclLimit "VCU顯示目前受限的目標值
+254=disable, 255=error";
+CM_ SG_ 526 LBIPressIndi "Left_Back_Inside Wheel Pressure Warning Indicator";
+CM_ SG_ 526 RFPressIndi "Right_Forward Wheel Pressure Warning Indicator";
+CM_ SG_ 526 LFPressIndi "Left_Forward Wheel Pressure Warning Indicator";
+CM_ SG_ 526 RBOPressIndi "Right_Back_outside Wheel Pressure Warning Indicator";
+CM_ SG_ 526 LBOPressIndi "Left_Back_outside Wheel Pressure Warning Indicator";
+CM_ SG_ 526 ACMODESta "AC MODE Status";
+CM_ SG_ 526 LBIWheelTemp "Left_Back_Inside Temperature";
+CM_ SG_ 526 RBOSensorFail "Right_Back_Outside Wheel Sensor Fail Indicator";
+CM_ SG_ 526 LBOSensorFail "Left_Back_Outside Wheel Sensor Fail Indicator";
+CM_ SG_ 526 RBISensorFail "Right_Back_Inside Wheel Sensor Fail Indicator";
+CM_ SG_ 526 LBISensorFail "Left_Back_Inside Wheel Sensor Fail Indicator";
+CM_ SG_ 526 RFBatWarn "Right_Forward Wheel Battery Warning";
+CM_ SG_ 526 LFBatWarn "Left_Forward Wheel Battery Warning";
+CM_ SG_ 526 THCM_Faultlv_Sta "THCM AC Fault feedback ";
+CM_ SG_ 526 LFSensorFail "Left_Forward Wheel Sensor Fail Indicator";
+CM_ SG_ 526 RFSensorFail "Right_Forward Wheel Sensor Fail Indicator";
+CM_ SG_ 526 LBIWheelTmpIndi "Left_Back_Inside Wheel Temperature Warning Indicator";
+CM_ SG_ 526 RBIWheelTmpIndi "Right_Back_Inside Wheel Temperature Warning Indicator";
+CM_ SG_ 526 LFWheelTmpIndi "Left_Forward Wheel Temperature Warning Indicator";
+CM_ SG_ 526 RFWheelTmpIndi "Right_Forward Wheel Temperature Warning Indicator";
+CM_ SG_ 526 RBIPressIndi "Right_Back_Inside Wheel Pressure Warning Indicator";
+CM_ SG_ 526 LBOWheelTmpIndi "Left_Back_Outside Wheel Temperature Warning Indicator";
+CM_ SG_ 526 RBOBatWarn "Right_Back_Outside Wheel Battery Warning";
+CM_ SG_ 526 RBOWheelTmpIndi "Right_Back_Outside Wheel Temperature Warning Indicator";
+CM_ SG_ 526 RBOWheelPress "Rirht_Back_Outside Wheel Pressure";
+CM_ SG_ 526 LFWheelPress "Left_Forward Wheel Pressure";
+CM_ SG_ 526 RFWheelPress "Right_Forward Wheel Pressure";
+CM_ SG_ 526 TPMSWarnIndi "TPMS Warning Indicator";
+CM_ SG_ 526 LBIBatWarn "Left_Back_Inside Wheel Battery Warning";
+CM_ SG_ 526 LBOBatWarn "Left_Back_Outside Wheel Battery Warning";
+CM_ SG_ 526 RBIBatWarn "Right_Back_Inside Wheel Battery Warning";
+CM_ SG_ 526 LBIWheelPress "Left_Back_Inside Wheel Pressure";
+CM_ SG_ 526 RBIWheelPress "Rirht_Back_Inside Wheel Pressure";
+CM_ SG_ 526 RFWheelTemp "Right_Forward Temperature";
+CM_ SG_ 526 LFWheelTemp "Left_Forward Temperature";
+CM_ SG_ 526 RBOWheelTemp "Right_Back_Outside Temperature";
+CM_ SG_ 526 LBOWheelTemp "Left_Back_Outside Temperature";
+CM_ SG_ 526 LBOWheelPress "Left_Back_Outside Wheel Pressure";
+CM_ SG_ 2355220689 TUpASta "TUpA status";
+CM_ SG_ 2355220689 RecuperHighSta "Indicates that Recuperation is high";
+CM_ SG_ 2355220689 EVECU1MSGCS "optional available";
+CM_ SG_ 2355220689 EVECU1MSGCnt "optional available
+Count 0~7";
+CM_ SG_ 2355220689 EMotorSpd "E-Motor-Speed (unsigned)";
+CM_ SG_ 2355220689 EMotorPerformance "output performance of E Motor
+馬達性能指數";
+CM_ SG_ 2355220689 EMotorOverSpd "Displays that the Emotor Speed is in critical speed range and the Driver should brake the vehicle to reduce the maximum allowed driveline speed";
+CM_ SG_ 2355220689 EBrakeTorqLow "Warning indication";
+CM_ SG_ 2355220689 CreeperSta "Creeper status";
+CM_ SG_ 2355220689 CeTraxSysReady "Ready Status of the System";
+CM_ SG_ 2355220689 VehActDriveDirect "Driving direction of the Vehicle (for using in a display, ..)";
+CM_ SG_ 2355220689 ActDriveMode "Working mode of CeTrax-System";
+CM_ SG_ 2355220689 WheelSlipdet "Wheel slippage is detected on the Wheel (compare to Front Axle Speed), and specific torque reduction is active";
+CM_ SG_ 517 ZFR_BCM_Seatbelt_Sta "Seat belt";
+CM_ SG_ 517 ZFR_BCM_Brake_Sta "Output Brake Status of Zone FR";
+CM_ SG_ 517 ZFR_BCM_DVRSignalR_Sta "Output DVRSignalR Status of Zone FR";
+CM_ SG_ 517 ZFR_BCM_DVRSignalL_Sta "Output DVRSignalL Status of Zone FR";
+CM_ SG_ 517 ZFR_BCM_TurnBuzzer_Sta "TurnBuzzer Status of Zone FR";
+CM_ SG_ 517 ZFR_BCM_RBSDY_Sta "Output RBSDY Status of Zone FR";
+CM_ SG_ 517 ZFR_BCM_LBSDY_Sta "Output LBSDY Status of Zone FR";
+CM_ SG_ 517 ZFR_BCM_RBSDR_Sta "Output RBSDR Status of Zone FR";
+CM_ SG_ 517 ZFR_BCM_LBSDR_Sta "Output LBSDR Status of Zone FR";
+CM_ SG_ 517 ZFR_BCM_RFogLp_SW_Sta "Rear Fog Lamp SW";
+CM_ SG_ 517 ZFR_BCM_Washer_Sta "Wiper Washer Status of Zone FR";
+CM_ SG_ 517 ZFR_BCM_WiperAS_Sta "Front Wiper Park Signal";
+CM_ SG_ 517 ZFR_BCM_WiperL_Sta "Wiper Low  Status of Zone FR";
+CM_ SG_ 517 ZFR_BCM_WiperH_Sta "Wiper Hight Status of Zone FR";
+CM_ SG_ 517 ZFR_BCM_DVRMidDoor_Sta "Output DVRMidDoor Status of Zone FR";
+CM_ SG_ 517 ZFR_BCM_RFTurnLp_Sta "Right Front Turn Lamp Status of Zone FR";
+CM_ SG_ 517 ZFR_BCM_LFTurnLp_Sta "Left Front Turn Lamp Status of Zone FR";
+CM_ SG_ 517 ZFR_BCM_RDRL_Sta "Right DRL Lamp Status of Zone FR";
+CM_ SG_ 517 ZFR_BCM_LDRL_Sta "Left DRL Lamp Status of Zone FR";
+CM_ SG_ 517 ZFR_BCM_PLamp_Sta "Position Lamp Status of Zone FR";
+CM_ SG_ 517 ZFR_BCM_HBeam_Sta "High Beam Lamp Status of Zone FR";
+CM_ SG_ 517 ZFR_BCM_LBeam_Sta "Low Beam Lamp Status of Zone FR";
+CM_ SG_ 517 ZFR_BCM_LightSensorV_Sta "Light Sensor 電壓";
+CM_ SG_ 517 ZFR_BCM_HBeamSW_Sta "High Beam SW";
+CM_ SG_ 517 ZFR_BCM_AutoLightSW_Sta "Auto Light Switch";
+CM_ SG_ 517 ZFR_BCM_PosLpSW_Sta "Position Lamp SW";
+CM_ SG_ 517 ZFR_BCM_HeadLpSW_Sta "Low Beam SW";
+CM_ SG_ 517 ZFR_BCM_WiperHSW_Sta "Front Wiper Low SW";
+CM_ SG_ 517 ZFR_BCM_WiperLSW_Sta "Front Wiper Low SW";
+CM_ SG_ 517 ZFR_BCM_WasherSW_Sta "Front Washer SW";
+CM_ SG_ 517 ZFR_BCM_HornSW_Sta "HornSW Status of Zone FR";
+CM_ SG_ 517 ZFR_BCM_RFTurnLpC_Sta "Right FrontTurn Lamp Current of Zone FR";
+CM_ SG_ 517 ZFR_BCM_LFTurnLpC_Sta "Left FrontTurn Lamp Current of Zone FR";
+CM_ SG_ 517 ZFR_BCM_BSD_Dimmer_Sta "BSD Dimmer Status of Zone FR";
+CM_ SG_ 517 ZFR_BCM_BacklightDuty_Sta "Backlight Duty Status of Zone FR";
+CM_ SG_ 517 AirPressureFC2 "The pneumatic pressure in the secondary service brake circuit or reservoir, supplying the front axle";
+CM_ SG_ 517 ZFR_BCM_DVRSignalReverse_Sta "Output DVRSignalReverse Status of Zone FR";
+CM_ SG_ 2583568724 IVI_Second_Sta "IVI_GPS Satellite Time_Second";
+CM_ SG_ 2583568724 IVI_Minute_Sta "IVI_GPS Satellite Time_Minute";
+CM_ SG_ 2583568724 IVI_Hour_Sta "IVI_GPS Satellite Time_Hour";
+CM_ SG_ 2583568724 IVI_Day_Sta "IVI_GPS Satellite Time_Day";
+CM_ SG_ 2583568724 IVI_Month_Sta "IVI_GPS Satellite Time_Month";
+CM_ SG_ 2583568724 IVI_Year_Sta "IVI_GPS Satellite Time_Year";
+CM_ SG_ 2566831883 FASpeed "Front Axle Vehicle Speed(64256~65535=Error)";
+CM_ SG_ 2566831883 RelaSpdFALWheel "The speed of the front axle, left wheel relative to the front axle speed, SPN 904.";
+CM_ SG_ 2566831883 RelaSpdFARWheel "The speed of the front axle, right wheel relative to the front axle speed, SPN 904.";
+CM_ SG_ 2566831883 RelaSpdRA1LWheel "The speed of the rear axle #1, left wheel relative to the front axle speed, SPN 904.";
+CM_ SG_ 2566831883 RelaSpdRA1RWheel "The speed of the rear axle #1, right wheel relative to the front axle speed, SPN 904.";
+CM_ SG_ 2566831883 RelaSpdRA2LWheel "The speed of the rear axle #2, left wheel relative to the front axle speed, SPN 904.";
+CM_ SG_ 2566831883 RelaSpdRA2RWheel "The speed of the rear axle #2, right wheel relative to the front axle speed, SPN 904.";
+CM_ SG_ 2000 DiagFuncReqFT "Diagnostic Functional Request from Tester";
+CM_ SG_ 1568 DiagResFromIVI "IVI Diagnostic Response";
+CM_ SG_ 1696 DiagPhysReqToIVI "IVI Diagnostic Request";
+CM_ SG_ 1666 DiagPhysReqToMETER "Meter Diagnostic Request";
+CM_ SG_ 1760 DiagPhysReqToIVI_F "IVI_F Diagnostic Request";
+CM_ SG_ 1632 DiagResFromIVI_F "IVI_F Diagnostic Response";
+CM_ SG_ 1538 DiagResFromMETER "Meter Diagnostic Response";
+CM_ SG_ 1761 DiagPhysReqToIVI_M "IVI_M Diagnostic Request";
+CM_ SG_ 1633 DiagResFromIVI_M "DCDC Diagnostic Response";
+CM_ SG_ 1762 DiagPhysReqToCMS_L "CMS_L Diagnostic Request";
+CM_ SG_ 1634 DiagResFromCMS_L "CMS_L Diagnostic Response";
+CM_ SG_ 1763 DiagPhysReqToCMS_R "CMS_R Diagnostic Request";
+CM_ SG_ 1635 DiagResFromCMS_R "CMS_R Diagnostic Response";
+CM_ SG_ 527 CACPresWarn "Brake system low pressure/pressure sensor invalid warning";
+CM_ SG_ 527 SysPowerMode "HV system current power mode";
+CM_ SG_ 1280 NM_FUSION_Node_ID "Source Node Identifier";
+CM_ SG_ 1280 NM_FUSION_ERROR_State "Defined Error states of the CAN Controller";
+CM_ SG_ 1280 NM_FUSION_Active_WU "Active Wakeup Bit";
+CM_ SG_ 1280 NM_FUSION_CSB "NM Coordinator Sleep Bit";
+CM_ SG_ 1280 NM_FUSION_PNI "Partial Network Information Bit (PNI)";
+CM_ SG_ 1280 NM_FUSION_Rpt_Msg_Req "Repeat Message Request";
+
+BA_DEF_ SG_ "GenSigInvalidValue" HEX 0 0;
+BA_DEF_ SG_ "GenSigStartValue" HEX 0 0;
+BA_DEF_ SG_ "GenSigInactiveValue" HEX 0 0;
+BA_DEF_ SG_ "GenSigRoutingTimeoutValue_String" STRING ;
+BA_DEF_ SG_ "DataCenterDataType" STRING ;
+BA_DEF_ SG_ "GenSigRoutingTimeoutValue" HEX 0 0;
+BA_DEF_ SG_ "GenSigSendType" ENUM "Cycle","OnWrite","OnWriteWithRepetition","OnChange","OnChangeWithRepetition","IfActive","IfActiveWithRepetition","NoSigSendType","vector_leerstring";
+BA_DEF_ SG_ "E2EProfile" STRING ;
+BA_DEF_ SG_ "GenSigDataID" STRING ;
+BA_DEF_ SG_ "SigType" ENUM "Default","Range","RangeSigned","ASCII","Discrete","Control","ReferencePGN","DTC","StringDelimiter","StringLength","StringLengthControl","MessageCounter","MessageChecksum";
+BA_DEF_ SG_ "GenSigILSupport" ENUM "No","Yes";
+BA_DEF_ SG_ "GenSigLongName" STRING ;
+BA_DEF_ SG_ "SPN" INT 0 0;
+BA_DEF_ BU_ "TerminalNode" ENUM "No","Yes";
+BA_DEF_ BU_ "NodeLayerModules" STRING ;
+BA_DEF_ BU_ "NmStationAddress" HEX 0 127;
+BA_DEF_ BU_ "NmNode" ENUM "Yes","No";
+BA_DEF_ BU_ "NmCAN" INT 1 2;
+BA_DEF_ BU_ "ILUsed" ENUM "No","Yes";
+BA_DEF_ BU_ "CANoeStartDelay" INT 0 10;
+BA_DEF_ BU_ "CANoeJitterMin" INT 0 0;
+BA_DEF_ BU_ "CANoeJitterMax" INT 0 0;
+BA_DEF_ BU_ "CANoeDrift" INT 0 0;
+BA_DEF_ BU_ "NmNodeAddress" HEX 0 127;
+BA_DEF_ BU_ "ECU" STRING ;
+BA_DEF_ BU_ "CANFD_CANFD_Gateway" ENUM "Yes","No";
+BA_DEF_ BU_ "CAN_CANFD_Gateway" ENUM "Yes","No";
+BA_DEF_ BU_ "CANFD_LIN_Gateway" ENUM "Yes","No";
+BA_DEF_ BU_ "ECUDisplayName" STRING ;
+BA_DEF_ BU_ "CAN_LIN_Gateway" ENUM "Yes","No";
+BA_DEF_ BU_ "CAN_CAN_Gateway" ENUM "Yes","No";
+BA_DEF_ BU_ "BootloaderNode" ENUM "No","Yes";
+BA_DEF_ "NmType" STRING ;
+BA_DEF_ "VersionYear" INT 2010 2999;
+BA_DEF_ "VersionNumber" INT 0 99;
+BA_DEF_ "VersionMonth" INT 0 12;
+BA_DEF_ "VersionDay" INT 0 31;
+BA_DEF_ "ProtocolType" STRING ;
+BA_DEF_ "NmMessageCount" INT 0 255;
+BA_DEF_ "NmBaseAddress" HEX 1280 1407;
+BA_DEF_ "Manufacturer" STRING ;
+BA_DEF_ "ILTxTimeout" INT 0 100;
+BA_DEF_ "DBName" STRING ;
+BA_DEF_ "BusType" STRING ;
+BA_DEF_ "Baudrate" INT 0 1000000;
+BA_DEF_ "DatabaseVersion" STRING ;
+BA_DEF_ "Datarate" INT 0 2000000;
+BA_DEF_ "MultiplexExtEnabled" ENUM "No","Yes";
+BA_DEF_ BO_ "StartDelay" INT 0 0;
+BA_DEF_ BO_ "GenMsgStartDelayTime" INT 0 0;
+BA_DEF_ BO_ "GenMsgSendType" ENUM "Cycle","NoMsgSendType","IfActive","Event","CA","CE";
+BA_DEF_ BO_ "GenMsgNrOfRepetition" INT 0 0;
+BA_DEF_ BO_ "GenMsgILSupport" ENUM "No","Yes";
+BA_DEF_ BO_ "GenMsgDelayTime" INT 0 0;
+BA_DEF_ BO_ "GenMsgCycleTimeFast" INT 0 0;
+BA_DEF_ BO_ "GenMsgCycleTime" INT 0 0;
+BA_DEF_ BO_ "DiagState" ENUM "No","Yes";
+BA_DEF_ BO_ "DiagResponse" ENUM "No","Yes";
+BA_DEF_ BO_ "DiagRequest" ENUM "No","Yes";
+BA_DEF_ BO_ "NmMessage" ENUM "No","Yes";
+BA_DEF_ BO_ "VFrameFormat" ENUM "StandardCAN","ExtendedCAN","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","StandardCAN_FD","ExtendedCAN_FD";
+BA_DEF_ BO_ "DataID" STRING ;
+BA_DEF_ BO_ "DoIPLogicalAddress" STRING ;
+BA_DEF_ BO_ "GenMsgFastOnStart" INT 0 100000;
+BA_DEF_ BO_ "GenMsgRequestable" INT 0 0;
+BA_DEF_ BO_ "CANFD_BRS" ENUM "0","1";
+BA_DEF_DEF_ "GenSigInvalidValue" 0;
+BA_DEF_DEF_ "GenSigStartValue" 0;
+BA_DEF_DEF_ "GenSigInactiveValue" 0;
+BA_DEF_DEF_ "GenSigRoutingTimeoutValue_String" "";
+BA_DEF_DEF_ "DataCenterDataType" "";
+BA_DEF_DEF_ "GenSigRoutingTimeoutValue" 0;
+BA_DEF_DEF_ "GenSigSendType" "Cycle";
+BA_DEF_DEF_ "E2EProfile" "";
+BA_DEF_DEF_ "GenSigDataID" "";
+BA_DEF_DEF_ "SigType" "Default";
+BA_DEF_DEF_ "GenSigILSupport" "Yes";
+BA_DEF_DEF_ "GenSigLongName" "";
+BA_DEF_DEF_ "SPN" 0;
+BA_DEF_DEF_ "TerminalNode" "No";
+BA_DEF_DEF_ "NodeLayerModules" "CANoeILNLVector.dll";
+BA_DEF_DEF_ "NmStationAddress" 0;
+BA_DEF_DEF_ "NmNode" "No";
+BA_DEF_DEF_ "NmCAN" 2;
+BA_DEF_DEF_ "ILUsed" "Yes";
+BA_DEF_DEF_ "CANoeStartDelay" 0;
+BA_DEF_DEF_ "CANoeJitterMin" 0;
+BA_DEF_DEF_ "CANoeJitterMax" 0;
+BA_DEF_DEF_ "CANoeDrift" 0;
+BA_DEF_DEF_ "NmNodeAddress" 0;
+BA_DEF_DEF_ "ECU" "";
+BA_DEF_DEF_ "CANFD_CANFD_Gateway" "No";
+BA_DEF_DEF_ "CAN_CANFD_Gateway" "No";
+BA_DEF_DEF_ "CANFD_LIN_Gateway" "No";
+BA_DEF_DEF_ "ECUDisplayName" "";
+BA_DEF_DEF_ "CAN_LIN_Gateway" "No";
+BA_DEF_DEF_ "CAN_CAN_Gateway" "No";
+BA_DEF_DEF_ "BootloaderNode" "No";
+BA_DEF_DEF_ "NmType" "AUTOSAR";
+BA_DEF_DEF_ "VersionYear" 2024;
+BA_DEF_DEF_ "VersionNumber" 0;
+BA_DEF_DEF_ "VersionMonth" 0;
+BA_DEF_DEF_ "VersionDay" 0;
+BA_DEF_DEF_ "ProtocolType" "CAN";
+BA_DEF_DEF_ "NmMessageCount" 128;
+BA_DEF_DEF_ "NmBaseAddress" 1280;
+BA_DEF_DEF_ "Manufacturer" "";
+BA_DEF_DEF_ "ILTxTimeout" 0;
+BA_DEF_DEF_ "DBName" "";
+BA_DEF_DEF_ "BusType" "CAN";
+BA_DEF_DEF_ "Baudrate" 500000;
+BA_DEF_DEF_ "DatabaseVersion" "";
+BA_DEF_DEF_ "Datarate" 2000000;
+BA_DEF_DEF_ "MultiplexExtEnabled" "No";
+BA_DEF_DEF_ "StartDelay" 0;
+BA_DEF_DEF_ "GenMsgStartDelayTime" 0;
+BA_DEF_DEF_ "GenMsgSendType" "Cycle";
+BA_DEF_DEF_ "GenMsgNrOfRepetition" 0;
+BA_DEF_DEF_ "GenMsgILSupport" "Yes";
+BA_DEF_DEF_ "GenMsgDelayTime" 0;
+BA_DEF_DEF_ "GenMsgCycleTimeFast" 0;
+BA_DEF_DEF_ "GenMsgCycleTime" 100;
+BA_DEF_DEF_ "DiagState" "No";
+BA_DEF_DEF_ "DiagResponse" "No";
+BA_DEF_DEF_ "DiagRequest" "No";
+BA_DEF_DEF_ "NmMessage" "No";
+BA_DEF_DEF_ "VFrameFormat" "StandardCAN";
+BA_DEF_DEF_ "DataID" "";
+BA_DEF_DEF_ "DoIPLogicalAddress" "";
+BA_DEF_DEF_ "GenMsgFastOnStart" 0;
+BA_DEF_DEF_ "GenMsgRequestable" 1;
+BA_DEF_DEF_ "CANFD_BRS" "1";
+BA_ "BusType" "CAN FD";
+BA_ "ProtocolType" "CAN FD";
+BA_ "Manufacturer" "FVT";
+BA_ "DBName" "CAN2";
+BA_ "CAN_CAN_Gateway" BU_ FUSION 0;
+BA_ "CANFD_CANFD_Gateway" BU_ FUSION 0;
+BA_ "CAN_CANFD_Gateway" BU_ FUSION 0;
+BA_ "VFrameFormat" BO_ 2566624094 1;
+BA_ "GenMsgCycleTime" BO_ 2566522135 500;
+BA_ "VFrameFormat" BO_ 2566522135 1;
+BA_ "GenMsgCycleTime" BO_ 2365535578 50;
+BA_ "VFrameFormat" BO_ 2365535578 1;
+BA_ "GenMsgNrOfRepetition" BO_ 521 1;
+BA_ "GenMsgSendType" BO_ 521 5;
+BA_ "VFrameFormat" BO_ 521 14;
+BA_ "VFrameFormat" BO_ 523 14;
+BA_ "GenMsgCycleTime" BO_ 526 1000;
+BA_ "VFrameFormat" BO_ 526 14;
+BA_ "GenMsgCycleTime" BO_ 2355220689 10;
+BA_ "VFrameFormat" BO_ 2355220689 1;
+BA_ "GenMsgNrOfRepetition" BO_ 517 1;
+BA_ "GenMsgSendType" BO_ 517 5;
+BA_ "VFrameFormat" BO_ 517 14;
+BA_ "GenMsgNrOfRepetition" BO_ 2583568724 1;
+BA_ "VFrameFormat" BO_ 2583568724 1;
+BA_ "GenMsgSendType" BO_ 2583568724 5;
+BA_ "VFrameFormat" BO_ 2566831883 1;
+BA_ "GenMsgCycleTime" BO_ 2000 0;
+BA_ "GenMsgSendType" BO_ 2000 3;
+BA_ "DoIPLogicalAddress" BO_ 2000 "0xEFFF";
+BA_ "GenMsgCycleTime" BO_ 1568 0;
+BA_ "GenMsgSendType" BO_ 1568 3;
+BA_ "VFrameFormat" BO_ 1568 14;
+BA_ "DoIPLogicalAddress" BO_ 1568 "0x06A0";
+BA_ "GenMsgCycleTime" BO_ 1696 0;
+BA_ "GenMsgSendType" BO_ 1696 3;
+BA_ "VFrameFormat" BO_ 1696 14;
+BA_ "DoIPLogicalAddress" BO_ 1696 "0x06A0";
+BA_ "GenMsgCycleTime" BO_ 1666 0;
+BA_ "GenMsgSendType" BO_ 1666 3;
+BA_ "VFrameFormat" BO_ 1666 14;
+BA_ "DoIPLogicalAddress" BO_ 1666 "0x0682";
+BA_ "GenMsgCycleTime" BO_ 1760 0;
+BA_ "GenMsgSendType" BO_ 1760 3;
+BA_ "VFrameFormat" BO_ 1760 14;
+BA_ "DoIPLogicalAddress" BO_ 1760 "0x06E0";
+BA_ "GenMsgCycleTime" BO_ 1632 0;
+BA_ "GenMsgSendType" BO_ 1632 3;
+BA_ "VFrameFormat" BO_ 1632 14;
+BA_ "DoIPLogicalAddress" BO_ 1632 "0x06E0";
+BA_ "GenMsgCycleTime" BO_ 1538 0;
+BA_ "GenMsgSendType" BO_ 1538 3;
+BA_ "VFrameFormat" BO_ 1538 14;
+BA_ "DoIPLogicalAddress" BO_ 1538 "0x0682";
+BA_ "GenMsgCycleTime" BO_ 1761 0;
+BA_ "GenMsgSendType" BO_ 1761 3;
+BA_ "VFrameFormat" BO_ 1761 14;
+BA_ "DoIPLogicalAddress" BO_ 1761 "0x06E1";
+BA_ "GenMsgCycleTime" BO_ 1633 0;
+BA_ "GenMsgSendType" BO_ 1633 3;
+BA_ "VFrameFormat" BO_ 1633 14;
+BA_ "DoIPLogicalAddress" BO_ 1633 "0x06E1";
+BA_ "GenMsgCycleTime" BO_ 1762 0;
+BA_ "GenMsgSendType" BO_ 1762 3;
+BA_ "VFrameFormat" BO_ 1762 14;
+BA_ "DoIPLogicalAddress" BO_ 1762 "0x06E2";
+BA_ "GenMsgCycleTime" BO_ 1634 0;
+BA_ "GenMsgSendType" BO_ 1634 3;
+BA_ "VFrameFormat" BO_ 1634 14;
+BA_ "DoIPLogicalAddress" BO_ 1634 "0x06E2";
+BA_ "GenMsgCycleTime" BO_ 1763 0;
+BA_ "GenMsgSendType" BO_ 1763 3;
+BA_ "VFrameFormat" BO_ 1763 14;
+BA_ "DoIPLogicalAddress" BO_ 1763 "0x06E3";
+BA_ "GenMsgCycleTime" BO_ 1635 0;
+BA_ "GenMsgSendType" BO_ 1635 3;
+BA_ "VFrameFormat" BO_ 1635 14;
+BA_ "DoIPLogicalAddress" BO_ 1635 "0x06E3";
+BA_ "GenMsgCycleTime" BO_ 527 200;
+BA_ "VFrameFormat" BO_ 527 14;
+BA_ "GenMsgCycleTime" BO_ 1280 0;
+BA_ "GenMsgSendType" BO_ 1280 3;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 2566522135 IGNKeySta "0x2";
+BA_ "GenSigRoutingTimeoutValue" SG_ 2566522135 IGNKeySta 2;
+BA_ "GenSigInvalidValue" SG_ 2566522135 VCU_VehicleSpd 65535;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 2566522135 VCU_VehicleSpd "0xFFFF";
+BA_ "GenSigRoutingTimeoutValue" SG_ 2566522135 VCU_VehicleSpd 65535;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 2365535578 ExtDischgReq "0x3";
+BA_ "GenSigInactiveValue" SG_ 2365535578 ExtDischgReq 0;
+BA_ "GenSigRoutingTimeoutValue" SG_ 2365535578 ExtDischgReq 3;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 2365535578 EVSysRls "0x3";
+BA_ "GenSigInactiveValue" SG_ 2365535578 EVSysRls 0;
+BA_ "GenSigRoutingTimeoutValue" SG_ 2365535578 EVSysRls 3;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 2365535578 ElecSysRdy "0x3";
+BA_ "GenSigRoutingTimeoutValue" SG_ 2365535578 ElecSysRdy 3;
+BA_ "GenSigInvalidValue" SG_ 2365535578 RecuperLimOrReq 255;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 2365535578 RecuperLimOrReq "0xFF";
+BA_ "GenSigRoutingTimeoutValue" SG_ 2365535578 RecuperLimOrReq 255;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 2365535578 ExtWorkshopMReq "0x3";
+BA_ "GenSigInactiveValue" SG_ 2365535578 ExtWorkshopMReq 0;
+BA_ "GenSigRoutingTimeoutValue" SG_ 2365535578 ExtWorkshopMReq 3;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 521 FDC_BCM_TurnBuzzerEN_Sta "0x0";
+BA_ "GenSigSendType" SG_ 521 FDC_BCM_TurnBuzzerEN_Sta 3;
+BA_ "GenSigSendType" SG_ 521 FDC_BCM_EmSV_Cmd 3;
+BA_ "GenSigSendType" SG_ 521 FDC_BCM_MDCloseSV_Cmd 3;
+BA_ "GenSigSendType" SG_ 521 FDC_BCM_MDOpenSV_Cmd 3;
+BA_ "GenSigSendType" SG_ 521 FDC_BCM_FDCloseSV_Cmd 3;
+BA_ "GenSigSendType" SG_ 521 FDC_BCM_FDOpenSV_Cmd 3;
+BA_ "GenSigSendType" SG_ 521 FDC_BCM_OutDoorOpenSW_Sta 3;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 521 FDC_BCM_HazardSW_Sta "0x0";
+BA_ "GenSigInactiveValue" SG_ 521 FDC_BCM_HazardSW_Sta 0;
+BA_ "GenSigSendType" SG_ 521 FDC_BCM_HazardSW_Sta 3;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 521 FDC_BCM_RTurnSW_Sta "0x0";
+BA_ "GenSigSendType" SG_ 521 FDC_BCM_RTurnSW_Sta 3;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 521 FDC_BCM_LTurnSW_Sta "0x0";
+BA_ "GenSigSendType" SG_ 521 FDC_BCM_LTurnSW_Sta 3;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 521 FDC_BCM_HelpIND_Cmd "0x0";
+BA_ "GenSigSendType" SG_ 521 FDC_BCM_HelpIND_Cmd 3;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 521 FDC_BCM_RoomLpSet_Sta "0x0";
+BA_ "GenSigSendType" SG_ 521 FDC_BCM_RoomLpSet_Sta 3;
+BA_ "GenSigSendType" SG_ 521 FDC_BCM_RoomLpAmbSet_Sta 3;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 521 FDC_BCM_EmExitSW_Sta "0x0";
+BA_ "GenSigSendType" SG_ 521 FDC_BCM_EmExitSW_Sta 3;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 521 FDC_BCM_InnerBuzzer_Cmd "0x0";
+BA_ "GenSigSendType" SG_ 521 FDC_BCM_InnerBuzzer_Cmd 3;
+BA_ "GenSigSendType" SG_ 521 FDC_BCM_InnerBuzzerMode_Sta 3;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 521 FDC_BCM_CallBell_Cmd "0x0";
+BA_ "GenSigSendType" SG_ 521 FDC_BCM_CallBell_Cmd 3;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 521 FDC_BCM_InnerCallBell_Cmd "0x0";
+BA_ "GenSigSendType" SG_ 521 FDC_BCM_InnerCallBell_Cmd 3;
+BA_ "GenSigSendType" SG_ 521 FDC_BCM_STOPBALL_Cmd 3;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 521 FDC_BCM_TurnLpPattern_Sta "0x0";
+BA_ "GenSigSendType" SG_ 521 FDC_BCM_TurnLpPattern_Sta 3;
+BA_ "GenSigSendType" SG_ 521 FDC_BCM_RFLamp_Cmd 3;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 521 FDC_BCM_Brake_Cmd "0x0";
+BA_ "GenSigSendType" SG_ 521 FDC_BCM_Brake_Cmd 3;
+BA_ "GenSigSendType" SG_ 521 FDC_BCM_SLTLp_Cmd 3;
+BA_ "GenSigSendType" SG_ 521 FDC_BCM_SRTLp_Cmd 3;
+BA_ "GenSigSendType" SG_ 521 FDC_BCM_SMKR_Cmd 3;
+BA_ "GenSigSendType" SG_ 521 FDC_BCM_SMKL_Cmd 3;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 521 FDC_BCM_RoomLpAmb_Cmd "0x0";
+BA_ "GenSigSendType" SG_ 521 FDC_BCM_RoomLpAmb_Cmd 3;
+BA_ "GenSigSendType" SG_ 521 FDC_BCM_Stop_IND_Cmd 3;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 521 FDC_BCM_BSD_Buzzer_Cmd "0x0";
+BA_ "GenSigSendType" SG_ 521 FDC_BCM_BSD_Buzzer_Cmd 3;
+BA_ "GenSigSendType" SG_ 521 FDC_BCM_RBSDY_Cmd 3;
+BA_ "GenSigSendType" SG_ 521 FDC_BCM_RBSDR_Cmd 3;
+BA_ "GenSigSendType" SG_ 521 FDC_BCM_LBSDY_Cmd 3;
+BA_ "GenSigSendType" SG_ 521 FDC_BCM_LBSDR_Cmd 3;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 521 FDC_BCM_Washer_Cmd "0x0";
+BA_ "GenSigSendType" SG_ 521 FDC_BCM_Washer_Cmd 3;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 521 FDC_BCM_WiperL_Cmd "0x0";
+BA_ "GenSigSendType" SG_ 521 FDC_BCM_WiperL_Cmd 3;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 521 FDC_BCM_WiperH_Cmd "0x0";
+BA_ "GenSigSendType" SG_ 521 FDC_BCM_WiperH_Cmd 3;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 521 FDC_BCM_RGear_Sta "0x0";
+BA_ "GenSigSendType" SG_ 521 FDC_BCM_RGear_Sta 3;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 521 FDC_BCM_RDoor_Sta "0x0";
+BA_ "GenSigSendType" SG_ 521 FDC_BCM_RDoor_Sta 3;
+BA_ "GenSigSendType" SG_ 521 FDC_BCM_FDoor_Sta 3;
+BA_ "GenSigSendType" SG_ 521 FDC_BCM_MDoor_Sta 3;
+BA_ "GenSigSendType" SG_ 521 FDC_BCM_RDRL_Cmd 3;
+BA_ "GenSigSendType" SG_ 521 FDC_BCM_LDRL_Cmd 3;
+BA_ "GenSigSendType" SG_ 521 FDC_BCM_PLamp_Cmd 3;
+BA_ "GenSigSendType" SG_ 521 FDC_BCM_HBeam_Cmd 3;
+BA_ "GenSigSendType" SG_ 521 FDC_BCM_LBeam_Cmd 3;
+BA_ "GenSigSendType" SG_ 521 FDC_BCM_RRoomLpSet_Sta 3;
+BA_ "GenSigSendType" SG_ 521 FDC_BCM_FRoomLpSet_Sta 3;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 523 B2THVRlySta "0x2";
+BA_ "GenSigRoutingTimeoutValue" SG_ 523 B2THVRlySta 2;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 523 B2VDCChgConnSta "0x3";
+BA_ "GenSigRoutingTimeoutValue" SG_ 523 B2VDCChgConnSta 3;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 523 ASRBrakeCtrlAtc "0x3";
+BA_ "GenSigRoutingTimeoutValue" SG_ 523 ASRBrakeCtrlAtc 3;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 523 ASREngCtrlAtc "0x3";
+BA_ "GenSigRoutingTimeoutValue" SG_ 523 ASREngCtrlAtc 3;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 523 ABSFullyOper "0x3";
+BA_ "GenSigRoutingTimeoutValue" SG_ 523 ABSFullyOper 3;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 523 EBSAmWarnLampSta "0x0";
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 523 WhlSpeed_FL "0xFB00";
+BA_ "GenSigRoutingTimeoutValue" SG_ 523 WhlSpeed_FL 64256;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 523 WhlSpeed_FR "0xFB00";
+BA_ "GenSigRoutingTimeoutValue" SG_ 523 WhlSpeed_FR 64256;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 523 WhlSpeed_RL "0xFB00";
+BA_ "GenSigRoutingTimeoutValue" SG_ 523 WhlSpeed_RL 64256;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 523 WhlSpeed_RR "0xFB00";
+BA_ "GenSigRoutingTimeoutValue" SG_ 523 WhlSpeed_RR 64256;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 523 ECASAWarmLampSta "0x2";
+BA_ "GenSigRoutingTimeoutValue" SG_ 523 ECASAWarmLampSta 2;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 523 EHPS_ErrLv_Sta "0x5";
+BA_ "GenSigRoutingTimeoutValue" SG_ 523 EHPS_ErrLv_Sta 5;
+BA_ "GenSigInvalidValue" SG_ 523 MCUFailGrade 4;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 523 MCUFailGrade "0x1";
+BA_ "GenSigRoutingTimeoutValue" SG_ 523 MCUFailGrade 1;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 523 AirPressureRC1 "0xFB";
+BA_ "GenSigRoutingTimeoutValue" SG_ 523 AirPressureRC1 251;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 523 EBSBrakeSw "0x3";
+BA_ "GenSigRoutingTimeoutValue" SG_ 523 EBSBrakeSw 3;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 523 ParkBrakeSW "0x3";
+BA_ "GenSigRoutingTimeoutValue" SG_ 523 ParkBrakeSW 3;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 523 LVBattLow "0x0";
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 523 DACStatus "0x2";
+BA_ "GenSigRoutingTimeoutValue" SG_ 523 DACStatus 2;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 523 VDCBrakeLightReq "0x0";
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 526 VCUVehSpdlimit "0xFF";
+BA_ "GenSigRoutingTimeoutValue" SG_ 526 VCUVehSpdlimit 255;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 526 VCUVehAcclLimit "0xFF";
+BA_ "GenSigRoutingTimeoutValue" SG_ 526 VCUVehAcclLimit 255;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 526 LBIPressIndi "0x3";
+BA_ "GenSigRoutingTimeoutValue" SG_ 526 LBIPressIndi 3;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 526 RFPressIndi "0x3";
+BA_ "GenSigRoutingTimeoutValue" SG_ 526 RFPressIndi 3;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 526 LFPressIndi "0x3";
+BA_ "GenSigRoutingTimeoutValue" SG_ 526 LFPressIndi 3;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 526 RBOPressIndi "0x3";
+BA_ "GenSigRoutingTimeoutValue" SG_ 526 RBOPressIndi 3;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 526 LBOPressIndi "0x3";
+BA_ "GenSigRoutingTimeoutValue" SG_ 526 LBOPressIndi 3;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 526 ACMODESta "0x0";
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 526 RBIPressIndi "0x3";
+BA_ "GenSigRoutingTimeoutValue" SG_ 526 RBIPressIndi 3;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 526 RBOWheelPress "0xFF";
+BA_ "GenSigRoutingTimeoutValue" SG_ 526 RBOWheelPress 255;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 526 LFWheelPress "0xFF";
+BA_ "GenSigRoutingTimeoutValue" SG_ 526 LFWheelPress 255;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 526 RFWheelPress "0xFF";
+BA_ "GenSigRoutingTimeoutValue" SG_ 526 RFWheelPress 255;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 526 TPMSWarnIndi "0x3";
+BA_ "GenSigRoutingTimeoutValue" SG_ 526 TPMSWarnIndi 3;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 526 LBIWheelPress "0xFF";
+BA_ "GenSigRoutingTimeoutValue" SG_ 526 LBIWheelPress 255;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 526 RBIWheelPress "0xFF";
+BA_ "GenSigRoutingTimeoutValue" SG_ 526 RBIWheelPress 255;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 526 LBOWheelPress "0xFF";
+BA_ "GenSigRoutingTimeoutValue" SG_ 526 LBOWheelPress 255;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 2355220689 TUpASta "0x2";
+BA_ "GenSigRoutingTimeoutValue" SG_ 2355220689 TUpASta 2;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 2355220689 EMotorOverSpd "0x2";
+BA_ "GenSigRoutingTimeoutValue" SG_ 2355220689 EMotorOverSpd 2;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 2355220689 CreeperSta "0x2";
+BA_ "GenSigRoutingTimeoutValue" SG_ 2355220689 CreeperSta 2;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 2355220689 ActDriveMode "0x3";
+BA_ "GenSigRoutingTimeoutValue" SG_ 2355220689 ActDriveMode 3;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 2355220689 WheelSlipdet "0x3";
+BA_ "GenSigRoutingTimeoutValue" SG_ 2355220689 WheelSlipdet 3;
+BA_ "GenSigSendType" SG_ 517 ZFR_BCM_Seatbelt_Sta 3;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 517 ZFR_BCM_Brake_Sta "0x0";
+BA_ "GenSigSendType" SG_ 517 ZFR_BCM_Brake_Sta 3;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 517 ZFR_BCM_DVRSignalR_Sta "0x0";
+BA_ "GenSigSendType" SG_ 517 ZFR_BCM_DVRSignalR_Sta 3;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 517 ZFR_BCM_DVRSignalL_Sta "0x0";
+BA_ "GenSigSendType" SG_ 517 ZFR_BCM_DVRSignalL_Sta 3;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 517 ZFR_BCM_TurnBuzzer_Sta "0x0";
+BA_ "GenSigSendType" SG_ 517 ZFR_BCM_TurnBuzzer_Sta 3;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 517 ZFR_BCM_RBSDY_Sta "0x0";
+BA_ "GenSigSendType" SG_ 517 ZFR_BCM_RBSDY_Sta 3;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 517 ZFR_BCM_LBSDY_Sta "0x0";
+BA_ "GenSigSendType" SG_ 517 ZFR_BCM_LBSDY_Sta 3;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 517 ZFR_BCM_RBSDR_Sta "0x0";
+BA_ "GenSigSendType" SG_ 517 ZFR_BCM_RBSDR_Sta 3;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 517 ZFR_BCM_LBSDR_Sta "0x0";
+BA_ "GenSigSendType" SG_ 517 ZFR_BCM_LBSDR_Sta 3;
+BA_ "GenSigSendType" SG_ 517 ZFR_BCM_RFogLp_SW_Sta 3;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 517 ZFR_BCM_Washer_Sta "0x0";
+BA_ "GenSigSendType" SG_ 517 ZFR_BCM_Washer_Sta 3;
+BA_ "GenSigSendType" SG_ 517 ZFR_BCM_WiperAS_Sta 3;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 517 ZFR_BCM_WiperL_Sta "0x0";
+BA_ "GenSigSendType" SG_ 517 ZFR_BCM_WiperL_Sta 3;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 517 ZFR_BCM_WiperH_Sta "0x0";
+BA_ "GenSigSendType" SG_ 517 ZFR_BCM_WiperH_Sta 3;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 517 ZFR_BCM_DVRMidDoor_Sta "0x0";
+BA_ "GenSigSendType" SG_ 517 ZFR_BCM_DVRMidDoor_Sta 3;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 517 ZFR_BCM_RFTurnLp_Sta "0x0";
+BA_ "GenSigSendType" SG_ 517 ZFR_BCM_RFTurnLp_Sta 3;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 517 ZFR_BCM_LFTurnLp_Sta "0x0";
+BA_ "GenSigSendType" SG_ 517 ZFR_BCM_LFTurnLp_Sta 3;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 517 ZFR_BCM_RDRL_Sta "0x0";
+BA_ "GenSigSendType" SG_ 517 ZFR_BCM_RDRL_Sta 3;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 517 ZFR_BCM_LDRL_Sta "0x0";
+BA_ "GenSigSendType" SG_ 517 ZFR_BCM_LDRL_Sta 3;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 517 ZFR_BCM_PLamp_Sta "0x0";
+BA_ "GenSigSendType" SG_ 517 ZFR_BCM_PLamp_Sta 3;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 517 ZFR_BCM_HBeam_Sta "0x0";
+BA_ "GenSigSendType" SG_ 517 ZFR_BCM_HBeam_Sta 3;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 517 ZFR_BCM_LBeam_Sta "0x0";
+BA_ "GenSigSendType" SG_ 517 ZFR_BCM_LBeam_Sta 3;
+BA_ "GenSigSendType" SG_ 517 ZFR_BCM_LightSensorV_Sta 3;
+BA_ "GenSigSendType" SG_ 517 ZFR_BCM_HBeamSW_Sta 3;
+BA_ "GenSigSendType" SG_ 517 ZFR_BCM_AutoLightSW_Sta 3;
+BA_ "GenSigSendType" SG_ 517 ZFR_BCM_PosLpSW_Sta 3;
+BA_ "GenSigSendType" SG_ 517 ZFR_BCM_HeadLpSW_Sta 3;
+BA_ "GenSigSendType" SG_ 517 ZFR_BCM_WiperHSW_Sta 3;
+BA_ "GenSigSendType" SG_ 517 ZFR_BCM_WiperLSW_Sta 3;
+BA_ "GenSigSendType" SG_ 517 ZFR_BCM_WasherSW_Sta 3;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 517 ZFR_BCM_HornSW_Sta "0x0";
+BA_ "GenSigSendType" SG_ 517 ZFR_BCM_HornSW_Sta 3;
+BA_ "GenSigInvalidValue" SG_ 517 ZFR_BCM_RFTurnLpC_Sta 255;
+BA_ "GenSigStartValue" SG_ 517 ZFR_BCM_RFTurnLpC_Sta 255;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 517 ZFR_BCM_RFTurnLpC_Sta "0xFF";
+BA_ "GenSigRoutingTimeoutValue" SG_ 517 ZFR_BCM_RFTurnLpC_Sta 255;
+BA_ "GenSigSendType" SG_ 517 ZFR_BCM_RFTurnLpC_Sta 3;
+BA_ "GenSigInvalidValue" SG_ 517 ZFR_BCM_LFTurnLpC_Sta 255;
+BA_ "GenSigStartValue" SG_ 517 ZFR_BCM_LFTurnLpC_Sta 255;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 517 ZFR_BCM_LFTurnLpC_Sta "0xFF";
+BA_ "GenSigRoutingTimeoutValue" SG_ 517 ZFR_BCM_LFTurnLpC_Sta 255;
+BA_ "GenSigSendType" SG_ 517 ZFR_BCM_LFTurnLpC_Sta 3;
+BA_ "GenSigInvalidValue" SG_ 517 ZFR_BCM_BSD_Dimmer_Sta 127;
+BA_ "GenSigStartValue" SG_ 517 ZFR_BCM_BSD_Dimmer_Sta 0;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 517 ZFR_BCM_BSD_Dimmer_Sta "0x7F";
+BA_ "GenSigRoutingTimeoutValue" SG_ 517 ZFR_BCM_BSD_Dimmer_Sta 127;
+BA_ "GenSigSendType" SG_ 517 ZFR_BCM_BSD_Dimmer_Sta 3;
+BA_ "GenSigInvalidValue" SG_ 517 ZFR_BCM_BacklightDuty_Sta 127;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 517 ZFR_BCM_BacklightDuty_Sta "0x7F";
+BA_ "GenSigRoutingTimeoutValue" SG_ 517 ZFR_BCM_BacklightDuty_Sta 127;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 517 AirPressureFC2 "0xFB";
+BA_ "GenSigRoutingTimeoutValue" SG_ 517 AirPressureFC2 251;
+BA_ "GenSigSendType" SG_ 517 ZFR_BCM_DVRSignalReverse_Sta 3;
+BA_ "GenSigInvalidValue" SG_ 2583568724 IVI_Second_Sta 60;
+BA_ "GenSigSendType" SG_ 2583568724 IVI_Second_Sta 3;
+BA_ "GenSigInvalidValue" SG_ 2583568724 IVI_Minute_Sta 60;
+BA_ "GenSigSendType" SG_ 2583568724 IVI_Minute_Sta 3;
+BA_ "GenSigStartValue" SG_ 2583568724 IVI_Hour_Sta 0;
+BA_ "GenSigSendType" SG_ 2583568724 IVI_Hour_Sta 3;
+BA_ "GenSigSendType" SG_ 2583568724 IVI_Day_Sta 3;
+BA_ "GenSigSendType" SG_ 2583568724 IVI_Month_Sta 3;
+BA_ "GenSigSendType" SG_ 2583568724 IVI_Year_Sta 3;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 2566831883 FASpeed "0xFB00";
+BA_ "GenSigRoutingTimeoutValue" SG_ 2566831883 FASpeed 64256;
+BA_ "GenSigSendType" SG_ 2000 DiagFuncReqFT 3;
+BA_ "GenSigSendType" SG_ 1568 DiagResFromIVI 3;
+BA_ "GenSigSendType" SG_ 1696 DiagPhysReqToIVI 3;
+BA_ "GenSigSendType" SG_ 1666 DiagPhysReqToMETER 3;
+BA_ "GenSigSendType" SG_ 1760 DiagPhysReqToIVI_F 3;
+BA_ "GenSigSendType" SG_ 1632 DiagResFromIVI_F 3;
+BA_ "GenSigSendType" SG_ 1538 DiagResFromMETER 3;
+BA_ "GenSigSendType" SG_ 1761 DiagPhysReqToIVI_M 3;
+BA_ "GenSigSendType" SG_ 1633 DiagResFromIVI_M 3;
+BA_ "GenSigSendType" SG_ 1762 DiagPhysReqToCMS_L 3;
+BA_ "GenSigSendType" SG_ 1634 DiagResFromCMS_L 3;
+BA_ "GenSigSendType" SG_ 1763 DiagPhysReqToCMS_R 3;
+BA_ "GenSigSendType" SG_ 1635 DiagResFromCMS_R 3;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 527 FDC_VCU_VCUDRM_Sta "0x3";
+BA_ "GenSigRoutingTimeoutValue" SG_ 527 FDC_VCU_VCUDRM_Sta 3;
+BA_ "GenSigInvalidValue" SG_ 527 SysPowerMode 15;
+BA_ "GenSigSendType" SG_ 1280 NM_FUSION_Node_ID 7;
+BA_ "GenSigSendType" SG_ 1280 NM_FUSION_ERROR_State 7;
+BA_ "GenSigSendType" SG_ 1280 NM_FUSION_Active_WU 7;
+BA_ "GenSigSendType" SG_ 1280 NM_FUSION_CSB 7;
+BA_ "GenSigSendType" SG_ 1280 NM_FUSION_PNI 7;
+BA_ "GenSigSendType" SG_ 1280 NM_FUSION_Rpt_Msg_Req 7;
+VAL_ 2566624094 IVI_ACPwrReq_Cmd 1 "PowerON" 0 "PowerOFF";
+VAL_ 2566624094 IVI_ACFanSpdReq_Cmd 3 "High Speed" 2 "Mid Speed" 1 "Low Speed" 0 "Stop";
+VAL_ 2566624094 IVI_ACMODEReq_Cmd 3 "Fan" 2 "Heat" 1 "Cooling" 0 "Auto";
+VAL_ 2566624094 IVI_ACOutCycleReq_Cmd 3 "reserve" 2 "anti virus" 1 "Fresh air" 0 "Turn off";
+VAL_ 2566624094 IVI_ACRemoteReq_Cmd 1 "Enable" 0 "DISABLE";
+VAL_ 2566522135 IGNKeySta 3 "Resvered" 2 "Failed" 1 "Enable" 0 "Disable";
+VAL_ 2566522135 VCU_VehicleSpd 65535 "error/invalid";
+VAL_ 2566522135 VSPFunc 3 "Resvered" 2 "Resvered" 1 "Enable" 0 "Disable";
+VAL_ 2365535578 ExtDischgReq 3 "Not available" 2 "Error" 1 "External Discharge Requested" 0 "External Discharge NOT Requrested";
+VAL_ 2365535578 EVSysRls 3 "not available" 2 "Error" 1 "Valid driver system activation" 0 "Init";
+VAL_ 2365535578 ElecSysRdy 3 "not available" 2 "Error" 1 "System ready" 0 "Init / not ready";
+VAL_ 2365535578 ExtWorkshopMReq 3 "not available" 2 "Error" 1 "Workshop Mode Requested" 0 "No Request of Workshop Mode";
+VAL_ 2365535578 ExtDriveMReq 2 "Eco Mode (high limitation)" 1 "Normal Mode (low limitation)" 0 "Power Mode (no llimitation)";
+VAL_ 521 FDC_BCM_TurnBuzzerEN_Sta 1 "ON" 0 "OFF";
+VAL_ 521 FDC_BCM_EmSV_Cmd 1 "Door_Can_not_Open" 0 "Door_Can_Open";
+VAL_ 521 FDC_BCM_MDCloseSV_Cmd 1 "ON" 0 "OFF";
+VAL_ 521 FDC_BCM_MDOpenSV_Cmd 1 "ON" 0 "OFF";
+VAL_ 521 FDC_BCM_FDCloseSV_Cmd 1 "ON" 0 "OFF";
+VAL_ 521 FDC_BCM_FDOpenSV_Cmd 1 "ON" 0 "OFF";
+VAL_ 521 FDC_BCM_OutDoorOpenSW_Sta 2 "ClosePos" 1 "OpenPos" 0 "OFF";
+VAL_ 521 FDC_BCM_HazardSW_Sta 1 "Press" 0 "Release";
+VAL_ 521 FDC_BCM_RTurnSW_Sta 1 "Press" 0 "Release";
+VAL_ 521 FDC_BCM_LTurnSW_Sta 1 "Press" 0 "Release";
+VAL_ 521 FDC_BCM_HelpIND_Cmd 1 "ON" 0 "OFF";
+VAL_ 521 FDC_BCM_RoomLpSet_Sta 1 "ON" 0 "OFF";
+VAL_ 521 FDC_BCM_RoomLpAmbSet_Sta 1 "ON" 0 "OFF";
+VAL_ 521 FDC_BCM_EmExitSW_Sta 1 "ON" 0 "OFF";
+VAL_ 521 FDC_BCM_InnerBuzzer_Cmd 1 "ON" 0 "OFF";
+VAL_ 521 FDC_BCM_InnerBuzzerMode_Sta 5 "VCU Warning" 4 "TA Buzzer" 3 "DoorOpen Warning" 2 "Emergency Exit Open" 1 "Fire Disaster" 0 "OFF";
+VAL_ 521 FDC_BCM_CallBell_Cmd 1 "ON" 0 "OFF";
+VAL_ 521 FDC_BCM_InnerCallBell_Cmd 1 "ON" 0 "OFF";
+VAL_ 521 FDC_BCM_STOPBALL_Cmd 1 "ON" 0 "OFF";
+VAL_ 521 FDC_BCM_TurnLpPattern_Sta 3 "Turn Right" 2 "Turn Left" 1 "Hazard" 0 "No Request";
+VAL_ 521 FDC_BCM_RFLamp_Cmd 1 "ON" 0 "OFF";
+VAL_ 521 FDC_BCM_Brake_Cmd 1 "Brake" 0 "Not At Brake";
+VAL_ 521 FDC_BCM_SLTLp_Cmd 1 "ON" 0 "OFF";
+VAL_ 521 FDC_BCM_SRTLp_Cmd 1 "ON" 0 "OFF";
+VAL_ 521 FDC_BCM_SMKR_Cmd 1 "ON" 0 "OFF";
+VAL_ 521 FDC_BCM_SMKL_Cmd 1 "ON" 0 "OFF";
+VAL_ 521 FDC_BCM_RoomLpAmb_Cmd 1 "ON" 0 "OFF";
+VAL_ 521 FDC_BCM_Stop_IND_Cmd 1 "ON" 0 "OFF";
+VAL_ 521 FDC_BCM_BSD_Buzzer_Cmd 1 "ON" 0 "OFF";
+VAL_ 521 FDC_BCM_RBSDY_Cmd 1 "ON" 0 "OFF";
+VAL_ 521 FDC_BCM_RBSDR_Cmd 1 "ON" 0 "OFF";
+VAL_ 521 FDC_BCM_LBSDY_Cmd 1 "ON" 0 "OFF";
+VAL_ 521 FDC_BCM_LBSDR_Cmd 1 "ON" 0 "OFF";
+VAL_ 521 FDC_BCM_Washer_Cmd 1 "ON" 0 "OFF";
+VAL_ 521 FDC_BCM_WiperL_Cmd 1 "ON" 0 "OFF";
+VAL_ 521 FDC_BCM_WiperH_Cmd 1 "ON" 0 "OFF";
+VAL_ 521 FDC_BCM_RGear_Sta 1 "R Gear" 0 "Not R Gear";
+VAL_ 521 FDC_BCM_RDoor_Sta 1 "Open" 0 "Close";
+VAL_ 521 FDC_BCM_FDoor_Sta 1 "ON" 0 "OFF";
+VAL_ 521 FDC_BCM_MDoor_Sta 1 "ON" 0 "OFF";
+VAL_ 521 FDC_BCM_RDRL_Cmd 1 "ON" 0 "OFF";
+VAL_ 521 FDC_BCM_LDRL_Cmd 1 "ON" 0 "OFF";
+VAL_ 521 FDC_BCM_PLamp_Cmd 1 "ON" 0 "OFF";
+VAL_ 521 FDC_BCM_HBeam_Cmd 1 "ON" 0 "OFF";
+VAL_ 521 FDC_BCM_LBeam_Cmd 1 "ON" 0 "OFF";
+VAL_ 521 FDC_BCM_LTurnLp_Cmd 1 "ON" 0 "OFF";
+VAL_ 521 FDC_BCM_RTurnLp_Cmd 1 "ON" 0 "OFF";
+VAL_ 521 FDC_BCM_DVRSignalL_Cmd 1 "ON" 0 "OFF";
+VAL_ 521 FDC_BCM_DVRSignalR_Cmd 1 "ON" 0 "OFF";
+VAL_ 523 B2VBI1BattType 15 "Others" 14 "Fuel battery" 13 "Reserved" 10 "Reserved" 9 "Super-capaciyor" 8 "Li4Ti5O12 Battery" 7 "Polymer li-ion battery" 6 "NCM Battery" 5 "LiCoO2 Battery" 4 "LiMn2O4 Battery" 3 "LFP Battery" 2 "NI-MHBattery" 1 "Lead-acid battery";
+VAL_ 523 B2THVRlySta 3 "Invalid" 2 "Invalid" 1 "Closed" 0 "Open";
+VAL_ 523 B2VChgMode 3 "Other charging" 2 "Accharging" 1 "DC charging" 0 "Notcharging";
+VAL_ 523 B2VChgSta 3 "Charge error" 2 "ChargeFinished" 1 "Charging" 0 "not charging";
+VAL_ 523 B2VDCChgConnSta 3 "Invalid" 2 "HalfConnected" 1 "Connected" 0 "Not connected";
+VAL_ 523 B2VPChrgConnSta 1 "Connected" 0 "Not connected";
+VAL_ 523 TransReqGear 223 "R" 254 "error" 125 "N" 252 "D" 245 "D1" 244 "D2" 243 "D3" 224 "no button";
+VAL_ 523 GearFlashInd 1 "request" 0 "no request";
+VAL_ 523 ASRBrakeCtrlAtc 3 "Not available" 2 "Reserved" 1 "ASR brake control active" 0 "ASR brake control passive but installed";
+VAL_ 523 ASREngCtrlAtc 3 "Not available" 2 "Reserved" 1 "ASR engine control active" 0 "ASR engine control passive but installed";
+VAL_ 523 ABSFullyOper 3 "Not available" 2 "Reserved" 1 "Fully Operational" 0 "Not Fully Operational";
+VAL_ 523 EBSAmWarnLampSta 3 "Take no action" 2 "Reserved" 1 "On" 0 "Off";
+VAL_ 523 EBSRedWarnLampSta 3 "Take no action" 2 "Reserved" 1 "On" 0 "Off";
+VAL_ 523 WhlSpeed_FL 64256 "Invalid Value";
+VAL_ 523 WhlSpeed_FR 64256 "Invalid Value";
+VAL_ 523 WhlSpeed_RL 64256 "Invalid Value";
+VAL_ 523 WhlSpeed_RR 64256 "Invalid Value";
+VAL_ 523 ASC1KneelingInfo 4 "Kneeling aborted" 3 "lifting active" 2 "Kneeling level reached" 1 "Lowering active" 0 "Not active";
+VAL_ 523 ECASAWarmLampSta 2 "Not defined" 1 "Lamp on" 0 "Lamp off";
+VAL_ 523 EHPS_ErrLv_Sta 7 "Not available" 6 "Not available" 5 "Not available" 4 "Level4" 3 "Level3" 2 "Level2" 1 "Level1" 0 "No error";
+VAL_ 523 MCUFailGrade 3 "Fault(disable)" 2 "Fault(0Nm)" 1 "Warning" 0 "No Fault";
+VAL_ 523 AirPressureRC1 251 "Invalid Value";
+VAL_ 523 CACTempWarn 1 "alarm" 0 "normal";
+VAL_ 523 EBSBrakeSw 3 "Not available" 2 "Error" 1 "Brake pedal is being pressed" 0 "Brake pedal is not being pressed";
+VAL_ 523 DCDC_En_Sta 3 "FAULT" 2 "RUN" 1 "Ready" 0 "INITIAL";
+VAL_ 523 ParkBrakeSW 3 "Not available" 2 "Error" 1 "Parking brake set" 0 "Parking brake not set";
+VAL_ 523 ZFR_CHASSIS_LiningWearFL_Sta 1 "Need to Replace Lining" 0 "Not Need to Replace Lining";
+VAL_ 523 ZFR_CHASSIS_LiningWearFR_Sta 1 "Need to Replace Lining" 0 "Not Need to Replace Lining";
+VAL_ 523 ZRR_CHASSIS_LiningWearRL_Sta 1 "Need to Replace Lining" 0 "Not Need to Replace Lining";
+VAL_ 523 ZRR_CHASSIS_LiningWearRR_Sta 1 "Need to Replace Lining" 0 "Not Need to Replace Lining";
+VAL_ 523 LVBattLow 2 "Low voltage, power up" 1 "Low voltage, power down" 0 "normal";
+VAL_ 523 PweLmtInd 1 "ON" 0 "OFF";
+VAL_ 523 VCUWarnInd 3 "Error" 2 "Red" 1 "Amber" 0 "Disable";
+VAL_ 523 VCUnoPBInd 1 "requested" 0 "no request";
+VAL_ 523 DACStatus 3 "Disable" 2 "Warning" 1 "Run" 0 "Ready";
+VAL_ 523 VDCBrakeLightReq 3 "Don't care/Take no action" 2 "Reserved" 1 "Turn brake light on" 0 "Turn brake light not on";
+VAL_ 526 VCUVehSpdlimit 255 "Error" 254 "disable";
+VAL_ 526 VCUVehAcclLimit 255 "Error" 254 "disable";
+VAL_ 526 LBIPressIndi 3 "invalid" 2 "pressure too low" 1 "pressure too high" 0 "Normal";
+VAL_ 526 RFPressIndi 3 "invalid" 2 "pressure too low" 1 "pressure too high" 0 "Normal";
+VAL_ 526 LFPressIndi 3 "invalid" 2 "pressure too low" 1 "pressure too high" 0 "Normal";
+VAL_ 526 RBOPressIndi 3 "invalid" 2 "pressure too low" 1 "pressure too high" 0 "Normal";
+VAL_ 526 LBOPressIndi 3 "invalid" 2 "pressure too low" 1 "pressure too high" 0 "Normal";
+VAL_ 526 ACMODESta 3 "Fan" 2 "Heat" 1 "Cooling" 0 "OFF";
+VAL_ 526 RBOSensorFail 1 "Fail" 0 "Normal";
+VAL_ 526 LBOSensorFail 1 "Fail" 0 "Normal";
+VAL_ 526 RBISensorFail 1 "Fail" 0 "Normal";
+VAL_ 526 LBISensorFail 1 "Fail" 0 "Normal";
+VAL_ 526 RFBatWarn 1 "Low" 0 "Normal";
+VAL_ 526 LFBatWarn 1 "Low" 0 "Normal";
+VAL_ 526 THCM_Faultlv_Sta 3 "Leve3 error" 2 "Leve2 error" 1 "Leve1 error" 0 "Normal";
+VAL_ 526 LFSensorFail 1 "Fail" 0 "Normal";
+VAL_ 526 RFSensorFail 1 "Fail" 0 "Normal";
+VAL_ 526 LBIWheelTmpIndi 1 "overheated" 0 "Normal";
+VAL_ 526 RBIWheelTmpIndi 1 "overheated" 0 "Normal";
+VAL_ 526 LFWheelTmpIndi 1 "overheated" 0 "Normal";
+VAL_ 526 RFWheelTmpIndi 1 "overheated" 0 "Normal";
+VAL_ 526 RBIPressIndi 3 "invalid" 2 "pressure too low" 1 "pressure too high" 0 "Normal";
+VAL_ 526 LBOWheelTmpIndi 1 "overheated" 0 "Normal";
+VAL_ 526 RBOBatWarn 1 "Low" 0 "Normal";
+VAL_ 526 RBOWheelTmpIndi 1 "overheated" 0 "Normal";
+VAL_ 526 RBOWheelPress 255 "Invalid Value";
+VAL_ 526 LFWheelPress 255 "Invalid Value";
+VAL_ 526 RFWheelPress 255 "Invalid Value";
+VAL_ 526 TPMSWarnIndi 3 "Invalid" 2 "Indicator Flash" 1 "Indicator ON" 0 "Indicator OFF";
+VAL_ 526 LBIBatWarn 1 "Low" 0 "Normal";
+VAL_ 526 LBOBatWarn 1 "Low" 0 "Normal";
+VAL_ 526 RBIBatWarn 1 "Low" 0 "Normal";
+VAL_ 526 LBIWheelPress 255 "Invalid Value";
+VAL_ 526 RBIWheelPress 255 "Invalid Value";
+VAL_ 526 LBOWheelPress 255 "Invalid Value";
+VAL_ 2355220689 TUpASta 3 "Disable" 2 "Warning" 1 "Run" 0 "Ready";
+VAL_ 2355220689 RecuperHighSta 1 "Recuperation Power is high" 0 "None or Low Recuperation";
+VAL_ 2355220689 EMotorOverSpd 3 "N/A" 2 "Error" 1 "Emotor Overspeed active" 0 "No Overspeed detected";
+VAL_ 2355220689 EBrakeTorqLow 1 "Brake torque Low" 0 "Brake torque OK";
+VAL_ 2355220689 CreeperSta 3 "Disable" 2 "Warning" 1 "Run" 0 "Ready";
+VAL_ 2355220689 CeTraxSysReady 1 "Ready" 0 "Not Ready";
+VAL_ 2355220689 VehActDriveDirect 2 "Reverse" 1 "Forward" 0 "Neutral";
+VAL_ 2355220689 ActDriveMode 3 "Error" 2 "Regen" 1 "Driving" 0 "Stop";
+VAL_ 2355220689 WheelSlipdet 3 "Error" 2 "Right Wheel Slippage Reduction active" 1 "Left Wheel Slippage Reduction active" 0 "No slippage Reduction";
+VAL_ 517 ZFR_BCM_Seatbelt_Sta 1 "fasten" 0 "Unfasten";
+VAL_ 517 ZFR_BCM_Brake_Sta 1 "ON" 0 "OFF";
+VAL_ 517 ZFR_BCM_DVRSignalR_Sta 1 "ON" 0 "OFF";
+VAL_ 517 ZFR_BCM_DVRSignalL_Sta 1 "ON" 0 "OFF";
+VAL_ 517 ZFR_BCM_TurnBuzzer_Sta 1 "ON" 0 "OFF";
+VAL_ 517 ZFR_BCM_RBSDY_Sta 1 "ON" 0 "OFF";
+VAL_ 517 ZFR_BCM_LBSDY_Sta 1 "ON" 0 "OFF";
+VAL_ 517 ZFR_BCM_RBSDR_Sta 1 "ON" 0 "OFF";
+VAL_ 517 ZFR_BCM_LBSDR_Sta 1 "ON" 0 "OFF";
+VAL_ 517 ZFR_BCM_RFogLp_SW_Sta 1 "ON" 0 "OFF";
+VAL_ 517 ZFR_BCM_Washer_Sta 1 "ON" 0 "OFF";
+VAL_ 517 ZFR_BCM_WiperAS_Sta 1 "ON" 0 "OFF";
+VAL_ 517 ZFR_BCM_WiperL_Sta 1 "ON" 0 "OFF";
+VAL_ 517 ZFR_BCM_WiperH_Sta 1 "ON" 0 "OFF";
+VAL_ 517 ZFR_BCM_DVRMidDoor_Sta 1 "ON" 0 "OFF";
+VAL_ 517 ZFR_BCM_RFTurnLp_Sta 1 "ON" 0 "OFF";
+VAL_ 517 ZFR_BCM_LFTurnLp_Sta 1 "ON" 0 "OFF";
+VAL_ 517 ZFR_BCM_RDRL_Sta 1 "ON" 0 "OFF";
+VAL_ 517 ZFR_BCM_LDRL_Sta 1 "ON" 0 "OFF";
+VAL_ 517 ZFR_BCM_PLamp_Sta 1 "ON" 0 "OFF";
+VAL_ 517 ZFR_BCM_HBeam_Sta 1 "ON" 0 "OFF";
+VAL_ 517 ZFR_BCM_LBeam_Sta 1 "ON" 0 "OFF";
+VAL_ 517 ZFR_BCM_HBeamSW_Sta 1 "ON" 0 "OFF";
+VAL_ 517 ZFR_BCM_AutoLightSW_Sta 1 "ON" 0 "OFF";
+VAL_ 517 ZFR_BCM_PosLpSW_Sta 1 "ON" 0 "OFF";
+VAL_ 517 ZFR_BCM_HeadLpSW_Sta 1 "ON" 0 "OFF";
+VAL_ 517 ZFR_BCM_WiperHSW_Sta 1 "ON" 0 "OFF";
+VAL_ 517 ZFR_BCM_WiperLSW_Sta 1 "ON" 0 "OFF";
+VAL_ 517 ZFR_BCM_WasherSW_Sta 1 "ON" 0 "OFF";
+VAL_ 517 ZFR_BCM_HornSW_Sta 1 "Press" 0 "Release";
+VAL_ 517 ZFR_BCM_RFTurnLpC_Sta 255 "invaild";
+VAL_ 517 ZFR_BCM_LFTurnLpC_Sta 255 "invaild";
+VAL_ 517 ZFR_BCM_BSD_Dimmer_Sta 101 "~0x7F Invalid";
+VAL_ 517 ZFR_BCM_BacklightDuty_Sta 101 "~0x7F Invalid";
+VAL_ 517 AirPressureFC2 251 "Invalid Value";
+VAL_ 517 ZFR_BCM_DVRSignalReverse_Sta 1 "ON" 0 "OFF";
+VAL_ 2583568724 IVI_Second_Sta 60 "Invalid Value";
+VAL_ 2583568724 IVI_Minute_Sta 60 "Invalid Value";
+VAL_ 2583568724 IVI_Month_Sta 13 "Invalid Value";
+VAL_ 2566831883 FASpeed 64256 "Invalid Value";
+VAL_ 527 FDC_VCU_VCUDRM_Sta 3 "not available" 2 "comfort mode" 1 "ECO mode" 0 "normal mode";
+VAL_ 527 CACPresWarn 1 "low pressure warning" 0 "no warning";
+VAL_ 527 SysPowerMode 8 "LV Batt Charge" 7 "Charge" 6 "Afterrun" 5 "sleep" 4 "Power down" 3 "Drive" 2 "Power up" 1 "stand by" 0 "self checking";
+VAL_ 1280 NM_FUSION_ERROR_State 8 "BUS OFF_L2" 4 "BUS OFF_L1" 2 "ERROR PASSIVE" 1 "ERROR ACTIVE" 0 "Inactive";
+VAL_ 1280 NM_FUSION_Active_WU 1 "Node has woken up the network (active Wakeup)" 0 "Node has not woken up the network (passive wakeup)";
+VAL_ 1280 NM_FUSION_CSB 1 "Start of synchronized shutdown is requested by main coordinator" 0 "Start of synchronized shutdown is not requested by main coordinator";
+VAL_ 1280 NM_FUSION_PNI 1 "NM PDU contains Partial Network request information" 0 "NM PDU contains no Partial Network request information";
+VAL_ 1280 NM_FUSION_Rpt_Msg_Req 1 "Repeat Message State requested" 0 "Repeat Message State not requested";

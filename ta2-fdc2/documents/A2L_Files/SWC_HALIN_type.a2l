@@ -1,0 +1,3821 @@
+/******************************************************************************
+ *
+ *  ASAP2 file:     SWC_HALIN_type.a2l
+ *
+ * Code generation for model "SWC_HALIN_type".
+ *
+ * Model version              : 1.12
+ * Simulink Coder version : 9.6 (R2021b) 14-May-2021
+ * C source code generated on : Wed May 14 10:46:24 2025
+ * 
+ * Target selection: autosar.tlc
+ * Embedded hardware selection: ARM Compatible->ARM Cortex-M
+ * Code generation objectives: Unspecified
+ * Validation result: Not run
+ *
+ * (add additional file header information here)
+ *
+ ******************************************************************************/
+
+ASAP2_VERSION  1 31   /* Version 1.31 */
+
+/begin PROJECT ProjectName "Project Comment Goes Here"
+  
+  /begin HEADER "Header Comments go here"
+    
+  /end HEADER
+  
+  
+  /begin MODULE ModuleName  "Module Comment Goes Here"
+    
+    /begin MOD_PAR "MOD PAR Comment Goes Here"
+      
+    /end MOD_PAR
+    
+    /begin MOD_COMMON  "Mod Common Comment Here" 
+      BYTE_ORDER     MSB_LAST
+    /end MOD_COMMON
+    
+    /begin RECORD_LAYOUT Scalar_BOOLEAN
+      FNC_VALUES  1 UBYTE COLUMN_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Scalar_UBYTE
+      FNC_VALUES  1 UBYTE COLUMN_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Scalar_BYTE
+      FNC_VALUES  1 SBYTE COLUMN_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Scalar_UWORD
+      FNC_VALUES  1 UWORD COLUMN_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Scalar_SWORD
+      FNC_VALUES 1 SWORD COLUMN_DIR DIRECT
+    /end RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Scalar_ULONG
+      FNC_VALUES  1 ULONG COLUMN_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Scalar_LONG
+      FNC_VALUES  1 SLONG COLUMN_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Scalar_FLOAT32_IEEE
+      FNC_VALUES  1 FLOAT32_IEEE COLUMN_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Scalar_FLOAT64_IEEE
+      FNC_VALUES  1 FLOAT64_IEEE COLUMN_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    
+    /begin RECORD_LAYOUT Lookup1D_BOOLEAN
+      FNC_VALUES  1 UBYTE COLUMN_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_X_BOOLEAN
+      AXIS_PTS_X  1 UBYTE INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_BYTE
+      FNC_VALUES  1 SBYTE COLUMN_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_X_BYTE
+      AXIS_PTS_X  1 SBYTE INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_UBYTE
+      FNC_VALUES  1 UBYTE COLUMN_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_X_UBYTE
+      AXIS_PTS_X  1 UBYTE INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_UWORD
+      FNC_VALUES  1 UWORD COLUMN_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_X_UWORD
+      AXIS_PTS_X  1 UWORD INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_WORD
+      FNC_VALUES  1 SWORD COLUMN_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_X_WORD
+      AXIS_PTS_X  1 SWORD INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_ULONG
+      FNC_VALUES  1 ULONG COLUMN_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_X_ULONG
+      AXIS_PTS_X  1 ULONG INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_SLONG
+      FNC_VALUES  1 SLONG COLUMN_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_X_LONG
+      AXIS_PTS_X  1 SLONG INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_FLOAT32_IEEE
+      FNC_VALUES  1 FLOAT32_IEEE COLUMN_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_X_FLOAT32_IEEE
+      AXIS_PTS_X  1 FLOAT32_IEEE INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_FLOAT64_IEEE
+      FNC_VALUES  1 FLOAT64_IEEE COLUMN_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_X_FLOAT64_IEEE
+      AXIS_PTS_X  1 FLOAT64_IEEE INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_BOOLEAN
+      FNC_VALUES  1 UBYTE COLUMN_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_X_BOOLEAN
+      AXIS_PTS_X  1 UBYTE INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT    
+    
+    /begin RECORD_LAYOUT Lookup2D_UBYTE
+      FNC_VALUES  1 UBYTE COLUMN_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_X_UBYTE
+      AXIS_PTS_X  1 UBYTE INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_BYTE
+      FNC_VALUES  1 SBYTE COLUMN_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_X_BYTE
+      AXIS_PTS_X  1 SBYTE INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_UWORD
+      FNC_VALUES  1 UWORD COLUMN_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_X_UWORD
+      AXIS_PTS_X  1 UWORD INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_WORD
+      FNC_VALUES  1 SWORD COLUMN_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_X_WORD
+      AXIS_PTS_X  1 SWORD INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_ULONG
+      FNC_VALUES  1 ULONG COLUMN_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_X_ULONG
+      AXIS_PTS_X  1 ULONG INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_LONG
+      FNC_VALUES  1 SLONG COLUMN_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_X_LONG
+      AXIS_PTS_X  1 SLONG INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_FLOAT32_IEEE
+      FNC_VALUES  1 FLOAT32_IEEE COLUMN_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_X_FLOAT32_IEEE
+      AXIS_PTS_X 1 FLOAT32_IEEE INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_FLOAT64_IEEE
+      FNC_VALUES  1  FLOAT64_IEEE COLUMN_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_X_FLOAT64_IEEE
+      AXIS_PTS_X 1 FLOAT64_IEEE INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_ACAmbTemp_C
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      SWC_HALIN_type_CM_single_C
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -20.0
+      /* Upper limit            */      1735.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_ACAmbTemp_C@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_ACTempSetSta_C
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      SWC_HALIN_type_CM_single_C
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -40.0
+      /* Upper limit            */      215.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_ACTempSetSta_C@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_BrakePedalPos_pct
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      SWC_HALIN_type_CM_single_pct
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      100.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_BrakePedalPos_pct@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_EngRetSel_pct
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      SWC_HALIN_type_CM_single_pct
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      100.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_EngRetSel_pct@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_FASpeed_kph
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      SWC_HALIN_type_CM_single_kph
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      255.9961
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_FASpeed_kph@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_RelaSpdFALWheel_kph
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      SWC_HALIN_type_CM_single_kph
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -7.8125
+      /* Upper limit            */      7.8125
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_RelaSpdFALWheel_kph@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_RelaSpdFARWheel_kph
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      SWC_HALIN_type_CM_single_kph
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -7.8125
+      /* Upper limit            */      7.8125
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_RelaSpdFARWheel_kph@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_XBRAcltnLimit_mps2
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      SWC_HALIN_type_CM_single_mps2
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -12.5
+      /* Upper limit            */      12.5
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_XBRAcltnLimit_mps2@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_EM1ReqTorqLimBrk_pct
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      SWC_HALIN_type_CM_single_pct
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -125.0
+      /* Upper limit            */      125.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_EM1ReqTorqLimBrk_pct@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_EM1ReqTorqLimDriv_pct
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      SWC_HALIN_type_CM_single_pct
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -125.0
+      /* Upper limit            */      125.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_EM1ReqTorqLimDriv_pct@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_WhlSpeedFL_kph
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      SWC_HALIN_type_CM_single_kph
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      255.9961
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_WhlSpeedFL_kph@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_SACtrlBrakeCtrl_SA
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      SWC_HALIN_type_CM_single_SA
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      255.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_SACtrlBrakeCtrl_SA@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_EM1ReqTorqHRlsBrk_pct
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      SWC_HALIN_type_CM_single_pct
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      15.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_EM1ReqTorqHRlsBrk_pct@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_EM1ReqTorqHRlsDri_pct
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      SWC_HALIN_type_CM_single_pct
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      15.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_EM1ReqTorqHRlsDri_pct@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_B2VAPlsDischgCurr_A
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      SWC_HALIN_type_CM_single_A
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      6553.5
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_B2VAPlsDischgCurr_A@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_B2VAvaPlsChgCurr_A
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      SWC_HALIN_type_CM_single_A
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      6553.5
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_B2VAvaPlsChgCurr_A@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_B2VPackCurr_A
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      SWC_HALIN_type_CM_single_A
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -1000.0
+      /* Upper limit            */      1000.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_B2VPackCurr_A@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_B2VPackInsideVol_V
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      SWC_HALIN_type_CM_single_V
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      1000.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_B2VPackInsideVol_V@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_B2VSOC_pct
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      SWC_HALIN_type_CM_single_pct
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      100.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_B2VSOC_pct@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_B2VCellMinVol_V
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      SWC_HALIN_type_CM_single_V
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      65.535
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_B2VCellMinVol_V@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_MotorSpd_rpm
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      SWC_HALIN_type_CM_single_rpm
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -15000.0
+      /* Upper limit            */      15000.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_MotorSpd_rpm@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_MotorTrq_Nm
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      SWC_HALIN_type_CM_single_Nm
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -5000.0
+      /* Upper limit            */      5000.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_MotorTrq_Nm@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_MCUTemp_C
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      SWC_HALIN_type_CM_single_C
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -40.0
+      /* Upper limit            */      215.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_MCUTemp_C@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_MCUTrqLimLo_Nm
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      SWC_HALIN_type_CM_single_Nm
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -5000.0
+      /* Upper limit            */      0.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_MCUTrqLimLo_Nm@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_MotorTemp_C
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      SWC_HALIN_type_CM_single_C
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -40.0
+      /* Upper limit            */      215.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_MotorTemp_C@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_MCUDCCur_A
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      SWC_HALIN_type_CM_single_A
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -1000.0
+      /* Upper limit            */      1000.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_MCUDCCur_A@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_MCUDCVol_V
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      SWC_HALIN_type_CM_single_V
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      1000.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_MCUDCVol_V@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_MCUTrqLimHi_Nm
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      SWC_HALIN_type_CM_single_Nm
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      5000.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_MCUTrqLimHi_Nm@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_AirPressureFC2_kPa
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      SWC_HALIN_type_CM_single_kPa
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      2008.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_AirPressureFC2_kPa@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_ZFRBCMLFTurnLpCSta_A
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      SWC_HALIN_type_CM_single_A
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      6.375
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_ZFRBCMLFTurnLpCSta_A@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_ZFRBCMLightSensorVSta_V
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      SWC_HALIN_type_CM_single_V
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      4.998
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_ZFRBCMLightSensorVSta_V@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_ZFRBCMRFTurnLpCSta_A
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      SWC_HALIN_type_CM_single_A
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      6.375
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_ZFRBCMRFTurnLpCSta_A@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_AirPressurePC3_kPa
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      SWC_HALIN_type_CM_single_kPa
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      2000.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_AirPressurePC3_kPa@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_AirPressureRC1_kPa
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      SWC_HALIN_type_CM_single_kPa
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      2008.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_AirPressureRC1_kPa@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_ZRRBCMLRTurnLpCSta_A
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      SWC_HALIN_type_CM_single_A
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      6.375
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_ZRRBCMLRTurnLpCSta_A@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_ZRRBCMRRTurnLpCSta_A
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      SWC_HALIN_type_CM_single_A
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      6.375
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_ZRRBCMRRTurnLpCSta_A@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_DCDCOutVolSta_V
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      SWC_HALIN_type_CM_single_V
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      1000.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_DCDCOutVolSta_V@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_DCDCTempSta_C
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      SWC_HALIN_type_CM_single_C
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -40.0
+      /* Upper limit            */      200.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_DCDCTempSta_C@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_EACInvTempSta_C
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      SWC_HALIN_type_CM_single_C
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -40.0
+      /* Upper limit            */      150.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_EACInvTempSta_C@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_EHPSInvTempSta_C
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      SWC_HALIN_type_CM_single_C
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -40.0
+      /* Upper limit            */      150.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_EHPSInvTempSta_C@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_EHPSMotorSpdSta_rpm
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      SWC_HALIN_type_CM_single_rpm
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -5000.0
+      /* Upper limit            */      5000.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_EHPSMotorSpdSta_rpm@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_ACFanSpdSta_enum
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      SWC_HALIN_type_CM_uint8_enum
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      3.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_ACFanSpdSta_enum@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_ASROffroadSw_enum
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      SWC_HALIN_type_CM_uint8_enum
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      3.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_ASROffroadSw_enum@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_ATCASRInfoSig_enum
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      SWC_HALIN_type_CM_uint8_enum
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      3.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_ATCASRInfoSig_enum@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_AcltrInterlockSw_enum
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      SWC_HALIN_type_CM_uint8_enum
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      3.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_AcltrInterlockSw_enum@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_AntiLBrakABSAct_enum
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      SWC_HALIN_type_CM_uint8_enum
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      3.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_AntiLBrakABSAct_enum@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_EBSAmWarnLampSta_enum
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      SWC_HALIN_type_CM_uint8_enum
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      3.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_EBSAmWarnLampSta_enum@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_EBSBrakeSw_enum
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      SWC_HALIN_type_CM_uint8_enum
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      3.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_EBSBrakeSw_enum@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_EBSRedWarnLampSta_enum
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      SWC_HALIN_type_CM_uint8_enum
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      3.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_EBSRedWarnLampSta_enum@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_EngAuxShutdownSw_enum
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      SWC_HALIN_type_CM_uint8_enum
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      3.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_EngAuxShutdownSw_enum@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_EngDerateSw_enum
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      SWC_HALIN_type_CM_uint8_enum
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      3.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_EngDerateSw_enum@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_TM2BFaultCode_enum
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      SWC_HALIN_type_CM_uint8_enum
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      63.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_TM2BFaultCode_enum@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_HaltBrakeSw_enum
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      SWC_HALIN_type_CM_uint8_enum
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      3.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_HaltBrakeSw_enum@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_RmAccelEnSw_enum
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      SWC_HALIN_type_CM_uint8_enum
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      3.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_RmAccelEnSw_enum@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_TractCtrlOvrSw_enum
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      SWC_HALIN_type_CM_uint8_enum
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      3.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_TractCtrlOvrSw_enum@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_TrailerABSSta_enum
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      SWC_HALIN_type_CM_uint8_enum
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      3.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_TrailerABSSta_enum@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_TrailerABSWarnSig_enum
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      SWC_HALIN_type_CM_uint8_enum
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      3.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_TrailerABSWarnSig_enum@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_BrkTempeWarn_enum
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      SWC_HALIN_type_CM_uint8_enum
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      3.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_BrkTempeWarn_enum@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_FndBrkUse_enum
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      SWC_HALIN_type_CM_uint8_enum
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      3.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_FndBrkUse_enum@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_HaltBrkMode_enum
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      SWC_HALIN_type_CM_uint8_enum
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      7.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_HaltBrkMode_enum@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_HillHolderMode_enum
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      SWC_HALIN_type_CM_uint8_enum
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      7.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_HillHolderMode_enum@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_ParkBrkActuFAct_enum
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      SWC_HALIN_type_CM_uint8_enum
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      3.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_ParkBrkActuFAct_enum@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_XBRActtrlMode_enum
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      SWC_HALIN_type_CM_uint8_enum
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      15.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_XBRActtrlMode_enum@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_XBRSysSta_enum
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      SWC_HALIN_type_CM_uint8_enum
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      3.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_XBRSysSta_enum@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_ECASAWarmLampSta_enum
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      SWC_HALIN_type_CM_uint8_enum
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      3.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_ECASAWarmLampSta_enum@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_EM1CS_enum
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      SWC_HALIN_type_CM_uint8_enum
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      7.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_EM1CS_enum@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_ASC1KneelingInfo_enum
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      SWC_HALIN_type_CM_uint8_enum
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      15.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_ASC1KneelingInfo_enum@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_EM1Cnt_enum
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      SWC_HALIN_type_CM_uint8_enum
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      7.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_EM1Cnt_enum@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_EM1OvrCtrlMBrk_enum
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      SWC_HALIN_type_CM_uint8_enum
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      3.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_EM1OvrCtrlMBrk_enum@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_EM1OvrCtrlMDriv_enum
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      SWC_HALIN_type_CM_uint8_enum
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      3.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_EM1OvrCtrlMDriv_enum@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_EM1OvrCtrlMPriBrk_enum
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      SWC_HALIN_type_CM_uint8_enum
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      3.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_EM1OvrCtrlMPriBrk_enum@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_DrivDirF_enum
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      SWC_HALIN_type_CM_uint8_enum
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      3.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_DrivDirF_enum@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_ABSFullyOper_enum
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      SWC_HALIN_type_CM_uint8_enum
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      3.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_ABSFullyOper_enum@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_TransReqGear_enum
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      SWC_HALIN_type_CM_uint8_enum
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      255.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_TransReqGear_enum@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_ABSOffroadSw_enum
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      SWC_HALIN_type_CM_uint8_enum
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      3.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_ABSOffroadSw_enum@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_ASRBrakeCtrlAtc_enum
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      SWC_HALIN_type_CM_uint8_enum
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      3.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_ASRBrakeCtrlAtc_enum@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_ASREngCtrlAtc_enum
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      SWC_HALIN_type_CM_uint8_enum
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      3.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_ASREngCtrlAtc_enum@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_ASRHillHolderSw_enum
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      SWC_HALIN_type_CM_uint8_enum
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      3.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_ASRHillHolderSw_enum@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_IVIACFanSpdReqCmd_enum
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      SWC_HALIN_type_CM_uint8_enum
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      3.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_IVIACFanSpdReqCmd_enum@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_B2THVRlySta_enum
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      SWC_HALIN_type_CM_uint8_enum
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      3.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_B2THVRlySta_enum@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_B2VBI1BattType_enum
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      SWC_HALIN_type_CM_uint8_enum
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      15.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_B2VBI1BattType_enum@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_B2VChgSta_enum
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      SWC_HALIN_type_CM_uint8_enum
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      3.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_B2VChgSta_enum@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_B2VDCChgConnSta_enum
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      SWC_HALIN_type_CM_uint8_enum
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      3.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_B2VDCChgConnSta_enum@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_B2VDCChgN1RlySta_enum
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      SWC_HALIN_type_CM_uint8_enum
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      3.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_B2VDCChgN1RlySta_enum@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_B2VDCChgP1RlySta_enum
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      SWC_HALIN_type_CM_uint8_enum
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      3.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_B2VDCChgP1RlySta_enum@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_B2VMainNegRlySta_enum
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      SWC_HALIN_type_CM_uint8_enum
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      3.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_B2VMainNegRlySta_enum@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_B2VFaultCode_enum
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      SWC_HALIN_type_CM_uint8_enum
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      255.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_B2VFaultCode_enum@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_B2VFaultLv_enum
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      SWC_HALIN_type_CM_uint8_enum
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      3.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_B2VFaultLv_enum@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_B2VRqHVPwrOff_enum
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      SWC_HALIN_type_CM_uint8_enum
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      3.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_B2VRqHVPwrOff_enum@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_B2VMinTempPos_enum
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      SWC_HALIN_type_CM_uint8_enum
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      255.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_B2VMinTempPos_enum@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_EWPPEFault_enum
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      SWC_HALIN_type_CM_uint8_enum
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      255.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_EWPPEFault_enum@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_MCUCtrlMdSta_enum
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      SWC_HALIN_type_CM_uint8_enum
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      3.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_MCUCtrlMdSta_enum@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_MCUFailGrade_enum
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      SWC_HALIN_type_CM_uint8_enum
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      15.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_MCUFailGrade_enum@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_MCUFailCode_enum
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      SWC_HALIN_type_CM_uint8_enum
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      255.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_MCUFailCode_enum@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_B2VACChgNegRlySta_enum
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      SWC_HALIN_type_CM_uint8_enum
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      3.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_B2VACChgNegRlySta_enum@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_B2VACChgPosRlySta_enum
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      SWC_HALIN_type_CM_uint8_enum
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      3.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_B2VACChgPosRlySta_enum@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_B2VBMUHVSta_enum
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      SWC_HALIN_type_CM_uint8_enum
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      3.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_B2VBMUHVSta_enum@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_B2VChgMode_enum
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      SWC_HALIN_type_CM_uint8_enum
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      3.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_B2VChgMode_enum@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_ParkBrakeSW_enum
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      SWC_HALIN_type_CM_uint8_enum
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      3.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_ParkBrakeSW_enum@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_ZRRBCMAllDoorSta_enum
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      SWC_HALIN_type_CM_uint8_enum
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      15.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_ZRRBCMAllDoorSta_enum@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_DCDCEnSta_enum
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      SWC_HALIN_type_CM_uint8_enum
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      3.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_DCDCEnSta_enum@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_DCDCErrLvSta_enum
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      SWC_HALIN_type_CM_uint8_enum
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      7.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_DCDCErrLvSta_enum@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_EACEnSta_enum
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      SWC_HALIN_type_CM_uint8_enum
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      3.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_EACEnSta_enum@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_EACErrLvSta_enum
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      SWC_HALIN_type_CM_uint8_enum
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      7.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_EACErrLvSta_enum@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_EHPSEnSta_enum
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      SWC_HALIN_type_CM_uint8_enum
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      3.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_EHPSEnSta_enum@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_EHPSErrLvSta_enum
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      SWC_HALIN_type_CM_uint8_enum
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      7.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_EHPSErrLvSta_enum@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_PDUACRlySta_enum
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      SWC_HALIN_type_CM_uint8_enum
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      3.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_PDUACRlySta_enum@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_PDUDCDCEACEHPSHVLoopSta_enum
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      SWC_HALIN_type_CM_uint8_enum
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      3.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_PDUDCDCEACEHPSHVLoopSta_enum@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_PDUDCDCEACEHPSPreRlySta_enum
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      SWC_HALIN_type_CM_uint8_enum
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      3.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_PDUDCDCEACEHPSPreRlySta_enum@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_PDUDCDCEACEHPSRlySta_enum
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      SWC_HALIN_type_CM_uint8_enum
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      3.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_PDUDCDCEACEHPSRlySta_enum@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_PDUHVILSta_enum
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      SWC_HALIN_type_CM_uint8_enum
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      3.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_PDUHVILSta_enum@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_PDUMCUHVLoopSta_enum
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      SWC_HALIN_type_CM_uint8_enum
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      3.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_PDUMCUHVLoopSta_enum@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_PDUMCUPosRlySta_enum
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      SWC_HALIN_type_CM_uint8_enum
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      3.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_PDUMCUPosRlySta_enum@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_PDUMCUPreRlySta_enum
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      SWC_HALIN_type_CM_uint8_enum
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      3.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_PDUMCUPreRlySta_enum@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_PDUSelfChkSta_enum
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      SWC_HALIN_type_CM_uint8_enum
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      3.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_PDUSelfChkSta_enum@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_CANMsgInvalidACBTMSC10000_flg
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      SWC_HALIN_type_CM_boolean_flg
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      1.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_CANMsgInvalidACBTMSC10000_flg@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_CANMsgInvalidACBTMSC10001_flg
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      SWC_HALIN_type_CM_boolean_flg
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      1.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_CANMsgInvalidACBTMSC10001_flg@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_CANMsgInvalidACBTMSC10004_flg
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      SWC_HALIN_type_CM_boolean_flg
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      1.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_CANMsgInvalidACBTMSC10004_flg@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_CANMsgInvalidACBTMSC50000_flg
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      SWC_HALIN_type_CM_boolean_flg
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      1.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_CANMsgInvalidACBTMSC50000_flg@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_CANMsgInvalidASC1A_flg
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      SWC_HALIN_type_CM_boolean_flg
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      1.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_CANMsgInvalidASC1A_flg@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_CANMsgInvalidEBC1_flg
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      SWC_HALIN_type_CM_boolean_flg
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      1.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_CANMsgInvalidEBC1_flg@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_CANMsgInvalidEBC2_flg
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      SWC_HALIN_type_CM_boolean_flg
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      1.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_CANMsgInvalidEBC2_flg@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_CANMsgInvalidEBC5_flg
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      SWC_HALIN_type_CM_boolean_flg
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      1.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_CANMsgInvalidEBC5_flg@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_CANMsgInvalidECASDM1_flg
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      SWC_HALIN_type_CM_boolean_flg
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      1.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_CANMsgInvalidECASDM1_flg@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_CANMsgInvalidEMC1EM1_flg
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      SWC_HALIN_type_CM_boolean_flg
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      1.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_CANMsgInvalidEMC1EM1_flg@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_CANMsgInvalidHRW_flg
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      SWC_HALIN_type_CM_boolean_flg
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      1.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_CANMsgInvalidHRW_flg@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_CANMsgInvalidTC1_flg
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      SWC_HALIN_type_CM_boolean_flg
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      1.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_CANMsgInvalidTC1_flg@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_CANMsgInvalidIVIC1000_flg
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      SWC_HALIN_type_CM_boolean_flg
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      1.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_CANMsgInvalidIVIC1000_flg@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_AtvDisChgEnFbk_flg
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      SWC_HALIN_type_CM_boolean_flg
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      1.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_AtvDisChgEnFbk_flg@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_MCUIGBTEnFbk_flg
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      SWC_HALIN_type_CM_boolean_flg
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      1.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_MCUIGBTEnFbk_flg@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_B2VHVILFault_flg
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      SWC_HALIN_type_CM_boolean_flg
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      1.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_B2VHVILFault_flg@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_B2VACChgConnSta_flg
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      SWC_HALIN_type_CM_boolean_flg
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      1.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_B2VACChgConnSta_flg@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_CANMsgInvalidB2TMInfo_flg
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      SWC_HALIN_type_CM_boolean_flg
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      1.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_CANMsgInvalidB2TMInfo_flg@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_CANMsgInvalidB2VBattInfo1_flg
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      SWC_HALIN_type_CM_boolean_flg
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      1.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_CANMsgInvalidB2VBattInfo1_flg@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_CANMsgInvalidB2VCurrentLimit_flg
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      SWC_HALIN_type_CM_boolean_flg
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      1.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_CANMsgInvalidB2VCurrentLimit_flg@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_CANMsgInvalidB2VFult132960_flg
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      SWC_HALIN_type_CM_boolean_flg
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      1.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_CANMsgInvalidB2VFult132960_flg@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_CANMsgInvalidB2VST1_flg
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      SWC_HALIN_type_CM_boolean_flg
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      1.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_CANMsgInvalidB2VST1_flg@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_CANMsgInvalidB2VST2_flg
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      SWC_HALIN_type_CM_boolean_flg
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      1.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_CANMsgInvalidB2VST2_flg@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_CANMsgInvalidB2VST4_flg
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      SWC_HALIN_type_CM_boolean_flg
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      1.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_CANMsgInvalidB2VST4_flg@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_CANMsgInvalidB2VST5_flg
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      SWC_HALIN_type_CM_boolean_flg
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      1.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_CANMsgInvalidB2VST5_flg@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_CANMsgInvalidEWP1_flg
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      SWC_HALIN_type_CM_boolean_flg
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      1.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_CANMsgInvalidEWP1_flg@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_CANMsgInvalidTMMCUSta1_flg
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      SWC_HALIN_type_CM_boolean_flg
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      1.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_CANMsgInvalidTMMCUSta1_flg@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_CANMsgInvalidTMMCUSta2_flg
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      SWC_HALIN_type_CM_boolean_flg
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      1.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_CANMsgInvalidTMMCUSta2_flg@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_CANMsgInvalidTMMCUSta3_flg
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      SWC_HALIN_type_CM_boolean_flg
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      1.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_CANMsgInvalidTMMCUSta3_flg@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_ZFRBCMRFogLpSWSta_flg
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      SWC_HALIN_type_CM_boolean_flg
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      1.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_ZFRBCMRFogLpSWSta_flg@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_ZFRBCMSeatbeltSta_flg
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      SWC_HALIN_type_CM_boolean_flg
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      1.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_ZFRBCMSeatbeltSta_flg@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_ZFRBCMWasherSWSta_flg
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      SWC_HALIN_type_CM_boolean_flg
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      1.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_ZFRBCMWasherSWSta_flg@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_ZFRBCMWiperASSta_flg
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      SWC_HALIN_type_CM_boolean_flg
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      1.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_ZFRBCMWiperASSta_flg@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_ZFRBCMWiperHSWSta_flg
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      SWC_HALIN_type_CM_boolean_flg
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      1.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_ZFRBCMWiperHSWSta_flg@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_ZFRBCMWiperLSWSta_flg
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      SWC_HALIN_type_CM_boolean_flg
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      1.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_ZFRBCMWiperLSWSta_flg@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_FDCCHASSISVCUEACPressSta_flg
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      SWC_HALIN_type_CM_boolean_flg
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      1.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_FDCCHASSISVCUEACPressSta_flg@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_ZFRBCMAutoLightSWSta_flg
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      SWC_HALIN_type_CM_boolean_flg
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      1.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_ZFRBCMAutoLightSWSta_flg@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_ZRRBCMCallingSWSta_flg
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      SWC_HALIN_type_CM_boolean_flg
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      1.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_ZRRBCMCallingSWSta_flg@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_ZRRBCMPLampSta_flg
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      SWC_HALIN_type_CM_boolean_flg
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      1.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_ZRRBCMPLampSta_flg@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_ZRRBCMSTOPSW2Sta_flg
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      SWC_HALIN_type_CM_boolean_flg
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      1.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_ZRRBCMSTOPSW2Sta_flg@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_ZRRBCMSTOPSWSta_flg
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      SWC_HALIN_type_CM_boolean_flg
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      1.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_ZRRBCMSTOPSWSta_flg@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_ZFRBCMBrakeSta_flg
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      SWC_HALIN_type_CM_boolean_flg
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      1.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_ZFRBCMBrakeSta_flg@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_ZFRBCMHBeamSWSta_flg
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      SWC_HALIN_type_CM_boolean_flg
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      1.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_ZFRBCMHBeamSWSta_flg@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_ZFRBCMHeadLpSWSta_flg
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      SWC_HALIN_type_CM_boolean_flg
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      1.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_ZFRBCMHeadLpSWSta_flg@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_ZFRBCMPLampSta_flg
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      SWC_HALIN_type_CM_boolean_flg
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      1.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_ZFRBCMPLampSta_flg@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_CANMsgInvalidZFRC1000_flg
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      SWC_HALIN_type_CM_boolean_flg
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      1.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_CANMsgInvalidZFRC1000_flg@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_CANMsgInvalidZFRCE1000_flg
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      SWC_HALIN_type_CM_boolean_flg
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      1.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_CANMsgInvalidZFRCE1000_flg@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_CANMsgInvalidZRRCE1000_flg
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      SWC_HALIN_type_CM_boolean_flg
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      1.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_CANMsgInvalidZRRCE1000_flg@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_CANMsgInvalidZRRCE1001_flg
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      SWC_HALIN_type_CM_boolean_flg
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      1.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_CANMsgInvalidZRRCE1001_flg@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VHAL_CANMsgInvalidzGWCANRr1C500_flg
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      SWC_HALIN_type_CM_boolean_flg
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      1.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VHAL_CANMsgInvalidzGWCANRr1C500_flg@ */
+    /end MEASUREMENT
+    
+    /begin COMPU_METHOD
+      /* Name of CompuMethod    */      SWC_HALIN_type_CM_single_C
+      /* Long identifier        */      "Q = V"
+      /* Conversion Type        */      RAT_FUNC
+      /* Format                 */      "%8.6"
+      /* Units                  */      "C"
+      /* Coefficients           */      COEFFS 0 1 0 0 0 1
+    /end COMPU_METHOD
+    
+    /begin COMPU_METHOD
+      /* Name of CompuMethod    */      SWC_HALIN_type_CM_single_pct
+      /* Long identifier        */      "Q = V"
+      /* Conversion Type        */      RAT_FUNC
+      /* Format                 */      "%8.6"
+      /* Units                  */      "pct"
+      /* Coefficients           */      COEFFS 0 1 0 0 0 1
+    /end COMPU_METHOD
+    
+    /begin COMPU_METHOD
+      /* Name of CompuMethod    */      SWC_HALIN_type_CM_single_kph
+      /* Long identifier        */      "Q = V"
+      /* Conversion Type        */      RAT_FUNC
+      /* Format                 */      "%8.6"
+      /* Units                  */      "kph"
+      /* Coefficients           */      COEFFS 0 1 0 0 0 1
+    /end COMPU_METHOD
+    
+    /begin COMPU_METHOD
+      /* Name of CompuMethod    */      SWC_HALIN_type_CM_single_mps2
+      /* Long identifier        */      "Q = V"
+      /* Conversion Type        */      RAT_FUNC
+      /* Format                 */      "%8.6"
+      /* Units                  */      "mps2"
+      /* Coefficients           */      COEFFS 0 1 0 0 0 1
+    /end COMPU_METHOD
+    
+    /begin COMPU_METHOD
+      /* Name of CompuMethod    */      SWC_HALIN_type_CM_single_SA
+      /* Long identifier        */      "Q = V"
+      /* Conversion Type        */      RAT_FUNC
+      /* Format                 */      "%8.6"
+      /* Units                  */      "SA"
+      /* Coefficients           */      COEFFS 0 1 0 0 0 1
+    /end COMPU_METHOD
+    
+    /begin COMPU_METHOD
+      /* Name of CompuMethod    */      SWC_HALIN_type_CM_single_A
+      /* Long identifier        */      "Q = V"
+      /* Conversion Type        */      RAT_FUNC
+      /* Format                 */      "%8.6"
+      /* Units                  */      "A"
+      /* Coefficients           */      COEFFS 0 1 0 0 0 1
+    /end COMPU_METHOD
+    
+    /begin COMPU_METHOD
+      /* Name of CompuMethod    */      SWC_HALIN_type_CM_single_V
+      /* Long identifier        */      "Q = V"
+      /* Conversion Type        */      RAT_FUNC
+      /* Format                 */      "%8.6"
+      /* Units                  */      "V"
+      /* Coefficients           */      COEFFS 0 1 0 0 0 1
+    /end COMPU_METHOD
+    
+    /begin COMPU_METHOD
+      /* Name of CompuMethod    */      SWC_HALIN_type_CM_single_rpm
+      /* Long identifier        */      "Q = V"
+      /* Conversion Type        */      RAT_FUNC
+      /* Format                 */      "%8.6"
+      /* Units                  */      "rpm"
+      /* Coefficients           */      COEFFS 0 1 0 0 0 1
+    /end COMPU_METHOD
+    
+    /begin COMPU_METHOD
+      /* Name of CompuMethod    */      SWC_HALIN_type_CM_single_Nm
+      /* Long identifier        */      "Q = V"
+      /* Conversion Type        */      RAT_FUNC
+      /* Format                 */      "%8.6"
+      /* Units                  */      "Nm"
+      /* Coefficients           */      COEFFS 0 1 0 0 0 1
+    /end COMPU_METHOD
+    
+    /begin COMPU_METHOD
+      /* Name of CompuMethod    */      SWC_HALIN_type_CM_single_kPa
+      /* Long identifier        */      "Q = V"
+      /* Conversion Type        */      RAT_FUNC
+      /* Format                 */      "%8.6"
+      /* Units                  */      "kPa"
+      /* Coefficients           */      COEFFS 0 1 0 0 0 1
+    /end COMPU_METHOD
+    
+    /begin COMPU_METHOD
+      /* Name of CompuMethod    */      SWC_HALIN_type_CM_uint8_enum
+      /* Long identifier        */      "Q = V"
+      /* Conversion Type        */      RAT_FUNC
+      /* Format                 */      "%3.0"
+      /* Units                  */      "enum"
+      /* Coefficients           */      COEFFS 0 1 0 0 0 1
+    /end COMPU_METHOD
+    
+    /begin COMPU_METHOD
+      /* Name of CompuMethod    */      SWC_HALIN_type_CM_boolean_flg
+      /* Long identifier        */      "Q = V"
+      /* Conversion Type        */      RAT_FUNC
+      /* Format                 */      "%1.0"
+      /* Units                  */      "flg"
+      /* Coefficients           */      COEFFS 0 1 0 0 0 1
+    /end COMPU_METHOD
+    
+    /begin GROUP
+      /* Name                   */       SWC_HALIN_type
+      /* Long identifier        */       "SWC_HALIN_type"
+      /* Root                    */       ROOT
+      /begin SUB_GROUP
+        Root_run_SWC_HALIN_Rx_5ms_sys
+      /end SUB_GROUP
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       Root_run_SWC_HALIN_Rx_5ms_sys
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys"
+      /begin SUB_GROUP
+        S3_HAL_IN
+      /end SUB_GROUP
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S3_HAL_IN
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN"
+      /begin SUB_GROUP
+        S6_CAN1
+        S6_CAN2
+        S6_CAN3
+        S6_CAN4
+      /end SUB_GROUP
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S6_CAN1
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN1"
+      /begin SUB_GROUP
+        S11_AC_BTMS_C1000_0
+        S11_AC_BTMS_C5000_0
+        S11_EBC1
+        S11_EBC2
+        S11_EBC5
+        S11_EMC1_EM1
+        S11_HRW
+        S11_VHAL_CANMsgInvalidACBTMSC10000_flg
+        S11_VHAL_CANMsgInvalidACBTMSC10001_flg
+        S11_VHAL_CANMsgInvalidACBTMSC10004_flg
+        S11_VHAL_CANMsgInvalidACBTMSC50000_flg
+        S11_VHAL_CANMsgInvalidASC1A_flg
+        S11_VHAL_CANMsgInvalidEBC1_flg
+        S11_VHAL_CANMsgInvalidEBC2_flg
+        S11_VHAL_CANMsgInvalidEBC5_flg
+        S11_VHAL_CANMsgInvalidECASDM1_flg
+        S11_VHAL_CANMsgInvalidEMC1EM1_flg
+        S11_VHAL_CANMsgInvalidHRW_flg
+        S11_VHAL_CANMsgInvalidTC1_flg
+      /end SUB_GROUP
+      /begin REF_MEASUREMENT
+        VHAL_ABSFullyOper_enum
+        VHAL_ABSOffroadSw_enum
+        VHAL_ACFanSpdSta_enum
+        VHAL_ASC1KneelingInfo_enum
+        VHAL_ASRBrakeCtrlAtc_enum
+        VHAL_ASREngCtrlAtc_enum
+        VHAL_ASRHillHolderSw_enum
+        VHAL_ASROffroadSw_enum
+        VHAL_ATCASRInfoSig_enum
+        VHAL_AcltrInterlockSw_enum
+        VHAL_AntiLBrakABSAct_enum
+        VHAL_BrkTempeWarn_enum
+        VHAL_DrivDirF_enum
+        VHAL_EBSAmWarnLampSta_enum
+        VHAL_EBSBrakeSw_enum
+        VHAL_EBSRedWarnLampSta_enum
+        VHAL_ECASAWarmLampSta_enum
+        VHAL_EM1CS_enum
+        VHAL_EM1Cnt_enum
+        VHAL_EM1OvrCtrlMBrk_enum
+        VHAL_EM1OvrCtrlMDriv_enum
+        VHAL_EM1OvrCtrlMPriBrk_enum
+        VHAL_EM1ReqTorqHRlsBrk_pct
+        VHAL_EM1ReqTorqHRlsDri_pct
+        VHAL_EngAuxShutdownSw_enum
+        VHAL_EngDerateSw_enum
+        VHAL_FndBrkUse_enum
+        VHAL_HaltBrakeSw_enum
+        VHAL_HaltBrkMode_enum
+        VHAL_HillHolderMode_enum
+        VHAL_ParkBrkActuFAct_enum
+        VHAL_RmAccelEnSw_enum
+        VHAL_SACtrlBrakeCtrl_SA
+        VHAL_TM2BFaultCode_enum
+        VHAL_TractCtrlOvrSw_enum
+        VHAL_TrailerABSSta_enum
+        VHAL_TrailerABSWarnSig_enum
+        VHAL_TransReqGear_enum
+        VHAL_XBRActtrlMode_enum
+        VHAL_XBRSysSta_enum
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S6_CAN2
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN2"
+      /begin SUB_GROUP
+        S12_VHAL_CANMsgInvalidIVIC1000_flg
+      /end SUB_GROUP
+      /begin REF_MEASUREMENT
+        VHAL_IVIACFanSpdReqCmd_enum
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S6_CAN3
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN3"
+      /begin SUB_GROUP
+        S13_B2V_CurrentLimit
+        S13_B2V_ST2
+        S13_B2V_ST5
+        S13_TM_MCUSta1
+        S13_TM_MCUSta2
+        S13_TM_MCUSta3
+        S13_VHAL_CANMsgInvalidB2TMInfo_flg
+        S13_VHAL_CANMsgInvalidB2VBattInfo1_flg
+        S13_VHAL_CANMsgInvalidB2VCurrentLimit_flg
+        S13_VHAL_CANMsgInvalidB2VFult132960_flg
+        S13_VHAL_CANMsgInvalidB2VST1_flg
+        S13_VHAL_CANMsgInvalidB2VST2_flg
+        S13_VHAL_CANMsgInvalidB2VST4_flg
+        S13_VHAL_CANMsgInvalidB2VST5_flg
+        S13_VHAL_CANMsgInvalidEWP1_flg
+        S13_VHAL_CANMsgInvalidTMMCUSta1_flg
+        S13_VHAL_CANMsgInvalidTMMCUSta2_flg
+        S13_VHAL_CANMsgInvalidTMMCUSta3_flg
+      /end SUB_GROUP
+      /begin REF_MEASUREMENT
+        VHAL_AtvDisChgEnFbk_flg
+        VHAL_B2THVRlySta_enum
+        VHAL_B2VACChgConnSta_flg
+        VHAL_B2VACChgNegRlySta_enum
+        VHAL_B2VACChgPosRlySta_enum
+        VHAL_B2VBI1BattType_enum
+        VHAL_B2VBMUHVSta_enum
+        VHAL_B2VChgMode_enum
+        VHAL_B2VChgSta_enum
+        VHAL_B2VDCChgConnSta_enum
+        VHAL_B2VDCChgN1RlySta_enum
+        VHAL_B2VDCChgP1RlySta_enum
+        VHAL_B2VFaultCode_enum
+        VHAL_B2VFaultLv_enum
+        VHAL_B2VHVILFault_flg
+        VHAL_B2VMainNegRlySta_enum
+        VHAL_B2VMinTempPos_enum
+        VHAL_B2VRqHVPwrOff_enum
+        VHAL_EWPPEFault_enum
+        VHAL_MCUCtrlMdSta_enum
+        VHAL_MCUFailCode_enum
+        VHAL_MCUFailGrade_enum
+        VHAL_MCUIGBTEnFbk_flg
+        VHAL_MCUTrqLimHi_Nm
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S6_CAN4
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN4"
+      /begin SUB_GROUP
+        S14_VHAL_CANMsgInvalidZFRC1000_flg
+        S14_VHAL_CANMsgInvalidZFRCE1000_flg
+        S14_VHAL_CANMsgInvalidZRRCE1000_flg
+        S14_VHAL_CANMsgInvalidZRRCE1001_flg
+        S14_VHAL_CANMsgInvalidzGWCANRr1C500_flg
+        S14_ZFR_C100_0
+        S14_ZFR_CE100_0
+        S14_ZRR_CE100_0
+        S14_ZRR_CE100_1
+        S14_zGW_CANRr1_C50_0
+      /end SUB_GROUP
+      /begin REF_MEASUREMENT
+        VHAL_FDCCHASSISVCUEACPressSta_flg
+        VHAL_ZFRBCMAutoLightSWSta_flg
+        VHAL_ZFRBCMBrakeSta_flg
+        VHAL_ZFRBCMHBeamSWSta_flg
+        VHAL_ZFRBCMHeadLpSWSta_flg
+        VHAL_ZFRBCMPLampSta_flg
+        VHAL_ZFRBCMRFogLpSWSta_flg
+        VHAL_ZFRBCMSeatbeltSta_flg
+        VHAL_ZFRBCMWasherSWSta_flg
+        VHAL_ZFRBCMWiperASSta_flg
+        VHAL_ZFRBCMWiperHSWSta_flg
+        VHAL_ZFRBCMWiperLSWSta_flg
+        VHAL_ZRRBCMCallingSWSta_flg
+        VHAL_ZRRBCMPLampSta_flg
+        VHAL_ZRRBCMSTOPSW2Sta_flg
+        VHAL_ZRRBCMSTOPSWSta_flg
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S11_AC_BTMS_C1000_0
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN1/AC_BTMS_C1000_0"
+      /begin SUB_GROUP
+        S15_ACAmbTemp
+      /end SUB_GROUP
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S11_AC_BTMS_C5000_0
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN1/AC_BTMS_C5000_0"
+      /begin SUB_GROUP
+        S18_ACTempSetSta
+      /end SUB_GROUP
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S11_EBC1
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN1/EBC1"
+      /begin SUB_GROUP
+        S20_BrakePedalPos
+        S20_EngRetSel
+      /end SUB_GROUP
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S11_EBC2
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN1/EBC2"
+      /begin SUB_GROUP
+        S21_FASpeed
+        S21_RelaSpdFALWheel
+        S21_RelaSpdFARWheel
+      /end SUB_GROUP
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S11_EBC5
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN1/EBC5"
+      /begin SUB_GROUP
+        S22_XBRAcltnLimit
+      /end SUB_GROUP
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S11_EMC1_EM1
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN1/EMC1_EM1"
+      /begin SUB_GROUP
+        S24_EM1ReqTorqLimBrk
+        S24_EM1ReqTorqLimDriv
+      /end SUB_GROUP
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S11_HRW
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN1/HRW"
+      /begin SUB_GROUP
+        S25_WhlSpeedFL
+      /end SUB_GROUP
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S11_VHAL_CANMsgInvalidACBTMSC10000_flg
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN1/VHAL_CANMsgInvalidACBTMSC10000_flg"
+      /begin REF_MEASUREMENT
+        VHAL_CANMsgInvalidACBTMSC10000_flg
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S11_VHAL_CANMsgInvalidACBTMSC10001_flg
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN1/VHAL_CANMsgInvalidACBTMSC10001_flg"
+      /begin REF_MEASUREMENT
+        VHAL_CANMsgInvalidACBTMSC10001_flg
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S11_VHAL_CANMsgInvalidACBTMSC10004_flg
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN1/VHAL_CANMsgInvalidACBTMSC10004_flg"
+      /begin REF_MEASUREMENT
+        VHAL_CANMsgInvalidACBTMSC10004_flg
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S11_VHAL_CANMsgInvalidACBTMSC50000_flg
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN1/VHAL_CANMsgInvalidACBTMSC50000_flg"
+      /begin REF_MEASUREMENT
+        VHAL_CANMsgInvalidACBTMSC50000_flg
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S11_VHAL_CANMsgInvalidASC1A_flg
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN1/VHAL_CANMsgInvalidASC1A_flg"
+      /begin REF_MEASUREMENT
+        VHAL_CANMsgInvalidASC1A_flg
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S11_VHAL_CANMsgInvalidEBC1_flg
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN1/VHAL_CANMsgInvalidEBC1_flg"
+      /begin REF_MEASUREMENT
+        VHAL_CANMsgInvalidEBC1_flg
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S11_VHAL_CANMsgInvalidEBC2_flg
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN1/VHAL_CANMsgInvalidEBC2_flg"
+      /begin REF_MEASUREMENT
+        VHAL_CANMsgInvalidEBC2_flg
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S11_VHAL_CANMsgInvalidEBC5_flg
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN1/VHAL_CANMsgInvalidEBC5_flg"
+      /begin REF_MEASUREMENT
+        VHAL_CANMsgInvalidEBC5_flg
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S11_VHAL_CANMsgInvalidECASDM1_flg
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN1/VHAL_CANMsgInvalidECASDM1_flg"
+      /begin REF_MEASUREMENT
+        VHAL_CANMsgInvalidECASDM1_flg
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S11_VHAL_CANMsgInvalidEMC1EM1_flg
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN1/VHAL_CANMsgInvalidEMC1EM1_flg"
+      /begin REF_MEASUREMENT
+        VHAL_CANMsgInvalidEMC1EM1_flg
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S11_VHAL_CANMsgInvalidHRW_flg
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN1/VHAL_CANMsgInvalidHRW_flg"
+      /begin REF_MEASUREMENT
+        VHAL_CANMsgInvalidHRW_flg
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S11_VHAL_CANMsgInvalidTC1_flg
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN1/VHAL_CANMsgInvalidTC1_flg"
+      /begin REF_MEASUREMENT
+        VHAL_CANMsgInvalidTC1_flg
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S12_VHAL_CANMsgInvalidIVIC1000_flg
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN2/VHAL_CANMsgInvalidIVIC1000_flg"
+      /begin REF_MEASUREMENT
+        VHAL_CANMsgInvalidIVIC1000_flg
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S13_B2V_CurrentLimit
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN3/B2V_CurrentLimit"
+      /begin SUB_GROUP
+        S119_B2VAPlsDischgCurr
+        S119_B2VAvaPlsChgCurr
+      /end SUB_GROUP
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S13_B2V_ST2
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN3/B2V_ST2"
+      /begin SUB_GROUP
+        S122_B2VPackCurr
+        S122_B2VPackInsideVol
+        S122_B2VSOC
+      /end SUB_GROUP
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S13_B2V_ST5
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN3/B2V_ST5"
+      /begin SUB_GROUP
+        S124_B2VCellMinVol
+      /end SUB_GROUP
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S13_TM_MCUSta1
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN3/TM_MCUSta1"
+      /begin SUB_GROUP
+        S126_MotorSpd
+        S126_MotorTrq
+      /end SUB_GROUP
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S13_TM_MCUSta2
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN3/TM_MCUSta2"
+      /begin SUB_GROUP
+        S127_MCUTemp
+        S127_MCUTrqLimLo
+        S127_MotorTemp
+      /end SUB_GROUP
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S13_TM_MCUSta3
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN3/TM_MCUSta3"
+      /begin SUB_GROUP
+        S128_MCUDCCur
+        S128_MCUDCVol
+      /end SUB_GROUP
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S13_VHAL_CANMsgInvalidB2TMInfo_flg
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN3/VHAL_CANMsgInvalidB2TMInfo_flg"
+      /begin REF_MEASUREMENT
+        VHAL_CANMsgInvalidB2TMInfo_flg
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S13_VHAL_CANMsgInvalidB2VBattInfo1_flg
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN3/VHAL_CANMsgInvalidB2VBattInfo1_flg"
+      /begin REF_MEASUREMENT
+        VHAL_CANMsgInvalidB2VBattInfo1_flg
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S13_VHAL_CANMsgInvalidB2VCurrentLimit_flg
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN3/VHAL_CANMsgInvalidB2VCurrentLimit_flg"
+      /begin REF_MEASUREMENT
+        VHAL_CANMsgInvalidB2VCurrentLimit_flg
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S13_VHAL_CANMsgInvalidB2VFult132960_flg
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN3/VHAL_CANMsgInvalidB2VFult132960_flg"
+      /begin REF_MEASUREMENT
+        VHAL_CANMsgInvalidB2VFult132960_flg
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S13_VHAL_CANMsgInvalidB2VST1_flg
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN3/VHAL_CANMsgInvalidB2VST1_flg"
+      /begin REF_MEASUREMENT
+        VHAL_CANMsgInvalidB2VST1_flg
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S13_VHAL_CANMsgInvalidB2VST2_flg
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN3/VHAL_CANMsgInvalidB2VST2_flg"
+      /begin REF_MEASUREMENT
+        VHAL_CANMsgInvalidB2VST2_flg
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S13_VHAL_CANMsgInvalidB2VST4_flg
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN3/VHAL_CANMsgInvalidB2VST4_flg"
+      /begin REF_MEASUREMENT
+        VHAL_CANMsgInvalidB2VST4_flg
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S13_VHAL_CANMsgInvalidB2VST5_flg
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN3/VHAL_CANMsgInvalidB2VST5_flg"
+      /begin REF_MEASUREMENT
+        VHAL_CANMsgInvalidB2VST5_flg
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S13_VHAL_CANMsgInvalidEWP1_flg
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN3/VHAL_CANMsgInvalidEWP1_flg"
+      /begin REF_MEASUREMENT
+        VHAL_CANMsgInvalidEWP1_flg
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S13_VHAL_CANMsgInvalidTMMCUSta1_flg
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN3/VHAL_CANMsgInvalidTMMCUSta1_flg"
+      /begin REF_MEASUREMENT
+        VHAL_CANMsgInvalidTMMCUSta1_flg
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S13_VHAL_CANMsgInvalidTMMCUSta2_flg
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN3/VHAL_CANMsgInvalidTMMCUSta2_flg"
+      /begin REF_MEASUREMENT
+        VHAL_CANMsgInvalidTMMCUSta2_flg
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S13_VHAL_CANMsgInvalidTMMCUSta3_flg
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN3/VHAL_CANMsgInvalidTMMCUSta3_flg"
+      /begin REF_MEASUREMENT
+        VHAL_CANMsgInvalidTMMCUSta3_flg
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S14_VHAL_CANMsgInvalidZFRC1000_flg
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN4/VHAL_CANMsgInvalidZFRC1000_flg"
+      /begin REF_MEASUREMENT
+        VHAL_CANMsgInvalidZFRC1000_flg
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S14_VHAL_CANMsgInvalidZFRCE1000_flg
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN4/VHAL_CANMsgInvalidZFRCE1000_flg"
+      /begin REF_MEASUREMENT
+        VHAL_CANMsgInvalidZFRCE1000_flg
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S14_VHAL_CANMsgInvalidZRRCE1000_flg
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN4/VHAL_CANMsgInvalidZRRCE1000_flg"
+      /begin REF_MEASUREMENT
+        VHAL_CANMsgInvalidZRRCE1000_flg
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S14_VHAL_CANMsgInvalidZRRCE1001_flg
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN4/VHAL_CANMsgInvalidZRRCE1001_flg"
+      /begin REF_MEASUREMENT
+        VHAL_CANMsgInvalidZRRCE1001_flg
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S14_VHAL_CANMsgInvalidzGWCANRr1C500_flg
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN4/VHAL_CANMsgInvalidzGWCANRr1C500_flg"
+      /begin REF_MEASUREMENT
+        VHAL_CANMsgInvalidzGWCANRr1C500_flg
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S14_ZFR_C100_0
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN4/ZFR_C100_0"
+      /begin SUB_GROUP
+        S208_ParkBrakeSW
+      /end SUB_GROUP
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S14_ZFR_CE100_0
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN4/ZFR_CE100_0"
+      /begin SUB_GROUP
+        S209_AirPressureFC2
+        S209_ZFRBCMLFTurnLpCSta
+        S209_ZFRBCMLightSensorVSta
+        S209_ZFRBCMRFTurnLpCSta
+      /end SUB_GROUP
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S14_ZRR_CE100_0
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN4/ZRR_CE100_0"
+      /begin SUB_GROUP
+        S210_ZRRBCMAllDoorSta
+      /end SUB_GROUP
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S14_ZRR_CE100_1
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN4/ZRR_CE100_1"
+      /begin SUB_GROUP
+        S211_AirPressurePC3
+        S211_AirPressureRC1
+        S211_ZRRBCMLRTurnLpCSta
+        S211_ZRRBCMRRTurnLpCSta
+      /end SUB_GROUP
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S14_zGW_CANRr1_C50_0
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN4/zGW_CANRr1_C50_0"
+      /begin SUB_GROUP
+        S212_DCDCEnSta
+        S212_DCDCErrLvSta
+        S212_DCDCOutVolSta
+        S212_DCDCTempSta
+        S212_EACEnSta
+        S212_EACErrLvSta
+        S212_EACInvTempSta
+        S212_EHPSEnSta
+        S212_EHPSErrLvSta
+        S212_EHPSInvTempSta
+        S212_EHPSMotorSpdSta
+        S212_PDUACRlySta
+        S212_PDUDCDCEACEHPSHVLoopSta
+        S212_PDUDCDCEACEHPSPreRlySta
+        S212_PDUDCDCEACEHPSRlySta
+        S212_PDUHVILSta
+        S212_PDUMCUHVLoopSta
+        S212_PDUMCUPosRlySta
+        S212_PDUMCUPreRlySta
+        S212_PDUSelfChkSta
+      /end SUB_GROUP
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S15_ACAmbTemp
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN1/AC_BTMS_C1000_0/ACAmbTemp"
+      /begin SUB_GROUP
+        S39_convert_in
+      /end SUB_GROUP
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S18_ACTempSetSta
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN1/AC_BTMS_C5000_0/ACTempSetSta"
+      /begin SUB_GROUP
+        S43_convert_in
+      /end SUB_GROUP
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S20_BrakePedalPos
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN1/EBC1/BrakePedalPos"
+      /begin SUB_GROUP
+        S55_convert_in
+      /end SUB_GROUP
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S20_EngRetSel
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN1/EBC1/EngRetSel"
+      /begin SUB_GROUP
+        S61_convert_in
+      /end SUB_GROUP
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S21_FASpeed
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN1/EBC2/FASpeed"
+      /begin SUB_GROUP
+        S70_convert_in
+      /end SUB_GROUP
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S21_RelaSpdFALWheel
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN1/EBC2/RelaSpdFALWheel"
+      /begin SUB_GROUP
+        S71_convert_in
+      /end SUB_GROUP
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S21_RelaSpdFARWheel
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN1/EBC2/RelaSpdFARWheel"
+      /begin SUB_GROUP
+        S72_convert_in
+      /end SUB_GROUP
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S22_XBRAcltnLimit
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN1/EBC5/XBRAcltnLimit"
+      /begin SUB_GROUP
+        S81_convert_in
+      /end SUB_GROUP
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S24_EM1ReqTorqLimBrk
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN1/EMC1_EM1/EM1ReqTorqLimBrk"
+      /begin SUB_GROUP
+        S93_convert_in
+      /end SUB_GROUP
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S24_EM1ReqTorqLimDriv
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN1/EMC1_EM1/EM1ReqTorqLimDriv"
+      /begin SUB_GROUP
+        S94_convert_in
+      /end SUB_GROUP
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S25_WhlSpeedFL
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN1/HRW/WhlSpeedFL"
+      /begin SUB_GROUP
+        S97_convert_in
+      /end SUB_GROUP
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S119_B2VAPlsDischgCurr
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN3/B2V_CurrentLimit/B2VAPlsDischgCurr"
+      /begin SUB_GROUP
+        S143_convert_in
+      /end SUB_GROUP
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S119_B2VAvaPlsChgCurr
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN3/B2V_CurrentLimit/B2VAvaPlsChgCurr"
+      /begin SUB_GROUP
+        S144_convert_in
+      /end SUB_GROUP
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S122_B2VPackCurr
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN3/B2V_ST2/B2VPackCurr"
+      /begin SUB_GROUP
+        S160_convert_in
+      /end SUB_GROUP
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S122_B2VPackInsideVol
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN3/B2V_ST2/B2VPackInsideVol"
+      /begin SUB_GROUP
+        S161_convert_in
+      /end SUB_GROUP
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S122_B2VSOC
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN3/B2V_ST2/B2VSOC"
+      /begin SUB_GROUP
+        S163_convert_in
+      /end SUB_GROUP
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S124_B2VCellMinVol
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN3/B2V_ST5/B2VCellMinVol"
+      /begin SUB_GROUP
+        S168_convert_in
+      /end SUB_GROUP
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S126_MotorSpd
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN3/TM_MCUSta1/MotorSpd"
+      /begin SUB_GROUP
+        S174_convert_in
+      /end SUB_GROUP
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S126_MotorTrq
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN3/TM_MCUSta1/MotorTrq"
+      /begin SUB_GROUP
+        S175_convert_in
+      /end SUB_GROUP
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S127_MCUTemp
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN3/TM_MCUSta2/MCUTemp"
+      /begin SUB_GROUP
+        S179_convert_in
+      /end SUB_GROUP
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S127_MCUTrqLimLo
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN3/TM_MCUSta2/MCUTrqLimLo"
+      /begin SUB_GROUP
+        S181_convert_in
+      /end SUB_GROUP
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S127_MotorTemp
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN3/TM_MCUSta2/MotorTemp"
+      /begin SUB_GROUP
+        S182_convert_in
+      /end SUB_GROUP
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S128_MCUDCCur
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN3/TM_MCUSta3/MCUDCCur"
+      /begin SUB_GROUP
+        S186_convert_in
+      /end SUB_GROUP
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S128_MCUDCVol
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN3/TM_MCUSta3/MCUDCVol"
+      /begin SUB_GROUP
+        S187_convert_in
+      /end SUB_GROUP
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S208_ParkBrakeSW
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN4/ZFR_C100_0/ParkBrakeSW"
+      /begin REF_MEASUREMENT
+        VHAL_ParkBrakeSW_enum
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S209_AirPressureFC2
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN4/ZFR_CE100_0/AirPressureFC2"
+      /begin SUB_GROUP
+        S219_convert_in
+      /end SUB_GROUP
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S209_ZFRBCMLFTurnLpCSta
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN4/ZFR_CE100_0/ZFRBCMLFTurnLpCSta"
+      /begin SUB_GROUP
+        S224_convert_in
+      /end SUB_GROUP
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S209_ZFRBCMLightSensorVSta
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN4/ZFR_CE100_0/ZFRBCMLightSensorVSta"
+      /begin SUB_GROUP
+        S225_convert_in
+      /end SUB_GROUP
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S209_ZFRBCMRFTurnLpCSta
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN4/ZFR_CE100_0/ZFRBCMRFTurnLpCSta"
+      /begin SUB_GROUP
+        S227_convert_in
+      /end SUB_GROUP
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S210_ZRRBCMAllDoorSta
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN4/ZRR_CE100_0/ZRRBCMAllDoorSta"
+      /begin REF_MEASUREMENT
+        VHAL_ZRRBCMAllDoorSta_enum
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S211_AirPressurePC3
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN4/ZRR_CE100_1/AirPressurePC3"
+      /begin SUB_GROUP
+        S239_convert_in
+      /end SUB_GROUP
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S211_AirPressureRC1
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN4/ZRR_CE100_1/AirPressureRC1"
+      /begin SUB_GROUP
+        S240_convert_in
+      /end SUB_GROUP
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S211_ZRRBCMLRTurnLpCSta
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN4/ZRR_CE100_1/ZRRBCMLRTurnLpCSta"
+      /begin SUB_GROUP
+        S243_convert_in
+      /end SUB_GROUP
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S211_ZRRBCMRRTurnLpCSta
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN4/ZRR_CE100_1/ZRRBCMRRTurnLpCSta"
+      /begin SUB_GROUP
+        S245_convert_in
+      /end SUB_GROUP
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S212_DCDCEnSta
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN4/zGW_CANRr1_C50_0/DCDCEnSta"
+      /begin REF_MEASUREMENT
+        VHAL_DCDCEnSta_enum
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S212_DCDCErrLvSta
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN4/zGW_CANRr1_C50_0/DCDCErrLvSta"
+      /begin REF_MEASUREMENT
+        VHAL_DCDCErrLvSta_enum
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S212_DCDCOutVolSta
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN4/zGW_CANRr1_C50_0/DCDCOutVolSta"
+      /begin SUB_GROUP
+        S254_convert_in
+      /end SUB_GROUP
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S212_DCDCTempSta
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN4/zGW_CANRr1_C50_0/DCDCTempSta"
+      /begin SUB_GROUP
+        S255_convert_in
+      /end SUB_GROUP
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S212_EACEnSta
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN4/zGW_CANRr1_C50_0/EACEnSta"
+      /begin REF_MEASUREMENT
+        VHAL_EACEnSta_enum
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S212_EACErrLvSta
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN4/zGW_CANRr1_C50_0/EACErrLvSta"
+      /begin REF_MEASUREMENT
+        VHAL_EACErrLvSta_enum
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S212_EACInvTempSta
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN4/zGW_CANRr1_C50_0/EACInvTempSta"
+      /begin SUB_GROUP
+        S258_convert_in
+      /end SUB_GROUP
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S212_EHPSEnSta
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN4/zGW_CANRr1_C50_0/EHPSEnSta"
+      /begin REF_MEASUREMENT
+        VHAL_EHPSEnSta_enum
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S212_EHPSErrLvSta
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN4/zGW_CANRr1_C50_0/EHPSErrLvSta"
+      /begin REF_MEASUREMENT
+        VHAL_EHPSErrLvSta_enum
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S212_EHPSInvTempSta
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN4/zGW_CANRr1_C50_0/EHPSInvTempSta"
+      /begin SUB_GROUP
+        S261_convert_in
+      /end SUB_GROUP
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S212_EHPSMotorSpdSta
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN4/zGW_CANRr1_C50_0/EHPSMotorSpdSta"
+      /begin SUB_GROUP
+        S262_convert_in
+      /end SUB_GROUP
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S212_PDUACRlySta
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN4/zGW_CANRr1_C50_0/PDUACRlySta"
+      /begin REF_MEASUREMENT
+        VHAL_PDUACRlySta_enum
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S212_PDUDCDCEACEHPSHVLoopSta
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN4/zGW_CANRr1_C50_0/PDUDCDCEACEHPSHVLoopSta"
+      /begin REF_MEASUREMENT
+        VHAL_PDUDCDCEACEHPSHVLoopSta_enum
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S212_PDUDCDCEACEHPSPreRlySta
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN4/zGW_CANRr1_C50_0/PDUDCDCEACEHPSPreRlySta"
+      /begin REF_MEASUREMENT
+        VHAL_PDUDCDCEACEHPSPreRlySta_enum
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S212_PDUDCDCEACEHPSRlySta
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN4/zGW_CANRr1_C50_0/PDUDCDCEACEHPSRlySta"
+      /begin REF_MEASUREMENT
+        VHAL_PDUDCDCEACEHPSRlySta_enum
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S212_PDUHVILSta
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN4/zGW_CANRr1_C50_0/PDUHVILSta"
+      /begin REF_MEASUREMENT
+        VHAL_PDUHVILSta_enum
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S212_PDUMCUHVLoopSta
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN4/zGW_CANRr1_C50_0/PDUMCUHVLoopSta"
+      /begin REF_MEASUREMENT
+        VHAL_PDUMCUHVLoopSta_enum
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S212_PDUMCUPosRlySta
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN4/zGW_CANRr1_C50_0/PDUMCUPosRlySta"
+      /begin REF_MEASUREMENT
+        VHAL_PDUMCUPosRlySta_enum
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S212_PDUMCUPreRlySta
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN4/zGW_CANRr1_C50_0/PDUMCUPreRlySta"
+      /begin REF_MEASUREMENT
+        VHAL_PDUMCUPreRlySta_enum
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S212_PDUSelfChkSta
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN4/zGW_CANRr1_C50_0/PDUSelfChkSta"
+      /begin REF_MEASUREMENT
+        VHAL_PDUSelfChkSta_enum
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S39_convert_in
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN1/AC_BTMS_C1000_0/ACAmbTemp/convert_in"
+      /begin REF_MEASUREMENT
+        VHAL_ACAmbTemp_C
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S43_convert_in
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN1/AC_BTMS_C5000_0/ACTempSetSta/convert_in"
+      /begin REF_MEASUREMENT
+        VHAL_ACTempSetSta_C
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S55_convert_in
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN1/EBC1/BrakePedalPos/convert_in"
+      /begin REF_MEASUREMENT
+        VHAL_BrakePedalPos_pct
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S61_convert_in
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN1/EBC1/EngRetSel/convert_in"
+      /begin REF_MEASUREMENT
+        VHAL_EngRetSel_pct
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S70_convert_in
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN1/EBC2/FASpeed/convert_in"
+      /begin REF_MEASUREMENT
+        VHAL_FASpeed_kph
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S71_convert_in
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN1/EBC2/RelaSpdFALWheel/convert_in"
+      /begin REF_MEASUREMENT
+        VHAL_RelaSpdFALWheel_kph
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S72_convert_in
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN1/EBC2/RelaSpdFARWheel/convert_in"
+      /begin REF_MEASUREMENT
+        VHAL_RelaSpdFARWheel_kph
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S81_convert_in
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN1/EBC5/XBRAcltnLimit/convert_in"
+      /begin REF_MEASUREMENT
+        VHAL_XBRAcltnLimit_mps2
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S93_convert_in
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN1/EMC1_EM1/EM1ReqTorqLimBrk/convert_in"
+      /begin REF_MEASUREMENT
+        VHAL_EM1ReqTorqLimBrk_pct
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S94_convert_in
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN1/EMC1_EM1/EM1ReqTorqLimDriv/convert_in"
+      /begin REF_MEASUREMENT
+        VHAL_EM1ReqTorqLimDriv_pct
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S97_convert_in
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN1/HRW/WhlSpeedFL/convert_in"
+      /begin REF_MEASUREMENT
+        VHAL_WhlSpeedFL_kph
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S143_convert_in
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN3/B2V_CurrentLimit/B2VAPlsDischgCurr/convert_in"
+      /begin REF_MEASUREMENT
+        VHAL_B2VAPlsDischgCurr_A
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S144_convert_in
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN3/B2V_CurrentLimit/B2VAvaPlsChgCurr/convert_in"
+      /begin REF_MEASUREMENT
+        VHAL_B2VAvaPlsChgCurr_A
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S160_convert_in
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN3/B2V_ST2/B2VPackCurr/convert_in"
+      /begin REF_MEASUREMENT
+        VHAL_B2VPackCurr_A
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S161_convert_in
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN3/B2V_ST2/B2VPackInsideVol/convert_in"
+      /begin REF_MEASUREMENT
+        VHAL_B2VPackInsideVol_V
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S163_convert_in
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN3/B2V_ST2/B2VSOC/convert_in"
+      /begin REF_MEASUREMENT
+        VHAL_B2VSOC_pct
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S168_convert_in
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN3/B2V_ST5/B2VCellMinVol/convert_in"
+      /begin REF_MEASUREMENT
+        VHAL_B2VCellMinVol_V
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S174_convert_in
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN3/TM_MCUSta1/MotorSpd/convert_in"
+      /begin REF_MEASUREMENT
+        VHAL_MotorSpd_rpm
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S175_convert_in
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN3/TM_MCUSta1/MotorTrq/convert_in"
+      /begin REF_MEASUREMENT
+        VHAL_MotorTrq_Nm
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S179_convert_in
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN3/TM_MCUSta2/MCUTemp/convert_in"
+      /begin REF_MEASUREMENT
+        VHAL_MCUTemp_C
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S181_convert_in
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN3/TM_MCUSta2/MCUTrqLimLo/convert_in"
+      /begin REF_MEASUREMENT
+        VHAL_MCUTrqLimLo_Nm
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S182_convert_in
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN3/TM_MCUSta2/MotorTemp/convert_in"
+      /begin REF_MEASUREMENT
+        VHAL_MotorTemp_C
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S186_convert_in
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN3/TM_MCUSta3/MCUDCCur/convert_in"
+      /begin REF_MEASUREMENT
+        VHAL_MCUDCCur_A
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S187_convert_in
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN3/TM_MCUSta3/MCUDCVol/convert_in"
+      /begin REF_MEASUREMENT
+        VHAL_MCUDCVol_V
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S219_convert_in
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN4/ZFR_CE100_0/AirPressureFC2/convert_in"
+      /begin REF_MEASUREMENT
+        VHAL_AirPressureFC2_kPa
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S224_convert_in
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN4/ZFR_CE100_0/ZFRBCMLFTurnLpCSta/convert_in"
+      /begin REF_MEASUREMENT
+        VHAL_ZFRBCMLFTurnLpCSta_A
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S225_convert_in
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN4/ZFR_CE100_0/ZFRBCMLightSensorVSta/convert_in"
+      /begin REF_MEASUREMENT
+        VHAL_ZFRBCMLightSensorVSta_V
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S227_convert_in
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN4/ZFR_CE100_0/ZFRBCMRFTurnLpCSta/convert_in"
+      /begin REF_MEASUREMENT
+        VHAL_ZFRBCMRFTurnLpCSta_A
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S239_convert_in
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN4/ZRR_CE100_1/AirPressurePC3/convert_in"
+      /begin REF_MEASUREMENT
+        VHAL_AirPressurePC3_kPa
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S240_convert_in
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN4/ZRR_CE100_1/AirPressureRC1/convert_in"
+      /begin REF_MEASUREMENT
+        VHAL_AirPressureRC1_kPa
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S243_convert_in
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN4/ZRR_CE100_1/ZRRBCMLRTurnLpCSta/convert_in"
+      /begin REF_MEASUREMENT
+        VHAL_ZRRBCMLRTurnLpCSta_A
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S245_convert_in
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN4/ZRR_CE100_1/ZRRBCMRRTurnLpCSta/convert_in"
+      /begin REF_MEASUREMENT
+        VHAL_ZRRBCMRRTurnLpCSta_A
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S254_convert_in
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN4/zGW_CANRr1_C50_0/DCDCOutVolSta/convert_in"
+      /begin REF_MEASUREMENT
+        VHAL_DCDCOutVolSta_V
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S255_convert_in
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN4/zGW_CANRr1_C50_0/DCDCTempSta/convert_in"
+      /begin REF_MEASUREMENT
+        VHAL_DCDCTempSta_C
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S258_convert_in
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN4/zGW_CANRr1_C50_0/EACInvTempSta/convert_in"
+      /begin REF_MEASUREMENT
+        VHAL_EACInvTempSta_C
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S261_convert_in
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN4/zGW_CANRr1_C50_0/EHPSInvTempSta/convert_in"
+      /begin REF_MEASUREMENT
+        VHAL_EHPSInvTempSta_C
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S262_convert_in
+      /* Long identifier        */       "SWC_HALIN_type/run_SWC_HALIN_Rx_5ms_sys/HAL_IN/CAN4/zGW_CANRr1_C50_0/EHPSMotorSpdSta/convert_in"
+      /begin REF_MEASUREMENT
+        VHAL_EHPSMotorSpdSta_rpm
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    
+  /end MODULE
+  
+  
+/end PROJECT
+/* (add any file trailer comments here) */
+/* EOF SWC_HALIN_type.a2l */

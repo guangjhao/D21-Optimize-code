@@ -1,0 +1,1191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-3-0.xsd">
+  <ADMIN-DATA>
+    <SDGS>
+      <SDG>
+        <SD GID="ScriptVersion">2024.07.02</SD>
+        <SD GID="InputFile_DBC">TA2U_0.2.2_CAN7_FUSION_20240820_Fix_AUTOSAR</SD>
+		<SD GID="InputFile_Msglink">CAN_MessageLinkOut_202408201718.xlsx</SD>
+      </SDG>
+    </SDGS>
+  </ADMIN-DATA>
+  <AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>CAN7</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE>
+		<SHORT-NAME>Frame</SHORT-NAME>
+          <ELEMENTS>
+            <CAN-FRAME>
+              <SHORT-NAME>CAN7_Door_Fr1</SHORT-NAME>
+              <FRAME-LENGTH>8</FRAME-LENGTH>
+              <PDU-TO-FRAME-MAPPINGS>
+                <PDU-TO-FRAME-MAPPING>
+                  <SHORT-NAME>CAN7_Door_Fr1</SHORT-NAME>
+                  <PACKING-BYTE-ORDER>MOST-SIGNIFICANT-BYTE-LAST</PACKING-BYTE-ORDER>
+                  <PDU-REF DEST="I-SIGNAL-I-PDU">/CAN7/PDU/CAN7_Door_Fr1</PDU-REF>
+                  <START-POSITION>0</START-POSITION>
+                </PDU-TO-FRAME-MAPPING>
+              </PDU-TO-FRAME-MAPPINGS>
+            </CAN-FRAME>
+            <CAN-FRAME>
+              <SHORT-NAME>CAN7_FD7_CE100_0</SHORT-NAME>
+              <FRAME-LENGTH>8</FRAME-LENGTH>
+              <PDU-TO-FRAME-MAPPINGS>
+                <PDU-TO-FRAME-MAPPING>
+                  <SHORT-NAME>CAN7_FD7_CE100_0</SHORT-NAME>
+                  <PACKING-BYTE-ORDER>MOST-SIGNIFICANT-BYTE-LAST</PACKING-BYTE-ORDER>
+                  <PDU-REF DEST="I-SIGNAL-I-PDU">/CAN7/PDU/CAN7_FD7_CE100_0</PDU-REF>
+                  <START-POSITION>0</START-POSITION>
+                </PDU-TO-FRAME-MAPPING>
+              </PDU-TO-FRAME-MAPPINGS>
+            </CAN-FRAME>
+            <CAN-FRAME>
+              <SHORT-NAME>CAN7_FD7_CE100_1</SHORT-NAME>
+              <FRAME-LENGTH>8</FRAME-LENGTH>
+              <PDU-TO-FRAME-MAPPINGS>
+                <PDU-TO-FRAME-MAPPING>
+                  <SHORT-NAME>CAN7_FD7_CE100_1</SHORT-NAME>
+                  <PACKING-BYTE-ORDER>MOST-SIGNIFICANT-BYTE-LAST</PACKING-BYTE-ORDER>
+                  <PDU-REF DEST="I-SIGNAL-I-PDU">/CAN7/PDU/CAN7_FD7_CE100_1</PDU-REF>
+                  <START-POSITION>0</START-POSITION>
+                </PDU-TO-FRAME-MAPPING>
+              </PDU-TO-FRAME-MAPPINGS>
+            </CAN-FRAME>
+		  </ELEMENTS>
+        </AR-PACKAGE>
+		<AR-PACKAGE>
+          <SHORT-NAME>PDU</SHORT-NAME>
+          <ELEMENTS>
+			<I-SIGNAL-I-PDU>
+              <SHORT-NAME>CAN7_Door_Fr1</SHORT-NAME>
+              <LENGTH>8</LENGTH>
+              <I-PDU-TIMING-SPECIFICATIONS>
+                <I-PDU-TIMING>
+                  <MINIMUM-DELAY>0.0</MINIMUM-DELAY>
+                  <TRANSMISSION-MODE-DECLARATION>
+                    <TRANSMISSION-MODE-TRUE-TIMING>
+                      <CYCLIC-TIMING>
+                        <TIME-PERIOD>
+                          <VALUE>0.1</VALUE>
+                        </TIME-PERIOD>
+                      </CYCLIC-TIMING>
+                      <EVENT-CONTROLLED-TIMING>
+                        <NUMBER-OF-REPETITIONS>0</NUMBER-OF-REPETITIONS>
+                        <REPETITION-PERIOD>
+                          <VALUE>0</VALUE>
+                        </REPETITION-PERIOD>
+                      </EVENT-CONTROLLED-TIMING>
+                    </TRANSMISSION-MODE-TRUE-TIMING>
+                  </TRANSMISSION-MODE-DECLARATION>
+                </I-PDU-TIMING>
+              </I-PDU-TIMING-SPECIFICATIONS>
+              <I-SIGNAL-TO-PDU-MAPPINGS>
+                <I-SIGNAL-TO-I-PDU-MAPPING>
+                  <SHORT-NAME>CAN7_SG_Door_Fr1</SHORT-NAME>
+                  <I-SIGNAL-GROUP-REF DEST="I-SIGNAL-GROUP">/CAN7/ISignalGroup/CAN7_SG_Door_Fr1</I-SIGNAL-GROUP-REF>
+                  <START-POSITION>0</START-POSITION>
+                  <TRANSFER-PROPERTY>TRIGGERED-ON-CHANGE</TRANSFER-PROPERTY>
+                </I-SIGNAL-TO-I-PDU-MAPPING>
+				<I-SIGNAL-TO-I-PDU-MAPPING>
+                  <SHORT-NAME>CAN7_Door_Fr_DoorEmergency_sta</SHORT-NAME>
+                  <I-SIGNAL-REF DEST="I-SIGNAL">/CAN7/ISignal/CAN7_Door_Fr_DoorEmergency_sta</I-SIGNAL-REF>
+                  <PACKING-BYTE-ORDER>MOST-SIGNIFICANT-BYTE-LAST</PACKING-BYTE-ORDER>
+                  <START-POSITION>4</START-POSITION>
+                  <TRANSFER-PROPERTY>TRIGGERED-ON-CHANGE</TRANSFER-PROPERTY>
+                </I-SIGNAL-TO-I-PDU-MAPPING>
+				<I-SIGNAL-TO-I-PDU-MAPPING>
+                  <SHORT-NAME>CAN7_Door_Fr_Dooroperation_sta</SHORT-NAME>
+                  <I-SIGNAL-REF DEST="I-SIGNAL">/CAN7/ISignal/CAN7_Door_Fr_Dooroperation_sta</I-SIGNAL-REF>
+                  <PACKING-BYTE-ORDER>MOST-SIGNIFICANT-BYTE-LAST</PACKING-BYTE-ORDER>
+                  <START-POSITION>10</START-POSITION>
+                  <TRANSFER-PROPERTY>TRIGGERED-ON-CHANGE</TRANSFER-PROPERTY>
+                </I-SIGNAL-TO-I-PDU-MAPPING>
+				<I-SIGNAL-TO-I-PDU-MAPPING>
+                  <SHORT-NAME>CAN7_Door_Fr_Doorposition_sta</SHORT-NAME>
+                  <I-SIGNAL-REF DEST="I-SIGNAL">/CAN7/ISignal/CAN7_Door_Fr_Doorposition_sta</I-SIGNAL-REF>
+                  <PACKING-BYTE-ORDER>MOST-SIGNIFICANT-BYTE-LAST</PACKING-BYTE-ORDER>
+                  <START-POSITION>8</START-POSITION>
+                  <TRANSFER-PROPERTY>TRIGGERED-ON-CHANGE</TRANSFER-PROPERTY>
+                </I-SIGNAL-TO-I-PDU-MAPPING>
+			  </I-SIGNAL-TO-PDU-MAPPINGS>
+              <UNUSED-BIT-PATTERN>0</UNUSED-BIT-PATTERN>
+            </I-SIGNAL-I-PDU>
+			<I-SIGNAL-I-PDU>
+              <SHORT-NAME>CAN7_FD7_CE100_0</SHORT-NAME>
+              <LENGTH>8</LENGTH>
+              <I-PDU-TIMING-SPECIFICATIONS>
+                <I-PDU-TIMING>
+                  <MINIMUM-DELAY>0.0</MINIMUM-DELAY>
+                  <TRANSMISSION-MODE-DECLARATION>
+                    <TRANSMISSION-MODE-TRUE-TIMING>
+                      <CYCLIC-TIMING>
+                        <TIME-PERIOD>
+                          <VALUE>0.1</VALUE>
+                        </TIME-PERIOD>
+                      </CYCLIC-TIMING>
+                      <EVENT-CONTROLLED-TIMING>
+                        <NUMBER-OF-REPETITIONS>0</NUMBER-OF-REPETITIONS>
+                        <REPETITION-PERIOD>
+                          <VALUE>0</VALUE>
+                        </REPETITION-PERIOD>
+                      </EVENT-CONTROLLED-TIMING>
+                    </TRANSMISSION-MODE-TRUE-TIMING>
+                  </TRANSMISSION-MODE-DECLARATION>
+                </I-PDU-TIMING>
+              </I-PDU-TIMING-SPECIFICATIONS>
+              <I-SIGNAL-TO-PDU-MAPPINGS>
+                <I-SIGNAL-TO-I-PDU-MAPPING>
+                  <SHORT-NAME>CAN7_SG_FD7_CE100_0</SHORT-NAME>
+                  <I-SIGNAL-GROUP-REF DEST="I-SIGNAL-GROUP">/CAN7/ISignalGroup/CAN7_SG_FD7_CE100_0</I-SIGNAL-GROUP-REF>
+                  <START-POSITION>0</START-POSITION>
+                  <TRANSFER-PROPERTY>TRIGGERED-ON-CHANGE</TRANSFER-PROPERTY>
+                </I-SIGNAL-TO-I-PDU-MAPPING>
+				<I-SIGNAL-TO-I-PDU-MAPPING>
+                  <SHORT-NAME>CAN7_FDC_BCM_FDDoorOpen_Sta</SHORT-NAME>
+                  <I-SIGNAL-REF DEST="I-SIGNAL">/CAN7/ISignal/CAN7_FDC_BCM_FDDoorOpen_Sta</I-SIGNAL-REF>
+                  <PACKING-BYTE-ORDER>MOST-SIGNIFICANT-BYTE-LAST</PACKING-BYTE-ORDER>
+                  <START-POSITION>62</START-POSITION>
+                  <TRANSFER-PROPERTY>TRIGGERED-ON-CHANGE</TRANSFER-PROPERTY>
+                </I-SIGNAL-TO-I-PDU-MAPPING>
+				<I-SIGNAL-TO-I-PDU-MAPPING>
+                  <SHORT-NAME>CAN7_LTurnLP</SHORT-NAME>
+                  <I-SIGNAL-REF DEST="I-SIGNAL">/CAN7/ISignal/CAN7_LTurnLP</I-SIGNAL-REF>
+                  <PACKING-BYTE-ORDER>MOST-SIGNIFICANT-BYTE-LAST</PACKING-BYTE-ORDER>
+                  <START-POSITION>13</START-POSITION>
+                  <TRANSFER-PROPERTY>TRIGGERED-ON-CHANGE</TRANSFER-PROPERTY>
+                </I-SIGNAL-TO-I-PDU-MAPPING>
+				<I-SIGNAL-TO-I-PDU-MAPPING>
+                  <SHORT-NAME>CAN7_RTurnLP</SHORT-NAME>
+                  <I-SIGNAL-REF DEST="I-SIGNAL">/CAN7/ISignal/CAN7_RTurnLP</I-SIGNAL-REF>
+                  <PACKING-BYTE-ORDER>MOST-SIGNIFICANT-BYTE-LAST</PACKING-BYTE-ORDER>
+                  <START-POSITION>14</START-POSITION>
+                  <TRANSFER-PROPERTY>TRIGGERED-ON-CHANGE</TRANSFER-PROPERTY>
+                </I-SIGNAL-TO-I-PDU-MAPPING>
+			  </I-SIGNAL-TO-PDU-MAPPINGS>
+              <UNUSED-BIT-PATTERN>0</UNUSED-BIT-PATTERN>
+            </I-SIGNAL-I-PDU>
+			<I-SIGNAL-I-PDU>
+              <SHORT-NAME>CAN7_FD7_CE100_1</SHORT-NAME>
+              <LENGTH>8</LENGTH>
+              <I-PDU-TIMING-SPECIFICATIONS>
+                <I-PDU-TIMING>
+                  <MINIMUM-DELAY>0.0</MINIMUM-DELAY>
+                  <TRANSMISSION-MODE-DECLARATION>
+                    <TRANSMISSION-MODE-TRUE-TIMING>
+                      <CYCLIC-TIMING>
+                        <TIME-PERIOD>
+                          <VALUE>0.1</VALUE>
+                        </TIME-PERIOD>
+                      </CYCLIC-TIMING>
+                      <EVENT-CONTROLLED-TIMING>
+                        <NUMBER-OF-REPETITIONS>0</NUMBER-OF-REPETITIONS>
+                        <REPETITION-PERIOD>
+                          <VALUE>0</VALUE>
+                        </REPETITION-PERIOD>
+                      </EVENT-CONTROLLED-TIMING>
+                    </TRANSMISSION-MODE-TRUE-TIMING>
+                  </TRANSMISSION-MODE-DECLARATION>
+                </I-PDU-TIMING>
+              </I-PDU-TIMING-SPECIFICATIONS>
+              <I-SIGNAL-TO-PDU-MAPPINGS>
+                <I-SIGNAL-TO-I-PDU-MAPPING>
+                  <SHORT-NAME>CAN7_SG_FD7_CE100_1</SHORT-NAME>
+                  <I-SIGNAL-GROUP-REF DEST="I-SIGNAL-GROUP">/CAN7/ISignalGroup/CAN7_SG_FD7_CE100_1</I-SIGNAL-GROUP-REF>
+                  <START-POSITION>0</START-POSITION>
+                  <TRANSFER-PROPERTY>TRIGGERED-ON-CHANGE</TRANSFER-PROPERTY>
+                </I-SIGNAL-TO-I-PDU-MAPPING>
+				<I-SIGNAL-TO-I-PDU-MAPPING>
+                  <SHORT-NAME>CAN7_FDC_BCM_FRClosedoor_Cmd</SHORT-NAME>
+                  <I-SIGNAL-REF DEST="I-SIGNAL">/CAN7/ISignal/CAN7_FDC_BCM_FRClosedoor_Cmd</I-SIGNAL-REF>
+                  <PACKING-BYTE-ORDER>MOST-SIGNIFICANT-BYTE-LAST</PACKING-BYTE-ORDER>
+                  <START-POSITION>22</START-POSITION>
+                  <TRANSFER-PROPERTY>TRIGGERED-ON-CHANGE</TRANSFER-PROPERTY>
+                </I-SIGNAL-TO-I-PDU-MAPPING>
+				<I-SIGNAL-TO-I-PDU-MAPPING>
+                  <SHORT-NAME>CAN7_FDC_BCM_FRHaltBrake_Sta</SHORT-NAME>
+                  <I-SIGNAL-REF DEST="I-SIGNAL">/CAN7/ISignal/CAN7_FDC_BCM_FRHaltBrake_Sta</I-SIGNAL-REF>
+                  <PACKING-BYTE-ORDER>MOST-SIGNIFICANT-BYTE-LAST</PACKING-BYTE-ORDER>
+                  <START-POSITION>6</START-POSITION>
+                  <TRANSFER-PROPERTY>TRIGGERED-ON-CHANGE</TRANSFER-PROPERTY>
+                </I-SIGNAL-TO-I-PDU-MAPPING>
+				<I-SIGNAL-TO-I-PDU-MAPPING>
+                  <SHORT-NAME>CAN7_FDC_BCM_FROpenClosePB_Cmd</SHORT-NAME>
+                  <I-SIGNAL-REF DEST="I-SIGNAL">/CAN7/ISignal/CAN7_FDC_BCM_FROpenClosePB_Cmd</I-SIGNAL-REF>
+                  <PACKING-BYTE-ORDER>MOST-SIGNIFICANT-BYTE-LAST</PACKING-BYTE-ORDER>
+                  <START-POSITION>8</START-POSITION>
+                  <TRANSFER-PROPERTY>TRIGGERED-ON-CHANGE</TRANSFER-PROPERTY>
+                </I-SIGNAL-TO-I-PDU-MAPPING>
+				<I-SIGNAL-TO-I-PDU-MAPPING>
+                  <SHORT-NAME>CAN7_FDC_BCM_FROpendoor_Cmd</SHORT-NAME>
+                  <I-SIGNAL-REF DEST="I-SIGNAL">/CAN7/ISignal/CAN7_FDC_BCM_FROpendoor_Cmd</I-SIGNAL-REF>
+                  <PACKING-BYTE-ORDER>MOST-SIGNIFICANT-BYTE-LAST</PACKING-BYTE-ORDER>
+                  <START-POSITION>20</START-POSITION>
+                  <TRANSFER-PROPERTY>TRIGGERED-ON-CHANGE</TRANSFER-PROPERTY>
+                </I-SIGNAL-TO-I-PDU-MAPPING>
+				<I-SIGNAL-TO-I-PDU-MAPPING>
+                  <SHORT-NAME>CAN7_FDC_BCM_PosLamp_Cmd</SHORT-NAME>
+                  <I-SIGNAL-REF DEST="I-SIGNAL">/CAN7/ISignal/CAN7_FDC_BCM_PosLamp_Cmd</I-SIGNAL-REF>
+                  <PACKING-BYTE-ORDER>MOST-SIGNIFICANT-BYTE-LAST</PACKING-BYTE-ORDER>
+                  <START-POSITION>14</START-POSITION>
+                  <TRANSFER-PROPERTY>TRIGGERED-ON-CHANGE</TRANSFER-PROPERTY>
+                </I-SIGNAL-TO-I-PDU-MAPPING>
+				<I-SIGNAL-TO-I-PDU-MAPPING>
+                  <SHORT-NAME>CAN7_FDC_FRDisIntEm_Cmd</SHORT-NAME>
+                  <I-SIGNAL-REF DEST="I-SIGNAL">/CAN7/ISignal/CAN7_FDC_FRDisIntEm_Cmd</I-SIGNAL-REF>
+                  <PACKING-BYTE-ORDER>MOST-SIGNIFICANT-BYTE-LAST</PACKING-BYTE-ORDER>
+                  <START-POSITION>2</START-POSITION>
+                  <TRANSFER-PROPERTY>TRIGGERED-ON-CHANGE</TRANSFER-PROPERTY>
+                </I-SIGNAL-TO-I-PDU-MAPPING>
+			  </I-SIGNAL-TO-PDU-MAPPINGS>
+              <UNUSED-BIT-PATTERN>0</UNUSED-BIT-PATTERN>
+            </I-SIGNAL-I-PDU>
+		   </ELEMENTS>
+        </AR-PACKAGE>
+		<AR-PACKAGE>
+          <SHORT-NAME>ISignal</SHORT-NAME>
+          <ELEMENTS>
+            <I-SIGNAL>
+              <SHORT-NAME>CAN7_Door_Fr_DoorEmergency_sta</SHORT-NAME>
+              <DATA-TYPE-POLICY>LEGACY</DATA-TYPE-POLICY>
+              <I-SIGNAL-TYPE>PRIMITIVE</I-SIGNAL-TYPE>
+              <INIT-VALUE>
+                <CONSTANT-REFERENCE>
+                  <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/CAN7/ConstantSpecification/Init_CAN7_Door_Fr_DoorEmergency_sta</CONSTANT-REF>
+                </CONSTANT-REFERENCE>
+              </INIT-VALUE>
+              <LENGTH>2</LENGTH>
+              <NETWORK-REPRESENTATION-PROPS>
+                <SW-DATA-DEF-PROPS-VARIANTS>
+                  <SW-DATA-DEF-PROPS-CONDITIONAL>
+                    <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_Platform/BaseTypes/uint8</BASE-TYPE-REF>
+                    <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint8</IMPLEMENTATION-DATA-TYPE-REF>
+                  </SW-DATA-DEF-PROPS-CONDITIONAL>
+                </SW-DATA-DEF-PROPS-VARIANTS>
+              </NETWORK-REPRESENTATION-PROPS>
+              <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/CAN7/Signal/CAN7_Door_Fr_DoorEmergency_sta</SYSTEM-SIGNAL-REF>
+            </I-SIGNAL>
+            <I-SIGNAL>
+              <SHORT-NAME>CAN7_Door_Fr_Dooroperation_sta</SHORT-NAME>
+              <DATA-TYPE-POLICY>LEGACY</DATA-TYPE-POLICY>
+              <I-SIGNAL-TYPE>PRIMITIVE</I-SIGNAL-TYPE>
+              <INIT-VALUE>
+                <CONSTANT-REFERENCE>
+                  <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/CAN7/ConstantSpecification/Init_CAN7_Door_Fr_Dooroperation_sta</CONSTANT-REF>
+                </CONSTANT-REFERENCE>
+              </INIT-VALUE>
+              <LENGTH>2</LENGTH>
+              <NETWORK-REPRESENTATION-PROPS>
+                <SW-DATA-DEF-PROPS-VARIANTS>
+                  <SW-DATA-DEF-PROPS-CONDITIONAL>
+                    <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_Platform/BaseTypes/uint8</BASE-TYPE-REF>
+                    <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint8</IMPLEMENTATION-DATA-TYPE-REF>
+                  </SW-DATA-DEF-PROPS-CONDITIONAL>
+                </SW-DATA-DEF-PROPS-VARIANTS>
+              </NETWORK-REPRESENTATION-PROPS>
+              <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/CAN7/Signal/CAN7_Door_Fr_Dooroperation_sta</SYSTEM-SIGNAL-REF>
+            </I-SIGNAL>
+            <I-SIGNAL>
+              <SHORT-NAME>CAN7_Door_Fr_Doorposition_sta</SHORT-NAME>
+              <DATA-TYPE-POLICY>LEGACY</DATA-TYPE-POLICY>
+              <I-SIGNAL-TYPE>PRIMITIVE</I-SIGNAL-TYPE>
+              <INIT-VALUE>
+                <CONSTANT-REFERENCE>
+                  <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/CAN7/ConstantSpecification/Init_CAN7_Door_Fr_Doorposition_sta</CONSTANT-REF>
+                </CONSTANT-REFERENCE>
+              </INIT-VALUE>
+              <LENGTH>2</LENGTH>
+              <NETWORK-REPRESENTATION-PROPS>
+                <SW-DATA-DEF-PROPS-VARIANTS>
+                  <SW-DATA-DEF-PROPS-CONDITIONAL>
+                    <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_Platform/BaseTypes/uint8</BASE-TYPE-REF>
+                    <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint8</IMPLEMENTATION-DATA-TYPE-REF>
+                  </SW-DATA-DEF-PROPS-CONDITIONAL>
+                </SW-DATA-DEF-PROPS-VARIANTS>
+              </NETWORK-REPRESENTATION-PROPS>
+              <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/CAN7/Signal/CAN7_Door_Fr_Doorposition_sta</SYSTEM-SIGNAL-REF>
+            </I-SIGNAL>
+            <I-SIGNAL>
+              <SHORT-NAME>CAN7_FDC_BCM_FDDoorOpen_Sta</SHORT-NAME>
+              <DATA-TYPE-POLICY>LEGACY</DATA-TYPE-POLICY>
+              <I-SIGNAL-TYPE>PRIMITIVE</I-SIGNAL-TYPE>
+              <INIT-VALUE>
+                <CONSTANT-REFERENCE>
+                  <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/CAN7/ConstantSpecification/Init_CAN7_FDC_BCM_FDDoorOpen_Sta</CONSTANT-REF>
+                </CONSTANT-REFERENCE>
+              </INIT-VALUE>
+              <LENGTH>2</LENGTH>
+              <NETWORK-REPRESENTATION-PROPS>
+                <SW-DATA-DEF-PROPS-VARIANTS>
+                  <SW-DATA-DEF-PROPS-CONDITIONAL>
+                    <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_Platform/BaseTypes/uint8</BASE-TYPE-REF>
+                    <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint8</IMPLEMENTATION-DATA-TYPE-REF>
+                  </SW-DATA-DEF-PROPS-CONDITIONAL>
+                </SW-DATA-DEF-PROPS-VARIANTS>
+              </NETWORK-REPRESENTATION-PROPS>
+              <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/CAN7/Signal/CAN7_FDC_BCM_FDDoorOpen_Sta</SYSTEM-SIGNAL-REF>
+            </I-SIGNAL>
+            <I-SIGNAL>
+              <SHORT-NAME>CAN7_LTurnLP</SHORT-NAME>
+              <DATA-TYPE-POLICY>LEGACY</DATA-TYPE-POLICY>
+              <I-SIGNAL-TYPE>PRIMITIVE</I-SIGNAL-TYPE>
+              <INIT-VALUE>
+                <CONSTANT-REFERENCE>
+                  <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/CAN7/ConstantSpecification/Init_CAN7_LTurnLP</CONSTANT-REF>
+                </CONSTANT-REFERENCE>
+              </INIT-VALUE>
+              <LENGTH>1</LENGTH>
+              <NETWORK-REPRESENTATION-PROPS>
+                <SW-DATA-DEF-PROPS-VARIANTS>
+                  <SW-DATA-DEF-PROPS-CONDITIONAL>
+                    <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_Platform/BaseTypes/uint8</BASE-TYPE-REF>
+                    <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint8</IMPLEMENTATION-DATA-TYPE-REF>
+                  </SW-DATA-DEF-PROPS-CONDITIONAL>
+                </SW-DATA-DEF-PROPS-VARIANTS>
+              </NETWORK-REPRESENTATION-PROPS>
+              <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/CAN7/Signal/CAN7_LTurnLP</SYSTEM-SIGNAL-REF>
+            </I-SIGNAL>
+            <I-SIGNAL>
+              <SHORT-NAME>CAN7_RTurnLP</SHORT-NAME>
+              <DATA-TYPE-POLICY>LEGACY</DATA-TYPE-POLICY>
+              <I-SIGNAL-TYPE>PRIMITIVE</I-SIGNAL-TYPE>
+              <INIT-VALUE>
+                <CONSTANT-REFERENCE>
+                  <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/CAN7/ConstantSpecification/Init_CAN7_RTurnLP</CONSTANT-REF>
+                </CONSTANT-REFERENCE>
+              </INIT-VALUE>
+              <LENGTH>1</LENGTH>
+              <NETWORK-REPRESENTATION-PROPS>
+                <SW-DATA-DEF-PROPS-VARIANTS>
+                  <SW-DATA-DEF-PROPS-CONDITIONAL>
+                    <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_Platform/BaseTypes/uint8</BASE-TYPE-REF>
+                    <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint8</IMPLEMENTATION-DATA-TYPE-REF>
+                  </SW-DATA-DEF-PROPS-CONDITIONAL>
+                </SW-DATA-DEF-PROPS-VARIANTS>
+              </NETWORK-REPRESENTATION-PROPS>
+              <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/CAN7/Signal/CAN7_RTurnLP</SYSTEM-SIGNAL-REF>
+            </I-SIGNAL>
+            <I-SIGNAL>
+              <SHORT-NAME>CAN7_FDC_BCM_FRClosedoor_Cmd</SHORT-NAME>
+              <DATA-TYPE-POLICY>LEGACY</DATA-TYPE-POLICY>
+              <I-SIGNAL-TYPE>PRIMITIVE</I-SIGNAL-TYPE>
+              <INIT-VALUE>
+                <CONSTANT-REFERENCE>
+                  <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/CAN7/ConstantSpecification/Init_CAN7_FDC_BCM_FRClosedoor_Cmd</CONSTANT-REF>
+                </CONSTANT-REFERENCE>
+              </INIT-VALUE>
+              <LENGTH>2</LENGTH>
+              <NETWORK-REPRESENTATION-PROPS>
+                <SW-DATA-DEF-PROPS-VARIANTS>
+                  <SW-DATA-DEF-PROPS-CONDITIONAL>
+                    <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_Platform/BaseTypes/uint8</BASE-TYPE-REF>
+                    <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint8</IMPLEMENTATION-DATA-TYPE-REF>
+                  </SW-DATA-DEF-PROPS-CONDITIONAL>
+                </SW-DATA-DEF-PROPS-VARIANTS>
+              </NETWORK-REPRESENTATION-PROPS>
+              <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/CAN7/Signal/CAN7_FDC_BCM_FRClosedoor_Cmd</SYSTEM-SIGNAL-REF>
+            </I-SIGNAL>
+            <I-SIGNAL>
+              <SHORT-NAME>CAN7_FDC_BCM_FRHaltBrake_Sta</SHORT-NAME>
+              <DATA-TYPE-POLICY>LEGACY</DATA-TYPE-POLICY>
+              <I-SIGNAL-TYPE>PRIMITIVE</I-SIGNAL-TYPE>
+              <INIT-VALUE>
+                <CONSTANT-REFERENCE>
+                  <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/CAN7/ConstantSpecification/Init_CAN7_FDC_BCM_FRHaltBrake_Sta</CONSTANT-REF>
+                </CONSTANT-REFERENCE>
+              </INIT-VALUE>
+              <LENGTH>2</LENGTH>
+              <NETWORK-REPRESENTATION-PROPS>
+                <SW-DATA-DEF-PROPS-VARIANTS>
+                  <SW-DATA-DEF-PROPS-CONDITIONAL>
+                    <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_Platform/BaseTypes/uint8</BASE-TYPE-REF>
+                    <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint8</IMPLEMENTATION-DATA-TYPE-REF>
+                  </SW-DATA-DEF-PROPS-CONDITIONAL>
+                </SW-DATA-DEF-PROPS-VARIANTS>
+              </NETWORK-REPRESENTATION-PROPS>
+              <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/CAN7/Signal/CAN7_FDC_BCM_FRHaltBrake_Sta</SYSTEM-SIGNAL-REF>
+            </I-SIGNAL>
+            <I-SIGNAL>
+              <SHORT-NAME>CAN7_FDC_BCM_FROpenClosePB_Cmd</SHORT-NAME>
+              <DATA-TYPE-POLICY>LEGACY</DATA-TYPE-POLICY>
+              <I-SIGNAL-TYPE>PRIMITIVE</I-SIGNAL-TYPE>
+              <INIT-VALUE>
+                <CONSTANT-REFERENCE>
+                  <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/CAN7/ConstantSpecification/Init_CAN7_FDC_BCM_FROpenClosePB_Cmd</CONSTANT-REF>
+                </CONSTANT-REFERENCE>
+              </INIT-VALUE>
+              <LENGTH>2</LENGTH>
+              <NETWORK-REPRESENTATION-PROPS>
+                <SW-DATA-DEF-PROPS-VARIANTS>
+                  <SW-DATA-DEF-PROPS-CONDITIONAL>
+                    <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_Platform/BaseTypes/uint8</BASE-TYPE-REF>
+                    <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint8</IMPLEMENTATION-DATA-TYPE-REF>
+                  </SW-DATA-DEF-PROPS-CONDITIONAL>
+                </SW-DATA-DEF-PROPS-VARIANTS>
+              </NETWORK-REPRESENTATION-PROPS>
+              <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/CAN7/Signal/CAN7_FDC_BCM_FROpenClosePB_Cmd</SYSTEM-SIGNAL-REF>
+            </I-SIGNAL>
+            <I-SIGNAL>
+              <SHORT-NAME>CAN7_FDC_BCM_FROpendoor_Cmd</SHORT-NAME>
+              <DATA-TYPE-POLICY>LEGACY</DATA-TYPE-POLICY>
+              <I-SIGNAL-TYPE>PRIMITIVE</I-SIGNAL-TYPE>
+              <INIT-VALUE>
+                <CONSTANT-REFERENCE>
+                  <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/CAN7/ConstantSpecification/Init_CAN7_FDC_BCM_FROpendoor_Cmd</CONSTANT-REF>
+                </CONSTANT-REFERENCE>
+              </INIT-VALUE>
+              <LENGTH>2</LENGTH>
+              <NETWORK-REPRESENTATION-PROPS>
+                <SW-DATA-DEF-PROPS-VARIANTS>
+                  <SW-DATA-DEF-PROPS-CONDITIONAL>
+                    <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_Platform/BaseTypes/uint8</BASE-TYPE-REF>
+                    <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint8</IMPLEMENTATION-DATA-TYPE-REF>
+                  </SW-DATA-DEF-PROPS-CONDITIONAL>
+                </SW-DATA-DEF-PROPS-VARIANTS>
+              </NETWORK-REPRESENTATION-PROPS>
+              <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/CAN7/Signal/CAN7_FDC_BCM_FROpendoor_Cmd</SYSTEM-SIGNAL-REF>
+            </I-SIGNAL>
+            <I-SIGNAL>
+              <SHORT-NAME>CAN7_FDC_BCM_PosLamp_Cmd</SHORT-NAME>
+              <DATA-TYPE-POLICY>LEGACY</DATA-TYPE-POLICY>
+              <I-SIGNAL-TYPE>PRIMITIVE</I-SIGNAL-TYPE>
+              <INIT-VALUE>
+                <CONSTANT-REFERENCE>
+                  <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/CAN7/ConstantSpecification/Init_CAN7_FDC_BCM_PosLamp_Cmd</CONSTANT-REF>
+                </CONSTANT-REFERENCE>
+              </INIT-VALUE>
+              <LENGTH>1</LENGTH>
+              <NETWORK-REPRESENTATION-PROPS>
+                <SW-DATA-DEF-PROPS-VARIANTS>
+                  <SW-DATA-DEF-PROPS-CONDITIONAL>
+                    <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_Platform/BaseTypes/uint8</BASE-TYPE-REF>
+                    <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint8</IMPLEMENTATION-DATA-TYPE-REF>
+                  </SW-DATA-DEF-PROPS-CONDITIONAL>
+                </SW-DATA-DEF-PROPS-VARIANTS>
+              </NETWORK-REPRESENTATION-PROPS>
+              <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/CAN7/Signal/CAN7_FDC_BCM_PosLamp_Cmd</SYSTEM-SIGNAL-REF>
+            </I-SIGNAL>
+            <I-SIGNAL>
+              <SHORT-NAME>CAN7_FDC_FRDisIntEm_Cmd</SHORT-NAME>
+              <DATA-TYPE-POLICY>LEGACY</DATA-TYPE-POLICY>
+              <I-SIGNAL-TYPE>PRIMITIVE</I-SIGNAL-TYPE>
+              <INIT-VALUE>
+                <CONSTANT-REFERENCE>
+                  <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/CAN7/ConstantSpecification/Init_CAN7_FDC_FRDisIntEm_Cmd</CONSTANT-REF>
+                </CONSTANT-REFERENCE>
+              </INIT-VALUE>
+              <LENGTH>2</LENGTH>
+              <NETWORK-REPRESENTATION-PROPS>
+                <SW-DATA-DEF-PROPS-VARIANTS>
+                  <SW-DATA-DEF-PROPS-CONDITIONAL>
+                    <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_Platform/BaseTypes/uint8</BASE-TYPE-REF>
+                    <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint8</IMPLEMENTATION-DATA-TYPE-REF>
+                  </SW-DATA-DEF-PROPS-CONDITIONAL>
+                </SW-DATA-DEF-PROPS-VARIANTS>
+              </NETWORK-REPRESENTATION-PROPS>
+              <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/CAN7/Signal/CAN7_FDC_FRDisIntEm_Cmd</SYSTEM-SIGNAL-REF>
+            </I-SIGNAL>
+		  </ELEMENTS>
+        </AR-PACKAGE>
+		<AR-PACKAGE>
+          <SHORT-NAME>ISignalGroup</SHORT-NAME>
+          <ELEMENTS>
+            <I-SIGNAL-GROUP>
+              <SHORT-NAME>CAN7_SG_Door_Fr1</SHORT-NAME>
+              <I-SIGNAL-REFS>
+                <I-SIGNAL-REF DEST="I-SIGNAL">/CAN7/ISignal/CAN7_Door_Fr_DoorEmergency_sta</I-SIGNAL-REF>
+                <I-SIGNAL-REF DEST="I-SIGNAL">/CAN7/ISignal/CAN7_Door_Fr_Dooroperation_sta</I-SIGNAL-REF>
+                <I-SIGNAL-REF DEST="I-SIGNAL">/CAN7/ISignal/CAN7_Door_Fr_Doorposition_sta</I-SIGNAL-REF>
+			  </I-SIGNAL-REFS>
+              <SYSTEM-SIGNAL-GROUP-REF DEST="SYSTEM-SIGNAL-GROUP">/CAN7/SignalGroup/CAN7_SG_Door_Fr1</SYSTEM-SIGNAL-GROUP-REF>
+            </I-SIGNAL-GROUP>
+            <I-SIGNAL-GROUP>
+              <SHORT-NAME>CAN7_SG_FD7_CE100_0</SHORT-NAME>
+              <I-SIGNAL-REFS>
+                <I-SIGNAL-REF DEST="I-SIGNAL">/CAN7/ISignal/CAN7_FDC_BCM_FDDoorOpen_Sta</I-SIGNAL-REF>
+                <I-SIGNAL-REF DEST="I-SIGNAL">/CAN7/ISignal/CAN7_LTurnLP</I-SIGNAL-REF>
+                <I-SIGNAL-REF DEST="I-SIGNAL">/CAN7/ISignal/CAN7_RTurnLP</I-SIGNAL-REF>
+			  </I-SIGNAL-REFS>
+              <SYSTEM-SIGNAL-GROUP-REF DEST="SYSTEM-SIGNAL-GROUP">/CAN7/SignalGroup/CAN7_SG_FD7_CE100_0</SYSTEM-SIGNAL-GROUP-REF>
+            </I-SIGNAL-GROUP>
+            <I-SIGNAL-GROUP>
+              <SHORT-NAME>CAN7_SG_FD7_CE100_1</SHORT-NAME>
+              <I-SIGNAL-REFS>
+                <I-SIGNAL-REF DEST="I-SIGNAL">/CAN7/ISignal/CAN7_FDC_BCM_FRClosedoor_Cmd</I-SIGNAL-REF>
+                <I-SIGNAL-REF DEST="I-SIGNAL">/CAN7/ISignal/CAN7_FDC_BCM_FRHaltBrake_Sta</I-SIGNAL-REF>
+                <I-SIGNAL-REF DEST="I-SIGNAL">/CAN7/ISignal/CAN7_FDC_BCM_FROpenClosePB_Cmd</I-SIGNAL-REF>
+                <I-SIGNAL-REF DEST="I-SIGNAL">/CAN7/ISignal/CAN7_FDC_BCM_FROpendoor_Cmd</I-SIGNAL-REF>
+                <I-SIGNAL-REF DEST="I-SIGNAL">/CAN7/ISignal/CAN7_FDC_BCM_PosLamp_Cmd</I-SIGNAL-REF>
+                <I-SIGNAL-REF DEST="I-SIGNAL">/CAN7/ISignal/CAN7_FDC_FRDisIntEm_Cmd</I-SIGNAL-REF>
+			  </I-SIGNAL-REFS>
+              <SYSTEM-SIGNAL-GROUP-REF DEST="SYSTEM-SIGNAL-GROUP">/CAN7/SignalGroup/CAN7_SG_FD7_CE100_1</SYSTEM-SIGNAL-GROUP-REF>
+            </I-SIGNAL-GROUP>
+		  </ELEMENTS>
+        </AR-PACKAGE>
+		<AR-PACKAGE>
+          <SHORT-NAME>Signal</SHORT-NAME>
+          <ELEMENTS>
+            <SYSTEM-SIGNAL>
+			<SHORT-NAME>CAN7_Door_Fr_DoorEmergency_sta</SHORT-NAME>
+              <DYNAMIC-LENGTH>false</DYNAMIC-LENGTH>
+            </SYSTEM-SIGNAL>
+            <SYSTEM-SIGNAL>
+			<SHORT-NAME>CAN7_Door_Fr_Dooroperation_sta</SHORT-NAME>
+              <DYNAMIC-LENGTH>false</DYNAMIC-LENGTH>
+            </SYSTEM-SIGNAL>
+            <SYSTEM-SIGNAL>
+			<SHORT-NAME>CAN7_Door_Fr_Doorposition_sta</SHORT-NAME>
+              <DYNAMIC-LENGTH>false</DYNAMIC-LENGTH>
+            </SYSTEM-SIGNAL>
+            <SYSTEM-SIGNAL>
+			<SHORT-NAME>CAN7_FDC_BCM_FDDoorOpen_Sta</SHORT-NAME>
+              <DYNAMIC-LENGTH>false</DYNAMIC-LENGTH>
+            </SYSTEM-SIGNAL>
+            <SYSTEM-SIGNAL>
+			<SHORT-NAME>CAN7_LTurnLP</SHORT-NAME>
+              <DYNAMIC-LENGTH>false</DYNAMIC-LENGTH>
+            </SYSTEM-SIGNAL>
+            <SYSTEM-SIGNAL>
+			<SHORT-NAME>CAN7_RTurnLP</SHORT-NAME>
+              <DYNAMIC-LENGTH>false</DYNAMIC-LENGTH>
+            </SYSTEM-SIGNAL>
+            <SYSTEM-SIGNAL>
+			<SHORT-NAME>CAN7_FDC_BCM_FRClosedoor_Cmd</SHORT-NAME>
+              <DYNAMIC-LENGTH>false</DYNAMIC-LENGTH>
+            </SYSTEM-SIGNAL>
+            <SYSTEM-SIGNAL>
+			<SHORT-NAME>CAN7_FDC_BCM_FRHaltBrake_Sta</SHORT-NAME>
+              <DYNAMIC-LENGTH>false</DYNAMIC-LENGTH>
+            </SYSTEM-SIGNAL>
+            <SYSTEM-SIGNAL>
+			<SHORT-NAME>CAN7_FDC_BCM_FROpenClosePB_Cmd</SHORT-NAME>
+              <DYNAMIC-LENGTH>false</DYNAMIC-LENGTH>
+            </SYSTEM-SIGNAL>
+            <SYSTEM-SIGNAL>
+			<SHORT-NAME>CAN7_FDC_BCM_FROpendoor_Cmd</SHORT-NAME>
+              <DYNAMIC-LENGTH>false</DYNAMIC-LENGTH>
+            </SYSTEM-SIGNAL>
+            <SYSTEM-SIGNAL>
+			<SHORT-NAME>CAN7_FDC_BCM_PosLamp_Cmd</SHORT-NAME>
+              <DYNAMIC-LENGTH>false</DYNAMIC-LENGTH>
+            </SYSTEM-SIGNAL>
+            <SYSTEM-SIGNAL>
+			<SHORT-NAME>CAN7_FDC_FRDisIntEm_Cmd</SHORT-NAME>
+              <DYNAMIC-LENGTH>false</DYNAMIC-LENGTH>
+            </SYSTEM-SIGNAL>
+		  </ELEMENTS>
+        </AR-PACKAGE>
+		<AR-PACKAGE>
+          <SHORT-NAME>SignalGroup</SHORT-NAME>
+          <ELEMENTS>
+            <SYSTEM-SIGNAL-GROUP>
+              <SHORT-NAME>CAN7_SG_Door_Fr1</SHORT-NAME>
+              <SYSTEM-SIGNAL-REFS>
+                <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/CAN7/Signal/CAN7_Door_Fr_DoorEmergency_sta</SYSTEM-SIGNAL-REF>
+                <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/CAN7/Signal/CAN7_Door_Fr_Dooroperation_sta</SYSTEM-SIGNAL-REF>
+                <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/CAN7/Signal/CAN7_Door_Fr_Doorposition_sta</SYSTEM-SIGNAL-REF>
+              </SYSTEM-SIGNAL-REFS>
+            </SYSTEM-SIGNAL-GROUP>
+            <SYSTEM-SIGNAL-GROUP>
+              <SHORT-NAME>CAN7_SG_FD7_CE100_0</SHORT-NAME>
+              <SYSTEM-SIGNAL-REFS>
+                <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/CAN7/Signal/CAN7_FDC_BCM_FDDoorOpen_Sta</SYSTEM-SIGNAL-REF>
+                <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/CAN7/Signal/CAN7_LTurnLP</SYSTEM-SIGNAL-REF>
+                <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/CAN7/Signal/CAN7_RTurnLP</SYSTEM-SIGNAL-REF>
+              </SYSTEM-SIGNAL-REFS>
+            </SYSTEM-SIGNAL-GROUP>
+            <SYSTEM-SIGNAL-GROUP>
+              <SHORT-NAME>CAN7_SG_FD7_CE100_1</SHORT-NAME>
+              <SYSTEM-SIGNAL-REFS>
+                <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/CAN7/Signal/CAN7_FDC_BCM_FRClosedoor_Cmd</SYSTEM-SIGNAL-REF>
+                <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/CAN7/Signal/CAN7_FDC_BCM_FRHaltBrake_Sta</SYSTEM-SIGNAL-REF>
+                <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/CAN7/Signal/CAN7_FDC_BCM_FROpenClosePB_Cmd</SYSTEM-SIGNAL-REF>
+                <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/CAN7/Signal/CAN7_FDC_BCM_FROpendoor_Cmd</SYSTEM-SIGNAL-REF>
+                <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/CAN7/Signal/CAN7_FDC_BCM_PosLamp_Cmd</SYSTEM-SIGNAL-REF>
+                <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/CAN7/Signal/CAN7_FDC_FRDisIntEm_Cmd</SYSTEM-SIGNAL-REF>
+              </SYSTEM-SIGNAL-REFS>
+            </SYSTEM-SIGNAL-GROUP>
+		   </ELEMENTS>
+        </AR-PACKAGE>
+		<AR-PACKAGE>
+          <SHORT-NAME>Cluster</SHORT-NAME>
+          <ELEMENTS>
+            <CAN-CLUSTER>
+              <SHORT-NAME>CAN7</SHORT-NAME>
+              <CAN-CLUSTER-VARIANTS>
+                <CAN-CLUSTER-CONDITIONAL>
+                  <BAUDRATE>500</BAUDRATE>
+                  <PHYSICAL-CHANNELS>
+                    <CAN-PHYSICAL-CHANNEL>
+                      <SHORT-NAME>CAN7</SHORT-NAME>
+                      <COMM-CONNECTORS>
+                        <COMMUNICATION-CONNECTOR-REF-CONDITIONAL>
+                          <COMMUNICATION-CONNECTOR-REF DEST="CAN-COMMUNICATION-CONNECTOR">/ECU/FUSION/ConnCAN7</COMMUNICATION-CONNECTOR-REF>
+                        </COMMUNICATION-CONNECTOR-REF-CONDITIONAL>
+                      </COMM-CONNECTORS>
+					  <FRAME-TRIGGERINGS>
+                        <CAN-FRAME-TRIGGERING>
+                          <SHORT-NAME>FT_CAN7_Door_Fr1</SHORT-NAME>
+                          <FRAME-PORT-REFS>
+                            <FRAME-PORT-REF DEST="FRAME-PORT">/ECU/FUSION/ConnCAN7/FP_CAN7_Door_Fr1_IN</FRAME-PORT-REF>
+                          </FRAME-PORT-REFS>
+                          <FRAME-REF DEST="CAN-FRAME">/CAN7/Frame/CAN7_Door_Fr1</FRAME-REF>
+                          <PDU-TRIGGERINGS>
+                            <PDU-TRIGGERING-REF-CONDITIONAL>
+                              <PDU-TRIGGERING-REF DEST="PDU-TRIGGERING">/CAN7/Cluster/CAN7/CAN7/PT_CAN7_Door_Fr1</PDU-TRIGGERING-REF>
+                            </PDU-TRIGGERING-REF-CONDITIONAL>
+                          </PDU-TRIGGERINGS>
+                          <CAN-ADDRESSING-MODE>EXTENDED</CAN-ADDRESSING-MODE>
+                          <CAN-FD-FRAME-SUPPORT>false</CAN-FD-FRAME-SUPPORT>
+                          <CAN-FRAME-RX-BEHAVIOR>CAN-20</CAN-FRAME-RX-BEHAVIOR>
+                          <CAN-FRAME-TX-BEHAVIOR>CAN-20</CAN-FRAME-TX-BEHAVIOR>
+                          <IDENTIFIER>419354418</IDENTIFIER>
+                        </CAN-FRAME-TRIGGERING>
+                        <CAN-FRAME-TRIGGERING>
+                          <SHORT-NAME>FT_CAN7_FD7_CE100_0</SHORT-NAME>
+                          <FRAME-PORT-REFS>
+                            <FRAME-PORT-REF DEST="FRAME-PORT">/ECU/FUSION/ConnCAN7/FP_CAN7_FD7_CE100_0_OUT</FRAME-PORT-REF>
+                          </FRAME-PORT-REFS>
+                          <FRAME-REF DEST="CAN-FRAME">/CAN7/Frame/CAN7_FD7_CE100_0</FRAME-REF>
+                          <PDU-TRIGGERINGS>
+                            <PDU-TRIGGERING-REF-CONDITIONAL>
+                              <PDU-TRIGGERING-REF DEST="PDU-TRIGGERING">/CAN7/Cluster/CAN7/CAN7/PT_CAN7_FD7_CE100_0</PDU-TRIGGERING-REF>
+                            </PDU-TRIGGERING-REF-CONDITIONAL>
+                          </PDU-TRIGGERINGS>
+                          <CAN-ADDRESSING-MODE>EXTENDED</CAN-ADDRESSING-MODE>
+                          <CAN-FD-FRAME-SUPPORT>false</CAN-FD-FRAME-SUPPORT>
+                          <CAN-FRAME-RX-BEHAVIOR>CAN-20</CAN-FRAME-RX-BEHAVIOR>
+                          <CAN-FRAME-TX-BEHAVIOR>CAN-20</CAN-FRAME-TX-BEHAVIOR>
+                          <IDENTIFIER>419038649</IDENTIFIER>
+                        </CAN-FRAME-TRIGGERING>
+                        <CAN-FRAME-TRIGGERING>
+                          <SHORT-NAME>FT_CAN7_FD7_CE100_1</SHORT-NAME>
+                          <FRAME-PORT-REFS>
+                            <FRAME-PORT-REF DEST="FRAME-PORT">/ECU/FUSION/ConnCAN7/FP_CAN7_FD7_CE100_1_OUT</FRAME-PORT-REF>
+                          </FRAME-PORT-REFS>
+                          <FRAME-REF DEST="CAN-FRAME">/CAN7/Frame/CAN7_FD7_CE100_1</FRAME-REF>
+                          <PDU-TRIGGERINGS>
+                            <PDU-TRIGGERING-REF-CONDITIONAL>
+                              <PDU-TRIGGERING-REF DEST="PDU-TRIGGERING">/CAN7/Cluster/CAN7/CAN7/PT_CAN7_FD7_CE100_1</PDU-TRIGGERING-REF>
+                            </PDU-TRIGGERING-REF-CONDITIONAL>
+                          </PDU-TRIGGERINGS>
+                          <CAN-ADDRESSING-MODE>EXTENDED</CAN-ADDRESSING-MODE>
+                          <CAN-FD-FRAME-SUPPORT>false</CAN-FD-FRAME-SUPPORT>
+                          <CAN-FRAME-RX-BEHAVIOR>CAN-20</CAN-FRAME-RX-BEHAVIOR>
+                          <CAN-FRAME-TX-BEHAVIOR>CAN-20</CAN-FRAME-TX-BEHAVIOR>
+                          <IDENTIFIER>218097202</IDENTIFIER>
+                        </CAN-FRAME-TRIGGERING>
+					  </FRAME-TRIGGERINGS>
+					  <I-SIGNAL-TRIGGERINGS>
+                        <I-SIGNAL-TRIGGERING>
+                          <SHORT-NAME>ST_CAN7_SG_Door_Fr1</SHORT-NAME>
+                          <I-SIGNAL-GROUP-REF DEST="I-SIGNAL-GROUP">/CAN7/ISignalGroup/CAN7_SG_Door_Fr1</I-SIGNAL-GROUP-REF>
+                          <I-SIGNAL-PORT-REFS>
+                            <I-SIGNAL-PORT-REF DEST="I-SIGNAL-PORT">/ECU/FUSION/ConnCAN7/SP_CAN7_SG_Door_Fr1_IN</I-SIGNAL-PORT-REF>
+                          </I-SIGNAL-PORT-REFS>
+                        </I-SIGNAL-TRIGGERING>
+						<I-SIGNAL-TRIGGERING>
+                          <SHORT-NAME>ST_CAN7_Door_Fr_DoorEmergency_sta</SHORT-NAME>
+                          <I-SIGNAL-PORT-REFS>
+                            <I-SIGNAL-PORT-REF DEST="I-SIGNAL-PORT">/ECU/FUSION/ConnCAN7/SP_CAN7_Door_Fr_DoorEmergency_sta_IN</I-SIGNAL-PORT-REF>
+                          </I-SIGNAL-PORT-REFS>
+                          <I-SIGNAL-REF DEST="I-SIGNAL">/CAN7/ISignal/CAN7_Door_Fr_DoorEmergency_sta</I-SIGNAL-REF>
+                        </I-SIGNAL-TRIGGERING>
+						<I-SIGNAL-TRIGGERING>
+                          <SHORT-NAME>ST_CAN7_Door_Fr_Dooroperation_sta</SHORT-NAME>
+                          <I-SIGNAL-PORT-REFS>
+                            <I-SIGNAL-PORT-REF DEST="I-SIGNAL-PORT">/ECU/FUSION/ConnCAN7/SP_CAN7_Door_Fr_Dooroperation_sta_IN</I-SIGNAL-PORT-REF>
+                          </I-SIGNAL-PORT-REFS>
+                          <I-SIGNAL-REF DEST="I-SIGNAL">/CAN7/ISignal/CAN7_Door_Fr_Dooroperation_sta</I-SIGNAL-REF>
+                        </I-SIGNAL-TRIGGERING>
+						<I-SIGNAL-TRIGGERING>
+                          <SHORT-NAME>ST_CAN7_Door_Fr_Doorposition_sta</SHORT-NAME>
+                          <I-SIGNAL-PORT-REFS>
+                            <I-SIGNAL-PORT-REF DEST="I-SIGNAL-PORT">/ECU/FUSION/ConnCAN7/SP_CAN7_Door_Fr_Doorposition_sta_IN</I-SIGNAL-PORT-REF>
+                          </I-SIGNAL-PORT-REFS>
+                          <I-SIGNAL-REF DEST="I-SIGNAL">/CAN7/ISignal/CAN7_Door_Fr_Doorposition_sta</I-SIGNAL-REF>
+                        </I-SIGNAL-TRIGGERING>
+                        <I-SIGNAL-TRIGGERING>
+                          <SHORT-NAME>ST_CAN7_SG_FD7_CE100_0</SHORT-NAME>
+                          <I-SIGNAL-GROUP-REF DEST="I-SIGNAL-GROUP">/CAN7/ISignalGroup/CAN7_SG_FD7_CE100_0</I-SIGNAL-GROUP-REF>
+                          <I-SIGNAL-PORT-REFS>
+                            <I-SIGNAL-PORT-REF DEST="I-SIGNAL-PORT">/ECU/FUSION/ConnCAN7/SP_CAN7_SG_FD7_CE100_0_OUT</I-SIGNAL-PORT-REF>
+                          </I-SIGNAL-PORT-REFS>
+                        </I-SIGNAL-TRIGGERING>
+						<I-SIGNAL-TRIGGERING>
+                          <SHORT-NAME>ST_CAN7_FDC_BCM_FDDoorOpen_Sta</SHORT-NAME>
+                          <I-SIGNAL-PORT-REFS>
+                            <I-SIGNAL-PORT-REF DEST="I-SIGNAL-PORT">/ECU/FUSION/ConnCAN7/SP_CAN7_FDC_BCM_FDDoorOpen_Sta_OUT</I-SIGNAL-PORT-REF>
+                          </I-SIGNAL-PORT-REFS>
+                          <I-SIGNAL-REF DEST="I-SIGNAL">/CAN7/ISignal/CAN7_FDC_BCM_FDDoorOpen_Sta</I-SIGNAL-REF>
+                        </I-SIGNAL-TRIGGERING>
+						<I-SIGNAL-TRIGGERING>
+                          <SHORT-NAME>ST_CAN7_LTurnLP</SHORT-NAME>
+                          <I-SIGNAL-PORT-REFS>
+                            <I-SIGNAL-PORT-REF DEST="I-SIGNAL-PORT">/ECU/FUSION/ConnCAN7/SP_CAN7_LTurnLP_OUT</I-SIGNAL-PORT-REF>
+                          </I-SIGNAL-PORT-REFS>
+                          <I-SIGNAL-REF DEST="I-SIGNAL">/CAN7/ISignal/CAN7_LTurnLP</I-SIGNAL-REF>
+                        </I-SIGNAL-TRIGGERING>
+						<I-SIGNAL-TRIGGERING>
+                          <SHORT-NAME>ST_CAN7_RTurnLP</SHORT-NAME>
+                          <I-SIGNAL-PORT-REFS>
+                            <I-SIGNAL-PORT-REF DEST="I-SIGNAL-PORT">/ECU/FUSION/ConnCAN7/SP_CAN7_RTurnLP_OUT</I-SIGNAL-PORT-REF>
+                          </I-SIGNAL-PORT-REFS>
+                          <I-SIGNAL-REF DEST="I-SIGNAL">/CAN7/ISignal/CAN7_RTurnLP</I-SIGNAL-REF>
+                        </I-SIGNAL-TRIGGERING>
+                        <I-SIGNAL-TRIGGERING>
+                          <SHORT-NAME>ST_CAN7_SG_FD7_CE100_1</SHORT-NAME>
+                          <I-SIGNAL-GROUP-REF DEST="I-SIGNAL-GROUP">/CAN7/ISignalGroup/CAN7_SG_FD7_CE100_1</I-SIGNAL-GROUP-REF>
+                          <I-SIGNAL-PORT-REFS>
+                            <I-SIGNAL-PORT-REF DEST="I-SIGNAL-PORT">/ECU/FUSION/ConnCAN7/SP_CAN7_SG_FD7_CE100_1_OUT</I-SIGNAL-PORT-REF>
+                          </I-SIGNAL-PORT-REFS>
+                        </I-SIGNAL-TRIGGERING>
+						<I-SIGNAL-TRIGGERING>
+                          <SHORT-NAME>ST_CAN7_FDC_BCM_FRClosedoor_Cmd</SHORT-NAME>
+                          <I-SIGNAL-PORT-REFS>
+                            <I-SIGNAL-PORT-REF DEST="I-SIGNAL-PORT">/ECU/FUSION/ConnCAN7/SP_CAN7_FDC_BCM_FRClosedoor_Cmd_OUT</I-SIGNAL-PORT-REF>
+                          </I-SIGNAL-PORT-REFS>
+                          <I-SIGNAL-REF DEST="I-SIGNAL">/CAN7/ISignal/CAN7_FDC_BCM_FRClosedoor_Cmd</I-SIGNAL-REF>
+                        </I-SIGNAL-TRIGGERING>
+						<I-SIGNAL-TRIGGERING>
+                          <SHORT-NAME>ST_CAN7_FDC_BCM_FRHaltBrake_Sta</SHORT-NAME>
+                          <I-SIGNAL-PORT-REFS>
+                            <I-SIGNAL-PORT-REF DEST="I-SIGNAL-PORT">/ECU/FUSION/ConnCAN7/SP_CAN7_FDC_BCM_FRHaltBrake_Sta_OUT</I-SIGNAL-PORT-REF>
+                          </I-SIGNAL-PORT-REFS>
+                          <I-SIGNAL-REF DEST="I-SIGNAL">/CAN7/ISignal/CAN7_FDC_BCM_FRHaltBrake_Sta</I-SIGNAL-REF>
+                        </I-SIGNAL-TRIGGERING>
+						<I-SIGNAL-TRIGGERING>
+                          <SHORT-NAME>ST_CAN7_FDC_BCM_FROpenClosePB_Cmd</SHORT-NAME>
+                          <I-SIGNAL-PORT-REFS>
+                            <I-SIGNAL-PORT-REF DEST="I-SIGNAL-PORT">/ECU/FUSION/ConnCAN7/SP_CAN7_FDC_BCM_FROpenClosePB_Cmd_OUT</I-SIGNAL-PORT-REF>
+                          </I-SIGNAL-PORT-REFS>
+                          <I-SIGNAL-REF DEST="I-SIGNAL">/CAN7/ISignal/CAN7_FDC_BCM_FROpenClosePB_Cmd</I-SIGNAL-REF>
+                        </I-SIGNAL-TRIGGERING>
+						<I-SIGNAL-TRIGGERING>
+                          <SHORT-NAME>ST_CAN7_FDC_BCM_FROpendoor_Cmd</SHORT-NAME>
+                          <I-SIGNAL-PORT-REFS>
+                            <I-SIGNAL-PORT-REF DEST="I-SIGNAL-PORT">/ECU/FUSION/ConnCAN7/SP_CAN7_FDC_BCM_FROpendoor_Cmd_OUT</I-SIGNAL-PORT-REF>
+                          </I-SIGNAL-PORT-REFS>
+                          <I-SIGNAL-REF DEST="I-SIGNAL">/CAN7/ISignal/CAN7_FDC_BCM_FROpendoor_Cmd</I-SIGNAL-REF>
+                        </I-SIGNAL-TRIGGERING>
+						<I-SIGNAL-TRIGGERING>
+                          <SHORT-NAME>ST_CAN7_FDC_BCM_PosLamp_Cmd</SHORT-NAME>
+                          <I-SIGNAL-PORT-REFS>
+                            <I-SIGNAL-PORT-REF DEST="I-SIGNAL-PORT">/ECU/FUSION/ConnCAN7/SP_CAN7_FDC_BCM_PosLamp_Cmd_OUT</I-SIGNAL-PORT-REF>
+                          </I-SIGNAL-PORT-REFS>
+                          <I-SIGNAL-REF DEST="I-SIGNAL">/CAN7/ISignal/CAN7_FDC_BCM_PosLamp_Cmd</I-SIGNAL-REF>
+                        </I-SIGNAL-TRIGGERING>
+						<I-SIGNAL-TRIGGERING>
+                          <SHORT-NAME>ST_CAN7_FDC_FRDisIntEm_Cmd</SHORT-NAME>
+                          <I-SIGNAL-PORT-REFS>
+                            <I-SIGNAL-PORT-REF DEST="I-SIGNAL-PORT">/ECU/FUSION/ConnCAN7/SP_CAN7_FDC_FRDisIntEm_Cmd_OUT</I-SIGNAL-PORT-REF>
+                          </I-SIGNAL-PORT-REFS>
+                          <I-SIGNAL-REF DEST="I-SIGNAL">/CAN7/ISignal/CAN7_FDC_FRDisIntEm_Cmd</I-SIGNAL-REF>
+                        </I-SIGNAL-TRIGGERING>
+					  </I-SIGNAL-TRIGGERINGS>					  
+					  <PDU-TRIGGERINGS>
+                        <PDU-TRIGGERING>
+                          <SHORT-NAME>PT_CAN7_Door_Fr1</SHORT-NAME>
+                          <I-PDU-PORT-REFS>
+                            <I-PDU-PORT-REF DEST="I-PDU-PORT">/ECU/FUSION/ConnCAN7/PP_CAN7_Door_Fr1_IN</I-PDU-PORT-REF>
+                          </I-PDU-PORT-REFS>
+                          <I-PDU-REF DEST="I-SIGNAL-I-PDU">/CAN7/PDU/CAN7_Door_Fr1</I-PDU-REF>
+						  <I-SIGNAL-TRIGGERINGS>
+                            <I-SIGNAL-TRIGGERING-REF-CONDITIONAL>
+                              <I-SIGNAL-TRIGGERING-REF DEST="I-SIGNAL-TRIGGERING">/CAN7/Cluster/CAN7/CAN7/ST_CAN7_SG_Door_Fr1</I-SIGNAL-TRIGGERING-REF>
+                            </I-SIGNAL-TRIGGERING-REF-CONDITIONAL>
+                            <I-SIGNAL-TRIGGERING-REF-CONDITIONAL>
+                              <I-SIGNAL-TRIGGERING-REF DEST="I-SIGNAL-TRIGGERING">/CAN7/Cluster/CAN7/CAN7/ST_CAN7_Door_Fr_DoorEmergency_sta</I-SIGNAL-TRIGGERING-REF>
+                            </I-SIGNAL-TRIGGERING-REF-CONDITIONAL>
+                            <I-SIGNAL-TRIGGERING-REF-CONDITIONAL>
+                              <I-SIGNAL-TRIGGERING-REF DEST="I-SIGNAL-TRIGGERING">/CAN7/Cluster/CAN7/CAN7/ST_CAN7_Door_Fr_Dooroperation_sta</I-SIGNAL-TRIGGERING-REF>
+                            </I-SIGNAL-TRIGGERING-REF-CONDITIONAL>
+                            <I-SIGNAL-TRIGGERING-REF-CONDITIONAL>
+                              <I-SIGNAL-TRIGGERING-REF DEST="I-SIGNAL-TRIGGERING">/CAN7/Cluster/CAN7/CAN7/ST_CAN7_Door_Fr_Doorposition_sta</I-SIGNAL-TRIGGERING-REF>
+                            </I-SIGNAL-TRIGGERING-REF-CONDITIONAL>
+						  </I-SIGNAL-TRIGGERINGS>
+                        </PDU-TRIGGERING>
+                        <PDU-TRIGGERING>
+                          <SHORT-NAME>PT_CAN7_FD7_CE100_0</SHORT-NAME>
+                          <I-PDU-PORT-REFS>
+                            <I-PDU-PORT-REF DEST="I-PDU-PORT">/ECU/FUSION/ConnCAN7/PP_CAN7_FD7_CE100_0_OUT</I-PDU-PORT-REF>
+                          </I-PDU-PORT-REFS>
+                          <I-PDU-REF DEST="I-SIGNAL-I-PDU">/CAN7/PDU/CAN7_FD7_CE100_0</I-PDU-REF>
+						  <I-SIGNAL-TRIGGERINGS>
+                            <I-SIGNAL-TRIGGERING-REF-CONDITIONAL>
+                              <I-SIGNAL-TRIGGERING-REF DEST="I-SIGNAL-TRIGGERING">/CAN7/Cluster/CAN7/CAN7/ST_CAN7_SG_FD7_CE100_0</I-SIGNAL-TRIGGERING-REF>
+                            </I-SIGNAL-TRIGGERING-REF-CONDITIONAL>
+                            <I-SIGNAL-TRIGGERING-REF-CONDITIONAL>
+                              <I-SIGNAL-TRIGGERING-REF DEST="I-SIGNAL-TRIGGERING">/CAN7/Cluster/CAN7/CAN7/ST_CAN7_FDC_BCM_FDDoorOpen_Sta</I-SIGNAL-TRIGGERING-REF>
+                            </I-SIGNAL-TRIGGERING-REF-CONDITIONAL>
+                            <I-SIGNAL-TRIGGERING-REF-CONDITIONAL>
+                              <I-SIGNAL-TRIGGERING-REF DEST="I-SIGNAL-TRIGGERING">/CAN7/Cluster/CAN7/CAN7/ST_CAN7_LTurnLP</I-SIGNAL-TRIGGERING-REF>
+                            </I-SIGNAL-TRIGGERING-REF-CONDITIONAL>
+                            <I-SIGNAL-TRIGGERING-REF-CONDITIONAL>
+                              <I-SIGNAL-TRIGGERING-REF DEST="I-SIGNAL-TRIGGERING">/CAN7/Cluster/CAN7/CAN7/ST_CAN7_RTurnLP</I-SIGNAL-TRIGGERING-REF>
+                            </I-SIGNAL-TRIGGERING-REF-CONDITIONAL>
+						  </I-SIGNAL-TRIGGERINGS>
+                        </PDU-TRIGGERING>
+                        <PDU-TRIGGERING>
+                          <SHORT-NAME>PT_CAN7_FD7_CE100_1</SHORT-NAME>
+                          <I-PDU-PORT-REFS>
+                            <I-PDU-PORT-REF DEST="I-PDU-PORT">/ECU/FUSION/ConnCAN7/PP_CAN7_FD7_CE100_1_OUT</I-PDU-PORT-REF>
+                          </I-PDU-PORT-REFS>
+                          <I-PDU-REF DEST="I-SIGNAL-I-PDU">/CAN7/PDU/CAN7_FD7_CE100_1</I-PDU-REF>
+						  <I-SIGNAL-TRIGGERINGS>
+                            <I-SIGNAL-TRIGGERING-REF-CONDITIONAL>
+                              <I-SIGNAL-TRIGGERING-REF DEST="I-SIGNAL-TRIGGERING">/CAN7/Cluster/CAN7/CAN7/ST_CAN7_SG_FD7_CE100_1</I-SIGNAL-TRIGGERING-REF>
+                            </I-SIGNAL-TRIGGERING-REF-CONDITIONAL>
+                            <I-SIGNAL-TRIGGERING-REF-CONDITIONAL>
+                              <I-SIGNAL-TRIGGERING-REF DEST="I-SIGNAL-TRIGGERING">/CAN7/Cluster/CAN7/CAN7/ST_CAN7_FDC_BCM_FRClosedoor_Cmd</I-SIGNAL-TRIGGERING-REF>
+                            </I-SIGNAL-TRIGGERING-REF-CONDITIONAL>
+                            <I-SIGNAL-TRIGGERING-REF-CONDITIONAL>
+                              <I-SIGNAL-TRIGGERING-REF DEST="I-SIGNAL-TRIGGERING">/CAN7/Cluster/CAN7/CAN7/ST_CAN7_FDC_BCM_FRHaltBrake_Sta</I-SIGNAL-TRIGGERING-REF>
+                            </I-SIGNAL-TRIGGERING-REF-CONDITIONAL>
+                            <I-SIGNAL-TRIGGERING-REF-CONDITIONAL>
+                              <I-SIGNAL-TRIGGERING-REF DEST="I-SIGNAL-TRIGGERING">/CAN7/Cluster/CAN7/CAN7/ST_CAN7_FDC_BCM_FROpenClosePB_Cmd</I-SIGNAL-TRIGGERING-REF>
+                            </I-SIGNAL-TRIGGERING-REF-CONDITIONAL>
+                            <I-SIGNAL-TRIGGERING-REF-CONDITIONAL>
+                              <I-SIGNAL-TRIGGERING-REF DEST="I-SIGNAL-TRIGGERING">/CAN7/Cluster/CAN7/CAN7/ST_CAN7_FDC_BCM_FROpendoor_Cmd</I-SIGNAL-TRIGGERING-REF>
+                            </I-SIGNAL-TRIGGERING-REF-CONDITIONAL>
+                            <I-SIGNAL-TRIGGERING-REF-CONDITIONAL>
+                              <I-SIGNAL-TRIGGERING-REF DEST="I-SIGNAL-TRIGGERING">/CAN7/Cluster/CAN7/CAN7/ST_CAN7_FDC_BCM_PosLamp_Cmd</I-SIGNAL-TRIGGERING-REF>
+                            </I-SIGNAL-TRIGGERING-REF-CONDITIONAL>
+                            <I-SIGNAL-TRIGGERING-REF-CONDITIONAL>
+                              <I-SIGNAL-TRIGGERING-REF DEST="I-SIGNAL-TRIGGERING">/CAN7/Cluster/CAN7/CAN7/ST_CAN7_FDC_FRDisIntEm_Cmd</I-SIGNAL-TRIGGERING-REF>
+                            </I-SIGNAL-TRIGGERING-REF-CONDITIONAL>
+						  </I-SIGNAL-TRIGGERINGS>
+                        </PDU-TRIGGERING>
+					  </PDU-TRIGGERINGS>
+                    </CAN-PHYSICAL-CHANNEL>
+                  </PHYSICAL-CHANNELS>
+                </CAN-CLUSTER-CONDITIONAL>
+              </CAN-CLUSTER-VARIANTS>
+            </CAN-CLUSTER>
+          </ELEMENTS>
+        </AR-PACKAGE>
+		<AR-PACKAGE>
+          <SHORT-NAME>ConstantSpecification</SHORT-NAME>
+          <ELEMENTS>
+            <CONSTANT-SPECIFICATION>
+              <SHORT-NAME>Init_CAN7_Door_Fr_DoorEmergency_sta</SHORT-NAME>
+              <VALUE-SPEC>
+                <NUMERICAL-VALUE-SPECIFICATION>
+                  <VALUE>0</VALUE>
+                </NUMERICAL-VALUE-SPECIFICATION>
+              </VALUE-SPEC>
+            </CONSTANT-SPECIFICATION>
+            <CONSTANT-SPECIFICATION>
+              <SHORT-NAME>Init_CAN7_Door_Fr_Dooroperation_sta</SHORT-NAME>
+              <VALUE-SPEC>
+                <NUMERICAL-VALUE-SPECIFICATION>
+                  <VALUE>0</VALUE>
+                </NUMERICAL-VALUE-SPECIFICATION>
+              </VALUE-SPEC>
+            </CONSTANT-SPECIFICATION>
+            <CONSTANT-SPECIFICATION>
+              <SHORT-NAME>Init_CAN7_Door_Fr_Doorposition_sta</SHORT-NAME>
+              <VALUE-SPEC>
+                <NUMERICAL-VALUE-SPECIFICATION>
+                  <VALUE>0</VALUE>
+                </NUMERICAL-VALUE-SPECIFICATION>
+              </VALUE-SPEC>
+            </CONSTANT-SPECIFICATION>
+            <CONSTANT-SPECIFICATION>
+              <SHORT-NAME>Init_CAN7_FDC_BCM_FDDoorOpen_Sta</SHORT-NAME>
+              <VALUE-SPEC>
+                <NUMERICAL-VALUE-SPECIFICATION>
+                  <VALUE>0</VALUE>
+                </NUMERICAL-VALUE-SPECIFICATION>
+              </VALUE-SPEC>
+            </CONSTANT-SPECIFICATION>
+            <CONSTANT-SPECIFICATION>
+              <SHORT-NAME>Init_CAN7_LTurnLP</SHORT-NAME>
+              <VALUE-SPEC>
+                <NUMERICAL-VALUE-SPECIFICATION>
+                  <VALUE>0</VALUE>
+                </NUMERICAL-VALUE-SPECIFICATION>
+              </VALUE-SPEC>
+            </CONSTANT-SPECIFICATION>
+            <CONSTANT-SPECIFICATION>
+              <SHORT-NAME>Init_CAN7_RTurnLP</SHORT-NAME>
+              <VALUE-SPEC>
+                <NUMERICAL-VALUE-SPECIFICATION>
+                  <VALUE>0</VALUE>
+                </NUMERICAL-VALUE-SPECIFICATION>
+              </VALUE-SPEC>
+            </CONSTANT-SPECIFICATION>
+            <CONSTANT-SPECIFICATION>
+              <SHORT-NAME>Init_CAN7_FDC_BCM_FRClosedoor_Cmd</SHORT-NAME>
+              <VALUE-SPEC>
+                <NUMERICAL-VALUE-SPECIFICATION>
+                  <VALUE>0</VALUE>
+                </NUMERICAL-VALUE-SPECIFICATION>
+              </VALUE-SPEC>
+            </CONSTANT-SPECIFICATION>
+            <CONSTANT-SPECIFICATION>
+              <SHORT-NAME>Init_CAN7_FDC_BCM_FRHaltBrake_Sta</SHORT-NAME>
+              <VALUE-SPEC>
+                <NUMERICAL-VALUE-SPECIFICATION>
+                  <VALUE>0</VALUE>
+                </NUMERICAL-VALUE-SPECIFICATION>
+              </VALUE-SPEC>
+            </CONSTANT-SPECIFICATION>
+            <CONSTANT-SPECIFICATION>
+              <SHORT-NAME>Init_CAN7_FDC_BCM_FROpenClosePB_Cmd</SHORT-NAME>
+              <VALUE-SPEC>
+                <NUMERICAL-VALUE-SPECIFICATION>
+                  <VALUE>0</VALUE>
+                </NUMERICAL-VALUE-SPECIFICATION>
+              </VALUE-SPEC>
+            </CONSTANT-SPECIFICATION>
+            <CONSTANT-SPECIFICATION>
+              <SHORT-NAME>Init_CAN7_FDC_BCM_FROpendoor_Cmd</SHORT-NAME>
+              <VALUE-SPEC>
+                <NUMERICAL-VALUE-SPECIFICATION>
+                  <VALUE>0</VALUE>
+                </NUMERICAL-VALUE-SPECIFICATION>
+              </VALUE-SPEC>
+            </CONSTANT-SPECIFICATION>
+            <CONSTANT-SPECIFICATION>
+              <SHORT-NAME>Init_CAN7_FDC_BCM_PosLamp_Cmd</SHORT-NAME>
+              <VALUE-SPEC>
+                <NUMERICAL-VALUE-SPECIFICATION>
+                  <VALUE>0</VALUE>
+                </NUMERICAL-VALUE-SPECIFICATION>
+              </VALUE-SPEC>
+            </CONSTANT-SPECIFICATION>
+            <CONSTANT-SPECIFICATION>
+              <SHORT-NAME>Init_CAN7_FDC_FRDisIntEm_Cmd</SHORT-NAME>
+              <VALUE-SPEC>
+                <NUMERICAL-VALUE-SPECIFICATION>
+                  <VALUE>0</VALUE>
+                </NUMERICAL-VALUE-SPECIFICATION>
+              </VALUE-SPEC>
+            </CONSTANT-SPECIFICATION>
+			<CONSTANT-SPECIFICATION>
+              <SHORT-NAME>Init_CAN7_SG_Door_Fr1</SHORT-NAME>
+              <VALUE-SPEC>
+                <RECORD-VALUE-SPECIFICATION>
+                  <FIELDS>
+                    <CONSTANT-REFERENCE>
+                      <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/CAN7/ConstantSpecification/Init_CAN7_Door_Fr_DoorEmergency_sta</CONSTANT-REF>
+                    </CONSTANT-REFERENCE>
+                    <CONSTANT-REFERENCE>
+                      <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/CAN7/ConstantSpecification/Init_CAN7_Door_Fr_Dooroperation_sta</CONSTANT-REF>
+                    </CONSTANT-REFERENCE>
+                    <CONSTANT-REFERENCE>
+                      <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/CAN7/ConstantSpecification/Init_CAN7_Door_Fr_Doorposition_sta</CONSTANT-REF>
+                    </CONSTANT-REFERENCE>
+				  </FIELDS>
+                </RECORD-VALUE-SPECIFICATION>
+              </VALUE-SPEC>
+            </CONSTANT-SPECIFICATION>
+			<CONSTANT-SPECIFICATION>
+              <SHORT-NAME>Init_CAN7_SG_FD7_CE100_0</SHORT-NAME>
+              <VALUE-SPEC>
+                <RECORD-VALUE-SPECIFICATION>
+                  <FIELDS>
+                    <CONSTANT-REFERENCE>
+                      <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/CAN7/ConstantSpecification/Init_CAN7_FDC_BCM_FDDoorOpen_Sta</CONSTANT-REF>
+                    </CONSTANT-REFERENCE>
+                    <CONSTANT-REFERENCE>
+                      <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/CAN7/ConstantSpecification/Init_CAN7_LTurnLP</CONSTANT-REF>
+                    </CONSTANT-REFERENCE>
+                    <CONSTANT-REFERENCE>
+                      <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/CAN7/ConstantSpecification/Init_CAN7_RTurnLP</CONSTANT-REF>
+                    </CONSTANT-REFERENCE>
+				  </FIELDS>
+                </RECORD-VALUE-SPECIFICATION>
+              </VALUE-SPEC>
+            </CONSTANT-SPECIFICATION>
+			<CONSTANT-SPECIFICATION>
+              <SHORT-NAME>Init_CAN7_SG_FD7_CE100_1</SHORT-NAME>
+              <VALUE-SPEC>
+                <RECORD-VALUE-SPECIFICATION>
+                  <FIELDS>
+                    <CONSTANT-REFERENCE>
+                      <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/CAN7/ConstantSpecification/Init_CAN7_FDC_BCM_FRClosedoor_Cmd</CONSTANT-REF>
+                    </CONSTANT-REFERENCE>
+                    <CONSTANT-REFERENCE>
+                      <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/CAN7/ConstantSpecification/Init_CAN7_FDC_BCM_FRHaltBrake_Sta</CONSTANT-REF>
+                    </CONSTANT-REFERENCE>
+                    <CONSTANT-REFERENCE>
+                      <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/CAN7/ConstantSpecification/Init_CAN7_FDC_BCM_FROpenClosePB_Cmd</CONSTANT-REF>
+                    </CONSTANT-REFERENCE>
+                    <CONSTANT-REFERENCE>
+                      <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/CAN7/ConstantSpecification/Init_CAN7_FDC_BCM_FROpendoor_Cmd</CONSTANT-REF>
+                    </CONSTANT-REFERENCE>
+                    <CONSTANT-REFERENCE>
+                      <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/CAN7/ConstantSpecification/Init_CAN7_FDC_BCM_PosLamp_Cmd</CONSTANT-REF>
+                    </CONSTANT-REFERENCE>
+                    <CONSTANT-REFERENCE>
+                      <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/CAN7/ConstantSpecification/Init_CAN7_FDC_FRDisIntEm_Cmd</CONSTANT-REF>
+                    </CONSTANT-REFERENCE>
+				  </FIELDS>
+                </RECORD-VALUE-SPECIFICATION>
+              </VALUE-SPEC>
+            </CONSTANT-SPECIFICATION>
+		   </ELEMENTS>
+        </AR-PACKAGE>
+		<AR-PACKAGE>
+          <SHORT-NAME>ImplementationDataTypes</SHORT-NAME>
+          <ELEMENTS>
+			<IMPLEMENTATION-DATA-TYPE>
+              <SHORT-NAME>DT_CAN7_SG_Door_Fr1</SHORT-NAME>
+              <CATEGORY>STRUCTURE</CATEGORY>
+              <SUB-ELEMENTS>
+                <IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                  <SHORT-NAME>CAN7_Door_Fr_DoorEmergency_sta</SHORT-NAME>
+                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint8</IMPLEMENTATION-DATA-TYPE-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                <IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                  <SHORT-NAME>CAN7_Door_Fr_Dooroperation_sta</SHORT-NAME>
+                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint8</IMPLEMENTATION-DATA-TYPE-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                <IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                  <SHORT-NAME>CAN7_Door_Fr_Doorposition_sta</SHORT-NAME>
+                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint8</IMPLEMENTATION-DATA-TYPE-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+			  </SUB-ELEMENTS>
+            </IMPLEMENTATION-DATA-TYPE>
+			<IMPLEMENTATION-DATA-TYPE>
+              <SHORT-NAME>DT_CAN7_SG_FD7_CE100_0</SHORT-NAME>
+              <CATEGORY>STRUCTURE</CATEGORY>
+              <SUB-ELEMENTS>
+                <IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                  <SHORT-NAME>CAN7_FDC_BCM_FDDoorOpen_Sta</SHORT-NAME>
+                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint8</IMPLEMENTATION-DATA-TYPE-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                <IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                  <SHORT-NAME>CAN7_LTurnLP</SHORT-NAME>
+                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint8</IMPLEMENTATION-DATA-TYPE-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                <IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                  <SHORT-NAME>CAN7_RTurnLP</SHORT-NAME>
+                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint8</IMPLEMENTATION-DATA-TYPE-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+			  </SUB-ELEMENTS>
+            </IMPLEMENTATION-DATA-TYPE>
+			<IMPLEMENTATION-DATA-TYPE>
+              <SHORT-NAME>DT_CAN7_SG_FD7_CE100_1</SHORT-NAME>
+              <CATEGORY>STRUCTURE</CATEGORY>
+              <SUB-ELEMENTS>
+                <IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                  <SHORT-NAME>CAN7_FDC_BCM_FRClosedoor_Cmd</SHORT-NAME>
+                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint8</IMPLEMENTATION-DATA-TYPE-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                <IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                  <SHORT-NAME>CAN7_FDC_BCM_FRHaltBrake_Sta</SHORT-NAME>
+                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint8</IMPLEMENTATION-DATA-TYPE-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                <IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                  <SHORT-NAME>CAN7_FDC_BCM_FROpenClosePB_Cmd</SHORT-NAME>
+                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint8</IMPLEMENTATION-DATA-TYPE-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                <IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                  <SHORT-NAME>CAN7_FDC_BCM_FROpendoor_Cmd</SHORT-NAME>
+                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint8</IMPLEMENTATION-DATA-TYPE-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                <IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                  <SHORT-NAME>CAN7_FDC_BCM_PosLamp_Cmd</SHORT-NAME>
+                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint8</IMPLEMENTATION-DATA-TYPE-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                <IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                  <SHORT-NAME>CAN7_FDC_FRDisIntEm_Cmd</SHORT-NAME>
+                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint8</IMPLEMENTATION-DATA-TYPE-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+			  </SUB-ELEMENTS>
+            </IMPLEMENTATION-DATA-TYPE>
+		  </ELEMENTS>
+        </AR-PACKAGE>
+	  </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>
+            
+            

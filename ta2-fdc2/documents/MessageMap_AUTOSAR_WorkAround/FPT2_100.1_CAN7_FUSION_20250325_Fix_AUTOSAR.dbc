@@ -1,0 +1,846 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: FUSION EDR DATAC NSAS
+
+
+BO_ 1296 NMm_XXX: 8 NSAS
+
+BO_ 2566831883 EBC2: 8 FUSION
+ SG_ FASpeed : 0|16@1+ (0.00390625,0) [0|255.99609375] "km/h"  EDR,DATAC,NSAS
+ SG_ RelaSpdFALWheel : 16|8@1+ (0.0625,-7.8125) [-7.8125|7.8125] "km/h" Vector__XXX
+ SG_ RelaSpdFARWheel : 24|8@1+ (0.0625,-7.8125) [-7.8125|7.8125] "km/h" Vector__XXX
+ SG_ RelaSpdRA1LWheel : 32|8@1+ (0.0625,-7.8125) [-7.8125|7.8125] "km/h" Vector__XXX
+ SG_ RelaSpdRA1RWheel : 40|8@1+ (0.0625,-7.8125) [-7.8125|7.8125] "km/h" Vector__XXX
+ SG_ RelaSpdRA2LWheel : 48|8@1+ (0.0625,-7.8125) [-7.8125|7.8125] "km/h" Vector__XXX
+ SG_ RelaSpdRA2RWheel : 56|8@1+ (0.0625,-7.8125) [-7.8125|7.8125] "km/h" Vector__XXX
+
+BO_ 2582644176 FD7_C100_0: 8 FUSION
+ SG_ VCUKeyStatus : 0|2@1+ (1,0) [0|3] ""  DATAC
+
+BO_ 2565865739 EBC1: 8 FUSION
+ SG_ ASREngCtrlAtc : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ ASRBrakeCtrlAtc : 2|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ AntiLBrakABSAct : 4|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ EBSBrakeSw : 6|2@1+ (1,0) [0|3] ""  EDR,DATAC
+ SG_ BrakePedalPos : 8|8@1+ (0.4,0) [0|100] "%" Vector__XXX
+ SG_ ABSOffroadSw : 16|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ ASROffroadSw : 18|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ ASRHillHolderSw : 20|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ TractCtrlOvrSw : 22|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ AcltrInterlockSw : 24|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ EngDerateSw : 26|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ EngAuxShutdownSw : 28|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ RmAccelEnSw : 30|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ EngRetSel : 32|8@1+ (0.4,0) [0|100] "%" Vector__XXX
+ SG_ ABSFullyOper : 40|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ EBSRedWarnLampSta : 42|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ EBSAmWarnLampSta : 44|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ ATCASRInfoSig : 46|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ SACtrlBrakeCtrl : 48|8@1+ (1,0) [0|255] "SA" Vector__XXX
+ SG_ HaltBrakeSw : 58|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ TrailerABSSta : 60|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ TrailerABSWarnSig : 62|2@1+ (1,0) [0|3] "" Vector__XXX
+
+BO_ 2558980083 B2V_ST4: 8 FUSION
+ SG_ B2VCellAvgTemp : 16|8@1+ (1,-40) [-40|215] "degC"  DATAC
+ SG_ B2VMaxTempCSCSN : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ B2VMaxTempPos : 32|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ B2VMinTempCSCSN : 40|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ B2VMinTempPos : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ B2VPackMaxTemp : 0|8@1+ (1,-40) [-40|215] "degC" Vector__XXX
+ SG_ B2VPackMinTemp : 8|8@1+ (1,-40) [-40|215] "degC" Vector__XXX
+
+BO_ 2558849011 B2V_ST2: 8 FUSION
+ SG_ B2VFaultCode : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ B2VFaultLv : 56|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ B2VPackCurr : 16|16@1+ (0.1,-1000) [-1000|1000] "A"  DATAC
+ SG_ B2VPackInsideVol : 32|16@1+ (0.1,0) [0|1000] "V"  DATAC
+ SG_ B2VRqHVPwrOff : 58|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ B2VSOC : 0|8@1+ (0.4,0) [0|100] "%"  DATAC
+ SG_ B2VSOH : 8|8@1+ (0.4,0) [0|100] "%" Vector__XXX
+ SG_ B2VST2LifeSig : 60|4@1+ (1,0) [0|15] "" Vector__XXX
+
+BO_ 2558783475 B2V_ST1: 8 FUSION
+ SG_ B2VACChgConnSta : 38|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ B2VACChgNegRlySta : 24|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ B2VACChgPosRlySta : 22|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ B2VAux1RlySta : 26|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ B2VAux2RlySta : 28|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ B2VAux3RlySta : 30|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ B2VBMUBalSta : 34|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ B2VBMUHVSta : 32|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ B2VChgMode : 39|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ B2VChgSta : 41|2@1+ (1,0) [0|3] ""  DATAC
+ SG_ B2VCoolingSta : 44|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ B2VDCChgConnSta : 35|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ B2VDCChgN1RlySta : 8|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ B2VDCChgN2RlySta : 12|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ B2VDCChgP1RlySta : 6|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ B2VDCChgP2RlySta : 10|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ B2VHeatingSta : 43|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ B2VHeatNegRelaySta : 16|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ B2VHeatPosRlySta : 14|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ B2VMainNegRlySta : 2|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ B2VMainPosRlySta : 0|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ B2VPChgPosRlySta : 18|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ B2VPChrgConnSta : 37|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ B2VPChrgNegRlySta : 20|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ B2VPrechgRelaySta : 4|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ B2VST1RChrgCy : 46|18@1+ (1,0) [0|262143] "" Vector__XXX
+
+BO_ 2552025555 AC_BTMS_C1000_1: 8 FUSION
+ SG_ ACMODESta : 6|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ ACPwrSta : 54|1@1+ (1,0) [0|1] ""  DATAC
+ SG_ ACFanSpdSta : 50|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ THCM_Reserve13_Sta : 55|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ THCM_Reserve12_Sta : 52|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ THCM_Reserve11_Sta : 48|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ THCM_Reserve10_Sta : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ THCM_Reserve9_Sta : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ THCM_Reserve8_Sta : 32|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ THCM_Reserve7_Sta : 40|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ THCM_Reserve6_Sta : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ THCM_Reserve5_Sta : 0|6@1+ (1,0) [0|63] "" Vector__XXX
+ SG_ THCM_Outcycle_Sta : 14|2@1+ (1,0) [0|3] "" Vector__XXX
+
+BO_ 2552025299 AC_BTMS_C1000_0: 8 FUSION
+ SG_ ACAmbTemp : 32|16@1+ (0.1,-20) [-20|1735] "degC"  DATAC
+ SG_ ACCabinTemp : 16|16@1+ (0.1,-20) [-20|6533.5] "degC" Vector__XXX
+ SG_ THCM_Reserve4_Sta : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ THCM_Reserve1_Sta : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ THCM_Reserve2_Sta : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ THCM_Reserve3_Sta : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 2364539648 FD7_C50_0: 8 FUSION
+ SG_ AccPedalPos1 : 8|8@1+ (0.4,0) [0|102] "%"  DATAC
+
+BO_ 2355220689 FD7_C10_0: 8 FUSION
+ SG_ EMotorSpd : 8|16@1+ (1,0) [0|65535] "rpm"  EDR,DATAC
+
+BO_ 2566522297 FD7_CE100_0: 8 FUSION
+ SG_ FDC_BCM_DVRSignalR_Cmd : 14|1@1+ (1,0) [0|1] ""  DATAC
+ SG_ FDC_BCM_DVRSignalL_Cmd : 13|1@1+ (1,0) [0|1] ""  EDR,DATAC
+ SG_ FDC_BCM_LBeam_Cmd : 4|1@1+ (1,0) [0|1] ""  EDR
+ SG_ FDC_BCM_HBeam_Cmd : 3|1@1+ (1,0) [0|1] ""  EDR
+ SG_ FDC_BCM_PLamp_Cmd : 7|1@1+ (1,0) [0|1] ""  EDR
+ SG_ FDC_BCM_MDoor_Sta : 1|1@1+ (1,0) [0|1] ""  EDR
+ SG_ FDC_BCM_FDoor_Sta : 0|1@1+ (1,0) [0|1] ""  EDR
+
+BO_ 2583568724 IVI_CE100_0: 8 FUSION
+ SG_ IVI_Second_Sta : 32|6@1+ (1,0) [0|60] "second"  EDR,DATAC,NSAS
+ SG_ IVI_Minute_Sta : 26|6@1+ (1,0) [0|60] "minute"  EDR,DATAC,NSAS
+ SG_ IVI_Hour_Sta : 20|6@1+ (1,0) [0|23] "hour"  EDR,DATAC,NSAS
+ SG_ IVI_Day_Sta : 14|6@1+ (1,0) [0|31] "day"  EDR,DATAC,NSAS
+ SG_ IVI_Month_Sta : 8|6@1+ (1,0) [0|13] "month"  EDR,DATAC,NSAS
+ SG_ IVI_Year_Sta : 0|8@1+ (1,2000) [2000|2127] "year"  EDR,DATAC,NSAS
+
+BO_ 2565866479 FD7_C200_0: 8 FUSION
+ SG_ SysPowerMode : 0|4@1+ (1,0) [0|15] ""  EDR,DATAC,NSAS
+
+BO_ 2000 DiagFuncReqFT: 8 FUSION
+ SG_ DiagFuncReqFT : 7|64@0+ (1,0) [0|1.84467440737096E+019] ""  EDR,DATAC,NSAS
+
+BO_ 2564458745 DiagPhyReqToEDR: 8 FUSION
+ SG_ DiagPhysReqToEDR : 7|64@0+ (1,0) [0|1.84467440737096E+019] ""  EDR
+
+BO_ 2564487560 DiagRespFromEDR: 8 EDR
+ SG_ DiagResFromEDR : 7|64@0+ (1,0) [0|1.84467440737096E+019] ""  FUSION
+
+BO_ 2564459001 DiagPhyReqToDATAC: 8 FUSION
+ SG_ DiagPhysReqToDATAC : 7|64@0+ (1,0) [0|1.84467440737096E+019] ""  DATAC
+
+BO_ 2564460793 DiagPhyReqToNSAS: 8 FUSION
+ SG_ DiagPhysReqToNSAS : 7|64@0+ (1,0) [0|1.84467440737096E+019] ""  NSAS
+
+BO_ 2564487561 DiagRespFromDATAC: 8 DATAC
+ SG_ DiagResFromDATAC : 7|64@0+ (1,0) [0|1.84467440737096E+019] ""  FUSION
+
+BO_ 2564487568 DiagRespFromNSAS: 8 NSAS
+ SG_ DiagResFromNSAS : 7|64@0+ (1,0) [0|1.84467440737096E+019] ""  FUSION
+
+BO_ 1280 NMm_FUSION: 8 FUSION
+ SG_ NM_FUSION_Node_ID : 7|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ NM_FUSION_ERROR_State : 31|4@0+ (1,0) [0|15] "" Vector__XXX
+ SG_ NM_FUSION_Active_WU : 12|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ NM_FUSION_CSB : 11|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ NM_FUSION_PNI : 14|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ NM_FUSION_Rpt_Msg_Req : 8|1@0+ (1,0) [0|1] "" Vector__XXX
+
+
+
+CM_ SG_ 2566831883 FASpeed "Front Axle Vehicle Speed(64256~65535=Error)";
+CM_ SG_ 2566831883 RelaSpdFALWheel "The speed of the front axle, left wheel relative to the front axle speed, SPN 904.";
+CM_ SG_ 2566831883 RelaSpdFARWheel "The speed of the front axle, right wheel relative to the front axle speed, SPN 904.";
+CM_ SG_ 2566831883 RelaSpdRA1LWheel "The speed of the rear axle #1, left wheel relative to the front axle speed, SPN 904.";
+CM_ SG_ 2566831883 RelaSpdRA1RWheel "The speed of the rear axle #1, right wheel relative to the front axle speed, SPN 904.";
+CM_ SG_ 2566831883 RelaSpdRA2LWheel "The speed of the rear axle #2, left wheel relative to the front axle speed, SPN 904.";
+CM_ SG_ 2566831883 RelaSpdRA2RWheel "The speed of the rear axle #2, right wheel relative to the front axle speed, SPN 904.";
+CM_ BO_ 2582644176 "FPT1_104.4_Draft，VCU4";
+CM_ SG_ 2582644176 VCUKeyStatus "VCU internal key status";
+CM_ SG_ 2565865739 ASREngCtrlAtc "State signal which indicates that ASR engine control has been commanded to be active. Active means that ASR actually tries to control the engine. This state signal is independent of other control commands to the engine (e.g., from the transmission) which may have higher priority.
+
+00b = ASR engine control passive but installed
+01b = ASR engine control active
+10b = Reserved
+11b = Not available";
+CM_ SG_ 2565865739 ASRBrakeCtrlAtc "State signal which indicates that ASR brake control is active. Active means that ASR actually controls wheel brake pressure at one or more wheels of the driven axle(s).
+
+00b = ASR brake control passive but installed
+01b = ASR brake control active
+10b = Reserved
+11b = Not available";
+CM_ SG_ 2565865739 AntiLBrakABSAct "00b = ABS passive but installed
+01b = ABS active
+10b = Reserved
+11b = Not available";
+CM_ SG_ 2565865739 EBSBrakeSw "Switch signal which indicates that the brake pedal is being pressed.  The EBS brake switch is independent of the brake light switch and has no provisions for external connections.
+
+00b = Brake pedal is not being pressed
+01b = Brake pedal is being pressed
+10b = Error
+11b = Not available";
+CM_ SG_ 2565865739 BrakePedalPos "Ratio of brake pedal position to maximum pedal position.  Used for electric brake applications. 0% means no braking. Also when there are two brake pedals on the machine (Left Brake Pedal Position SPN 3033 and Right Brake Pedal Position SPN 3032) the maximum of the two should be transmitted for Brake Pedal Position.";
+CM_ SG_ 2565865739 ABSOffroadSw "Switch signal which indicates the position of the ABS off-road switch.
+
+00b = ABS off-road switch passive
+01b = ABS off-road switch active
+10b = Error
+11b = Not available";
+CM_ SG_ 2565865739 ASROffroadSw "Switch signal which indicates the position of the ASR off-road switch.
+
+00b = ASR off-road switch passive
+01b = ASR off-road switch active
+10b = Error
+11b = Not available";
+CM_ SG_ 2565865739 ASRHillHolderSw "Switch signal which indicates the position of the ASR “hill holder“ switch.
+
+00b = ASR “hill holder“ switch passive
+01b = ASR “hill holder“ switch active
+10b = Error
+11b = Not available";
+CM_ SG_ 2565865739 TractCtrlOvrSw "Switch signal which indicates the position of the traction control override switch.  The traction control override signal disables the automatic traction control function allowing the wheels to spin.
+
+00b = Off
+01b = On
+10b = Error
+11b = Not available or not installed";
+CM_ SG_ 2565865739 AcltrInterlockSw "Switch signal used to disable the accelerator and remote accelerator inputs, causing the engine to return to idle.
+
+00b = Off
+01b = On
+10b = Error
+11b = Not available";
+CM_ SG_ 2565865739 EngDerateSw "Switch signal used to activate the torque limiting feature of the engine.  The specific nature of torque limiting should be verified with the manufacturer.
+
+00b = Off
+01b = On
+10b = Error
+11b = Not available";
+CM_ SG_ 2565865739 EngAuxShutdownSw "Switch signal which requests that all engine fueling stop.
+
+00b = Off
+01b = On
+10b = Error
+11b = Not available";
+CM_ SG_ 2565865739 RmAccelEnSw "Switch signal which indicates that the remote accelerator has been enabled and controls the engine.  
+
+00b = Off
+01b = On
+10b = Error
+11b = Not available
+
+NOTE—The accelerator interlock switch (see SPN 972) must be disabled in order for the remote accelerator to perform engine control.";
+CM_ SG_ 2565865739 EngRetSel "The position of the operator controlled selector, expressed as a percentage and determined by the ratio of the current position of the selector to its maximum possible position. Zero percent means no braking torque is requested by the operator from the engine while 100% means maximum braking.";
+CM_ SG_ 2565865739 ABSFullyOper "Signal which indicates whether an ABS system is fully operational or whether its functionality is reduced by a defect or by an intended action (e.g., by activation of an ABS-off-road switch or during special diagnostic procedures).  There are cases where the signal is necessary to fulfill legal regulations for special applications (e.g., switching off integrated retarders).
+
+00b = Not Fully Operational
+01b = Fully Operational
+10b = Reserved
+11b = Not available";
+CM_ SG_ 2565865739 EBSRedWarnLampSta "This parameter commands the EBS red optical warning signal
+
+00b = Off
+01b = On
+10b = Reserved
+11b = Take no action";
+CM_ SG_ 2565865739 EBSAmWarnLampSta "This parameter commands the ABS/EBS amber/yellow optical warning signal
+
+00b = Off
+01b = On
+10b = Reserved
+11b = Take no action";
+CM_ SG_ 2565865739 ATCASRInfoSig "This parameter commands the ATC/ASR driver information signal, for example a dash lamp.
+
+00b = Off
+01b = On 
+10b = Reserved
+11b = Take no action";
+CM_ SG_ 2565865739 SACtrlBrakeCtrl "The source address of the SAE J1939 device currently controlling the brake system. Its value may be the source address of the ECU transmitting the message (which means that no external SAE J1939 message is providing the active command) or the source address of the SAE J1939 ECU that is currently providing the active command in a TSC1 (see PGN 0) or similar message.  ";
+CM_ SG_ 2565865739 HaltBrakeSw "Switch signal which indicates the position of the Railroad mode switch.
+
+00b = Railroad mode switch passive (City/Highway mode)
+01b = Railroad mode switch active (Railroad mode)
+10b = Error
+11b = Not available";
+CM_ SG_ 2565865739 TrailerABSSta "Switch signal which indicates the position of the halt brake switch.
+
+00b = Halt brake switch passive
+01b = Halt brake switch active
+10b = Error
+11b = Not available";
+CM_ SG_ 2565865739 TrailerABSWarnSig "00b = Trailer ABS Status Information Available But Not Active
+01b = Trailer ABS Active
+10b = Reserved
+11b = Trailer ABS Status Information Not Available or Parameter Not Supported";
+CM_ SG_ 2558980083 B2VCellAvgTemp "電芯溫度平均值
+Average cell temperatuer in pack";
+CM_ SG_ 2558980083 B2VMaxTempCSCSN "最高溫度探針所在的CSC編號
+CSC serial number with maximum cell temperture";
+CM_ SG_ 2558980083 B2VMaxTempPos "最高溫度探針在系統中的位置
+Serial number of maximum cell temperture probe in pack";
+CM_ SG_ 2558980083 B2VMinTempCSCSN "最低溫度探針所在的CSC編號
+CSC serial number with minimum cell temperture";
+CM_ SG_ 2558980083 B2VMinTempPos "最低溫度探針在系統中的位置
+Serial number of minimum cell temperture probe in pack";
+CM_ SG_ 2558980083 B2VPackMaxTemp "電芯溫度最大值
+Maximum cell temperatuer in pack";
+CM_ SG_ 2558980083 B2VPackMinTemp "電芯溫度最小值
+Minimum cell temperatuer in pack";
+CM_ SG_ 2558849011 B2VFaultCode "故障碼
+Fault code";
+CM_ SG_ 2558849011 B2VFaultLv "當前最高故障等級
+Highest fault level";
+CM_ SG_ 2558849011 B2VPackCurr "電池包總電流，充電為負值，放電為正值
+Pack current";
+CM_ SG_ 2558849011 B2VPackInsideVol "電池包內側電壓
+Pack inside high-voltage";
+CM_ SG_ 2558849011 B2VRqHVPwrOff "BCU下高壓請求
+Require high-voltage powero-ff";
+CM_ SG_ 2558849011 B2VSOC "電池包SOC
+SOC";
+CM_ SG_ 2558849011 B2VSOH "電池包SOH
+SOH";
+CM_ SG_ 2558849011 B2VST2LifeSig "BCU生命信號
+BCU life signal";
+CM_ SG_ 2558783475 B2VACChgConnSta "交流充電槍連接狀態
+AC-Charge gun connect status";
+CM_ SG_ 2558783475 B2VACChgNegRlySta "交流負繼電器狀態(如繼電器狀態由BCU檢測)
+Status of AC-charge negative contactor";
+CM_ SG_ 2558783475 B2VACChgPosRlySta "交流正繼電器狀態(如繼電器狀態由BCU檢測)
+Status of AC-charge positive contactor";
+CM_ SG_ 2558783475 B2VAux1RlySta "附件1繼電器狀態(如繼電器狀態由BCU檢測)
+Status of auxiliary-1 contactor";
+CM_ SG_ 2558783475 B2VAux2RlySta "附件2繼電器狀態(如繼電器狀態由BCU檢測)
+Status of auxiliary-2 contactor";
+CM_ SG_ 2558783475 B2VAux3RlySta "附件3繼電器狀態(如繼電器狀態由BCU檢測)
+Status of auxiliary-3 contactor";
+CM_ SG_ 2558783475 B2VBMUBalSta "BCU當前均衡狀態
+BCU balance status";
+CM_ SG_ 2558783475 B2VBMUHVSta "BCU當前高壓狀態
+BCU high-voltage status";
+CM_ SG_ 2558783475 B2VChgMode "BCU當前充電模式
+BCU charge mode";
+CM_ SG_ 2558783475 B2VChgSta "充電狀態
+BCU charge status";
+CM_ SG_ 2558783475 B2VCoolingSta "當前冷卻狀態
+BCU cooling status";
+CM_ SG_ 2558783475 B2VDCChgConnSta "直流充電槍連接狀態
+DC-Charge gun connect status";
+CM_ SG_ 2558783475 B2VDCChgN1RlySta "直流充負繼電器1狀態(如繼電器狀態由BCU檢測)
+Status of DC-charge negative-1 contactor";
+CM_ SG_ 2558783475 B2VDCChgN2RlySta "直流充負繼電器2狀態(如繼電器狀態由BCU檢測)
+Status of DC-charge negative-2 contactor";
+CM_ SG_ 2558783475 B2VDCChgP1RlySta "直流充正繼電器1狀態(如繼電器狀態由BCU檢測)
+Status of DC-charge positive-1 contactor";
+CM_ SG_ 2558783475 B2VDCChgP2RlySta "直流充正繼電器2狀態(如繼電器狀態由BCU檢測)
+Status of DC-charge positive-2 contactor";
+CM_ SG_ 2558783475 B2VHeatingSta "當前加熱狀態
+BCU heat status";
+CM_ SG_ 2558783475 B2VHeatNegRelaySta "加熱負繼電器狀態(如繼電器狀態由BCU檢測)
+Status of heat negative contactor";
+CM_ SG_ 2558783475 B2VHeatPosRlySta "加熱正繼電器狀態(如繼電器狀態由BCU檢測)
+Status of heat positive contactor";
+CM_ SG_ 2558783475 B2VMainNegRlySta "主負繼電器狀態(如繼電器狀態由BCU檢測)
+Status of main-negative contactor";
+CM_ SG_ 2558783475 B2VMainPosRlySta "主正繼電器狀態(如繼電器狀態由BCU檢測)
+Status of main-positive contactor";
+CM_ SG_ 2558783475 B2VPChgPosRlySta "集電弓正繼電器狀態(如繼電器狀態由BCU檢測)
+Status of pantograph charge positive contactor";
+CM_ SG_ 2558783475 B2VPChrgConnSta "集電弓充電槍連接狀態
+Pantograph Charge gun connect status";
+CM_ SG_ 2558783475 B2VPChrgNegRlySta "集電弓負繼電器狀態(如繼電器狀態由BCU檢測)
+Status of pantograph charge negative contactor";
+CM_ SG_ 2558783475 B2VPrechgRelaySta "主回路預充或預檢繼電器狀態(如繼電器狀態由BCU檢測)
+Status of main-loop precharge or precheck contactor";
+CM_ SG_ 2558783475 B2VST1RChrgCy "充電次數BCU charge cycles";
+CM_ SG_ 2552025555 ACMODESta "AC MODE Status";
+CM_ SG_ 2552025555 ACFanSpdSta "AC FAN SPEED status
+風速狀態訊號";
+CM_ SG_ 2552025555 THCM_Reserve13_Sta " Reserve";
+CM_ SG_ 2552025555 THCM_Reserve12_Sta " Reserve";
+CM_ SG_ 2552025555 THCM_Reserve11_Sta " Reserve";
+CM_ SG_ 2552025555 THCM_Reserve10_Sta " Reserve";
+CM_ SG_ 2552025555 THCM_Reserve9_Sta " Reserve";
+CM_ SG_ 2552025555 THCM_Reserve8_Sta " Reserve";
+CM_ SG_ 2552025555 THCM_Reserve7_Sta " Reserve";
+CM_ SG_ 2552025555 THCM_Reserve6_Sta " Reserve";
+CM_ SG_ 2552025555 THCM_Reserve5_Sta " Reserve";
+CM_ SG_ 2552025299 ACAmbTemp "AC Amb Temp
+室外溫度";
+CM_ SG_ 2552025299 ACCabinTemp "AC Cabin Temp
+室內溫度";
+CM_ SG_ 2552025299 THCM_Reserve4_Sta " Reserve";
+CM_ SG_ 2552025299 THCM_Reserve1_Sta " Reserve";
+CM_ SG_ 2552025299 THCM_Reserve2_Sta " Reserve";
+CM_ SG_ 2552025299 THCM_Reserve3_Sta " Reserve";
+CM_ BO_ 2364539648 "FPT1_104.4_Draft，EEC2";
+CM_ SG_ 2364539648 AccPedalPos1 "Accelerator Pedal Position 1";
+CM_ BO_ 2355220689 "FPT1_104.4_Draft，EVCU1";
+CM_ SG_ 2355220689 EMotorSpd "E-Motor-Speed (unsigned)";
+CM_ BO_ 2566522297 "FPT1_104.4_Draft，BCM1";
+CM_ SG_ 2566522297 FDC_BCM_DVRSignalR_Cmd "Turn Lamp Right Acitve";
+CM_ SG_ 2566522297 FDC_BCM_DVRSignalL_Cmd "Turn Lamp Left Acitve";
+CM_ SG_ 2566522297 FDC_BCM_LBeam_Cmd "Low Beam Indicator
+近光燈指示燈";
+CM_ SG_ 2566522297 FDC_BCM_HBeam_Cmd "Hi Beam Indicaotr
+遠光燈指示燈";
+CM_ SG_ 2566522297 FDC_BCM_PLamp_Cmd "Postion Lamp Indicator
+小燈(位置燈)指示燈";
+CM_ SG_ 2566522297 FDC_BCM_MDoor_Sta "Middle Door Open Indicaor
+中門開啟指示燈";
+CM_ SG_ 2566522297 FDC_BCM_FDoor_Sta "Front Door Open Indicaor
+前門開啟指示燈";
+CM_ SG_ 2583568724 IVI_Second_Sta "IVI_GPS Satellite Time_Second";
+CM_ SG_ 2583568724 IVI_Minute_Sta "IVI_GPS Satellite Time_Minute";
+CM_ SG_ 2583568724 IVI_Hour_Sta "IVI_GPS Satellite Time_Hour";
+CM_ SG_ 2583568724 IVI_Day_Sta "IVI_GPS Satellite Time_Day";
+CM_ SG_ 2583568724 IVI_Month_Sta "IVI_GPS Satellite Time_Month";
+CM_ SG_ 2583568724 IVI_Year_Sta "IVI_GPS Satellite Time_Year";
+CM_ BO_ 2565866479 "FPT1_104.4_Draft，VCU3";
+CM_ SG_ 2565866479 SysPowerMode "HV system current power mode";
+CM_ SG_ 2000 DiagFuncReqFT "Diagnostic Functional Request from Tester";
+CM_ SG_ 2564458745 DiagPhysReqToEDR "EDR Diagnostic Request";
+CM_ SG_ 2564487560 DiagResFromEDR "EDR Diagnostic Response";
+CM_ SG_ 2564459001 DiagPhysReqToDATAC "DATAC Diagnostic Request";
+CM_ SG_ 2564460793 DiagPhysReqToNSAS "NSAS Diagnostic Request";
+CM_ SG_ 2564487561 DiagResFromDATAC "DataC Diagnostic Response";
+CM_ SG_ 2564487568 DiagResFromNSAS "EWP1 Diagnostic Response";
+CM_ SG_ 1280 NM_FUSION_Node_ID "Source Node Identifier";
+CM_ SG_ 1280 NM_FUSION_ERROR_State "Defined Error states of the CAN Controller";
+CM_ SG_ 1280 NM_FUSION_Active_WU "Active Wakeup Bit";
+CM_ SG_ 1280 NM_FUSION_CSB "NM Coordinator Sleep Bit";
+CM_ SG_ 1280 NM_FUSION_PNI "Partial Network Information Bit (PNI)";
+CM_ SG_ 1280 NM_FUSION_Rpt_Msg_Req "Repeat Message Request";
+BA_DEF_ SG_  "GenSigInvalidValue" HEX 0 0;
+BA_DEF_ SG_  "GenSigStartValue" HEX 0 0;
+BA_DEF_ SG_  "GenSigInactiveValue" HEX 0 0;
+BA_DEF_ SG_  "GenSigRoutingTimeoutValue_String" STRING ;
+BA_DEF_ SG_  "DataCenterDataType" STRING ;
+BA_DEF_ SG_  "GenSigRoutingTimeoutValue" HEX 0 0;
+BA_DEF_ SG_  "GenSigSendType" ENUM  "Cycle","OnWrite","OnWriteWithRepetition","OnChange","OnChangeWithRepetition","IfActive","IfActiveWithRepetition","NoSigSendType","vector_leerstring";
+BA_DEF_ SG_  "E2EProfile" STRING ;
+BA_DEF_ SG_  "GenSigDataID" STRING ;
+BA_DEF_ SG_  "SigType" ENUM  "Default","Range","RangeSigned","ASCII","Discrete","Control","ReferencePGN","DTC","StringDelimiter","StringLength","StringLengthControl","MessageCounter","MessageChecksum";
+BA_DEF_ SG_  "GenSigILSupport" ENUM  "No","Yes";
+BA_DEF_ SG_  "GenSigLongName" STRING ;
+BA_DEF_ SG_  "SPN" INT 0 0;
+BA_DEF_ BU_  "TerminalNode" ENUM  "No","Yes";
+BA_DEF_ BU_  "NodeLayerModules" STRING ;
+BA_DEF_ BU_  "NmStationAddress" HEX 0 127;
+BA_DEF_ BU_  "NmNode" ENUM  "Yes","No";
+BA_DEF_ BU_  "NmCAN" INT 1 2;
+BA_DEF_ BU_  "ILUsed" ENUM  "No","Yes";
+BA_DEF_ BU_  "CANoeStartDelay" INT 0 10;
+BA_DEF_ BU_  "CANoeJitterMin" INT 0 0;
+BA_DEF_ BU_  "CANoeJitterMax" INT 0 0;
+BA_DEF_ BU_  "CANoeDrift" INT 0 0;
+BA_DEF_ BU_  "NmNodeAddress" HEX 0 127;
+BA_DEF_ BU_  "ECU" STRING ;
+BA_DEF_ BU_  "CANFD_CANFD_Gateway" ENUM  "Yes","No";
+BA_DEF_ BU_  "CAN_CANFD_Gateway" ENUM  "Yes","No";
+BA_DEF_ BU_  "CANFD_LIN_Gateway" ENUM  "Yes","No";
+BA_DEF_ BU_  "ECUDisplayName" STRING ;
+BA_DEF_ BU_  "CAN_LIN_Gateway" ENUM  "Yes","No";
+BA_DEF_ BU_  "CAN_CAN_Gateway" ENUM  "Yes","No";
+BA_DEF_ BU_  "BootloaderNode" ENUM  "No","Yes";
+BA_DEF_  "NmType" STRING ;
+BA_DEF_  "VersionYear" INT 2010 2999;
+BA_DEF_  "VersionNumber" INT 0 99;
+BA_DEF_  "VersionMonth" INT 0 12;
+BA_DEF_  "VersionDay" INT 0 31;
+BA_DEF_  "ProtocolType" STRING ;
+BA_DEF_  "NmMessageCount" INT 0 255;
+BA_DEF_  "NmBaseAddress" HEX 1280 1407;
+BA_DEF_  "Manufacturer" STRING ;
+BA_DEF_  "ILTxTimeout" INT 0 100;
+BA_DEF_  "DBName" STRING ;
+BA_DEF_  "BusType" STRING ;
+BA_DEF_  "Baudrate" INT 0 1000000;
+BA_DEF_  "DatabaseVersion" STRING ;
+BA_DEF_  "Datarate" INT 0 2000000;
+BA_DEF_  "MultiplexExtEnabled" ENUM  "No","Yes";
+BA_DEF_ BO_  "StartDelay" INT 0 0;
+BA_DEF_ BO_  "GenMsgStartDelayTime" INT 0 0;
+BA_DEF_ BO_  "GenMsgSendType" ENUM  "Cycle","NoMsgSendType","IfActive","Event","CA","CE";
+BA_DEF_ BO_  "GenMsgNrOfRepetition" INT 0 0;
+BA_DEF_ BO_  "GenMsgILSupport" ENUM  "No","Yes";
+BA_DEF_ BO_  "GenMsgDelayTime" INT 0 0;
+BA_DEF_ BO_  "GenMsgCycleTimeFast" INT 0 0;
+BA_DEF_ BO_  "GenMsgCycleTime" INT 0 0;
+BA_DEF_ BO_  "DiagState" ENUM  "No","Yes";
+BA_DEF_ BO_  "DiagResponse" ENUM  "No","Yes";
+BA_DEF_ BO_  "DiagRequest" ENUM  "No","Yes";
+BA_DEF_ BO_  "NmMessage" ENUM  "No","Yes";
+BA_DEF_ BO_  "VFrameFormat" ENUM  "StandardCAN","ExtendedCAN","reserved","J1939PG";
+BA_DEF_ BO_  "DataID" STRING ;
+BA_DEF_ BO_  "DoIPLogicalAddress" STRING ;
+BA_DEF_ BO_  "GenMsgFastOnStart" INT 0 100000;
+BA_DEF_ BO_  "GenMsgRequestable" INT 0 0;
+BA_DEF_DEF_  "GenSigInvalidValue" 0;
+BA_DEF_DEF_  "GenSigStartValue" 0;
+BA_DEF_DEF_  "GenSigInactiveValue" 0;
+BA_DEF_DEF_  "GenSigRoutingTimeoutValue_String" "";
+BA_DEF_DEF_  "DataCenterDataType" "";
+BA_DEF_DEF_  "GenSigRoutingTimeoutValue" 0;
+BA_DEF_DEF_  "GenSigSendType" "Cycle";
+BA_DEF_DEF_  "E2EProfile" "";
+BA_DEF_DEF_  "GenSigDataID" "";
+BA_DEF_DEF_  "SigType" "Default";
+BA_DEF_DEF_  "GenSigILSupport" "Yes";
+BA_DEF_DEF_  "GenSigLongName" "";
+BA_DEF_DEF_  "SPN" 0;
+BA_DEF_DEF_  "TerminalNode" "No";
+BA_DEF_DEF_  "NodeLayerModules" "CANoeILNLVector.dll";
+BA_DEF_DEF_  "NmStationAddress" 0;
+BA_DEF_DEF_  "NmNode" "No";
+BA_DEF_DEF_  "NmCAN" 2;
+BA_DEF_DEF_  "ILUsed" "Yes";
+BA_DEF_DEF_  "CANoeStartDelay" 0;
+BA_DEF_DEF_  "CANoeJitterMin" 0;
+BA_DEF_DEF_  "CANoeJitterMax" 0;
+BA_DEF_DEF_  "CANoeDrift" 0;
+BA_DEF_DEF_  "NmNodeAddress" 0;
+BA_DEF_DEF_  "ECU" "";
+BA_DEF_DEF_  "CANFD_CANFD_Gateway" "No";
+BA_DEF_DEF_  "CAN_CANFD_Gateway" "No";
+BA_DEF_DEF_  "CANFD_LIN_Gateway" "No";
+BA_DEF_DEF_  "ECUDisplayName" "";
+BA_DEF_DEF_  "CAN_LIN_Gateway" "No";
+BA_DEF_DEF_  "CAN_CAN_Gateway" "No";
+BA_DEF_DEF_  "BootloaderNode" "No";
+BA_DEF_DEF_  "NmType" "AUTOSAR";
+BA_DEF_DEF_  "VersionYear" 2024;
+BA_DEF_DEF_  "VersionNumber" 0;
+BA_DEF_DEF_  "VersionMonth" 0;
+BA_DEF_DEF_  "VersionDay" 0;
+BA_DEF_DEF_  "ProtocolType" "CAN";
+BA_DEF_DEF_  "NmMessageCount" 128;
+BA_DEF_DEF_  "NmBaseAddress" 1280;
+BA_DEF_DEF_  "Manufacturer" "";
+BA_DEF_DEF_  "ILTxTimeout" 0;
+BA_DEF_DEF_  "DBName" "";
+BA_DEF_DEF_  "BusType" "CAN";
+BA_DEF_DEF_  "Baudrate" 500000;
+BA_DEF_DEF_  "DatabaseVersion" "";
+BA_DEF_DEF_  "Datarate" 2000000;
+BA_DEF_DEF_  "MultiplexExtEnabled" "No";
+BA_DEF_DEF_  "StartDelay" 0;
+BA_DEF_DEF_  "GenMsgStartDelayTime" 0;
+BA_DEF_DEF_  "GenMsgSendType" "Cycle";
+BA_DEF_DEF_  "GenMsgNrOfRepetition" 0;
+BA_DEF_DEF_  "GenMsgILSupport" "Yes";
+BA_DEF_DEF_  "GenMsgDelayTime" 0;
+BA_DEF_DEF_  "GenMsgCycleTimeFast" 0;
+BA_DEF_DEF_  "GenMsgCycleTime" 100;
+BA_DEF_DEF_  "DiagState" "No";
+BA_DEF_DEF_  "DiagResponse" "No";
+BA_DEF_DEF_  "DiagRequest" "No";
+BA_DEF_DEF_  "NmMessage" "No";
+BA_DEF_DEF_  "VFrameFormat" "StandardCAN";
+BA_DEF_DEF_  "DataID" "";
+BA_DEF_DEF_  "DoIPLogicalAddress" "";
+BA_DEF_DEF_  "GenMsgFastOnStart" 0;
+BA_DEF_DEF_  "GenMsgRequestable" 1;
+BA_ "Baudrate" 250000;
+BA_ "Manufacturer" "FVT";
+BA_ "ProtocolType" "J1939";
+BA_ "BusType" "CAN";
+BA_ "DBName" "CAN7";
+BA_ "CAN_CANFD_Gateway" BU_ FUSION 0;
+BA_ "CANFD_CANFD_Gateway" BU_ FUSION 0;
+BA_ "CAN_CAN_Gateway" BU_ FUSION 0;
+BA_ "GenMsgCycleTime" BO_ 1296 0;
+BA_ "GenMsgSendType" BO_ 1296 3;
+BA_ "VFrameFormat" BO_ 2566831883 1;
+BA_ "VFrameFormat" BO_ 2582644176 3;
+BA_ "VFrameFormat" BO_ 2565865739 3;
+BA_ "GenMsgCycleTime" BO_ 2558980083 500;
+BA_ "VFrameFormat" BO_ 2558980083 3;
+BA_ "GenMsgCycleTime" BO_ 2558849011 200;
+BA_ "VFrameFormat" BO_ 2558849011 3;
+BA_ "VFrameFormat" BO_ 2558783475 3;
+BA_ "GenMsgCycleTime" BO_ 2552025555 1000;
+BA_ "VFrameFormat" BO_ 2552025555 3;
+BA_ "GenMsgCycleTime" BO_ 2552025299 1000;
+BA_ "VFrameFormat" BO_ 2552025299 3;
+BA_ "GenMsgCycleTime" BO_ 2364539648 50;
+BA_ "VFrameFormat" BO_ 2364539648 3;
+BA_ "GenMsgCycleTime" BO_ 2355220689 10;
+BA_ "VFrameFormat" BO_ 2355220689 3;
+BA_ "GenMsgSendType" BO_ 2566522297 5;
+BA_ "GenMsgNrOfRepetition" BO_ 2566522297 1;
+BA_ "VFrameFormat" BO_ 2566522297 3;
+BA_ "VFrameFormat" BO_ 2583568724 1;
+BA_ "GenMsgSendType" BO_ 2583568724 5;
+BA_ "GenMsgNrOfRepetition" BO_ 2583568724 1;
+BA_ "VFrameFormat" BO_ 2565866479 1;
+BA_ "GenMsgCycleTime" BO_ 2565866479 200;
+BA_ "DoIPLogicalAddress" BO_ 2000 "0xEFFF";
+BA_ "GenMsgSendType" BO_ 2000 3;
+BA_ "GenMsgCycleTime" BO_ 2000 0;
+BA_ "DoIPLogicalAddress" BO_ 2564458745 "0x0088";
+BA_ "GenMsgSendType" BO_ 2564458745 3;
+BA_ "GenMsgCycleTime" BO_ 2564458745 0;
+BA_ "VFrameFormat" BO_ 2564458745 3;
+BA_ "DoIPLogicalAddress" BO_ 2564487560 "0x0088";
+BA_ "GenMsgSendType" BO_ 2564487560 3;
+BA_ "GenMsgCycleTime" BO_ 2564487560 0;
+BA_ "VFrameFormat" BO_ 2564487560 3;
+BA_ "DoIPLogicalAddress" BO_ 2564459001 "0x0089";
+BA_ "GenMsgSendType" BO_ 2564459001 3;
+BA_ "GenMsgCycleTime" BO_ 2564459001 0;
+BA_ "VFrameFormat" BO_ 2564459001 3;
+BA_ "DoIPLogicalAddress" BO_ 2564460793 "0x0090";
+BA_ "GenMsgSendType" BO_ 2564460793 3;
+BA_ "GenMsgCycleTime" BO_ 2564460793 0;
+BA_ "VFrameFormat" BO_ 2564460793 3;
+BA_ "DoIPLogicalAddress" BO_ 2564487561 "0x0089";
+BA_ "GenMsgSendType" BO_ 2564487561 3;
+BA_ "GenMsgCycleTime" BO_ 2564487561 0;
+BA_ "VFrameFormat" BO_ 2564487561 3;
+BA_ "DoIPLogicalAddress" BO_ 2564487568 "0x0090";
+BA_ "GenMsgSendType" BO_ 2564487568 3;
+BA_ "GenMsgCycleTime" BO_ 2564487568 0;
+BA_ "VFrameFormat" BO_ 2564487568 3;
+BA_ "GenMsgSendType" BO_ 1280 3;
+BA_ "GenMsgCycleTime" BO_ 1280 0;
+BA_ "GenSigRoutingTimeoutValue" SG_ 2566831883 FASpeed 64256;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 2566831883 FASpeed "0xFB00";
+BA_ "GenSigRoutingTimeoutValue" SG_ 2582644176 VCUKeyStatus 3;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 2582644176 VCUKeyStatus "0x3";
+BA_ "GenSigRoutingTimeoutValue" SG_ 2565865739 ASREngCtrlAtc 3;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 2565865739 ASREngCtrlAtc "0x3";
+BA_ "GenSigRoutingTimeoutValue" SG_ 2565865739 ASRBrakeCtrlAtc 3;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 2565865739 ASRBrakeCtrlAtc "0x3";
+BA_ "GenSigRoutingTimeoutValue" SG_ 2565865739 AntiLBrakABSAct 3;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 2565865739 AntiLBrakABSAct "0x3";
+BA_ "GenSigRoutingTimeoutValue" SG_ 2565865739 EBSBrakeSw 3;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 2565865739 EBSBrakeSw "0x3";
+BA_ "GenSigRoutingTimeoutValue" SG_ 2565865739 ABSOffroadSw 3;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 2565865739 ABSOffroadSw "0x3";
+BA_ "GenSigRoutingTimeoutValue" SG_ 2565865739 ASROffroadSw 3;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 2565865739 ASROffroadSw "0x3";
+BA_ "GenSigRoutingTimeoutValue" SG_ 2565865739 ASRHillHolderSw 3;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 2565865739 ASRHillHolderSw "0x3";
+BA_ "GenSigRoutingTimeoutValue" SG_ 2565865739 TractCtrlOvrSw 3;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 2565865739 TractCtrlOvrSw "0x3";
+BA_ "GenSigRoutingTimeoutValue" SG_ 2565865739 AcltrInterlockSw 3;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 2565865739 AcltrInterlockSw "0x3";
+BA_ "GenSigRoutingTimeoutValue" SG_ 2565865739 EngDerateSw 3;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 2565865739 EngDerateSw "0x3";
+BA_ "GenSigRoutingTimeoutValue" SG_ 2565865739 EngAuxShutdownSw 3;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 2565865739 EngAuxShutdownSw "0x3";
+BA_ "GenSigRoutingTimeoutValue" SG_ 2565865739 RmAccelEnSw 3;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 2565865739 RmAccelEnSw "0x3";
+BA_ "GenSigRoutingTimeoutValue" SG_ 2565865739 ABSFullyOper 3;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 2565865739 ABSFullyOper "0x3";
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 2565865739 EBSAmWarnLampSta "0x0";
+BA_ "GenSigRoutingTimeoutValue" SG_ 2565865739 ATCASRInfoSig 3;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 2565865739 ATCASRInfoSig "0x3";
+BA_ "GenSigRoutingTimeoutValue" SG_ 2565865739 HaltBrakeSw 3;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 2565865739 HaltBrakeSw "0x3";
+BA_ "GenSigRoutingTimeoutValue" SG_ 2565865739 TrailerABSSta 3;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 2565865739 TrailerABSSta "0x3";
+BA_ "GenSigRoutingTimeoutValue" SG_ 2565865739 TrailerABSWarnSig 3;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 2565865739 TrailerABSWarnSig "0x3";
+BA_ "GenSigRoutingTimeoutValue" SG_ 2558980083 B2VMaxTempCSCSN 255;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 2558980083 B2VMaxTempCSCSN "0xFF";
+BA_ "GenSigRoutingTimeoutValue" SG_ 2558980083 B2VMinTempCSCSN 255;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 2558980083 B2VMinTempCSCSN "0xFF";
+BA_ "GenSigRoutingTimeoutValue" SG_ 2558849011 B2VRqHVPwrOff 3;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 2558849011 B2VRqHVPwrOff "0x3";
+BA_ "GenSigRoutingTimeoutValue" SG_ 2558783475 B2VACChgNegRlySta 3;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 2558783475 B2VACChgNegRlySta "0x3";
+BA_ "GenSigRoutingTimeoutValue" SG_ 2558783475 B2VACChgPosRlySta 3;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 2558783475 B2VACChgPosRlySta "0x3";
+BA_ "GenSigRoutingTimeoutValue" SG_ 2558783475 B2VAux1RlySta 3;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 2558783475 B2VAux1RlySta "0x3";
+BA_ "GenSigRoutingTimeoutValue" SG_ 2558783475 B2VAux2RlySta 3;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 2558783475 B2VAux2RlySta "0x3";
+BA_ "GenSigRoutingTimeoutValue" SG_ 2558783475 B2VAux3RlySta 3;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 2558783475 B2VAux3RlySta "0x3";
+BA_ "GenSigRoutingTimeoutValue" SG_ 2558783475 B2VDCChgConnSta 3;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 2558783475 B2VDCChgConnSta "0x3";
+BA_ "GenSigRoutingTimeoutValue" SG_ 2558783475 B2VDCChgN1RlySta 3;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 2558783475 B2VDCChgN1RlySta "0x3";
+BA_ "GenSigRoutingTimeoutValue" SG_ 2558783475 B2VDCChgN2RlySta 3;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 2558783475 B2VDCChgN2RlySta "0x3";
+BA_ "GenSigRoutingTimeoutValue" SG_ 2558783475 B2VDCChgP1RlySta 3;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 2558783475 B2VDCChgP1RlySta "0x3";
+BA_ "GenSigRoutingTimeoutValue" SG_ 2558783475 B2VDCChgP2RlySta 3;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 2558783475 B2VDCChgP2RlySta "0x3";
+BA_ "GenSigRoutingTimeoutValue" SG_ 2558783475 B2VHeatNegRelaySta 3;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 2558783475 B2VHeatNegRelaySta "0x3";
+BA_ "GenSigRoutingTimeoutValue" SG_ 2558783475 B2VHeatPosRlySta 3;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 2558783475 B2VHeatPosRlySta "0x3";
+BA_ "GenSigRoutingTimeoutValue" SG_ 2558783475 B2VMainNegRlySta 3;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 2558783475 B2VMainNegRlySta "0x3";
+BA_ "GenSigRoutingTimeoutValue" SG_ 2558783475 B2VMainPosRlySta 3;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 2558783475 B2VMainPosRlySta "0x3";
+BA_ "GenSigRoutingTimeoutValue" SG_ 2558783475 B2VPChgPosRlySta 3;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 2558783475 B2VPChgPosRlySta "0x3";
+BA_ "GenSigRoutingTimeoutValue" SG_ 2558783475 B2VPChrgNegRlySta 3;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 2558783475 B2VPChrgNegRlySta "0x3";
+BA_ "GenSigRoutingTimeoutValue" SG_ 2558783475 B2VPrechgRelaySta 3;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 2558783475 B2VPrechgRelaySta "0x3";
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 2552025555 ACMODESta "0x0";
+BA_ "GenSigRoutingTimeoutValue" SG_ 2552025555 THCM_Outcycle_Sta 3;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 2552025555 THCM_Outcycle_Sta "0x3";
+BA_ "GenSigInvalidValue" SG_ 2552025555 THCM_Outcycle_Sta 3;
+BA_ "GenSigRoutingTimeoutValue" SG_ 2364539648 AccPedalPos1 255;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 2364539648 AccPedalPos1 "0xFF";
+BA_ "GenSigSendType" SG_ 2566522297 FDC_BCM_DVRSignalR_Cmd 3;
+BA_ "GenSigSendType" SG_ 2566522297 FDC_BCM_DVRSignalL_Cmd 3;
+BA_ "GenSigSendType" SG_ 2566522297 FDC_BCM_LBeam_Cmd 3;
+BA_ "GenSigSendType" SG_ 2566522297 FDC_BCM_HBeam_Cmd 3;
+BA_ "GenSigSendType" SG_ 2566522297 FDC_BCM_PLamp_Cmd 3;
+BA_ "GenSigSendType" SG_ 2566522297 FDC_BCM_MDoor_Sta 3;
+BA_ "GenSigSendType" SG_ 2566522297 FDC_BCM_FDoor_Sta 3;
+BA_ "GenSigSendType" SG_ 2583568724 IVI_Second_Sta 3;
+BA_ "GenSigInvalidValue" SG_ 2583568724 IVI_Second_Sta 60;
+BA_ "GenSigSendType" SG_ 2583568724 IVI_Minute_Sta 3;
+BA_ "GenSigInvalidValue" SG_ 2583568724 IVI_Minute_Sta 60;
+BA_ "GenSigSendType" SG_ 2583568724 IVI_Hour_Sta 3;
+BA_ "GenSigStartValue" SG_ 2583568724 IVI_Hour_Sta 0;
+BA_ "GenSigSendType" SG_ 2583568724 IVI_Day_Sta 3;
+BA_ "GenSigSendType" SG_ 2583568724 IVI_Month_Sta 3;
+BA_ "GenSigSendType" SG_ 2583568724 IVI_Year_Sta 3;
+BA_ "GenSigInvalidValue" SG_ 2565866479 SysPowerMode 15;
+BA_ "GenSigSendType" SG_ 2000 DiagFuncReqFT 3;
+BA_ "GenSigSendType" SG_ 2564458745 DiagPhysReqToEDR 3;
+BA_ "GenSigSendType" SG_ 2564487560 DiagResFromEDR 3;
+BA_ "GenSigSendType" SG_ 2564459001 DiagPhysReqToDATAC 3;
+BA_ "GenSigSendType" SG_ 2564460793 DiagPhysReqToNSAS 3;
+BA_ "GenSigSendType" SG_ 2564487561 DiagResFromDATAC 3;
+BA_ "GenSigSendType" SG_ 2564487568 DiagResFromNSAS 3;
+BA_ "GenSigSendType" SG_ 1280 NM_FUSION_Node_ID 7;
+BA_ "GenSigSendType" SG_ 1280 NM_FUSION_ERROR_State 7;
+BA_ "GenSigSendType" SG_ 1280 NM_FUSION_Active_WU 7;
+BA_ "GenSigSendType" SG_ 1280 NM_FUSION_CSB 7;
+BA_ "GenSigSendType" SG_ 1280 NM_FUSION_PNI 7;
+BA_ "GenSigSendType" SG_ 1280 NM_FUSION_Rpt_Msg_Req 7;
+VAL_ 2566831883 FASpeed 64256 "Invalid Value" ;
+VAL_ 2582644176 VCUKeyStatus 3 "reserved" 2 "START" 1 "ON" 0 "OFF" ;
+VAL_ 2565865739 ASREngCtrlAtc 3 "Not available" 2 "Reserved" 1 "ASR engine control active" 0 "ASR engine control passive but installed" ;
+VAL_ 2565865739 ASRBrakeCtrlAtc 3 "Not available" 2 "Reserved" 1 "ASR brake control active" 0 "ASR brake control passive but installed" ;
+VAL_ 2565865739 AntiLBrakABSAct 3 "Not available" 2 "Reserved" 1 "ABS active" 0 "ABS passive but installed" ;
+VAL_ 2565865739 EBSBrakeSw 3 "Not available" 2 "Error" 1 "Brake pedal is being pressed" 0 "Brake pedal is not being pressed" ;
+VAL_ 2565865739 ABSOffroadSw 3 "Not available" 2 "Error" 1 "ABS off-road switch active" 0 "ABS off-road switch passive" ;
+VAL_ 2565865739 ASROffroadSw 3 "Not available" 2 "Error" 1 "ASR off-road switch active" 0 "ASR off-road switch passive" ;
+VAL_ 2565865739 ASRHillHolderSw 3 "Not available" 2 "Error" 1 "ASR-hill holder switch active" 0 "ASR-hill holder switch passive" ;
+VAL_ 2565865739 TractCtrlOvrSw 3 "Not available or not installed" 2 "Error" 1 "On" 0 "Off" ;
+VAL_ 2565865739 AcltrInterlockSw 3 "Not available" 2 "Error" 1 "On" 0 "Off" ;
+VAL_ 2565865739 EngDerateSw 3 "Not available" 2 "Error" 1 "On" 0 "Off" ;
+VAL_ 2565865739 EngAuxShutdownSw 3 "Not available" 2 "Error" 1 "On" 0 "Off" ;
+VAL_ 2565865739 RmAccelEnSw 3 "Not available" 2 "Error" 1 "On" 0 "Off" ;
+VAL_ 2565865739 ABSFullyOper 3 "Not available" 2 "Reserved" 1 "Fully Operational" 0 "Not Fully Operational" ;
+VAL_ 2565865739 EBSRedWarnLampSta 3 "Take no action" 2 "Reserved" 1 "On" 0 "Off" ;
+VAL_ 2565865739 EBSAmWarnLampSta 3 "Take no action" 2 "Reserved" 1 "On" 0 "Off" ;
+VAL_ 2565865739 ATCASRInfoSig 3 "Take no action" 2 "Reserved" 1 "On" 0 "Off" ;
+VAL_ 2565865739 HaltBrakeSw 3 "Not available" 2 "Error" 1 "Halt brake switch active" 0 "Halt brake switch passive" ;
+VAL_ 2565865739 TrailerABSSta 3 "Trailer ABS Status Information Not Available or Parameter Not Supported" 2 "Reserved" 1 "Trailer ABS Active" 0 "Trailer ABS Status Information Available But Not Active" ;
+VAL_ 2565865739 TrailerABSWarnSig 3 "Take no action" 2 "Reserved" 1 "On" 0 "Off" ;
+VAL_ 2558980083 B2VMaxTempCSCSN 255 "Signal Invalid" 18 "CSC18" 17 "CSC17" 16 "CSC16" 15 "CSC15" 14 "CSC14" 13 "CSC13" 12 "CSC12" 11 "CSC11" 10 "CSC10" 9 "CSC9" 8 "CSC8" 7 "CSC7" 6 "CSC6" 5 "CSC5" 4 "CSC4" 3 "CSC3" 2 "CSC2" 1 "CSC1" ;
+VAL_ 2558980083 B2VMinTempCSCSN 255 "Signal Invalid" 18 "CSC18" 17 "CSC17" 16 "CSC16" 15 "CSC15" 14 "CSC14" 13 "CSC13" 12 "CSC12" 11 "CSC11" 10 "CSC10" 9 "CSC9" 8 "CSC8" 7 "CSC7" 6 "CSC6" 5 "CSC5" 4 "CSC4" 3 "CSC3" 2 "CSC2" 1 "CSC1" ;
+VAL_ 2558849011 B2VFaultLv 3 "Level3-Most severe fault" 2 "Level 2-More severe fault" 1 "Level 1-Light fault" 0 "Normal" ;
+VAL_ 2558849011 B2VRqHVPwrOff 3 "Signal Invalid" 2 "not require power off" 1 "require power off" 0 "Signal Invalid" ;
+VAL_ 2558783475 B2VACChgConnSta 1 "Connected" 0 "Not connected" ;
+VAL_ 2558783475 B2VACChgNegRlySta 3 "SignalInvalid" 2 "Closed" 1 "Open" 0 "Reserved" ;
+VAL_ 2558783475 B2VACChgPosRlySta 3 "SignalInvalid" 2 "Closed" 1 "Open" 0 "Reserved" ;
+VAL_ 2558783475 B2VAux1RlySta 3 "SignalInvalid" 2 "Closed" 1 "Open" 0 "Reserved" ;
+VAL_ 2558783475 B2VAux2RlySta 3 "SignalInvalid" 2 "Closed" 1 "Open" 0 "Reserved" ;
+VAL_ 2558783475 B2VAux3RlySta 3 "SignalInvalid" 2 "Closed" 1 "Open" 0 "Reserved" ;
+VAL_ 2558783475 B2VBMUBalSta 1 "Balancing" 0 "No Balancing" ;
+VAL_ 2558783475 B2VBMUHVSta 3 "Fail to HV on" 2 "Hvclosed" 1 "Precharge or Precheck" 0 "HV open" ;
+VAL_ 2558783475 B2VChgMode 3 "Other charging" 2 "Accharging" 1 "DC charging" 0 "Notcharging" ;
+VAL_ 2558783475 B2VChgSta 3 "Charge error" 2 "ChargeFinished" 1 "Charging" 0 "not charging" ;
+VAL_ 2558783475 B2VCoolingSta 1 "cooling" 0 "not cooling" ;
+VAL_ 2558783475 B2VDCChgConnSta 3 "Invalid" 2 "HalfConnected" 1 "Connected" 0 "Not connected" ;
+VAL_ 2558783475 B2VDCChgN1RlySta 3 "SignalInvalid" 2 "Closed" 1 "Open" 0 "Reserved" ;
+VAL_ 2558783475 B2VDCChgN2RlySta 3 "SignalInvalid" 2 "Closed" 1 "Open" 0 "Reserved" ;
+VAL_ 2558783475 B2VDCChgP1RlySta 3 "SignalInvalid" 2 "Closed" 1 "Open" 0 "Reserved" ;
+VAL_ 2558783475 B2VDCChgP2RlySta 3 "SignalInvalid" 2 "Closed" 1 "Open" 0 "Reserved" ;
+VAL_ 2558783475 B2VHeatingSta 1 "heating" 0 "not heat" ;
+VAL_ 2558783475 B2VHeatNegRelaySta 3 "SignalInvalid" 2 "Closed" 1 "Open" 0 "Reserved" ;
+VAL_ 2558783475 B2VHeatPosRlySta 3 "SignalInvalid" 2 "Closed" 1 "Open" 0 "Reserved" ;
+VAL_ 2558783475 B2VMainNegRlySta 3 "SignalInvalid" 2 "Closed" 1 "Open" 0 "Reserved" ;
+VAL_ 2558783475 B2VMainPosRlySta 3 "SignalInvalid" 2 "Closed" 1 "Open" 0 "Reserved" ;
+VAL_ 2558783475 B2VPChgPosRlySta 3 "SignalInvalid" 2 "Closed" 1 "Open" 0 "Reserved" ;
+VAL_ 2558783475 B2VPChrgConnSta 1 "Connected" 0 "Not connected" ;
+VAL_ 2558783475 B2VPChrgNegRlySta 3 "SignalInvalid" 2 "Closed" 1 "Open" 0 "Reserved" ;
+VAL_ 2558783475 B2VPrechgRelaySta 3 "SignalInvalid" 2 "Closed" 1 "Open" 0 "Reserved" ;
+VAL_ 2552025555 ACMODESta 3 "Fan" 2 "Heat" 1 "Cooling" 0 "OFF" ;
+VAL_ 2552025555 ACPwrSta 1 "ON" 0 "OFF" ;
+VAL_ 2552025555 ACFanSpdSta 3 "High Speed" 2 "Mid Speed" 1 "Low Speed" 0 "Stop" ;
+VAL_ 2552025555 THCM_Outcycle_Sta 3 "Invaild" 2 "Invaild" 1 "Out cycle off" 0 "Out cycle on" ;
+VAL_ 2364539648 AccPedalPos1 255 "not avaliable" 254 "error" ;
+VAL_ 2566522297 FDC_BCM_DVRSignalR_Cmd 1 "ON" 0 "OFF" ;
+VAL_ 2566522297 FDC_BCM_DVRSignalL_Cmd 1 "ON" 0 "OFF" ;
+VAL_ 2566522297 FDC_BCM_LBeam_Cmd 1 "ON" 0 "OFF" ;
+VAL_ 2566522297 FDC_BCM_HBeam_Cmd 1 "ON" 0 "OFF" ;
+VAL_ 2566522297 FDC_BCM_PLamp_Cmd 1 "ON" 0 "OFF" ;
+VAL_ 2566522297 FDC_BCM_MDoor_Sta 1 "ON" 0 "OFF" ;
+VAL_ 2566522297 FDC_BCM_FDoor_Sta 1 "ON" 0 "OFF" ;
+VAL_ 2583568724 IVI_Second_Sta 60 "Invalid Value" ;
+VAL_ 2583568724 IVI_Minute_Sta 60 "Invalid Value" ;
+VAL_ 2583568724 IVI_Month_Sta 13 "Invalid Value" ;
+VAL_ 2565866479 SysPowerMode 8 "LV Batt Charge" 7 "Charge" 6 "Afterrun" 5 "sleep" 4 "Power down" 3 "Drive" 2 "Power up" 1 "stand by" 0 "self checking" ;
+VAL_ 1280 NM_FUSION_ERROR_State 8 "BUS OFF_L2" 4 "BUS OFF_L1" 2 "ERROR PASSIVE" 1 "ERROR ACTIVE" 0 "Inactive" ;
+VAL_ 1280 NM_FUSION_Active_WU 1 "Node has woken up the network (active Wakeup)" 0 "Node has not woken up the network (passive wakeup)" ;
+VAL_ 1280 NM_FUSION_CSB 1 "Start of synchronized shutdown is requested by main coordinator" 0 "Start of synchronized shutdown is not requested by main coordinator" ;
+VAL_ 1280 NM_FUSION_PNI 1 "NM PDU contains Partial Network request information" 0 "NM PDU contains no Partial Network request information" ;
+VAL_ 1280 NM_FUSION_Rpt_Msg_Req 1 "Repeat Message State requested" 0 "Repeat Message State not requested" ;
+

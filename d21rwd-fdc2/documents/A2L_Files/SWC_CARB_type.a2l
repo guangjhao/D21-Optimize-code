@@ -1,0 +1,947 @@
+/******************************************************************************
+ *
+ *  ASAP2 file:     SWC_CARB_type.a2l
+ *
+ * Code generation for model "SWC_CARB_type".
+ *
+ * Model version              : 1.9
+ * Simulink Coder version : 9.6 (R2021b) 14-May-2021
+ * C source code generated on : Tue Jun  3 13:57:04 2025
+ * 
+ * Target selection: autosar.tlc
+ * Embedded hardware selection: ARM Compatible->ARM Cortex-M
+ * Code generation objectives: Unspecified
+ * Validation result: Not run
+ *
+ * (add additional file header information here)
+ *
+ ******************************************************************************/
+
+ASAP2_VERSION  1 31   /* Version 1.31 */
+
+/begin PROJECT ProjectName "Project Comment Goes Here"
+  
+  /begin HEADER "Header Comments go here"
+    
+  /end HEADER
+  
+  
+  /begin MODULE ModuleName  "Module Comment Goes Here"
+    
+    /begin MOD_PAR "MOD PAR Comment Goes Here"
+      
+    /end MOD_PAR
+    
+    /begin MOD_COMMON  "Mod Common Comment Here" 
+      BYTE_ORDER     MSB_LAST
+    /end MOD_COMMON
+    
+    /begin RECORD_LAYOUT Scalar_BOOLEAN
+      FNC_VALUES  1 UBYTE COLUMN_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Scalar_UBYTE
+      FNC_VALUES  1 UBYTE COLUMN_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Scalar_BYTE
+      FNC_VALUES  1 SBYTE COLUMN_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Scalar_UWORD
+      FNC_VALUES  1 UWORD COLUMN_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Scalar_SWORD
+      FNC_VALUES 1 SWORD COLUMN_DIR DIRECT
+    /end RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Scalar_ULONG
+      FNC_VALUES  1 ULONG COLUMN_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Scalar_LONG
+      FNC_VALUES  1 SLONG COLUMN_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Scalar_FLOAT32_IEEE
+      FNC_VALUES  1 FLOAT32_IEEE COLUMN_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Scalar_FLOAT64_IEEE
+      FNC_VALUES  1 FLOAT64_IEEE COLUMN_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    
+    /begin RECORD_LAYOUT Lookup1D_BOOLEAN
+      FNC_VALUES  1 UBYTE COLUMN_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_X_BOOLEAN
+      AXIS_PTS_X  1 UBYTE INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_BYTE
+      FNC_VALUES  1 SBYTE COLUMN_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_X_BYTE
+      AXIS_PTS_X  1 SBYTE INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_UBYTE
+      FNC_VALUES  1 UBYTE COLUMN_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_X_UBYTE
+      AXIS_PTS_X  1 UBYTE INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_UWORD
+      FNC_VALUES  1 UWORD COLUMN_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_X_UWORD
+      AXIS_PTS_X  1 UWORD INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_WORD
+      FNC_VALUES  1 SWORD COLUMN_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_X_WORD
+      AXIS_PTS_X  1 SWORD INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_ULONG
+      FNC_VALUES  1 ULONG COLUMN_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_X_ULONG
+      AXIS_PTS_X  1 ULONG INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_SLONG
+      FNC_VALUES  1 SLONG COLUMN_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_X_LONG
+      AXIS_PTS_X  1 SLONG INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_FLOAT32_IEEE
+      FNC_VALUES  1 FLOAT32_IEEE COLUMN_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_X_FLOAT32_IEEE
+      AXIS_PTS_X  1 FLOAT32_IEEE INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_FLOAT64_IEEE
+      FNC_VALUES  1 FLOAT64_IEEE COLUMN_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup1D_X_FLOAT64_IEEE
+      AXIS_PTS_X  1 FLOAT64_IEEE INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_BOOLEAN
+      FNC_VALUES  1 UBYTE COLUMN_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_X_BOOLEAN
+      AXIS_PTS_X  1 UBYTE INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT    
+    
+    /begin RECORD_LAYOUT Lookup2D_UBYTE
+      FNC_VALUES  1 UBYTE COLUMN_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_X_UBYTE
+      AXIS_PTS_X  1 UBYTE INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_BYTE
+      FNC_VALUES  1 SBYTE COLUMN_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_X_BYTE
+      AXIS_PTS_X  1 SBYTE INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_UWORD
+      FNC_VALUES  1 UWORD COLUMN_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_X_UWORD
+      AXIS_PTS_X  1 UWORD INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_WORD
+      FNC_VALUES  1 SWORD COLUMN_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_X_WORD
+      AXIS_PTS_X  1 SWORD INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_ULONG
+      FNC_VALUES  1 ULONG COLUMN_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_X_ULONG
+      AXIS_PTS_X  1 ULONG INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_LONG
+      FNC_VALUES  1 SLONG COLUMN_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_X_LONG
+      AXIS_PTS_X  1 SLONG INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_FLOAT32_IEEE
+      FNC_VALUES  1 FLOAT32_IEEE COLUMN_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_X_FLOAT32_IEEE
+      AXIS_PTS_X 1 FLOAT32_IEEE INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_FLOAT64_IEEE
+      FNC_VALUES  1  FLOAT64_IEEE COLUMN_DIR DIRECT
+    /end   RECORD_LAYOUT
+    
+    /begin RECORD_LAYOUT Lookup2D_X_FLOAT64_IEEE
+      AXIS_PTS_X 1 FLOAT64_IEEE INDEX_INCR DIRECT
+    /end   RECORD_LAYOUT
+    
+    
+    /begin CHARACTERISTIC
+      /* Name                   */      KDID_CPSAVehSpdThres_kph  
+      /* Long Identifier        */      ""
+      /* Type                   */      VALUE 
+      /* ECU Address            */      0x0000 /* @ECU_Address@KDID_CPSAVehSpdThres_kph@ */ 
+      /* Record Layout          */      Scalar_FLOAT32_IEEE 
+      /* Maximum Difference     */      0 
+      /* Conversion Method      */      SWC_CARB_type_CM_single_sec 
+      /* Lower Limit            */      0.0 
+      /* Upper Limit            */      100.0
+    /end CHARACTERISTIC
+    
+    
+    /begin CHARACTERISTIC
+      /* Name                   */      KDID_IPSAVehSpdThres_kph  
+      /* Long Identifier        */      ""
+      /* Type                   */      VALUE 
+      /* ECU Address            */      0x0000 /* @ECU_Address@KDID_IPSAVehSpdThres_kph@ */ 
+      /* Record Layout          */      Scalar_FLOAT32_IEEE 
+      /* Maximum Difference     */      0 
+      /* Conversion Method      */      SWC_CARB_type_CM_single_sec 
+      /* Lower Limit            */      0.0 
+      /* Upper Limit            */      2.0
+    /end CHARACTERISTIC
+    
+    
+    /begin CHARACTERISTIC
+      /* Name                   */      KDID_PropActiveTripThres_s  
+      /* Long Identifier        */      ""
+      /* Type                   */      VALUE 
+      /* ECU Address            */      0x0000 /* @ECU_Address@KDID_PropActiveTripThres_s@ */ 
+      /* Record Layout          */      Scalar_FLOAT32_IEEE 
+      /* Maximum Difference     */      0 
+      /* Conversion Method      */      SWC_CARB_type_CM_single_sec 
+      /* Lower Limit            */      0.0 
+      /* Upper Limit            */      10.0
+    /end CHARACTERISTIC
+    
+    
+    /begin CHARACTERISTIC
+      /* Name                   */      KDID_PSARResetThres_sec  
+      /* Long Identifier        */      ""
+      /* Type                   */      VALUE 
+      /* ECU Address            */      0x0000 /* @ECU_Address@KDID_PSARResetThres_sec@ */ 
+      /* Record Layout          */      Scalar_ULONG 
+      /* Maximum Difference     */      0 
+      /* Conversion Method      */      SWC_CARB_type_CM_uint32_sec 
+      /* Lower Limit            */      0.0 
+      /* Upper Limit            */      4.294967295E+9
+    /end CHARACTERISTIC
+    
+    
+    /begin CHARACTERISTIC
+      /* Name                   */      KDID_DIDModelVersion_raw  
+      /* Long Identifier        */      ""
+      /* Type                   */      VALUE 
+      /* ECU Address            */      0x0000 /* @ECU_Address@KDID_DIDModelVersion_raw@ */ 
+      /* Record Layout          */      Scalar_UBYTE 
+      /* Maximum Difference     */      0 
+      /* Conversion Method      */      SWC_CARB_type_CM_uint8_enum 
+      /* Lower Limit            */      0.0 
+      /* Upper Limit            */      255.0
+    /end CHARACTERISTIC
+    
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VDID_PSAR_sec
+      /* Long identifier        */      ""
+      /* Data type              */      ULONG
+      /* Conversion method      */      SWC_CARB_type_CM_uint32_sec
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      4.294967295E+9
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VDID_PSAR_sec@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VDID_CPSAL_sec
+      /* Long identifier        */      ""
+      /* Data type              */      ULONG
+      /* Conversion method      */      SWC_CARB_type_CM_uint32_sec
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      4.294967295E+9
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VDID_CPSAL_sec@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VDID_CPSAR_sec
+      /* Long identifier        */      ""
+      /* Data type              */      ULONG
+      /* Conversion method      */      SWC_CARB_type_CM_uint32_sec
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      4.294967295E+9
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VDID_CPSAR_sec@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VDID_IPSAL_sec
+      /* Long identifier        */      ""
+      /* Data type              */      ULONG
+      /* Conversion method      */      SWC_CARB_type_CM_uint32_sec
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      4.294967295E+9
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VDID_IPSAL_sec@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VDID_IPSAR_sec
+      /* Long identifier        */      ""
+      /* Data type              */      ULONG
+      /* Conversion method      */      SWC_CARB_type_CM_uint32_sec
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      4.294967295E+9
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VDID_IPSAR_sec@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VDID_PSAL_sec
+      /* Long identifier        */      ""
+      /* Data type              */      ULONG
+      /* Conversion method      */      SWC_CARB_type_CM_uint32_sec
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      4.294967295E+9
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VDID_PSAL_sec@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VDID_QTYPSATRIPSR_cnt
+      /* Long identifier        */      ""
+      /* Data type              */      ULONG
+      /* Conversion method      */      SWC_CARB_type_CM_uint32_cnt
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      4.294967295E+9
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VDID_QTYPSATRIPSR_cnt@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VDID_QTYPSATRIPSL_cnt
+      /* Long identifier        */      ""
+      /* Data type              */      ULONG
+      /* Conversion method      */      SWC_CARB_type_CM_uint32_cnt
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      4.294967295E+9
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VDID_QTYPSATRIPSL_cnt@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VDID_ODOMETER_km
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      SWC_CARB_type_CM_single_km
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      4.294967295E+8
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VDID_ODOMETER_km@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VDID_ResetCDEODTR_km
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      SWC_CARB_type_CM_single_km
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      4.294967295E+8
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VDID_ResetCDEODTR_km@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VDID_CDEODTR_km
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      SWC_CARB_type_CM_single_km
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      4.294967295E+8
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VDID_CDEODTR_km@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VDID_PKERNumerator_kphsqr
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      SWC_CARB_type_CM_single_kphsqr
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      3.4028E+38
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VDID_PKERNumerator_kphsqr@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VDID_PKER_kphsqr
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      SWC_CARB_type_CM_single_kphsqr
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      4.294967295E+9
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VDID_PKER_kphsqr@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VDID_PKELNumerator_kphsqr
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      SWC_CARB_type_CM_single_kphsqr
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      3.4028E+38
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VDID_PKELNumerator_kphsqr@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VDID_CDEODTL_km
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      SWC_CARB_type_CM_single_km
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      -40.0
+      /* Upper limit            */      215.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VDID_CDEODTL_km@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VDID_PKEL_kphsqr
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      SWC_CARB_type_CM_single_kphsqr
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      4.294967295E+9
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VDID_PKEL_kphsqr@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VDID_MILDIST_km
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      SWC_CARB_type_CM_single_km
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      65535.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VDID_MILDIST_km@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VDID_CLRDIST_km
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      SWC_CARB_type_CM_single_km
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      65535.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VDID_CLRDIST_km@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VDID_VSS_kph
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      SWC_CARB_type_CM_single_kph
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      255.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VDID_VSS_kph@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VDID_APPD_pct
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      SWC_CARB_type_CM_single_pct
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      100.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VDID_APPD_pct@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VDID_APPE_pct
+      /* Long identifier        */      ""
+      /* Data type              */      FLOAT32_IEEE
+      /* Conversion method      */      SWC_CARB_type_CM_single_pct
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      100.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VDID_APPE_pct@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VDID_RUNTM_s
+      /* Long identifier        */      ""
+      /* Data type              */      UWORD
+      /* Conversion method      */      SWC_CARB_type_CM_uint16_s
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      65535.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VDID_RUNTM_s@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VDID_NUMPSATRIPSFLTMEMCLR_cnt
+      /* Long identifier        */      ""
+      /* Data type              */      UWORD
+      /* Conversion method      */      SWC_CARB_type_CM_uint16_cnt
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      65535.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VDID_NUMPSATRIPSFLTMEMCLR_cnt@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VDID_ECUNAME_cnt
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      SWC_CARB_type_CM_uint8
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      255
+      /* Array Size             */
+      ARRAY_SIZE                        20
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VDID_ECUNAME_cnt@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VDID_VinCode_cnt
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      SWC_CARB_type_CM_uint8
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      255
+      /* Array Size             */
+      ARRAY_SIZE                        17
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VDID_VinCode_cnt@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VDID_CALID_cnt
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      SWC_CARB_type_CM_uint8
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0
+      /* Upper limit            */      255
+      /* Array Size             */
+      ARRAY_SIZE                        16
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VDID_CALID_cnt@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VDID_PROTOCOLID_enum
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      SWC_CARB_type_CM_uint8_enum
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      2.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VDID_PROTOCOLID_enum@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VDID_DIDModelVersion_raw
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      SWC_CARB_type_CM_uint8_raw
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      255.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VDID_DIDModelVersion_raw@ */
+    /end MEASUREMENT
+    
+    
+    /begin MEASUREMENT
+      /* Name                   */      VDID_DIDModelVersionChksum_raw
+      /* Long identifier        */      ""
+      /* Data type              */      UBYTE
+      /* Conversion method      */      SWC_CARB_type_CM_uint8_raw
+      /* Resolution (Not used)  */      0
+      /* Accuracy (Not used)    */      0
+      /* Lower limit            */      0.0
+      /* Upper limit            */      255.0
+      ECU_ADDRESS                       0x0000 /* @ECU_Address@VDID_DIDModelVersionChksum_raw@ */
+    /end MEASUREMENT
+    
+    /begin COMPU_METHOD
+      /* Name of CompuMethod    */      SWC_CARB_type_CM_single_sec
+      /* Long identifier        */      "Q = V"
+      /* Conversion Type        */      RAT_FUNC
+      /* Format                 */      "%8.6"
+      /* Units                  */      "sec"
+      /* Coefficients           */      COEFFS 0 1 0 0 0 1
+    /end COMPU_METHOD
+    
+    /begin COMPU_METHOD
+      /* Name of CompuMethod    */      SWC_CARB_type_CM_uint32_sec
+      /* Long identifier        */      "Q = V"
+      /* Conversion Type        */      RAT_FUNC
+      /* Format                 */      "%10.0"
+      /* Units                  */      "sec"
+      /* Coefficients           */      COEFFS 0 1 0 0 0 1
+    /end COMPU_METHOD
+    
+    /begin COMPU_METHOD
+      /* Name of CompuMethod    */      SWC_CARB_type_CM_uint8_enum
+      /* Long identifier        */      "Q = V"
+      /* Conversion Type        */      RAT_FUNC
+      /* Format                 */      "%3.0"
+      /* Units                  */      "enum"
+      /* Coefficients           */      COEFFS 0 1 0 0 0 1
+    /end COMPU_METHOD
+    
+    /begin COMPU_METHOD
+      /* Name of CompuMethod    */      SWC_CARB_type_CM_uint32_cnt
+      /* Long identifier        */      "Q = V"
+      /* Conversion Type        */      RAT_FUNC
+      /* Format                 */      "%10.0"
+      /* Units                  */      "cnt"
+      /* Coefficients           */      COEFFS 0 1 0 0 0 1
+    /end COMPU_METHOD
+    
+    /begin COMPU_METHOD
+      /* Name of CompuMethod    */      SWC_CARB_type_CM_single_km
+      /* Long identifier        */      "Q = V"
+      /* Conversion Type        */      RAT_FUNC
+      /* Format                 */      "%8.6"
+      /* Units                  */      "km"
+      /* Coefficients           */      COEFFS 0 1 0 0 0 1
+    /end COMPU_METHOD
+    
+    /begin COMPU_METHOD
+      /* Name of CompuMethod    */      SWC_CARB_type_CM_single_kphsqr
+      /* Long identifier        */      "Q = V"
+      /* Conversion Type        */      RAT_FUNC
+      /* Format                 */      "%8.6"
+      /* Units                  */      "kphsqr"
+      /* Coefficients           */      COEFFS 0 1 0 0 0 1
+    /end COMPU_METHOD
+    
+    /begin COMPU_METHOD
+      /* Name of CompuMethod    */      SWC_CARB_type_CM_single_kph
+      /* Long identifier        */      "Q = V"
+      /* Conversion Type        */      RAT_FUNC
+      /* Format                 */      "%8.6"
+      /* Units                  */      "kph"
+      /* Coefficients           */      COEFFS 0 1 0 0 0 1
+    /end COMPU_METHOD
+    
+    /begin COMPU_METHOD
+      /* Name of CompuMethod    */      SWC_CARB_type_CM_single_pct
+      /* Long identifier        */      "Q = V"
+      /* Conversion Type        */      RAT_FUNC
+      /* Format                 */      "%8.6"
+      /* Units                  */      "pct"
+      /* Coefficients           */      COEFFS 0 1 0 0 0 1
+    /end COMPU_METHOD
+    
+    /begin COMPU_METHOD
+      /* Name of CompuMethod    */      SWC_CARB_type_CM_uint16_s
+      /* Long identifier        */      "Q = V"
+      /* Conversion Type        */      RAT_FUNC
+      /* Format                 */      "%5.0"
+      /* Units                  */      "s"
+      /* Coefficients           */      COEFFS 0 1 0 0 0 1
+    /end COMPU_METHOD
+    
+    /begin COMPU_METHOD
+      /* Name of CompuMethod    */      SWC_CARB_type_CM_uint16_cnt
+      /* Long identifier        */      "Q = V"
+      /* Conversion Type        */      RAT_FUNC
+      /* Format                 */      "%5.0"
+      /* Units                  */      "cnt"
+      /* Coefficients           */      COEFFS 0 1 0 0 0 1
+    /end COMPU_METHOD
+    
+    /begin COMPU_METHOD
+      /* Name of CompuMethod    */      SWC_CARB_type_CM_uint8
+      /* Long identifier        */      "Q = V"
+      /* Conversion Type        */      RAT_FUNC
+      /* Format                 */      "%3.0"
+      /* Units                  */      ""
+      /* Coefficients           */      COEFFS 0 1 0 0 0 1
+    /end COMPU_METHOD
+    
+    /begin COMPU_METHOD
+      /* Name of CompuMethod    */      SWC_CARB_type_CM_uint8_raw
+      /* Long identifier        */      "Q = V"
+      /* Conversion Type        */      RAT_FUNC
+      /* Format                 */      "%3.0"
+      /* Units                  */      "raw"
+      /* Coefficients           */      COEFFS 0 1 0 0 0 1
+    /end COMPU_METHOD
+    
+    /begin GROUP
+      /* Name                   */       SWC_CARB_type
+      /* Long identifier        */       "SWC_CARB_type"
+      /* Root                    */       ROOT
+      /begin SUB_GROUP
+        Root_run_SWC_CARB_5ms_sys
+      /end SUB_GROUP
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       Root_run_SWC_CARB_5ms_sys
+      /* Long identifier        */       "SWC_CARB_type/run_SWC_CARB_5ms_sys"
+      /begin SUB_GROUP
+        S2_DID
+      /end SUB_GROUP
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S2_DID
+      /* Long identifier        */       "SWC_CARB_type/run_SWC_CARB_5ms_sys/DID"
+      /begin SUB_GROUP
+        S3_Subsystem
+      /end SUB_GROUP
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S3_Subsystem
+      /* Long identifier        */       "SWC_CARB_type/run_SWC_CARB_5ms_sys/DID/Subsystem"
+      /begin SUB_GROUP
+        S5_0xF819__Total_Propulsion_System_Active_Time
+        S5_Initializable_U32counter
+        S5_Initializable_U32counter1
+        S5_Subsystem
+      /end SUB_GROUP
+      /begin REF_CHARACTERISTIC
+        KDID_PropActiveTripThres_s
+      /end REF_CHARACTERISTIC
+      /begin REF_MEASUREMENT
+        VDID_APPD_pct
+        VDID_APPE_pct
+        VDID_CALID_cnt
+        VDID_CDEODTL_km
+        VDID_CDEODTR_km
+        VDID_CLRDIST_km
+        VDID_ECUNAME_cnt
+        VDID_MILDIST_km
+        VDID_NUMPSATRIPSFLTMEMCLR_cnt
+        VDID_ODOMETER_km
+        VDID_PKELNumerator_kphsqr
+        VDID_PKEL_kphsqr
+        VDID_PKERNumerator_kphsqr
+        VDID_PKER_kphsqr
+        VDID_PROTOCOLID_enum
+        VDID_RUNTM_s
+        VDID_ResetCDEODTR_km
+        VDID_VSS_kph
+        VDID_VinCode_cnt
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S5_0xF819__Total_Propulsion_System_Active_Time
+      /* Long identifier        */       "SWC_CARB_type/run_SWC_CARB_5ms_sys/DID/Subsystem/0xF819: Total Propulsion System Active Time"
+      /begin SUB_GROUP
+        S6_Seconds_Counter
+        S6_Seconds_Counter1
+        S6_Seconds_Counter2
+        S6_Seconds_Counter3
+        S6_Seconds_Counter4
+        S6_Seconds_Counter5
+      /end SUB_GROUP
+      /begin REF_CHARACTERISTIC
+        KDID_CPSAVehSpdThres_kph
+        KDID_IPSAVehSpdThres_kph
+        KDID_PSARResetThres_sec
+      /end REF_CHARACTERISTIC
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S5_Initializable_U32counter
+      /* Long identifier        */       "SWC_CARB_type/run_SWC_CARB_5ms_sys/DID/Subsystem/Initializable_U32counter"
+      /begin REF_MEASUREMENT
+        VDID_QTYPSATRIPSR_cnt
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S5_Initializable_U32counter1
+      /* Long identifier        */       "SWC_CARB_type/run_SWC_CARB_5ms_sys/DID/Subsystem/Initializable_U32counter1"
+      /begin REF_MEASUREMENT
+        VDID_QTYPSATRIPSL_cnt
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S5_Subsystem
+      /* Long identifier        */       "SWC_CARB_type/run_SWC_CARB_5ms_sys/DID/Subsystem/Subsystem"
+      /begin SUB_GROUP
+        S27_Checksum
+      /end SUB_GROUP
+      /begin REF_CHARACTERISTIC
+        KDID_DIDModelVersion_raw
+      /end REF_CHARACTERISTIC
+      /begin REF_MEASUREMENT
+        VDID_DIDModelVersion_raw
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S6_Seconds_Counter
+      /* Long identifier        */       "SWC_CARB_type/run_SWC_CARB_5ms_sys/DID/Subsystem/0xF819: Total Propulsion System Active Time/Seconds_Counter"
+      /begin REF_MEASUREMENT
+        VDID_PSAR_sec
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S6_Seconds_Counter1
+      /* Long identifier        */       "SWC_CARB_type/run_SWC_CARB_5ms_sys/DID/Subsystem/0xF819: Total Propulsion System Active Time/Seconds_Counter1"
+      /begin REF_MEASUREMENT
+        VDID_PSAL_sec
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S6_Seconds_Counter2
+      /* Long identifier        */       "SWC_CARB_type/run_SWC_CARB_5ms_sys/DID/Subsystem/0xF819: Total Propulsion System Active Time/Seconds_Counter2"
+      /begin REF_MEASUREMENT
+        VDID_IPSAR_sec
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S6_Seconds_Counter3
+      /* Long identifier        */       "SWC_CARB_type/run_SWC_CARB_5ms_sys/DID/Subsystem/0xF819: Total Propulsion System Active Time/Seconds_Counter3"
+      /begin REF_MEASUREMENT
+        VDID_IPSAL_sec
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S6_Seconds_Counter4
+      /* Long identifier        */       "SWC_CARB_type/run_SWC_CARB_5ms_sys/DID/Subsystem/0xF819: Total Propulsion System Active Time/Seconds_Counter4"
+      /begin REF_MEASUREMENT
+        VDID_CPSAR_sec
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S6_Seconds_Counter5
+      /* Long identifier        */       "SWC_CARB_type/run_SWC_CARB_5ms_sys/DID/Subsystem/0xF819: Total Propulsion System Active Time/Seconds_Counter5"
+      /begin REF_MEASUREMENT
+        VDID_CPSAL_sec
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    /begin GROUP
+      /* Name                   */       S27_Checksum
+      /* Long identifier        */       "SWC_CARB_type/run_SWC_CARB_5ms_sys/DID/Subsystem/Subsystem/Checksum"
+      /begin REF_MEASUREMENT
+        VDID_DIDModelVersionChksum_raw
+      /end REF_MEASUREMENT
+    /end GROUP
+    
+    
+  /end MODULE
+  
+  
+/end PROJECT
+/* (add any file trailer comments here) */
+/* EOF SWC_CARB_type.a2l */

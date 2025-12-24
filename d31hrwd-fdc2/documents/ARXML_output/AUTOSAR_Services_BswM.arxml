@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-3-0.xsd">
+  <AR-PACKAGES>
+    <AR-PACKAGE T="2016-10-05T18:09:46+02:00">
+      <SHORT-NAME>AUTOSAR</SHORT-NAME>
+      <ADMIN-DATA>
+        <SDGS>
+          <SDG>
+            <SD GID="_ExtensionKey">AB::LOCK</SD>
+            <SD GID="_Type">java.lang.String</SD>
+            <SD GID="_Value">LOCKED_WITH_CHILDREN</SD>
+          </SDG>
+        </SDGS>
+      </ADMIN-DATA>
+      <AR-PACKAGES>
+        <AR-PACKAGE T="2016-10-05T18:10:44+02:00" UUID="22d281b2-af03-4967-8934-5518ad329e3f">
+          <SHORT-NAME>Services</SHORT-NAME>
+          <AR-PACKAGES>
+            <AR-PACKAGE>
+              <SHORT-NAME>BswM</SHORT-NAME>
+              <ADMIN-DATA>
+                <SDGS>
+                  <SDG>
+                    <SD GID="_ExtensionKey">AB::LOCK</SD>
+                    <SD GID="_Type">java.lang.String</SD>
+                    <SD GID="_Value">UNLOCKED_WITH_CHILDREN</SD>
+                  </SDG>
+                </SDGS>
+              </ADMIN-DATA>
+              <ELEMENTS>
+                <MODE-DECLARATION-GROUP>
+                  <SHORT-NAME>AppModeGroup</SHORT-NAME>
+                  <CATEGORY>EXPLICIT_ORDER</CATEGORY>
+                  <INITIAL-MODE-REF DEST="MODE-DECLARATION">/AUTOSAR/Services/BswM/AppModeGroup/APP_MODE_ACTIVE</INITIAL-MODE-REF>
+                  <MODE-DECLARATIONS>
+                    <MODE-DECLARATION>
+                      <SHORT-NAME>APP_MODE_ACTIVE</SHORT-NAME>
+                      <VALUE>0</VALUE>
+                    </MODE-DECLARATION>
+                    <MODE-DECLARATION>
+                      <SHORT-NAME>APP_MODE_INACTIVE</SHORT-NAME>
+                      <VALUE>1</VALUE>
+                    </MODE-DECLARATION>
+                  </MODE-DECLARATIONS>
+                  <ON-TRANSITION-VALUE>2</ON-TRANSITION-VALUE>
+                </MODE-DECLARATION-GROUP>
+                <MODE-SWITCH-INTERFACE>
+                  <SHORT-NAME>AppModeInterface</SHORT-NAME>
+                  <IS-SERVICE>true</IS-SERVICE>
+                  <MODE-GROUP>
+                    <SHORT-NAME>AppMode</SHORT-NAME>
+                    <TYPE-TREF DEST="MODE-DECLARATION-GROUP">/AUTOSAR/Services/BswM/AppModeGroup</TYPE-TREF>
+                  </MODE-GROUP>
+                </MODE-SWITCH-INTERFACE>
+                <SENDER-RECEIVER-INTERFACE>
+                  <SHORT-NAME>AppModeRequestInterface</SHORT-NAME>
+                  <IS-SERVICE>true</IS-SERVICE>
+                  <DATA-ELEMENTS>
+                    <VARIABLE-DATA-PROTOTYPE>
+                      <SHORT-NAME>requestedMode</SHORT-NAME>
+                      <SW-DATA-DEF-PROPS>
+                        <SW-DATA-DEF-PROPS-VARIANTS>
+                          <SW-DATA-DEF-PROPS-CONDITIONAL>
+                            <SW-IMPL-POLICY>STANDARD</SW-IMPL-POLICY>
+                          </SW-DATA-DEF-PROPS-CONDITIONAL>
+                        </SW-DATA-DEF-PROPS-VARIANTS>
+                      </SW-DATA-DEF-PROPS>
+                      <TYPE-TREF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR/Services/BswM/AppModeRequestType</TYPE-TREF>
+                    </VARIABLE-DATA-PROTOTYPE>
+                  </DATA-ELEMENTS>
+                </SENDER-RECEIVER-INTERFACE>
+                <IMPLEMENTATION-DATA-TYPE>
+                  <SHORT-NAME>AppModeRequestType</SHORT-NAME>
+                  <CATEGORY>VALUE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_PlatformTypes/BaseTypes/uint8</BASE-TYPE-REF>
+                        <COMPU-METHOD-REF DEST="COMPU-METHOD">/AUTOSAR/Services/BswM/AppStateEnumTable</COMPU-METHOD-REF>
+                        <DATA-CONSTR-REF DEST="DATA-CONSTR">/AUTOSAR/Services/BswM/dc_AppModeRequestType</DATA-CONSTR-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE>
+                <DATA-TYPE-MAPPING-SET>
+                  <SHORT-NAME>AppModeTypeMap</SHORT-NAME>
+                  <MODE-REQUEST-TYPE-MAPS>
+                    <MODE-REQUEST-TYPE-MAP>
+                      <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint8</IMPLEMENTATION-DATA-TYPE-REF>
+                      <MODE-GROUP-REF DEST="MODE-DECLARATION-GROUP">/AUTOSAR/Services/BswM/AppModeGroup</MODE-GROUP-REF>
+                    </MODE-REQUEST-TYPE-MAP>
+                  </MODE-REQUEST-TYPE-MAPS>
+                </DATA-TYPE-MAPPING-SET>
+                <COMPU-METHOD>
+                  <SHORT-NAME>AppStateEnumTable</SHORT-NAME>
+                  <CATEGORY>TEXTTABLE</CATEGORY>
+                  <COMPU-INTERNAL-TO-PHYS>
+                    <COMPU-SCALES>
+                      <COMPU-SCALE>
+                        <LOWER-LIMIT>0</LOWER-LIMIT>
+                        <UPPER-LIMIT>0</UPPER-LIMIT>
+                        <COMPU-CONST>
+                          <VT>APP_MODE_ACTIVE</VT>
+                        </COMPU-CONST>
+                      </COMPU-SCALE>
+                      <COMPU-SCALE>
+                        <LOWER-LIMIT>1</LOWER-LIMIT>
+                        <UPPER-LIMIT>1</UPPER-LIMIT>
+                        <COMPU-CONST>
+                          <VT>APP_MODE_INACTIVE</VT>
+                        </COMPU-CONST>
+                      </COMPU-SCALE>
+                    </COMPU-SCALES>
+                  </COMPU-INTERNAL-TO-PHYS>
+                </COMPU-METHOD>
+                <DATA-CONSTR>
+                  <SHORT-NAME>dc_AppModeRequestType</SHORT-NAME>
+                  <DATA-CONSTR-RULES>
+                    <DATA-CONSTR-RULE>
+                      <INTERNAL-CONSTRS>
+                        <LOWER-LIMIT INTERVAL-TYPE="CLOSED">0</LOWER-LIMIT>
+                        <UPPER-LIMIT INTERVAL-TYPE="CLOSED">2</UPPER-LIMIT>
+                      </INTERNAL-CONSTRS>
+                    </DATA-CONSTR-RULE>
+                  </DATA-CONSTR-RULES>
+                </DATA-CONSTR>
+              </ELEMENTS>
+            </AR-PACKAGE>
+          </AR-PACKAGES>
+        </AR-PACKAGE>
+      </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

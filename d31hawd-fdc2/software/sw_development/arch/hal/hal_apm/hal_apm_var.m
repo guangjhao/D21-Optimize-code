@@ -1,0 +1,64 @@
+%===========$Update Time :  2024-11-01 17:52:34 $=========
+disp('Loading $Id: hal_apm_var.m  2024-11-01 17:52:34    foxtron $      FVT_export_businfo_v2.0 2021-11-02')
+%% Calibration Name, Units, Min, Max, Data Type, Comment
+
+%% Outputs Signals
+% Outputs Signals %
+a2l_mon('VHAL_PASDRMR_cm', 	'cm',    0,    255,    'uint8',    '');
+a2l_mon('VHAL_PASDRML_cm', 	'cm',    0,    255,    'uint8',    '');
+a2l_mon('VHAL_PASDRCR_cm', 	'cm',    0,    255,    'uint8',    '');
+a2l_mon('VHAL_PASDRCL_cm', 	'cm',    0,    255,    'uint8',    '');
+a2l_mon('VHAL_PASDFMR_cm', 	'cm',    0,    255,    'uint8',    '');
+a2l_mon('VHAL_PASDFML_cm', 	'cm',    0,    255,    'uint8',    '');
+a2l_mon('VHAL_PASDFCR_cm', 	'cm',    0,    255,    'uint8',    '');
+a2l_mon('VHAL_PASDFCL_cm', 	'cm',    0,    255,    'uint8',    '');
+a2l_mon('VHAL_APSDRLR_cm', 	'cm',    0,    65535,    'uint16',    '');
+a2l_mon('VHAL_APSDRLL_cm', 	'cm',    0,    65535,    'uint16',    '');
+a2l_mon('VHAL_APSDFLR_cm', 	'cm',    0,    65535,    'uint16',    '');
+a2l_mon('VHAL_APSDFLL_cm', 	'cm',    0,    65535,    'uint16',    '');
+a2l_mon('VHAL_PASAFCL_enum', 	'enum',    0,    255,    'uint8',    '');
+a2l_mon('VHAL_PASARMR_enum', 	'enum',    0,    255,    'uint8',    '');
+a2l_mon('VHAL_PASARML_enum', 	'enum',    0,    255,    'uint8',    '');
+a2l_mon('VHAL_PASARCR_enum', 	'enum',    0,    255,    'uint8',    '');
+a2l_mon('VHAL_PASARCL_enum', 	'enum',    0,    255,    'uint8',    '');
+a2l_mon('VHAL_PASAFMR_enum', 	'enum',    0,    255,    'uint8',    '');
+a2l_mon('VHAL_PASAFML_enum', 	'enum',    0,    255,    'uint8',    '');
+a2l_mon('VHAL_PASAFCR_enum', 	'enum',    0,    255,    'uint8',    '');
+a2l_mon('VHAL_USSStaRMR_flg', 	'flg',    0,    1,    'boolean',    '');
+a2l_mon('VHAL_USSStaRML_flg', 	'flg',    0,    1,    'boolean',    '');
+a2l_mon('VHAL_USSStaRLR_flg', 	'flg',    0,    1,    'boolean',    '');
+a2l_mon('VHAL_USSStaRLL_flg', 	'flg',    0,    1,    'boolean',    '');
+a2l_mon('VHAL_USSStaRCR_flg', 	'flg',    0,    1,    'boolean',    '');
+a2l_mon('VHAL_USSStaRCL_flg', 	'flg',    0,    1,    'boolean',    '');
+a2l_mon('VHAL_USSStaFMR_flg', 	'flg',    0,    1,    'boolean',    '');
+a2l_mon('VHAL_USSStaFML_flg', 	'flg',    0,    1,    'boolean',    '');
+a2l_mon('VHAL_USSStaFLR_flg', 	'flg',    0,    1,    'boolean',    '');
+a2l_mon('VHAL_USSStaFLL_flg', 	'flg',    0,    1,    'boolean',    '');
+a2l_mon('VHAL_USSStaFCR_flg', 	'flg',    0,    1,    'boolean',    '');
+a2l_mon('VHAL_USSStaFCL_flg', 	'flg',    0,    1,    'boolean',    '');
+a2l_mon('VHAL_Chime_enum', 	'enum',    0,    255,    'uint8',    '');
+a2l_mon('VHAL_SNSRLayout_enum', 	'enum',    0,    255,    'uint8',    '');
+a2l_mon('VHAL_StaFSya_flg', 	'flg',    0,    1,    'boolean',    '');
+a2l_mon('VHAL_ModOperation_enum', 	'enum',    0,    255,    'uint8',    '');
+a2l_mon('VHAL_APSProgressPCT_pct', 	'pct',    0,    100,    'single',    '');
+a2l_mon('VHAL_APSRQDisplay_enum', 	'enum',    0,    255,    'uint8',    '');
+a2l_mon('VHAL_APSSWVer_enum', 	'enum',    0,    255,    'uint8',    '');
+a2l_mon('VHAL_APSHWVer_enum', 	'enum',    0,    255,    'uint8',    '');
+a2l_mon('VHAL_APSExitCondition_enum', 	'enum',    0,    255,    'uint8',    '');
+a2l_mon('VHAL_APSAngleTarget_Deg', 	'Deg',    -900,    900,    'single',    '');
+a2l_mon('VHAL_APSStaSystem_enum', 	'enum',    0,    7,    'uint8',    '');
+a2l_mon('VHAL_APSVRqEPASCtrl_flg', 	'flg',    0,    1,    'boolean',    '');
+a2l_mon('VHAL_APSRqEPASCtrl_flg', 	'flg',    0,    1,    'boolean',    '');
+a2l_mon('VHAL_APSReq_enum', 	'enum',    0,    7,    'uint8',    '');
+a2l_mon('VHAL_APSDecReq_mps2', 	'mps2',    0,    25.4,    'single',    '');
+a2l_mon('VHAL_APSDecReqA_flg', 	'flg',    0,    1,    'boolean',    '');
+a2l_mon('VHAL_APSShiftPosnReq_enum', 	'enum',    0,    15,    'uint8',    '');
+a2l_mon('VHAL_APSSpeedCMD_kph', 	'kph',    0,    20,    'single',    '');
+a2l_mon('VHAL_APSVMCReqA_flg', 	'flg',    0,    1,    'boolean',    '');
+a2l_mon('VHAL_CAASSta_enum', 	'enum',    0,    7,    'uint8',    '');
+a2l_mon('VHAL_CAASVMCReqA_flg', 	'flg',    0,    1,    'boolean',    '');
+a2l_mon('VHAL_APSPwrReq_enum', 	'enum',    0,    4,    'uint8',    '');
+a2l_mon('VHAL_RAPSBCMLockReq_flg', 	'flg',    0,    1,    'boolean',    '');
+a2l_mon('VHAL_RAPSBCMLamp_enum', 	'enum',    0,    3,    'uint8',    '');
+a2l_mon('VHAL_RAPSErrWarnSta_enum', 	'enum',    0,    7,    'uint8',    '');
+a2l_mon('VHAL_RAPSErrLv1_flg', 	'flg',    0,    1,    'boolean',    '');

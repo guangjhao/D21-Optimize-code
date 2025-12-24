@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-3-0.xsd">
+  <ADMIN-DATA>
+    <SDGS>
+      <SDG>
+        <SD GID="ScriptVersion">0.0.1</SD>
+		<SD GID="InputFile_RoutingTable">RoutingTableName</SD>
+      </SDG>
+    </SDGS>
+  </ADMIN-DATA>
+  <AR-PACKAGES>
+   <AR-PACKAGE>
+      <SHORT-NAME>Gateway</SHORT-NAME>
+      <ELEMENTS>
+        <GATEWAY>
+          <SHORT-NAME>Gateway_TargetECU</SHORT-NAME>
+          <ECU-REF DEST="ECU-INSTANCE">/ECU/FUSION</ECU-REF>
+          <SIGNAL-MAPPINGS>
+            <I-SIGNAL-MAPPING>
+              <SOURCE-SIGNAL-REF DEST="I-SIGNAL-TRIGGERING">/CAN3/Cluster/CAN3/CAN3/ST_CS_BMS3</SOURCE-SIGNAL-REF>
+              <TARGET-SIGNAL-REF DEST="I-SIGNAL-TRIGGERING">/CAN2/Cluster/CAN2/CAN2/ST_CS_BMS3</TARGET-SIGNAL-REF>
+            </I-SIGNAL-MAPPING>
+          </SIGNAL-MAPPINGS>
+        </GATEWAY>
+      </ELEMENTS>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>

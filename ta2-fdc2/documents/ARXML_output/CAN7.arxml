@@ -1,0 +1,1633 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AUTOSAR xmlns="http://autosar.org/schema/r4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://autosar.org/schema/r4.0 AUTOSAR_4-3-0.xsd">
+  <ADMIN-DATA>
+    <SDGS>
+      <SDG>
+        <SD GID="ScriptVersion">2024.07.02</SD>
+        <SD GID="InputFile_DBC">FPT2_100.1_CAN7_FUSION_20250325_Fix_AUTOSAR</SD>
+		<SD GID="InputFile_Msglink">CAN_MessageLinkOut_202505081833.xlsx</SD>
+      </SDG>
+    </SDGS>
+  </ADMIN-DATA>
+  <AR-PACKAGES>
+    <AR-PACKAGE>
+      <SHORT-NAME>CAN7</SHORT-NAME>
+      <AR-PACKAGES>
+        <AR-PACKAGE>
+		<SHORT-NAME>Frame</SHORT-NAME>
+          <ELEMENTS>
+            <CAN-FRAME>
+              <SHORT-NAME>CAN7_DiagFuncReqFT</SHORT-NAME>
+              <FRAME-LENGTH>8</FRAME-LENGTH>
+              <PDU-TO-FRAME-MAPPINGS>
+                <PDU-TO-FRAME-MAPPING>
+                  <SHORT-NAME>CAN7_DiagFuncReqFT</SHORT-NAME>
+                  <PACKING-BYTE-ORDER>MOST-SIGNIFICANT-BYTE-LAST</PACKING-BYTE-ORDER>
+                  <PDU-REF DEST="N-PDU">/CAN7/PDU/CAN7_DiagFuncReqFT</PDU-REF>
+                  <START-POSITION>0</START-POSITION>
+                </PDU-TO-FRAME-MAPPING>
+              </PDU-TO-FRAME-MAPPINGS>
+            </CAN-FRAME>
+            <CAN-FRAME>
+              <SHORT-NAME>CAN7_DiagPhyReqToDATAC</SHORT-NAME>
+              <FRAME-LENGTH>8</FRAME-LENGTH>
+              <PDU-TO-FRAME-MAPPINGS>
+                <PDU-TO-FRAME-MAPPING>
+                  <SHORT-NAME>CAN7_DiagPhyReqToDATAC</SHORT-NAME>
+                  <PACKING-BYTE-ORDER>MOST-SIGNIFICANT-BYTE-LAST</PACKING-BYTE-ORDER>
+                  <PDU-REF DEST="N-PDU">/CAN7/PDU/CAN7_DiagPhyReqToDATAC</PDU-REF>
+                  <START-POSITION>0</START-POSITION>
+                </PDU-TO-FRAME-MAPPING>
+              </PDU-TO-FRAME-MAPPINGS>
+            </CAN-FRAME>
+            <CAN-FRAME>
+              <SHORT-NAME>CAN7_DiagPhyReqToEDR</SHORT-NAME>
+              <FRAME-LENGTH>8</FRAME-LENGTH>
+              <PDU-TO-FRAME-MAPPINGS>
+                <PDU-TO-FRAME-MAPPING>
+                  <SHORT-NAME>CAN7_DiagPhyReqToEDR</SHORT-NAME>
+                  <PACKING-BYTE-ORDER>MOST-SIGNIFICANT-BYTE-LAST</PACKING-BYTE-ORDER>
+                  <PDU-REF DEST="N-PDU">/CAN7/PDU/CAN7_DiagPhyReqToEDR</PDU-REF>
+                  <START-POSITION>0</START-POSITION>
+                </PDU-TO-FRAME-MAPPING>
+              </PDU-TO-FRAME-MAPPINGS>
+            </CAN-FRAME>
+            <CAN-FRAME>
+              <SHORT-NAME>CAN7_DiagPhyReqToNSAS</SHORT-NAME>
+              <FRAME-LENGTH>8</FRAME-LENGTH>
+              <PDU-TO-FRAME-MAPPINGS>
+                <PDU-TO-FRAME-MAPPING>
+                  <SHORT-NAME>CAN7_DiagPhyReqToNSAS</SHORT-NAME>
+                  <PACKING-BYTE-ORDER>MOST-SIGNIFICANT-BYTE-LAST</PACKING-BYTE-ORDER>
+                  <PDU-REF DEST="N-PDU">/CAN7/PDU/CAN7_DiagPhyReqToNSAS</PDU-REF>
+                  <START-POSITION>0</START-POSITION>
+                </PDU-TO-FRAME-MAPPING>
+              </PDU-TO-FRAME-MAPPINGS>
+            </CAN-FRAME>
+            <CAN-FRAME>
+              <SHORT-NAME>CAN7_DiagRespFromDATAC</SHORT-NAME>
+              <FRAME-LENGTH>8</FRAME-LENGTH>
+              <PDU-TO-FRAME-MAPPINGS>
+                <PDU-TO-FRAME-MAPPING>
+                  <SHORT-NAME>CAN7_DiagRespFromDATAC</SHORT-NAME>
+                  <PACKING-BYTE-ORDER>MOST-SIGNIFICANT-BYTE-LAST</PACKING-BYTE-ORDER>
+                  <PDU-REF DEST="N-PDU">/CAN7/PDU/CAN7_DiagRespFromDATAC</PDU-REF>
+                  <START-POSITION>0</START-POSITION>
+                </PDU-TO-FRAME-MAPPING>
+              </PDU-TO-FRAME-MAPPINGS>
+            </CAN-FRAME>
+            <CAN-FRAME>
+              <SHORT-NAME>CAN7_DiagRespFromEDR</SHORT-NAME>
+              <FRAME-LENGTH>8</FRAME-LENGTH>
+              <PDU-TO-FRAME-MAPPINGS>
+                <PDU-TO-FRAME-MAPPING>
+                  <SHORT-NAME>CAN7_DiagRespFromEDR</SHORT-NAME>
+                  <PACKING-BYTE-ORDER>MOST-SIGNIFICANT-BYTE-LAST</PACKING-BYTE-ORDER>
+                  <PDU-REF DEST="N-PDU">/CAN7/PDU/CAN7_DiagRespFromEDR</PDU-REF>
+                  <START-POSITION>0</START-POSITION>
+                </PDU-TO-FRAME-MAPPING>
+              </PDU-TO-FRAME-MAPPINGS>
+            </CAN-FRAME>
+            <CAN-FRAME>
+              <SHORT-NAME>CAN7_DiagRespFromNSAS</SHORT-NAME>
+              <FRAME-LENGTH>8</FRAME-LENGTH>
+              <PDU-TO-FRAME-MAPPINGS>
+                <PDU-TO-FRAME-MAPPING>
+                  <SHORT-NAME>CAN7_DiagRespFromNSAS</SHORT-NAME>
+                  <PACKING-BYTE-ORDER>MOST-SIGNIFICANT-BYTE-LAST</PACKING-BYTE-ORDER>
+                  <PDU-REF DEST="N-PDU">/CAN7/PDU/CAN7_DiagRespFromNSAS</PDU-REF>
+                  <START-POSITION>0</START-POSITION>
+                </PDU-TO-FRAME-MAPPING>
+              </PDU-TO-FRAME-MAPPINGS>
+            </CAN-FRAME>
+            <CAN-FRAME>
+              <SHORT-NAME>CAN7_FD7_C100_0</SHORT-NAME>
+              <FRAME-LENGTH>8</FRAME-LENGTH>
+              <PDU-TO-FRAME-MAPPINGS>
+                <PDU-TO-FRAME-MAPPING>
+                  <SHORT-NAME>CAN7_FD7_C100_0</SHORT-NAME>
+                  <PACKING-BYTE-ORDER>MOST-SIGNIFICANT-BYTE-LAST</PACKING-BYTE-ORDER>
+                  <PDU-REF DEST="I-SIGNAL-I-PDU">/CAN7/PDU/CAN7_FD7_C100_0</PDU-REF>
+                  <START-POSITION>0</START-POSITION>
+                </PDU-TO-FRAME-MAPPING>
+              </PDU-TO-FRAME-MAPPINGS>
+            </CAN-FRAME>
+            <CAN-FRAME>
+              <SHORT-NAME>CAN7_FD7_C10_0</SHORT-NAME>
+              <FRAME-LENGTH>8</FRAME-LENGTH>
+              <PDU-TO-FRAME-MAPPINGS>
+                <PDU-TO-FRAME-MAPPING>
+                  <SHORT-NAME>CAN7_FD7_C10_0</SHORT-NAME>
+                  <PACKING-BYTE-ORDER>MOST-SIGNIFICANT-BYTE-LAST</PACKING-BYTE-ORDER>
+                  <PDU-REF DEST="I-SIGNAL-I-PDU">/CAN7/PDU/CAN7_FD7_C10_0</PDU-REF>
+                  <START-POSITION>0</START-POSITION>
+                </PDU-TO-FRAME-MAPPING>
+              </PDU-TO-FRAME-MAPPINGS>
+            </CAN-FRAME>
+            <CAN-FRAME>
+              <SHORT-NAME>CAN7_FD7_C200_0</SHORT-NAME>
+              <FRAME-LENGTH>8</FRAME-LENGTH>
+              <PDU-TO-FRAME-MAPPINGS>
+                <PDU-TO-FRAME-MAPPING>
+                  <SHORT-NAME>CAN7_FD7_C200_0</SHORT-NAME>
+                  <PACKING-BYTE-ORDER>MOST-SIGNIFICANT-BYTE-LAST</PACKING-BYTE-ORDER>
+                  <PDU-REF DEST="I-SIGNAL-I-PDU">/CAN7/PDU/CAN7_FD7_C200_0</PDU-REF>
+                  <START-POSITION>0</START-POSITION>
+                </PDU-TO-FRAME-MAPPING>
+              </PDU-TO-FRAME-MAPPINGS>
+            </CAN-FRAME>
+            <CAN-FRAME>
+              <SHORT-NAME>CAN7_FD7_C50_0</SHORT-NAME>
+              <FRAME-LENGTH>8</FRAME-LENGTH>
+              <PDU-TO-FRAME-MAPPINGS>
+                <PDU-TO-FRAME-MAPPING>
+                  <SHORT-NAME>CAN7_FD7_C50_0</SHORT-NAME>
+                  <PACKING-BYTE-ORDER>MOST-SIGNIFICANT-BYTE-LAST</PACKING-BYTE-ORDER>
+                  <PDU-REF DEST="I-SIGNAL-I-PDU">/CAN7/PDU/CAN7_FD7_C50_0</PDU-REF>
+                  <START-POSITION>0</START-POSITION>
+                </PDU-TO-FRAME-MAPPING>
+              </PDU-TO-FRAME-MAPPINGS>
+            </CAN-FRAME>
+            <CAN-FRAME>
+              <SHORT-NAME>CAN7_FD7_CE100_0</SHORT-NAME>
+              <FRAME-LENGTH>8</FRAME-LENGTH>
+              <PDU-TO-FRAME-MAPPINGS>
+                <PDU-TO-FRAME-MAPPING>
+                  <SHORT-NAME>CAN7_FD7_CE100_0</SHORT-NAME>
+                  <PACKING-BYTE-ORDER>MOST-SIGNIFICANT-BYTE-LAST</PACKING-BYTE-ORDER>
+                  <PDU-REF DEST="I-SIGNAL-I-PDU">/CAN7/PDU/CAN7_FD7_CE100_0</PDU-REF>
+                  <START-POSITION>0</START-POSITION>
+                </PDU-TO-FRAME-MAPPING>
+              </PDU-TO-FRAME-MAPPINGS>
+            </CAN-FRAME>
+            <CAN-FRAME>
+              <SHORT-NAME>CAN7_NMm_FUSION_TX</SHORT-NAME>
+              <FRAME-LENGTH>8</FRAME-LENGTH>
+              <PDU-TO-FRAME-MAPPINGS>
+                <PDU-TO-FRAME-MAPPING>
+                  <SHORT-NAME>CAN7_NMm_FUSION_TX</SHORT-NAME>
+                  <PACKING-BYTE-ORDER>MOST-SIGNIFICANT-BYTE-LAST</PACKING-BYTE-ORDER>
+                  <PDU-REF DEST="NM-PDU">/CAN7/PDU/CAN7_NMm_FUSION_TX</PDU-REF>
+                  <START-POSITION>0</START-POSITION>
+                </PDU-TO-FRAME-MAPPING>
+              </PDU-TO-FRAME-MAPPINGS>
+            </CAN-FRAME>
+            <CAN-FRAME>
+              <SHORT-NAME>CAN7_NMm_FUSION_RX</SHORT-NAME>
+              <FRAME-LENGTH>8</FRAME-LENGTH>
+              <PDU-TO-FRAME-MAPPINGS>
+                <PDU-TO-FRAME-MAPPING>
+                  <SHORT-NAME>CAN7_NMm_FUSION_RX</SHORT-NAME>
+                  <PACKING-BYTE-ORDER>MOST-SIGNIFICANT-BYTE-LAST</PACKING-BYTE-ORDER>
+                  <PDU-REF DEST="NM-PDU">/CAN7/PDU/CAN7_NMm_FUSION_RX</PDU-REF>
+                  <START-POSITION>0</START-POSITION>
+                </PDU-TO-FRAME-MAPPING>
+              </PDU-TO-FRAME-MAPPINGS>
+            </CAN-FRAME>
+		  </ELEMENTS>
+        </AR-PACKAGE>
+		<AR-PACKAGE>
+          <SHORT-NAME>PDU</SHORT-NAME>
+          <ELEMENTS>
+			<I-SIGNAL-I-PDU>
+              <SHORT-NAME>CAN7_FD7_C100_0</SHORT-NAME>
+              <LENGTH>8</LENGTH>
+              <I-PDU-TIMING-SPECIFICATIONS>
+                <I-PDU-TIMING>
+                  <MINIMUM-DELAY>0.0</MINIMUM-DELAY>
+                  <TRANSMISSION-MODE-DECLARATION>
+                    <TRANSMISSION-MODE-TRUE-TIMING>
+                      <CYCLIC-TIMING>
+                        <TIME-PERIOD>
+                          <VALUE>0.1</VALUE>
+                        </TIME-PERIOD>
+                      </CYCLIC-TIMING>
+                    </TRANSMISSION-MODE-TRUE-TIMING>
+                  </TRANSMISSION-MODE-DECLARATION>
+                </I-PDU-TIMING>
+              </I-PDU-TIMING-SPECIFICATIONS>
+              <I-SIGNAL-TO-PDU-MAPPINGS>
+                <I-SIGNAL-TO-I-PDU-MAPPING>
+                  <SHORT-NAME>CAN7_SG_FD7_C100_0</SHORT-NAME>
+                  <I-SIGNAL-GROUP-REF DEST="I-SIGNAL-GROUP">/CAN7/ISignalGroup/CAN7_SG_FD7_C100_0</I-SIGNAL-GROUP-REF>
+                  <START-POSITION>0</START-POSITION>
+                  <TRANSFER-PROPERTY>PENDING</TRANSFER-PROPERTY>
+                </I-SIGNAL-TO-I-PDU-MAPPING>
+				<I-SIGNAL-TO-I-PDU-MAPPING>
+                  <SHORT-NAME>CAN7_VCUKeyStatus</SHORT-NAME>
+                  <I-SIGNAL-REF DEST="I-SIGNAL">/CAN7/ISignal/CAN7_VCUKeyStatus</I-SIGNAL-REF>
+                  <PACKING-BYTE-ORDER>MOST-SIGNIFICANT-BYTE-LAST</PACKING-BYTE-ORDER>
+                  <START-POSITION>0</START-POSITION>
+                  <TRANSFER-PROPERTY>PENDING</TRANSFER-PROPERTY>
+                </I-SIGNAL-TO-I-PDU-MAPPING>
+			  </I-SIGNAL-TO-PDU-MAPPINGS>
+              <UNUSED-BIT-PATTERN>0</UNUSED-BIT-PATTERN>
+            </I-SIGNAL-I-PDU>
+			<I-SIGNAL-I-PDU>
+              <SHORT-NAME>CAN7_FD7_C10_0</SHORT-NAME>
+              <LENGTH>8</LENGTH>
+              <I-PDU-TIMING-SPECIFICATIONS>
+                <I-PDU-TIMING>
+                  <MINIMUM-DELAY>0.0</MINIMUM-DELAY>
+                  <TRANSMISSION-MODE-DECLARATION>
+                    <TRANSMISSION-MODE-TRUE-TIMING>
+                      <CYCLIC-TIMING>
+                        <TIME-PERIOD>
+                          <VALUE>0.01</VALUE>
+                        </TIME-PERIOD>
+                      </CYCLIC-TIMING>
+                    </TRANSMISSION-MODE-TRUE-TIMING>
+                  </TRANSMISSION-MODE-DECLARATION>
+                </I-PDU-TIMING>
+              </I-PDU-TIMING-SPECIFICATIONS>
+              <I-SIGNAL-TO-PDU-MAPPINGS>
+                <I-SIGNAL-TO-I-PDU-MAPPING>
+                  <SHORT-NAME>CAN7_SG_FD7_C10_0</SHORT-NAME>
+                  <I-SIGNAL-GROUP-REF DEST="I-SIGNAL-GROUP">/CAN7/ISignalGroup/CAN7_SG_FD7_C10_0</I-SIGNAL-GROUP-REF>
+                  <START-POSITION>0</START-POSITION>
+                  <TRANSFER-PROPERTY>PENDING</TRANSFER-PROPERTY>
+                </I-SIGNAL-TO-I-PDU-MAPPING>
+				<I-SIGNAL-TO-I-PDU-MAPPING>
+                  <SHORT-NAME>CAN7_EMotorSpd</SHORT-NAME>
+                  <I-SIGNAL-REF DEST="I-SIGNAL">/CAN7/ISignal/CAN7_EMotorSpd</I-SIGNAL-REF>
+                  <PACKING-BYTE-ORDER>MOST-SIGNIFICANT-BYTE-LAST</PACKING-BYTE-ORDER>
+                  <START-POSITION>8</START-POSITION>
+                  <TRANSFER-PROPERTY>PENDING</TRANSFER-PROPERTY>
+                </I-SIGNAL-TO-I-PDU-MAPPING>
+			  </I-SIGNAL-TO-PDU-MAPPINGS>
+              <UNUSED-BIT-PATTERN>0</UNUSED-BIT-PATTERN>
+            </I-SIGNAL-I-PDU>
+			<I-SIGNAL-I-PDU>
+              <SHORT-NAME>CAN7_FD7_C200_0</SHORT-NAME>
+              <LENGTH>8</LENGTH>
+              <I-PDU-TIMING-SPECIFICATIONS>
+                <I-PDU-TIMING>
+                  <MINIMUM-DELAY>0.0</MINIMUM-DELAY>
+                  <TRANSMISSION-MODE-DECLARATION>
+                    <TRANSMISSION-MODE-TRUE-TIMING>
+                      <CYCLIC-TIMING>
+                        <TIME-PERIOD>
+                          <VALUE>0.2</VALUE>
+                        </TIME-PERIOD>
+                      </CYCLIC-TIMING>
+                    </TRANSMISSION-MODE-TRUE-TIMING>
+                  </TRANSMISSION-MODE-DECLARATION>
+                </I-PDU-TIMING>
+              </I-PDU-TIMING-SPECIFICATIONS>
+              <I-SIGNAL-TO-PDU-MAPPINGS>
+                <I-SIGNAL-TO-I-PDU-MAPPING>
+                  <SHORT-NAME>CAN7_SG_FD7_C200_0</SHORT-NAME>
+                  <I-SIGNAL-GROUP-REF DEST="I-SIGNAL-GROUP">/CAN7/ISignalGroup/CAN7_SG_FD7_C200_0</I-SIGNAL-GROUP-REF>
+                  <START-POSITION>0</START-POSITION>
+                  <TRANSFER-PROPERTY>PENDING</TRANSFER-PROPERTY>
+                </I-SIGNAL-TO-I-PDU-MAPPING>
+				<I-SIGNAL-TO-I-PDU-MAPPING>
+                  <SHORT-NAME>CAN7_SysPowerMode</SHORT-NAME>
+                  <I-SIGNAL-REF DEST="I-SIGNAL">/CAN7/ISignal/CAN7_SysPowerMode</I-SIGNAL-REF>
+                  <PACKING-BYTE-ORDER>MOST-SIGNIFICANT-BYTE-LAST</PACKING-BYTE-ORDER>
+                  <START-POSITION>0</START-POSITION>
+                  <TRANSFER-PROPERTY>PENDING</TRANSFER-PROPERTY>
+                </I-SIGNAL-TO-I-PDU-MAPPING>
+			  </I-SIGNAL-TO-PDU-MAPPINGS>
+              <UNUSED-BIT-PATTERN>0</UNUSED-BIT-PATTERN>
+            </I-SIGNAL-I-PDU>
+			<I-SIGNAL-I-PDU>
+              <SHORT-NAME>CAN7_FD7_C50_0</SHORT-NAME>
+              <LENGTH>8</LENGTH>
+              <I-PDU-TIMING-SPECIFICATIONS>
+                <I-PDU-TIMING>
+                  <MINIMUM-DELAY>0.0</MINIMUM-DELAY>
+                  <TRANSMISSION-MODE-DECLARATION>
+                    <TRANSMISSION-MODE-TRUE-TIMING>
+                      <CYCLIC-TIMING>
+                        <TIME-PERIOD>
+                          <VALUE>0.05</VALUE>
+                        </TIME-PERIOD>
+                      </CYCLIC-TIMING>
+                    </TRANSMISSION-MODE-TRUE-TIMING>
+                  </TRANSMISSION-MODE-DECLARATION>
+                </I-PDU-TIMING>
+              </I-PDU-TIMING-SPECIFICATIONS>
+              <I-SIGNAL-TO-PDU-MAPPINGS>
+                <I-SIGNAL-TO-I-PDU-MAPPING>
+                  <SHORT-NAME>CAN7_SG_FD7_C50_0</SHORT-NAME>
+                  <I-SIGNAL-GROUP-REF DEST="I-SIGNAL-GROUP">/CAN7/ISignalGroup/CAN7_SG_FD7_C50_0</I-SIGNAL-GROUP-REF>
+                  <START-POSITION>0</START-POSITION>
+                  <TRANSFER-PROPERTY>PENDING</TRANSFER-PROPERTY>
+                </I-SIGNAL-TO-I-PDU-MAPPING>
+				<I-SIGNAL-TO-I-PDU-MAPPING>
+                  <SHORT-NAME>CAN7_AccPedalPos1</SHORT-NAME>
+                  <I-SIGNAL-REF DEST="I-SIGNAL">/CAN7/ISignal/CAN7_AccPedalPos1</I-SIGNAL-REF>
+                  <PACKING-BYTE-ORDER>MOST-SIGNIFICANT-BYTE-LAST</PACKING-BYTE-ORDER>
+                  <START-POSITION>8</START-POSITION>
+                  <TRANSFER-PROPERTY>PENDING</TRANSFER-PROPERTY>
+                </I-SIGNAL-TO-I-PDU-MAPPING>
+			  </I-SIGNAL-TO-PDU-MAPPINGS>
+              <UNUSED-BIT-PATTERN>0</UNUSED-BIT-PATTERN>
+            </I-SIGNAL-I-PDU>
+			<I-SIGNAL-I-PDU>
+              <SHORT-NAME>CAN7_FD7_CE100_0</SHORT-NAME>
+              <LENGTH>8</LENGTH>
+              <I-PDU-TIMING-SPECIFICATIONS>
+                <I-PDU-TIMING>
+                  <MINIMUM-DELAY>0.0</MINIMUM-DELAY>
+                  <TRANSMISSION-MODE-DECLARATION>
+                    <TRANSMISSION-MODE-TRUE-TIMING>
+                      <CYCLIC-TIMING>
+                        <TIME-PERIOD>
+                          <VALUE>0.1</VALUE>
+                        </TIME-PERIOD>
+                      </CYCLIC-TIMING>
+                      <EVENT-CONTROLLED-TIMING>
+                        <NUMBER-OF-REPETITIONS>0</NUMBER-OF-REPETITIONS>
+                        <REPETITION-PERIOD>
+                          <VALUE>0</VALUE>
+                        </REPETITION-PERIOD>
+                      </EVENT-CONTROLLED-TIMING>
+                    </TRANSMISSION-MODE-TRUE-TIMING>
+                  </TRANSMISSION-MODE-DECLARATION>
+                </I-PDU-TIMING>
+              </I-PDU-TIMING-SPECIFICATIONS>
+              <I-SIGNAL-TO-PDU-MAPPINGS>
+                <I-SIGNAL-TO-I-PDU-MAPPING>
+                  <SHORT-NAME>CAN7_SG_FD7_CE100_0</SHORT-NAME>
+                  <I-SIGNAL-GROUP-REF DEST="I-SIGNAL-GROUP">/CAN7/ISignalGroup/CAN7_SG_FD7_CE100_0</I-SIGNAL-GROUP-REF>
+                  <START-POSITION>0</START-POSITION>
+                  <TRANSFER-PROPERTY>TRIGGERED-ON-CHANGE</TRANSFER-PROPERTY>
+                </I-SIGNAL-TO-I-PDU-MAPPING>
+				<I-SIGNAL-TO-I-PDU-MAPPING>
+                  <SHORT-NAME>CAN7_FDC_BCM_DVRSignalL_Cmd</SHORT-NAME>
+                  <I-SIGNAL-REF DEST="I-SIGNAL">/CAN7/ISignal/CAN7_FDC_BCM_DVRSignalL_Cmd</I-SIGNAL-REF>
+                  <PACKING-BYTE-ORDER>MOST-SIGNIFICANT-BYTE-LAST</PACKING-BYTE-ORDER>
+                  <START-POSITION>13</START-POSITION>
+                  <TRANSFER-PROPERTY>TRIGGERED-ON-CHANGE</TRANSFER-PROPERTY>
+                </I-SIGNAL-TO-I-PDU-MAPPING>
+				<I-SIGNAL-TO-I-PDU-MAPPING>
+                  <SHORT-NAME>CAN7_FDC_BCM_DVRSignalR_Cmd</SHORT-NAME>
+                  <I-SIGNAL-REF DEST="I-SIGNAL">/CAN7/ISignal/CAN7_FDC_BCM_DVRSignalR_Cmd</I-SIGNAL-REF>
+                  <PACKING-BYTE-ORDER>MOST-SIGNIFICANT-BYTE-LAST</PACKING-BYTE-ORDER>
+                  <START-POSITION>14</START-POSITION>
+                  <TRANSFER-PROPERTY>TRIGGERED-ON-CHANGE</TRANSFER-PROPERTY>
+                </I-SIGNAL-TO-I-PDU-MAPPING>
+				<I-SIGNAL-TO-I-PDU-MAPPING>
+                  <SHORT-NAME>CAN7_FDC_BCM_FDoor_Sta</SHORT-NAME>
+                  <I-SIGNAL-REF DEST="I-SIGNAL">/CAN7/ISignal/CAN7_FDC_BCM_FDoor_Sta</I-SIGNAL-REF>
+                  <PACKING-BYTE-ORDER>MOST-SIGNIFICANT-BYTE-LAST</PACKING-BYTE-ORDER>
+                  <START-POSITION>0</START-POSITION>
+                  <TRANSFER-PROPERTY>TRIGGERED-ON-CHANGE</TRANSFER-PROPERTY>
+                </I-SIGNAL-TO-I-PDU-MAPPING>
+				<I-SIGNAL-TO-I-PDU-MAPPING>
+                  <SHORT-NAME>CAN7_FDC_BCM_HBeam_Cmd</SHORT-NAME>
+                  <I-SIGNAL-REF DEST="I-SIGNAL">/CAN7/ISignal/CAN7_FDC_BCM_HBeam_Cmd</I-SIGNAL-REF>
+                  <PACKING-BYTE-ORDER>MOST-SIGNIFICANT-BYTE-LAST</PACKING-BYTE-ORDER>
+                  <START-POSITION>3</START-POSITION>
+                  <TRANSFER-PROPERTY>TRIGGERED-ON-CHANGE</TRANSFER-PROPERTY>
+                </I-SIGNAL-TO-I-PDU-MAPPING>
+				<I-SIGNAL-TO-I-PDU-MAPPING>
+                  <SHORT-NAME>CAN7_FDC_BCM_LBeam_Cmd</SHORT-NAME>
+                  <I-SIGNAL-REF DEST="I-SIGNAL">/CAN7/ISignal/CAN7_FDC_BCM_LBeam_Cmd</I-SIGNAL-REF>
+                  <PACKING-BYTE-ORDER>MOST-SIGNIFICANT-BYTE-LAST</PACKING-BYTE-ORDER>
+                  <START-POSITION>4</START-POSITION>
+                  <TRANSFER-PROPERTY>TRIGGERED-ON-CHANGE</TRANSFER-PROPERTY>
+                </I-SIGNAL-TO-I-PDU-MAPPING>
+				<I-SIGNAL-TO-I-PDU-MAPPING>
+                  <SHORT-NAME>CAN7_FDC_BCM_MDoor_Sta</SHORT-NAME>
+                  <I-SIGNAL-REF DEST="I-SIGNAL">/CAN7/ISignal/CAN7_FDC_BCM_MDoor_Sta</I-SIGNAL-REF>
+                  <PACKING-BYTE-ORDER>MOST-SIGNIFICANT-BYTE-LAST</PACKING-BYTE-ORDER>
+                  <START-POSITION>1</START-POSITION>
+                  <TRANSFER-PROPERTY>TRIGGERED-ON-CHANGE</TRANSFER-PROPERTY>
+                </I-SIGNAL-TO-I-PDU-MAPPING>
+				<I-SIGNAL-TO-I-PDU-MAPPING>
+                  <SHORT-NAME>CAN7_FDC_BCM_PLamp_Cmd</SHORT-NAME>
+                  <I-SIGNAL-REF DEST="I-SIGNAL">/CAN7/ISignal/CAN7_FDC_BCM_PLamp_Cmd</I-SIGNAL-REF>
+                  <PACKING-BYTE-ORDER>MOST-SIGNIFICANT-BYTE-LAST</PACKING-BYTE-ORDER>
+                  <START-POSITION>7</START-POSITION>
+                  <TRANSFER-PROPERTY>TRIGGERED-ON-CHANGE</TRANSFER-PROPERTY>
+                </I-SIGNAL-TO-I-PDU-MAPPING>
+			  </I-SIGNAL-TO-PDU-MAPPINGS>
+              <UNUSED-BIT-PATTERN>0</UNUSED-BIT-PATTERN>
+            </I-SIGNAL-I-PDU>
+			<NM-PDU>
+              <SHORT-NAME>CAN7_NMm_FUSION_TX</SHORT-NAME>
+              <LENGTH>8</LENGTH>
+              <UNUSED-BIT-PATTERN>0</UNUSED-BIT-PATTERN>
+            </NM-PDU>
+			<NM-PDU>
+              <SHORT-NAME>CAN7_NMm_FUSION_RX</SHORT-NAME>
+              <LENGTH>8</LENGTH>
+              <UNUSED-BIT-PATTERN>0</UNUSED-BIT-PATTERN>
+            </NM-PDU>
+			<N-PDU>
+              <SHORT-NAME>CAN7_DiagFuncReqFT</SHORT-NAME>
+              <LENGTH>8</LENGTH>
+            </N-PDU>
+			<N-PDU>
+              <SHORT-NAME>CAN7_DiagPhyReqToDATAC</SHORT-NAME>
+              <LENGTH>8</LENGTH>
+            </N-PDU>
+			<N-PDU>
+              <SHORT-NAME>CAN7_DiagPhyReqToEDR</SHORT-NAME>
+              <LENGTH>8</LENGTH>
+            </N-PDU>
+			<N-PDU>
+              <SHORT-NAME>CAN7_DiagPhyReqToNSAS</SHORT-NAME>
+              <LENGTH>8</LENGTH>
+            </N-PDU>
+			<N-PDU>
+              <SHORT-NAME>CAN7_DiagRespFromDATAC</SHORT-NAME>
+              <LENGTH>8</LENGTH>
+            </N-PDU>
+			<N-PDU>
+              <SHORT-NAME>CAN7_DiagRespFromEDR</SHORT-NAME>
+              <LENGTH>8</LENGTH>
+            </N-PDU>
+			<N-PDU>
+              <SHORT-NAME>CAN7_DiagRespFromNSAS</SHORT-NAME>
+              <LENGTH>8</LENGTH>
+            </N-PDU>
+		   </ELEMENTS>
+        </AR-PACKAGE>
+		<AR-PACKAGE>
+          <SHORT-NAME>ISignal</SHORT-NAME>
+          <ELEMENTS>
+            <I-SIGNAL>
+              <SHORT-NAME>CAN7_VCUKeyStatus</SHORT-NAME>
+              <DATA-TYPE-POLICY>LEGACY</DATA-TYPE-POLICY>
+              <I-SIGNAL-TYPE>PRIMITIVE</I-SIGNAL-TYPE>
+              <INIT-VALUE>
+                <CONSTANT-REFERENCE>
+                  <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/CAN7/ConstantSpecification/Init_CAN7_VCUKeyStatus</CONSTANT-REF>
+                </CONSTANT-REFERENCE>
+              </INIT-VALUE>
+              <LENGTH>2</LENGTH>
+              <NETWORK-REPRESENTATION-PROPS>
+                <SW-DATA-DEF-PROPS-VARIANTS>
+                  <SW-DATA-DEF-PROPS-CONDITIONAL>
+                    <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_Platform/BaseTypes/uint8</BASE-TYPE-REF>
+                    <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint8</IMPLEMENTATION-DATA-TYPE-REF>
+                  </SW-DATA-DEF-PROPS-CONDITIONAL>
+                </SW-DATA-DEF-PROPS-VARIANTS>
+              </NETWORK-REPRESENTATION-PROPS>
+              <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/CAN7/Signal/CAN7_VCUKeyStatus</SYSTEM-SIGNAL-REF>
+            </I-SIGNAL>
+            <I-SIGNAL>
+              <SHORT-NAME>CAN7_EMotorSpd</SHORT-NAME>
+              <DATA-TYPE-POLICY>LEGACY</DATA-TYPE-POLICY>
+              <I-SIGNAL-TYPE>PRIMITIVE</I-SIGNAL-TYPE>
+              <INIT-VALUE>
+                <CONSTANT-REFERENCE>
+                  <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/CAN7/ConstantSpecification/Init_CAN7_EMotorSpd</CONSTANT-REF>
+                </CONSTANT-REFERENCE>
+              </INIT-VALUE>
+              <LENGTH>16</LENGTH>
+              <NETWORK-REPRESENTATION-PROPS>
+                <SW-DATA-DEF-PROPS-VARIANTS>
+                  <SW-DATA-DEF-PROPS-CONDITIONAL>
+                    <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_Platform/BaseTypes/uint16</BASE-TYPE-REF>
+                    <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint16</IMPLEMENTATION-DATA-TYPE-REF>
+                  </SW-DATA-DEF-PROPS-CONDITIONAL>
+                </SW-DATA-DEF-PROPS-VARIANTS>
+              </NETWORK-REPRESENTATION-PROPS>
+              <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/CAN7/Signal/CAN7_EMotorSpd</SYSTEM-SIGNAL-REF>
+            </I-SIGNAL>
+            <I-SIGNAL>
+              <SHORT-NAME>CAN7_SysPowerMode</SHORT-NAME>
+              <DATA-TYPE-POLICY>LEGACY</DATA-TYPE-POLICY>
+              <I-SIGNAL-TYPE>PRIMITIVE</I-SIGNAL-TYPE>
+              <INIT-VALUE>
+                <CONSTANT-REFERENCE>
+                  <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/CAN7/ConstantSpecification/Init_CAN7_SysPowerMode</CONSTANT-REF>
+                </CONSTANT-REFERENCE>
+              </INIT-VALUE>
+              <LENGTH>4</LENGTH>
+              <NETWORK-REPRESENTATION-PROPS>
+                <SW-DATA-DEF-PROPS-VARIANTS>
+                  <SW-DATA-DEF-PROPS-CONDITIONAL>
+                    <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_Platform/BaseTypes/uint8</BASE-TYPE-REF>
+                    <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint8</IMPLEMENTATION-DATA-TYPE-REF>
+                  </SW-DATA-DEF-PROPS-CONDITIONAL>
+                </SW-DATA-DEF-PROPS-VARIANTS>
+              </NETWORK-REPRESENTATION-PROPS>
+              <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/CAN7/Signal/CAN7_SysPowerMode</SYSTEM-SIGNAL-REF>
+            </I-SIGNAL>
+            <I-SIGNAL>
+              <SHORT-NAME>CAN7_AccPedalPos1</SHORT-NAME>
+              <DATA-TYPE-POLICY>LEGACY</DATA-TYPE-POLICY>
+              <I-SIGNAL-TYPE>PRIMITIVE</I-SIGNAL-TYPE>
+              <INIT-VALUE>
+                <CONSTANT-REFERENCE>
+                  <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/CAN7/ConstantSpecification/Init_CAN7_AccPedalPos1</CONSTANT-REF>
+                </CONSTANT-REFERENCE>
+              </INIT-VALUE>
+              <LENGTH>8</LENGTH>
+              <NETWORK-REPRESENTATION-PROPS>
+                <SW-DATA-DEF-PROPS-VARIANTS>
+                  <SW-DATA-DEF-PROPS-CONDITIONAL>
+                    <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_Platform/BaseTypes/uint8</BASE-TYPE-REF>
+                    <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint8</IMPLEMENTATION-DATA-TYPE-REF>
+                  </SW-DATA-DEF-PROPS-CONDITIONAL>
+                </SW-DATA-DEF-PROPS-VARIANTS>
+              </NETWORK-REPRESENTATION-PROPS>
+              <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/CAN7/Signal/CAN7_AccPedalPos1</SYSTEM-SIGNAL-REF>
+            </I-SIGNAL>
+            <I-SIGNAL>
+              <SHORT-NAME>CAN7_FDC_BCM_DVRSignalL_Cmd</SHORT-NAME>
+              <DATA-TYPE-POLICY>LEGACY</DATA-TYPE-POLICY>
+              <I-SIGNAL-TYPE>PRIMITIVE</I-SIGNAL-TYPE>
+              <INIT-VALUE>
+                <CONSTANT-REFERENCE>
+                  <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/CAN7/ConstantSpecification/Init_CAN7_FDC_BCM_DVRSignalL_Cmd</CONSTANT-REF>
+                </CONSTANT-REFERENCE>
+              </INIT-VALUE>
+              <LENGTH>1</LENGTH>
+              <NETWORK-REPRESENTATION-PROPS>
+                <SW-DATA-DEF-PROPS-VARIANTS>
+                  <SW-DATA-DEF-PROPS-CONDITIONAL>
+                    <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_Platform/BaseTypes/uint8</BASE-TYPE-REF>
+                    <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint8</IMPLEMENTATION-DATA-TYPE-REF>
+                  </SW-DATA-DEF-PROPS-CONDITIONAL>
+                </SW-DATA-DEF-PROPS-VARIANTS>
+              </NETWORK-REPRESENTATION-PROPS>
+              <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/CAN7/Signal/CAN7_FDC_BCM_DVRSignalL_Cmd</SYSTEM-SIGNAL-REF>
+            </I-SIGNAL>
+            <I-SIGNAL>
+              <SHORT-NAME>CAN7_FDC_BCM_DVRSignalR_Cmd</SHORT-NAME>
+              <DATA-TYPE-POLICY>LEGACY</DATA-TYPE-POLICY>
+              <I-SIGNAL-TYPE>PRIMITIVE</I-SIGNAL-TYPE>
+              <INIT-VALUE>
+                <CONSTANT-REFERENCE>
+                  <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/CAN7/ConstantSpecification/Init_CAN7_FDC_BCM_DVRSignalR_Cmd</CONSTANT-REF>
+                </CONSTANT-REFERENCE>
+              </INIT-VALUE>
+              <LENGTH>1</LENGTH>
+              <NETWORK-REPRESENTATION-PROPS>
+                <SW-DATA-DEF-PROPS-VARIANTS>
+                  <SW-DATA-DEF-PROPS-CONDITIONAL>
+                    <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_Platform/BaseTypes/uint8</BASE-TYPE-REF>
+                    <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint8</IMPLEMENTATION-DATA-TYPE-REF>
+                  </SW-DATA-DEF-PROPS-CONDITIONAL>
+                </SW-DATA-DEF-PROPS-VARIANTS>
+              </NETWORK-REPRESENTATION-PROPS>
+              <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/CAN7/Signal/CAN7_FDC_BCM_DVRSignalR_Cmd</SYSTEM-SIGNAL-REF>
+            </I-SIGNAL>
+            <I-SIGNAL>
+              <SHORT-NAME>CAN7_FDC_BCM_FDoor_Sta</SHORT-NAME>
+              <DATA-TYPE-POLICY>LEGACY</DATA-TYPE-POLICY>
+              <I-SIGNAL-TYPE>PRIMITIVE</I-SIGNAL-TYPE>
+              <INIT-VALUE>
+                <CONSTANT-REFERENCE>
+                  <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/CAN7/ConstantSpecification/Init_CAN7_FDC_BCM_FDoor_Sta</CONSTANT-REF>
+                </CONSTANT-REFERENCE>
+              </INIT-VALUE>
+              <LENGTH>1</LENGTH>
+              <NETWORK-REPRESENTATION-PROPS>
+                <SW-DATA-DEF-PROPS-VARIANTS>
+                  <SW-DATA-DEF-PROPS-CONDITIONAL>
+                    <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_Platform/BaseTypes/uint8</BASE-TYPE-REF>
+                    <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint8</IMPLEMENTATION-DATA-TYPE-REF>
+                  </SW-DATA-DEF-PROPS-CONDITIONAL>
+                </SW-DATA-DEF-PROPS-VARIANTS>
+              </NETWORK-REPRESENTATION-PROPS>
+              <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/CAN7/Signal/CAN7_FDC_BCM_FDoor_Sta</SYSTEM-SIGNAL-REF>
+            </I-SIGNAL>
+            <I-SIGNAL>
+              <SHORT-NAME>CAN7_FDC_BCM_HBeam_Cmd</SHORT-NAME>
+              <DATA-TYPE-POLICY>LEGACY</DATA-TYPE-POLICY>
+              <I-SIGNAL-TYPE>PRIMITIVE</I-SIGNAL-TYPE>
+              <INIT-VALUE>
+                <CONSTANT-REFERENCE>
+                  <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/CAN7/ConstantSpecification/Init_CAN7_FDC_BCM_HBeam_Cmd</CONSTANT-REF>
+                </CONSTANT-REFERENCE>
+              </INIT-VALUE>
+              <LENGTH>1</LENGTH>
+              <NETWORK-REPRESENTATION-PROPS>
+                <SW-DATA-DEF-PROPS-VARIANTS>
+                  <SW-DATA-DEF-PROPS-CONDITIONAL>
+                    <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_Platform/BaseTypes/uint8</BASE-TYPE-REF>
+                    <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint8</IMPLEMENTATION-DATA-TYPE-REF>
+                  </SW-DATA-DEF-PROPS-CONDITIONAL>
+                </SW-DATA-DEF-PROPS-VARIANTS>
+              </NETWORK-REPRESENTATION-PROPS>
+              <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/CAN7/Signal/CAN7_FDC_BCM_HBeam_Cmd</SYSTEM-SIGNAL-REF>
+            </I-SIGNAL>
+            <I-SIGNAL>
+              <SHORT-NAME>CAN7_FDC_BCM_LBeam_Cmd</SHORT-NAME>
+              <DATA-TYPE-POLICY>LEGACY</DATA-TYPE-POLICY>
+              <I-SIGNAL-TYPE>PRIMITIVE</I-SIGNAL-TYPE>
+              <INIT-VALUE>
+                <CONSTANT-REFERENCE>
+                  <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/CAN7/ConstantSpecification/Init_CAN7_FDC_BCM_LBeam_Cmd</CONSTANT-REF>
+                </CONSTANT-REFERENCE>
+              </INIT-VALUE>
+              <LENGTH>1</LENGTH>
+              <NETWORK-REPRESENTATION-PROPS>
+                <SW-DATA-DEF-PROPS-VARIANTS>
+                  <SW-DATA-DEF-PROPS-CONDITIONAL>
+                    <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_Platform/BaseTypes/uint8</BASE-TYPE-REF>
+                    <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint8</IMPLEMENTATION-DATA-TYPE-REF>
+                  </SW-DATA-DEF-PROPS-CONDITIONAL>
+                </SW-DATA-DEF-PROPS-VARIANTS>
+              </NETWORK-REPRESENTATION-PROPS>
+              <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/CAN7/Signal/CAN7_FDC_BCM_LBeam_Cmd</SYSTEM-SIGNAL-REF>
+            </I-SIGNAL>
+            <I-SIGNAL>
+              <SHORT-NAME>CAN7_FDC_BCM_MDoor_Sta</SHORT-NAME>
+              <DATA-TYPE-POLICY>LEGACY</DATA-TYPE-POLICY>
+              <I-SIGNAL-TYPE>PRIMITIVE</I-SIGNAL-TYPE>
+              <INIT-VALUE>
+                <CONSTANT-REFERENCE>
+                  <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/CAN7/ConstantSpecification/Init_CAN7_FDC_BCM_MDoor_Sta</CONSTANT-REF>
+                </CONSTANT-REFERENCE>
+              </INIT-VALUE>
+              <LENGTH>1</LENGTH>
+              <NETWORK-REPRESENTATION-PROPS>
+                <SW-DATA-DEF-PROPS-VARIANTS>
+                  <SW-DATA-DEF-PROPS-CONDITIONAL>
+                    <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_Platform/BaseTypes/uint8</BASE-TYPE-REF>
+                    <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint8</IMPLEMENTATION-DATA-TYPE-REF>
+                  </SW-DATA-DEF-PROPS-CONDITIONAL>
+                </SW-DATA-DEF-PROPS-VARIANTS>
+              </NETWORK-REPRESENTATION-PROPS>
+              <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/CAN7/Signal/CAN7_FDC_BCM_MDoor_Sta</SYSTEM-SIGNAL-REF>
+            </I-SIGNAL>
+            <I-SIGNAL>
+              <SHORT-NAME>CAN7_FDC_BCM_PLamp_Cmd</SHORT-NAME>
+              <DATA-TYPE-POLICY>LEGACY</DATA-TYPE-POLICY>
+              <I-SIGNAL-TYPE>PRIMITIVE</I-SIGNAL-TYPE>
+              <INIT-VALUE>
+                <CONSTANT-REFERENCE>
+                  <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/CAN7/ConstantSpecification/Init_CAN7_FDC_BCM_PLamp_Cmd</CONSTANT-REF>
+                </CONSTANT-REFERENCE>
+              </INIT-VALUE>
+              <LENGTH>1</LENGTH>
+              <NETWORK-REPRESENTATION-PROPS>
+                <SW-DATA-DEF-PROPS-VARIANTS>
+                  <SW-DATA-DEF-PROPS-CONDITIONAL>
+                    <BASE-TYPE-REF DEST="SW-BASE-TYPE">/AUTOSAR_Platform/BaseTypes/uint8</BASE-TYPE-REF>
+                    <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint8</IMPLEMENTATION-DATA-TYPE-REF>
+                  </SW-DATA-DEF-PROPS-CONDITIONAL>
+                </SW-DATA-DEF-PROPS-VARIANTS>
+              </NETWORK-REPRESENTATION-PROPS>
+              <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/CAN7/Signal/CAN7_FDC_BCM_PLamp_Cmd</SYSTEM-SIGNAL-REF>
+            </I-SIGNAL>
+		  </ELEMENTS>
+        </AR-PACKAGE>
+		<AR-PACKAGE>
+          <SHORT-NAME>ISignalGroup</SHORT-NAME>
+          <ELEMENTS>
+            <I-SIGNAL-GROUP>
+              <SHORT-NAME>CAN7_SG_FD7_C100_0</SHORT-NAME>
+              <I-SIGNAL-REFS>
+                <I-SIGNAL-REF DEST="I-SIGNAL">/CAN7/ISignal/CAN7_VCUKeyStatus</I-SIGNAL-REF>
+			  </I-SIGNAL-REFS>
+              <SYSTEM-SIGNAL-GROUP-REF DEST="SYSTEM-SIGNAL-GROUP">/CAN7/SignalGroup/CAN7_SG_FD7_C100_0</SYSTEM-SIGNAL-GROUP-REF>
+            </I-SIGNAL-GROUP>
+            <I-SIGNAL-GROUP>
+              <SHORT-NAME>CAN7_SG_FD7_C10_0</SHORT-NAME>
+              <I-SIGNAL-REFS>
+                <I-SIGNAL-REF DEST="I-SIGNAL">/CAN7/ISignal/CAN7_EMotorSpd</I-SIGNAL-REF>
+			  </I-SIGNAL-REFS>
+              <SYSTEM-SIGNAL-GROUP-REF DEST="SYSTEM-SIGNAL-GROUP">/CAN7/SignalGroup/CAN7_SG_FD7_C10_0</SYSTEM-SIGNAL-GROUP-REF>
+            </I-SIGNAL-GROUP>
+            <I-SIGNAL-GROUP>
+              <SHORT-NAME>CAN7_SG_FD7_C200_0</SHORT-NAME>
+              <I-SIGNAL-REFS>
+                <I-SIGNAL-REF DEST="I-SIGNAL">/CAN7/ISignal/CAN7_SysPowerMode</I-SIGNAL-REF>
+			  </I-SIGNAL-REFS>
+              <SYSTEM-SIGNAL-GROUP-REF DEST="SYSTEM-SIGNAL-GROUP">/CAN7/SignalGroup/CAN7_SG_FD7_C200_0</SYSTEM-SIGNAL-GROUP-REF>
+            </I-SIGNAL-GROUP>
+            <I-SIGNAL-GROUP>
+              <SHORT-NAME>CAN7_SG_FD7_C50_0</SHORT-NAME>
+              <I-SIGNAL-REFS>
+                <I-SIGNAL-REF DEST="I-SIGNAL">/CAN7/ISignal/CAN7_AccPedalPos1</I-SIGNAL-REF>
+			  </I-SIGNAL-REFS>
+              <SYSTEM-SIGNAL-GROUP-REF DEST="SYSTEM-SIGNAL-GROUP">/CAN7/SignalGroup/CAN7_SG_FD7_C50_0</SYSTEM-SIGNAL-GROUP-REF>
+            </I-SIGNAL-GROUP>
+            <I-SIGNAL-GROUP>
+              <SHORT-NAME>CAN7_SG_FD7_CE100_0</SHORT-NAME>
+              <I-SIGNAL-REFS>
+                <I-SIGNAL-REF DEST="I-SIGNAL">/CAN7/ISignal/CAN7_FDC_BCM_DVRSignalL_Cmd</I-SIGNAL-REF>
+                <I-SIGNAL-REF DEST="I-SIGNAL">/CAN7/ISignal/CAN7_FDC_BCM_DVRSignalR_Cmd</I-SIGNAL-REF>
+                <I-SIGNAL-REF DEST="I-SIGNAL">/CAN7/ISignal/CAN7_FDC_BCM_FDoor_Sta</I-SIGNAL-REF>
+                <I-SIGNAL-REF DEST="I-SIGNAL">/CAN7/ISignal/CAN7_FDC_BCM_HBeam_Cmd</I-SIGNAL-REF>
+                <I-SIGNAL-REF DEST="I-SIGNAL">/CAN7/ISignal/CAN7_FDC_BCM_LBeam_Cmd</I-SIGNAL-REF>
+                <I-SIGNAL-REF DEST="I-SIGNAL">/CAN7/ISignal/CAN7_FDC_BCM_MDoor_Sta</I-SIGNAL-REF>
+                <I-SIGNAL-REF DEST="I-SIGNAL">/CAN7/ISignal/CAN7_FDC_BCM_PLamp_Cmd</I-SIGNAL-REF>
+			  </I-SIGNAL-REFS>
+              <SYSTEM-SIGNAL-GROUP-REF DEST="SYSTEM-SIGNAL-GROUP">/CAN7/SignalGroup/CAN7_SG_FD7_CE100_0</SYSTEM-SIGNAL-GROUP-REF>
+            </I-SIGNAL-GROUP>
+		  </ELEMENTS>
+        </AR-PACKAGE>
+		<AR-PACKAGE>
+          <SHORT-NAME>Signal</SHORT-NAME>
+          <ELEMENTS>
+            <SYSTEM-SIGNAL>
+			<SHORT-NAME>CAN7_VCUKeyStatus</SHORT-NAME>
+              <DYNAMIC-LENGTH>false</DYNAMIC-LENGTH>
+            </SYSTEM-SIGNAL>
+            <SYSTEM-SIGNAL>
+			<SHORT-NAME>CAN7_EMotorSpd</SHORT-NAME>
+              <DYNAMIC-LENGTH>false</DYNAMIC-LENGTH>
+            </SYSTEM-SIGNAL>
+            <SYSTEM-SIGNAL>
+			<SHORT-NAME>CAN7_SysPowerMode</SHORT-NAME>
+              <DYNAMIC-LENGTH>false</DYNAMIC-LENGTH>
+            </SYSTEM-SIGNAL>
+            <SYSTEM-SIGNAL>
+			<SHORT-NAME>CAN7_AccPedalPos1</SHORT-NAME>
+              <DYNAMIC-LENGTH>false</DYNAMIC-LENGTH>
+            </SYSTEM-SIGNAL>
+            <SYSTEM-SIGNAL>
+			<SHORT-NAME>CAN7_FDC_BCM_DVRSignalL_Cmd</SHORT-NAME>
+              <DYNAMIC-LENGTH>false</DYNAMIC-LENGTH>
+            </SYSTEM-SIGNAL>
+            <SYSTEM-SIGNAL>
+			<SHORT-NAME>CAN7_FDC_BCM_DVRSignalR_Cmd</SHORT-NAME>
+              <DYNAMIC-LENGTH>false</DYNAMIC-LENGTH>
+            </SYSTEM-SIGNAL>
+            <SYSTEM-SIGNAL>
+			<SHORT-NAME>CAN7_FDC_BCM_FDoor_Sta</SHORT-NAME>
+              <DYNAMIC-LENGTH>false</DYNAMIC-LENGTH>
+            </SYSTEM-SIGNAL>
+            <SYSTEM-SIGNAL>
+			<SHORT-NAME>CAN7_FDC_BCM_HBeam_Cmd</SHORT-NAME>
+              <DYNAMIC-LENGTH>false</DYNAMIC-LENGTH>
+            </SYSTEM-SIGNAL>
+            <SYSTEM-SIGNAL>
+			<SHORT-NAME>CAN7_FDC_BCM_LBeam_Cmd</SHORT-NAME>
+              <DYNAMIC-LENGTH>false</DYNAMIC-LENGTH>
+            </SYSTEM-SIGNAL>
+            <SYSTEM-SIGNAL>
+			<SHORT-NAME>CAN7_FDC_BCM_MDoor_Sta</SHORT-NAME>
+              <DYNAMIC-LENGTH>false</DYNAMIC-LENGTH>
+            </SYSTEM-SIGNAL>
+            <SYSTEM-SIGNAL>
+			<SHORT-NAME>CAN7_FDC_BCM_PLamp_Cmd</SHORT-NAME>
+              <DYNAMIC-LENGTH>false</DYNAMIC-LENGTH>
+            </SYSTEM-SIGNAL>
+		  </ELEMENTS>
+        </AR-PACKAGE>
+		<AR-PACKAGE>
+          <SHORT-NAME>SignalGroup</SHORT-NAME>
+          <ELEMENTS>
+            <SYSTEM-SIGNAL-GROUP>
+              <SHORT-NAME>CAN7_SG_FD7_C100_0</SHORT-NAME>
+              <SYSTEM-SIGNAL-REFS>
+                <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/CAN7/Signal/CAN7_VCUKeyStatus</SYSTEM-SIGNAL-REF>
+              </SYSTEM-SIGNAL-REFS>
+            </SYSTEM-SIGNAL-GROUP>
+            <SYSTEM-SIGNAL-GROUP>
+              <SHORT-NAME>CAN7_SG_FD7_C10_0</SHORT-NAME>
+              <SYSTEM-SIGNAL-REFS>
+                <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/CAN7/Signal/CAN7_EMotorSpd</SYSTEM-SIGNAL-REF>
+              </SYSTEM-SIGNAL-REFS>
+            </SYSTEM-SIGNAL-GROUP>
+            <SYSTEM-SIGNAL-GROUP>
+              <SHORT-NAME>CAN7_SG_FD7_C200_0</SHORT-NAME>
+              <SYSTEM-SIGNAL-REFS>
+                <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/CAN7/Signal/CAN7_SysPowerMode</SYSTEM-SIGNAL-REF>
+              </SYSTEM-SIGNAL-REFS>
+            </SYSTEM-SIGNAL-GROUP>
+            <SYSTEM-SIGNAL-GROUP>
+              <SHORT-NAME>CAN7_SG_FD7_C50_0</SHORT-NAME>
+              <SYSTEM-SIGNAL-REFS>
+                <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/CAN7/Signal/CAN7_AccPedalPos1</SYSTEM-SIGNAL-REF>
+              </SYSTEM-SIGNAL-REFS>
+            </SYSTEM-SIGNAL-GROUP>
+            <SYSTEM-SIGNAL-GROUP>
+              <SHORT-NAME>CAN7_SG_FD7_CE100_0</SHORT-NAME>
+              <SYSTEM-SIGNAL-REFS>
+                <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/CAN7/Signal/CAN7_FDC_BCM_DVRSignalL_Cmd</SYSTEM-SIGNAL-REF>
+                <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/CAN7/Signal/CAN7_FDC_BCM_DVRSignalR_Cmd</SYSTEM-SIGNAL-REF>
+                <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/CAN7/Signal/CAN7_FDC_BCM_FDoor_Sta</SYSTEM-SIGNAL-REF>
+                <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/CAN7/Signal/CAN7_FDC_BCM_HBeam_Cmd</SYSTEM-SIGNAL-REF>
+                <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/CAN7/Signal/CAN7_FDC_BCM_LBeam_Cmd</SYSTEM-SIGNAL-REF>
+                <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/CAN7/Signal/CAN7_FDC_BCM_MDoor_Sta</SYSTEM-SIGNAL-REF>
+                <SYSTEM-SIGNAL-REF DEST="SYSTEM-SIGNAL">/CAN7/Signal/CAN7_FDC_BCM_PLamp_Cmd</SYSTEM-SIGNAL-REF>
+              </SYSTEM-SIGNAL-REFS>
+            </SYSTEM-SIGNAL-GROUP>
+		   </ELEMENTS>
+        </AR-PACKAGE>
+		<AR-PACKAGE>
+          <SHORT-NAME>Cluster</SHORT-NAME>
+          <ELEMENTS>
+            <CAN-CLUSTER>
+              <SHORT-NAME>CAN7</SHORT-NAME>
+              <CAN-CLUSTER-VARIANTS>
+                <CAN-CLUSTER-CONDITIONAL>
+                  <BAUDRATE>500</BAUDRATE>
+                  <PHYSICAL-CHANNELS>
+                    <CAN-PHYSICAL-CHANNEL>
+                      <SHORT-NAME>CAN7</SHORT-NAME>
+                      <COMM-CONNECTORS>
+                        <COMMUNICATION-CONNECTOR-REF-CONDITIONAL>
+                          <COMMUNICATION-CONNECTOR-REF DEST="CAN-COMMUNICATION-CONNECTOR">/ECU/FUSION/ConnCAN7</COMMUNICATION-CONNECTOR-REF>
+                        </COMMUNICATION-CONNECTOR-REF-CONDITIONAL>
+                      </COMM-CONNECTORS>
+					  <FRAME-TRIGGERINGS>
+                        <CAN-FRAME-TRIGGERING>
+                          <SHORT-NAME>FT_CAN7_DiagFuncReqFT</SHORT-NAME>
+                          <FRAME-PORT-REFS>
+                            <FRAME-PORT-REF DEST="FRAME-PORT">/ECU/FUSION/ConnCAN7/FP_CAN7_DiagFuncReqFT_OUT</FRAME-PORT-REF>
+                          </FRAME-PORT-REFS>
+                          <FRAME-REF DEST="CAN-FRAME">/CAN7/Frame/CAN7_DiagFuncReqFT</FRAME-REF>
+                          <CAN-ADDRESSING-MODE>STANDARD</CAN-ADDRESSING-MODE>
+                          <CAN-FD-FRAME-SUPPORT>false</CAN-FD-FRAME-SUPPORT>
+                          <CAN-FRAME-RX-BEHAVIOR>CAN-20</CAN-FRAME-RX-BEHAVIOR>
+                          <CAN-FRAME-TX-BEHAVIOR>CAN-20</CAN-FRAME-TX-BEHAVIOR>
+                          <IDENTIFIER>2000</IDENTIFIER>
+                        </CAN-FRAME-TRIGGERING>
+                        <CAN-FRAME-TRIGGERING>
+                          <SHORT-NAME>FT_CAN7_DiagPhyReqToDATAC</SHORT-NAME>
+                          <FRAME-PORT-REFS>
+                            <FRAME-PORT-REF DEST="FRAME-PORT">/ECU/FUSION/ConnCAN7/FP_CAN7_DiagPhyReqToDATAC_OUT</FRAME-PORT-REF>
+                          </FRAME-PORT-REFS>
+                          <FRAME-REF DEST="CAN-FRAME">/CAN7/Frame/CAN7_DiagPhyReqToDATAC</FRAME-REF>
+                          <CAN-ADDRESSING-MODE>EXTENDED</CAN-ADDRESSING-MODE>
+                          <CAN-FD-FRAME-SUPPORT>false</CAN-FD-FRAME-SUPPORT>
+                          <CAN-FRAME-RX-BEHAVIOR>CAN-20</CAN-FRAME-RX-BEHAVIOR>
+                          <CAN-FRAME-TX-BEHAVIOR>CAN-20</CAN-FRAME-TX-BEHAVIOR>
+                          <IDENTIFIER>416975353</IDENTIFIER>
+                        </CAN-FRAME-TRIGGERING>
+                        <CAN-FRAME-TRIGGERING>
+                          <SHORT-NAME>FT_CAN7_DiagPhyReqToEDR</SHORT-NAME>
+                          <FRAME-PORT-REFS>
+                            <FRAME-PORT-REF DEST="FRAME-PORT">/ECU/FUSION/ConnCAN7/FP_CAN7_DiagPhyReqToEDR_OUT</FRAME-PORT-REF>
+                          </FRAME-PORT-REFS>
+                          <FRAME-REF DEST="CAN-FRAME">/CAN7/Frame/CAN7_DiagPhyReqToEDR</FRAME-REF>
+                          <CAN-ADDRESSING-MODE>EXTENDED</CAN-ADDRESSING-MODE>
+                          <CAN-FD-FRAME-SUPPORT>false</CAN-FD-FRAME-SUPPORT>
+                          <CAN-FRAME-RX-BEHAVIOR>CAN-20</CAN-FRAME-RX-BEHAVIOR>
+                          <CAN-FRAME-TX-BEHAVIOR>CAN-20</CAN-FRAME-TX-BEHAVIOR>
+                          <IDENTIFIER>416975097</IDENTIFIER>
+                        </CAN-FRAME-TRIGGERING>
+                        <CAN-FRAME-TRIGGERING>
+                          <SHORT-NAME>FT_CAN7_DiagPhyReqToNSAS</SHORT-NAME>
+                          <FRAME-PORT-REFS>
+                            <FRAME-PORT-REF DEST="FRAME-PORT">/ECU/FUSION/ConnCAN7/FP_CAN7_DiagPhyReqToNSAS_OUT</FRAME-PORT-REF>
+                          </FRAME-PORT-REFS>
+                          <FRAME-REF DEST="CAN-FRAME">/CAN7/Frame/CAN7_DiagPhyReqToNSAS</FRAME-REF>
+                          <CAN-ADDRESSING-MODE>EXTENDED</CAN-ADDRESSING-MODE>
+                          <CAN-FD-FRAME-SUPPORT>false</CAN-FD-FRAME-SUPPORT>
+                          <CAN-FRAME-RX-BEHAVIOR>CAN-20</CAN-FRAME-RX-BEHAVIOR>
+                          <CAN-FRAME-TX-BEHAVIOR>CAN-20</CAN-FRAME-TX-BEHAVIOR>
+                          <IDENTIFIER>416977145</IDENTIFIER>
+                        </CAN-FRAME-TRIGGERING>
+                        <CAN-FRAME-TRIGGERING>
+                          <SHORT-NAME>FT_CAN7_DiagRespFromDATAC</SHORT-NAME>
+                          <FRAME-PORT-REFS>
+                            <FRAME-PORT-REF DEST="FRAME-PORT">/ECU/FUSION/ConnCAN7/FP_CAN7_DiagRespFromDATAC_IN</FRAME-PORT-REF>
+                          </FRAME-PORT-REFS>
+                          <FRAME-REF DEST="CAN-FRAME">/CAN7/Frame/CAN7_DiagRespFromDATAC</FRAME-REF>
+                          <CAN-ADDRESSING-MODE>EXTENDED</CAN-ADDRESSING-MODE>
+                          <CAN-FD-FRAME-SUPPORT>false</CAN-FD-FRAME-SUPPORT>
+                          <CAN-FRAME-RX-BEHAVIOR>CAN-20</CAN-FRAME-RX-BEHAVIOR>
+                          <CAN-FRAME-TX-BEHAVIOR>CAN-20</CAN-FRAME-TX-BEHAVIOR>
+                          <IDENTIFIER>417003913</IDENTIFIER>
+                        </CAN-FRAME-TRIGGERING>
+                        <CAN-FRAME-TRIGGERING>
+                          <SHORT-NAME>FT_CAN7_DiagRespFromEDR</SHORT-NAME>
+                          <FRAME-PORT-REFS>
+                            <FRAME-PORT-REF DEST="FRAME-PORT">/ECU/FUSION/ConnCAN7/FP_CAN7_DiagRespFromEDR_IN</FRAME-PORT-REF>
+                          </FRAME-PORT-REFS>
+                          <FRAME-REF DEST="CAN-FRAME">/CAN7/Frame/CAN7_DiagRespFromEDR</FRAME-REF>
+                          <CAN-ADDRESSING-MODE>EXTENDED</CAN-ADDRESSING-MODE>
+                          <CAN-FD-FRAME-SUPPORT>false</CAN-FD-FRAME-SUPPORT>
+                          <CAN-FRAME-RX-BEHAVIOR>CAN-20</CAN-FRAME-RX-BEHAVIOR>
+                          <CAN-FRAME-TX-BEHAVIOR>CAN-20</CAN-FRAME-TX-BEHAVIOR>
+                          <IDENTIFIER>417003912</IDENTIFIER>
+                        </CAN-FRAME-TRIGGERING>
+                        <CAN-FRAME-TRIGGERING>
+                          <SHORT-NAME>FT_CAN7_DiagRespFromNSAS</SHORT-NAME>
+                          <FRAME-PORT-REFS>
+                            <FRAME-PORT-REF DEST="FRAME-PORT">/ECU/FUSION/ConnCAN7/FP_CAN7_DiagRespFromNSAS_IN</FRAME-PORT-REF>
+                          </FRAME-PORT-REFS>
+                          <FRAME-REF DEST="CAN-FRAME">/CAN7/Frame/CAN7_DiagRespFromNSAS</FRAME-REF>
+                          <CAN-ADDRESSING-MODE>EXTENDED</CAN-ADDRESSING-MODE>
+                          <CAN-FD-FRAME-SUPPORT>false</CAN-FD-FRAME-SUPPORT>
+                          <CAN-FRAME-RX-BEHAVIOR>CAN-20</CAN-FRAME-RX-BEHAVIOR>
+                          <CAN-FRAME-TX-BEHAVIOR>CAN-20</CAN-FRAME-TX-BEHAVIOR>
+                          <IDENTIFIER>417003920</IDENTIFIER>
+                        </CAN-FRAME-TRIGGERING>
+                        <CAN-FRAME-TRIGGERING>
+                          <SHORT-NAME>FT_CAN7_FD7_C100_0</SHORT-NAME>
+                          <FRAME-PORT-REFS>
+                            <FRAME-PORT-REF DEST="FRAME-PORT">/ECU/FUSION/ConnCAN7/FP_CAN7_FD7_C100_0_OUT</FRAME-PORT-REF>
+                          </FRAME-PORT-REFS>
+                          <FRAME-REF DEST="CAN-FRAME">/CAN7/Frame/CAN7_FD7_C100_0</FRAME-REF>
+                          <PDU-TRIGGERINGS>
+                            <PDU-TRIGGERING-REF-CONDITIONAL>
+                              <PDU-TRIGGERING-REF DEST="PDU-TRIGGERING">/CAN7/Cluster/CAN7/CAN7/PT_CAN7_FD7_C100_0</PDU-TRIGGERING-REF>
+                            </PDU-TRIGGERING-REF-CONDITIONAL>
+                          </PDU-TRIGGERINGS>
+                          <CAN-ADDRESSING-MODE>EXTENDED</CAN-ADDRESSING-MODE>
+                          <CAN-FD-FRAME-SUPPORT>false</CAN-FD-FRAME-SUPPORT>
+                          <CAN-FRAME-RX-BEHAVIOR>CAN-20</CAN-FRAME-RX-BEHAVIOR>
+                          <CAN-FRAME-TX-BEHAVIOR>CAN-20</CAN-FRAME-TX-BEHAVIOR>
+                          <IDENTIFIER>435160528</IDENTIFIER>
+                        </CAN-FRAME-TRIGGERING>
+                        <CAN-FRAME-TRIGGERING>
+                          <SHORT-NAME>FT_CAN7_FD7_C10_0</SHORT-NAME>
+                          <FRAME-PORT-REFS>
+                            <FRAME-PORT-REF DEST="FRAME-PORT">/ECU/FUSION/ConnCAN7/FP_CAN7_FD7_C10_0_OUT</FRAME-PORT-REF>
+                          </FRAME-PORT-REFS>
+                          <FRAME-REF DEST="CAN-FRAME">/CAN7/Frame/CAN7_FD7_C10_0</FRAME-REF>
+                          <PDU-TRIGGERINGS>
+                            <PDU-TRIGGERING-REF-CONDITIONAL>
+                              <PDU-TRIGGERING-REF DEST="PDU-TRIGGERING">/CAN7/Cluster/CAN7/CAN7/PT_CAN7_FD7_C10_0</PDU-TRIGGERING-REF>
+                            </PDU-TRIGGERING-REF-CONDITIONAL>
+                          </PDU-TRIGGERINGS>
+                          <CAN-ADDRESSING-MODE>EXTENDED</CAN-ADDRESSING-MODE>
+                          <CAN-FD-FRAME-SUPPORT>false</CAN-FD-FRAME-SUPPORT>
+                          <CAN-FRAME-RX-BEHAVIOR>CAN-20</CAN-FRAME-RX-BEHAVIOR>
+                          <CAN-FRAME-TX-BEHAVIOR>CAN-20</CAN-FRAME-TX-BEHAVIOR>
+                          <IDENTIFIER>207737041</IDENTIFIER>
+                        </CAN-FRAME-TRIGGERING>
+                        <CAN-FRAME-TRIGGERING>
+                          <SHORT-NAME>FT_CAN7_FD7_C200_0</SHORT-NAME>
+                          <FRAME-PORT-REFS>
+                            <FRAME-PORT-REF DEST="FRAME-PORT">/ECU/FUSION/ConnCAN7/FP_CAN7_FD7_C200_0_OUT</FRAME-PORT-REF>
+                          </FRAME-PORT-REFS>
+                          <FRAME-REF DEST="CAN-FRAME">/CAN7/Frame/CAN7_FD7_C200_0</FRAME-REF>
+                          <PDU-TRIGGERINGS>
+                            <PDU-TRIGGERING-REF-CONDITIONAL>
+                              <PDU-TRIGGERING-REF DEST="PDU-TRIGGERING">/CAN7/Cluster/CAN7/CAN7/PT_CAN7_FD7_C200_0</PDU-TRIGGERING-REF>
+                            </PDU-TRIGGERING-REF-CONDITIONAL>
+                          </PDU-TRIGGERINGS>
+                          <CAN-ADDRESSING-MODE>EXTENDED</CAN-ADDRESSING-MODE>
+                          <CAN-FD-FRAME-SUPPORT>false</CAN-FD-FRAME-SUPPORT>
+                          <CAN-FRAME-RX-BEHAVIOR>CAN-20</CAN-FRAME-RX-BEHAVIOR>
+                          <CAN-FRAME-TX-BEHAVIOR>CAN-20</CAN-FRAME-TX-BEHAVIOR>
+                          <IDENTIFIER>418382831</IDENTIFIER>
+                        </CAN-FRAME-TRIGGERING>
+                        <CAN-FRAME-TRIGGERING>
+                          <SHORT-NAME>FT_CAN7_FD7_C50_0</SHORT-NAME>
+                          <FRAME-PORT-REFS>
+                            <FRAME-PORT-REF DEST="FRAME-PORT">/ECU/FUSION/ConnCAN7/FP_CAN7_FD7_C50_0_OUT</FRAME-PORT-REF>
+                          </FRAME-PORT-REFS>
+                          <FRAME-REF DEST="CAN-FRAME">/CAN7/Frame/CAN7_FD7_C50_0</FRAME-REF>
+                          <PDU-TRIGGERINGS>
+                            <PDU-TRIGGERING-REF-CONDITIONAL>
+                              <PDU-TRIGGERING-REF DEST="PDU-TRIGGERING">/CAN7/Cluster/CAN7/CAN7/PT_CAN7_FD7_C50_0</PDU-TRIGGERING-REF>
+                            </PDU-TRIGGERING-REF-CONDITIONAL>
+                          </PDU-TRIGGERINGS>
+                          <CAN-ADDRESSING-MODE>EXTENDED</CAN-ADDRESSING-MODE>
+                          <CAN-FD-FRAME-SUPPORT>false</CAN-FD-FRAME-SUPPORT>
+                          <CAN-FRAME-RX-BEHAVIOR>CAN-20</CAN-FRAME-RX-BEHAVIOR>
+                          <CAN-FRAME-TX-BEHAVIOR>CAN-20</CAN-FRAME-TX-BEHAVIOR>
+                          <IDENTIFIER>217056000</IDENTIFIER>
+                        </CAN-FRAME-TRIGGERING>
+                        <CAN-FRAME-TRIGGERING>
+                          <SHORT-NAME>FT_CAN7_FD7_CE100_0</SHORT-NAME>
+                          <FRAME-PORT-REFS>
+                            <FRAME-PORT-REF DEST="FRAME-PORT">/ECU/FUSION/ConnCAN7/FP_CAN7_FD7_CE100_0_OUT</FRAME-PORT-REF>
+                          </FRAME-PORT-REFS>
+                          <FRAME-REF DEST="CAN-FRAME">/CAN7/Frame/CAN7_FD7_CE100_0</FRAME-REF>
+                          <PDU-TRIGGERINGS>
+                            <PDU-TRIGGERING-REF-CONDITIONAL>
+                              <PDU-TRIGGERING-REF DEST="PDU-TRIGGERING">/CAN7/Cluster/CAN7/CAN7/PT_CAN7_FD7_CE100_0</PDU-TRIGGERING-REF>
+                            </PDU-TRIGGERING-REF-CONDITIONAL>
+                          </PDU-TRIGGERINGS>
+                          <CAN-ADDRESSING-MODE>EXTENDED</CAN-ADDRESSING-MODE>
+                          <CAN-FD-FRAME-SUPPORT>false</CAN-FD-FRAME-SUPPORT>
+                          <CAN-FRAME-RX-BEHAVIOR>CAN-20</CAN-FRAME-RX-BEHAVIOR>
+                          <CAN-FRAME-TX-BEHAVIOR>CAN-20</CAN-FRAME-TX-BEHAVIOR>
+                          <IDENTIFIER>419038649</IDENTIFIER>
+                        </CAN-FRAME-TRIGGERING>
+                        <CAN-FRAME-TRIGGERING>
+                          <SHORT-NAME>FT_CAN7_NMm_FUSION_TX</SHORT-NAME>
+                          <FRAME-PORT-REFS>
+                            <FRAME-PORT-REF DEST="FRAME-PORT">/ECU/FUSION/ConnCAN7/FP_CAN7_NMm_FUSION_TX_OUT</FRAME-PORT-REF>
+                          </FRAME-PORT-REFS>
+                          <FRAME-REF DEST="CAN-FRAME">/CAN7/Frame/CAN7_NMm_FUSION_TX</FRAME-REF>
+                          <CAN-ADDRESSING-MODE>STANDARD</CAN-ADDRESSING-MODE>
+                          <CAN-FD-FRAME-SUPPORT>false</CAN-FD-FRAME-SUPPORT>
+                          <CAN-FRAME-RX-BEHAVIOR>CAN-20</CAN-FRAME-RX-BEHAVIOR>
+                          <CAN-FRAME-TX-BEHAVIOR>CAN-20</CAN-FRAME-TX-BEHAVIOR>
+                          <IDENTIFIER>1280</IDENTIFIER>
+                        </CAN-FRAME-TRIGGERING>
+                        <CAN-FRAME-TRIGGERING>
+                          <SHORT-NAME>FT_CAN7_NMm_FUSION_RX</SHORT-NAME>
+                          <FRAME-PORT-REFS>
+                            <FRAME-PORT-REF DEST="FRAME-PORT">/ECU/FUSION/ConnCAN7/FP_CAN7_NMm_FUSION_RX_IN</FRAME-PORT-REF>
+                          </FRAME-PORT-REFS>
+                          <FRAME-REF DEST="CAN-FRAME">/CAN7/Frame/CAN7_NMm_FUSION_RX</FRAME-REF>
+                          <CAN-ADDRESSING-MODE>STANDARD</CAN-ADDRESSING-MODE>
+                          <CAN-FD-FRAME-SUPPORT>false</CAN-FD-FRAME-SUPPORT>
+                          <CAN-FRAME-RX-BEHAVIOR>CAN-20</CAN-FRAME-RX-BEHAVIOR>
+                          <CAN-FRAME-TX-BEHAVIOR>CAN-20</CAN-FRAME-TX-BEHAVIOR>
+                          <IDENTIFIER>1280</IDENTIFIER>
+                        </CAN-FRAME-TRIGGERING>
+					  </FRAME-TRIGGERINGS>
+					  <I-SIGNAL-TRIGGERINGS>
+                        <I-SIGNAL-TRIGGERING>
+                          <SHORT-NAME>ST_CAN7_SG_FD7_C100_0</SHORT-NAME>
+                          <I-SIGNAL-GROUP-REF DEST="I-SIGNAL-GROUP">/CAN7/ISignalGroup/CAN7_SG_FD7_C100_0</I-SIGNAL-GROUP-REF>
+                          <I-SIGNAL-PORT-REFS>
+                            <I-SIGNAL-PORT-REF DEST="I-SIGNAL-PORT">/ECU/FUSION/ConnCAN7/SP_CAN7_SG_FD7_C100_0_OUT</I-SIGNAL-PORT-REF>
+                          </I-SIGNAL-PORT-REFS>
+                        </I-SIGNAL-TRIGGERING>
+						<I-SIGNAL-TRIGGERING>
+                          <SHORT-NAME>ST_CAN7_VCUKeyStatus</SHORT-NAME>
+                          <I-SIGNAL-PORT-REFS>
+                            <I-SIGNAL-PORT-REF DEST="I-SIGNAL-PORT">/ECU/FUSION/ConnCAN7/SP_CAN7_VCUKeyStatus_OUT</I-SIGNAL-PORT-REF>
+                          </I-SIGNAL-PORT-REFS>
+                          <I-SIGNAL-REF DEST="I-SIGNAL">/CAN7/ISignal/CAN7_VCUKeyStatus</I-SIGNAL-REF>
+                        </I-SIGNAL-TRIGGERING>
+                        <I-SIGNAL-TRIGGERING>
+                          <SHORT-NAME>ST_CAN7_SG_FD7_C10_0</SHORT-NAME>
+                          <I-SIGNAL-GROUP-REF DEST="I-SIGNAL-GROUP">/CAN7/ISignalGroup/CAN7_SG_FD7_C10_0</I-SIGNAL-GROUP-REF>
+                          <I-SIGNAL-PORT-REFS>
+                            <I-SIGNAL-PORT-REF DEST="I-SIGNAL-PORT">/ECU/FUSION/ConnCAN7/SP_CAN7_SG_FD7_C10_0_OUT</I-SIGNAL-PORT-REF>
+                          </I-SIGNAL-PORT-REFS>
+                        </I-SIGNAL-TRIGGERING>
+						<I-SIGNAL-TRIGGERING>
+                          <SHORT-NAME>ST_CAN7_EMotorSpd</SHORT-NAME>
+                          <I-SIGNAL-PORT-REFS>
+                            <I-SIGNAL-PORT-REF DEST="I-SIGNAL-PORT">/ECU/FUSION/ConnCAN7/SP_CAN7_EMotorSpd_OUT</I-SIGNAL-PORT-REF>
+                          </I-SIGNAL-PORT-REFS>
+                          <I-SIGNAL-REF DEST="I-SIGNAL">/CAN7/ISignal/CAN7_EMotorSpd</I-SIGNAL-REF>
+                        </I-SIGNAL-TRIGGERING>
+                        <I-SIGNAL-TRIGGERING>
+                          <SHORT-NAME>ST_CAN7_SG_FD7_C200_0</SHORT-NAME>
+                          <I-SIGNAL-GROUP-REF DEST="I-SIGNAL-GROUP">/CAN7/ISignalGroup/CAN7_SG_FD7_C200_0</I-SIGNAL-GROUP-REF>
+                          <I-SIGNAL-PORT-REFS>
+                            <I-SIGNAL-PORT-REF DEST="I-SIGNAL-PORT">/ECU/FUSION/ConnCAN7/SP_CAN7_SG_FD7_C200_0_OUT</I-SIGNAL-PORT-REF>
+                          </I-SIGNAL-PORT-REFS>
+                        </I-SIGNAL-TRIGGERING>
+						<I-SIGNAL-TRIGGERING>
+                          <SHORT-NAME>ST_CAN7_SysPowerMode</SHORT-NAME>
+                          <I-SIGNAL-PORT-REFS>
+                            <I-SIGNAL-PORT-REF DEST="I-SIGNAL-PORT">/ECU/FUSION/ConnCAN7/SP_CAN7_SysPowerMode_OUT</I-SIGNAL-PORT-REF>
+                          </I-SIGNAL-PORT-REFS>
+                          <I-SIGNAL-REF DEST="I-SIGNAL">/CAN7/ISignal/CAN7_SysPowerMode</I-SIGNAL-REF>
+                        </I-SIGNAL-TRIGGERING>
+                        <I-SIGNAL-TRIGGERING>
+                          <SHORT-NAME>ST_CAN7_SG_FD7_C50_0</SHORT-NAME>
+                          <I-SIGNAL-GROUP-REF DEST="I-SIGNAL-GROUP">/CAN7/ISignalGroup/CAN7_SG_FD7_C50_0</I-SIGNAL-GROUP-REF>
+                          <I-SIGNAL-PORT-REFS>
+                            <I-SIGNAL-PORT-REF DEST="I-SIGNAL-PORT">/ECU/FUSION/ConnCAN7/SP_CAN7_SG_FD7_C50_0_OUT</I-SIGNAL-PORT-REF>
+                          </I-SIGNAL-PORT-REFS>
+                        </I-SIGNAL-TRIGGERING>
+						<I-SIGNAL-TRIGGERING>
+                          <SHORT-NAME>ST_CAN7_AccPedalPos1</SHORT-NAME>
+                          <I-SIGNAL-PORT-REFS>
+                            <I-SIGNAL-PORT-REF DEST="I-SIGNAL-PORT">/ECU/FUSION/ConnCAN7/SP_CAN7_AccPedalPos1_OUT</I-SIGNAL-PORT-REF>
+                          </I-SIGNAL-PORT-REFS>
+                          <I-SIGNAL-REF DEST="I-SIGNAL">/CAN7/ISignal/CAN7_AccPedalPos1</I-SIGNAL-REF>
+                        </I-SIGNAL-TRIGGERING>
+                        <I-SIGNAL-TRIGGERING>
+                          <SHORT-NAME>ST_CAN7_SG_FD7_CE100_0</SHORT-NAME>
+                          <I-SIGNAL-GROUP-REF DEST="I-SIGNAL-GROUP">/CAN7/ISignalGroup/CAN7_SG_FD7_CE100_0</I-SIGNAL-GROUP-REF>
+                          <I-SIGNAL-PORT-REFS>
+                            <I-SIGNAL-PORT-REF DEST="I-SIGNAL-PORT">/ECU/FUSION/ConnCAN7/SP_CAN7_SG_FD7_CE100_0_OUT</I-SIGNAL-PORT-REF>
+                          </I-SIGNAL-PORT-REFS>
+                        </I-SIGNAL-TRIGGERING>
+						<I-SIGNAL-TRIGGERING>
+                          <SHORT-NAME>ST_CAN7_FDC_BCM_DVRSignalL_Cmd</SHORT-NAME>
+                          <I-SIGNAL-PORT-REFS>
+                            <I-SIGNAL-PORT-REF DEST="I-SIGNAL-PORT">/ECU/FUSION/ConnCAN7/SP_CAN7_FDC_BCM_DVRSignalL_Cmd_OUT</I-SIGNAL-PORT-REF>
+                          </I-SIGNAL-PORT-REFS>
+                          <I-SIGNAL-REF DEST="I-SIGNAL">/CAN7/ISignal/CAN7_FDC_BCM_DVRSignalL_Cmd</I-SIGNAL-REF>
+                        </I-SIGNAL-TRIGGERING>
+						<I-SIGNAL-TRIGGERING>
+                          <SHORT-NAME>ST_CAN7_FDC_BCM_DVRSignalR_Cmd</SHORT-NAME>
+                          <I-SIGNAL-PORT-REFS>
+                            <I-SIGNAL-PORT-REF DEST="I-SIGNAL-PORT">/ECU/FUSION/ConnCAN7/SP_CAN7_FDC_BCM_DVRSignalR_Cmd_OUT</I-SIGNAL-PORT-REF>
+                          </I-SIGNAL-PORT-REFS>
+                          <I-SIGNAL-REF DEST="I-SIGNAL">/CAN7/ISignal/CAN7_FDC_BCM_DVRSignalR_Cmd</I-SIGNAL-REF>
+                        </I-SIGNAL-TRIGGERING>
+						<I-SIGNAL-TRIGGERING>
+                          <SHORT-NAME>ST_CAN7_FDC_BCM_FDoor_Sta</SHORT-NAME>
+                          <I-SIGNAL-PORT-REFS>
+                            <I-SIGNAL-PORT-REF DEST="I-SIGNAL-PORT">/ECU/FUSION/ConnCAN7/SP_CAN7_FDC_BCM_FDoor_Sta_OUT</I-SIGNAL-PORT-REF>
+                          </I-SIGNAL-PORT-REFS>
+                          <I-SIGNAL-REF DEST="I-SIGNAL">/CAN7/ISignal/CAN7_FDC_BCM_FDoor_Sta</I-SIGNAL-REF>
+                        </I-SIGNAL-TRIGGERING>
+						<I-SIGNAL-TRIGGERING>
+                          <SHORT-NAME>ST_CAN7_FDC_BCM_HBeam_Cmd</SHORT-NAME>
+                          <I-SIGNAL-PORT-REFS>
+                            <I-SIGNAL-PORT-REF DEST="I-SIGNAL-PORT">/ECU/FUSION/ConnCAN7/SP_CAN7_FDC_BCM_HBeam_Cmd_OUT</I-SIGNAL-PORT-REF>
+                          </I-SIGNAL-PORT-REFS>
+                          <I-SIGNAL-REF DEST="I-SIGNAL">/CAN7/ISignal/CAN7_FDC_BCM_HBeam_Cmd</I-SIGNAL-REF>
+                        </I-SIGNAL-TRIGGERING>
+						<I-SIGNAL-TRIGGERING>
+                          <SHORT-NAME>ST_CAN7_FDC_BCM_LBeam_Cmd</SHORT-NAME>
+                          <I-SIGNAL-PORT-REFS>
+                            <I-SIGNAL-PORT-REF DEST="I-SIGNAL-PORT">/ECU/FUSION/ConnCAN7/SP_CAN7_FDC_BCM_LBeam_Cmd_OUT</I-SIGNAL-PORT-REF>
+                          </I-SIGNAL-PORT-REFS>
+                          <I-SIGNAL-REF DEST="I-SIGNAL">/CAN7/ISignal/CAN7_FDC_BCM_LBeam_Cmd</I-SIGNAL-REF>
+                        </I-SIGNAL-TRIGGERING>
+						<I-SIGNAL-TRIGGERING>
+                          <SHORT-NAME>ST_CAN7_FDC_BCM_MDoor_Sta</SHORT-NAME>
+                          <I-SIGNAL-PORT-REFS>
+                            <I-SIGNAL-PORT-REF DEST="I-SIGNAL-PORT">/ECU/FUSION/ConnCAN7/SP_CAN7_FDC_BCM_MDoor_Sta_OUT</I-SIGNAL-PORT-REF>
+                          </I-SIGNAL-PORT-REFS>
+                          <I-SIGNAL-REF DEST="I-SIGNAL">/CAN7/ISignal/CAN7_FDC_BCM_MDoor_Sta</I-SIGNAL-REF>
+                        </I-SIGNAL-TRIGGERING>
+						<I-SIGNAL-TRIGGERING>
+                          <SHORT-NAME>ST_CAN7_FDC_BCM_PLamp_Cmd</SHORT-NAME>
+                          <I-SIGNAL-PORT-REFS>
+                            <I-SIGNAL-PORT-REF DEST="I-SIGNAL-PORT">/ECU/FUSION/ConnCAN7/SP_CAN7_FDC_BCM_PLamp_Cmd_OUT</I-SIGNAL-PORT-REF>
+                          </I-SIGNAL-PORT-REFS>
+                          <I-SIGNAL-REF DEST="I-SIGNAL">/CAN7/ISignal/CAN7_FDC_BCM_PLamp_Cmd</I-SIGNAL-REF>
+                        </I-SIGNAL-TRIGGERING>
+					  </I-SIGNAL-TRIGGERINGS>					  
+					  <PDU-TRIGGERINGS>
+                        <PDU-TRIGGERING>
+                          <SHORT-NAME>PT_CAN7_DiagFuncReqFT</SHORT-NAME>
+                          <I-PDU-PORT-REFS>
+                            <I-PDU-PORT-REF DEST="I-PDU-PORT">/ECU/FUSION/ConnCAN7/PP_CAN7_DiagFuncReqFT_OUT</I-PDU-PORT-REF>
+                          </I-PDU-PORT-REFS>
+                          <I-PDU-REF DEST="N-PDU">/CAN7/PDU/CAN7_DiagFuncReqFT</I-PDU-REF>
+                        </PDU-TRIGGERING>
+                        <PDU-TRIGGERING>
+                          <SHORT-NAME>PT_CAN7_DiagPhyReqToDATAC</SHORT-NAME>
+                          <I-PDU-PORT-REFS>
+                            <I-PDU-PORT-REF DEST="I-PDU-PORT">/ECU/FUSION/ConnCAN7/PP_CAN7_DiagPhyReqToDATAC_OUT</I-PDU-PORT-REF>
+                          </I-PDU-PORT-REFS>
+                          <I-PDU-REF DEST="N-PDU">/CAN7/PDU/CAN7_DiagPhyReqToDATAC</I-PDU-REF>
+                        </PDU-TRIGGERING>
+                        <PDU-TRIGGERING>
+                          <SHORT-NAME>PT_CAN7_DiagPhyReqToEDR</SHORT-NAME>
+                          <I-PDU-PORT-REFS>
+                            <I-PDU-PORT-REF DEST="I-PDU-PORT">/ECU/FUSION/ConnCAN7/PP_CAN7_DiagPhyReqToEDR_OUT</I-PDU-PORT-REF>
+                          </I-PDU-PORT-REFS>
+                          <I-PDU-REF DEST="N-PDU">/CAN7/PDU/CAN7_DiagPhyReqToEDR</I-PDU-REF>
+                        </PDU-TRIGGERING>
+                        <PDU-TRIGGERING>
+                          <SHORT-NAME>PT_CAN7_DiagPhyReqToNSAS</SHORT-NAME>
+                          <I-PDU-PORT-REFS>
+                            <I-PDU-PORT-REF DEST="I-PDU-PORT">/ECU/FUSION/ConnCAN7/PP_CAN7_DiagPhyReqToNSAS_OUT</I-PDU-PORT-REF>
+                          </I-PDU-PORT-REFS>
+                          <I-PDU-REF DEST="N-PDU">/CAN7/PDU/CAN7_DiagPhyReqToNSAS</I-PDU-REF>
+                        </PDU-TRIGGERING>
+                        <PDU-TRIGGERING>
+                          <SHORT-NAME>PT_CAN7_DiagRespFromDATAC</SHORT-NAME>
+                          <I-PDU-PORT-REFS>
+                            <I-PDU-PORT-REF DEST="I-PDU-PORT">/ECU/FUSION/ConnCAN7/PP_CAN7_DiagRespFromDATAC_IN</I-PDU-PORT-REF>
+                          </I-PDU-PORT-REFS>
+                          <I-PDU-REF DEST="N-PDU">/CAN7/PDU/CAN7_DiagRespFromDATAC</I-PDU-REF>
+                        </PDU-TRIGGERING>
+                        <PDU-TRIGGERING>
+                          <SHORT-NAME>PT_CAN7_DiagRespFromEDR</SHORT-NAME>
+                          <I-PDU-PORT-REFS>
+                            <I-PDU-PORT-REF DEST="I-PDU-PORT">/ECU/FUSION/ConnCAN7/PP_CAN7_DiagRespFromEDR_IN</I-PDU-PORT-REF>
+                          </I-PDU-PORT-REFS>
+                          <I-PDU-REF DEST="N-PDU">/CAN7/PDU/CAN7_DiagRespFromEDR</I-PDU-REF>
+                        </PDU-TRIGGERING>
+                        <PDU-TRIGGERING>
+                          <SHORT-NAME>PT_CAN7_DiagRespFromNSAS</SHORT-NAME>
+                          <I-PDU-PORT-REFS>
+                            <I-PDU-PORT-REF DEST="I-PDU-PORT">/ECU/FUSION/ConnCAN7/PP_CAN7_DiagRespFromNSAS_IN</I-PDU-PORT-REF>
+                          </I-PDU-PORT-REFS>
+                          <I-PDU-REF DEST="N-PDU">/CAN7/PDU/CAN7_DiagRespFromNSAS</I-PDU-REF>
+                        </PDU-TRIGGERING>
+                        <PDU-TRIGGERING>
+                          <SHORT-NAME>PT_CAN7_FD7_C100_0</SHORT-NAME>
+                          <I-PDU-PORT-REFS>
+                            <I-PDU-PORT-REF DEST="I-PDU-PORT">/ECU/FUSION/ConnCAN7/PP_CAN7_FD7_C100_0_OUT</I-PDU-PORT-REF>
+                          </I-PDU-PORT-REFS>
+                          <I-PDU-REF DEST="I-SIGNAL-I-PDU">/CAN7/PDU/CAN7_FD7_C100_0</I-PDU-REF>
+						  <I-SIGNAL-TRIGGERINGS>
+                            <I-SIGNAL-TRIGGERING-REF-CONDITIONAL>
+                              <I-SIGNAL-TRIGGERING-REF DEST="I-SIGNAL-TRIGGERING">/CAN7/Cluster/CAN7/CAN7/ST_CAN7_SG_FD7_C100_0</I-SIGNAL-TRIGGERING-REF>
+                            </I-SIGNAL-TRIGGERING-REF-CONDITIONAL>
+                            <I-SIGNAL-TRIGGERING-REF-CONDITIONAL>
+                              <I-SIGNAL-TRIGGERING-REF DEST="I-SIGNAL-TRIGGERING">/CAN7/Cluster/CAN7/CAN7/ST_CAN7_VCUKeyStatus</I-SIGNAL-TRIGGERING-REF>
+                            </I-SIGNAL-TRIGGERING-REF-CONDITIONAL>
+						  </I-SIGNAL-TRIGGERINGS>
+                        </PDU-TRIGGERING>
+                        <PDU-TRIGGERING>
+                          <SHORT-NAME>PT_CAN7_FD7_C10_0</SHORT-NAME>
+                          <I-PDU-PORT-REFS>
+                            <I-PDU-PORT-REF DEST="I-PDU-PORT">/ECU/FUSION/ConnCAN7/PP_CAN7_FD7_C10_0_OUT</I-PDU-PORT-REF>
+                          </I-PDU-PORT-REFS>
+                          <I-PDU-REF DEST="I-SIGNAL-I-PDU">/CAN7/PDU/CAN7_FD7_C10_0</I-PDU-REF>
+						  <I-SIGNAL-TRIGGERINGS>
+                            <I-SIGNAL-TRIGGERING-REF-CONDITIONAL>
+                              <I-SIGNAL-TRIGGERING-REF DEST="I-SIGNAL-TRIGGERING">/CAN7/Cluster/CAN7/CAN7/ST_CAN7_SG_FD7_C10_0</I-SIGNAL-TRIGGERING-REF>
+                            </I-SIGNAL-TRIGGERING-REF-CONDITIONAL>
+                            <I-SIGNAL-TRIGGERING-REF-CONDITIONAL>
+                              <I-SIGNAL-TRIGGERING-REF DEST="I-SIGNAL-TRIGGERING">/CAN7/Cluster/CAN7/CAN7/ST_CAN7_EMotorSpd</I-SIGNAL-TRIGGERING-REF>
+                            </I-SIGNAL-TRIGGERING-REF-CONDITIONAL>
+						  </I-SIGNAL-TRIGGERINGS>
+                        </PDU-TRIGGERING>
+                        <PDU-TRIGGERING>
+                          <SHORT-NAME>PT_CAN7_FD7_C200_0</SHORT-NAME>
+                          <I-PDU-PORT-REFS>
+                            <I-PDU-PORT-REF DEST="I-PDU-PORT">/ECU/FUSION/ConnCAN7/PP_CAN7_FD7_C200_0_OUT</I-PDU-PORT-REF>
+                          </I-PDU-PORT-REFS>
+                          <I-PDU-REF DEST="I-SIGNAL-I-PDU">/CAN7/PDU/CAN7_FD7_C200_0</I-PDU-REF>
+						  <I-SIGNAL-TRIGGERINGS>
+                            <I-SIGNAL-TRIGGERING-REF-CONDITIONAL>
+                              <I-SIGNAL-TRIGGERING-REF DEST="I-SIGNAL-TRIGGERING">/CAN7/Cluster/CAN7/CAN7/ST_CAN7_SG_FD7_C200_0</I-SIGNAL-TRIGGERING-REF>
+                            </I-SIGNAL-TRIGGERING-REF-CONDITIONAL>
+                            <I-SIGNAL-TRIGGERING-REF-CONDITIONAL>
+                              <I-SIGNAL-TRIGGERING-REF DEST="I-SIGNAL-TRIGGERING">/CAN7/Cluster/CAN7/CAN7/ST_CAN7_SysPowerMode</I-SIGNAL-TRIGGERING-REF>
+                            </I-SIGNAL-TRIGGERING-REF-CONDITIONAL>
+						  </I-SIGNAL-TRIGGERINGS>
+                        </PDU-TRIGGERING>
+                        <PDU-TRIGGERING>
+                          <SHORT-NAME>PT_CAN7_FD7_C50_0</SHORT-NAME>
+                          <I-PDU-PORT-REFS>
+                            <I-PDU-PORT-REF DEST="I-PDU-PORT">/ECU/FUSION/ConnCAN7/PP_CAN7_FD7_C50_0_OUT</I-PDU-PORT-REF>
+                          </I-PDU-PORT-REFS>
+                          <I-PDU-REF DEST="I-SIGNAL-I-PDU">/CAN7/PDU/CAN7_FD7_C50_0</I-PDU-REF>
+						  <I-SIGNAL-TRIGGERINGS>
+                            <I-SIGNAL-TRIGGERING-REF-CONDITIONAL>
+                              <I-SIGNAL-TRIGGERING-REF DEST="I-SIGNAL-TRIGGERING">/CAN7/Cluster/CAN7/CAN7/ST_CAN7_SG_FD7_C50_0</I-SIGNAL-TRIGGERING-REF>
+                            </I-SIGNAL-TRIGGERING-REF-CONDITIONAL>
+                            <I-SIGNAL-TRIGGERING-REF-CONDITIONAL>
+                              <I-SIGNAL-TRIGGERING-REF DEST="I-SIGNAL-TRIGGERING">/CAN7/Cluster/CAN7/CAN7/ST_CAN7_AccPedalPos1</I-SIGNAL-TRIGGERING-REF>
+                            </I-SIGNAL-TRIGGERING-REF-CONDITIONAL>
+						  </I-SIGNAL-TRIGGERINGS>
+                        </PDU-TRIGGERING>
+                        <PDU-TRIGGERING>
+                          <SHORT-NAME>PT_CAN7_FD7_CE100_0</SHORT-NAME>
+                          <I-PDU-PORT-REFS>
+                            <I-PDU-PORT-REF DEST="I-PDU-PORT">/ECU/FUSION/ConnCAN7/PP_CAN7_FD7_CE100_0_OUT</I-PDU-PORT-REF>
+                          </I-PDU-PORT-REFS>
+                          <I-PDU-REF DEST="I-SIGNAL-I-PDU">/CAN7/PDU/CAN7_FD7_CE100_0</I-PDU-REF>
+						  <I-SIGNAL-TRIGGERINGS>
+                            <I-SIGNAL-TRIGGERING-REF-CONDITIONAL>
+                              <I-SIGNAL-TRIGGERING-REF DEST="I-SIGNAL-TRIGGERING">/CAN7/Cluster/CAN7/CAN7/ST_CAN7_SG_FD7_CE100_0</I-SIGNAL-TRIGGERING-REF>
+                            </I-SIGNAL-TRIGGERING-REF-CONDITIONAL>
+                            <I-SIGNAL-TRIGGERING-REF-CONDITIONAL>
+                              <I-SIGNAL-TRIGGERING-REF DEST="I-SIGNAL-TRIGGERING">/CAN7/Cluster/CAN7/CAN7/ST_CAN7_FDC_BCM_DVRSignalL_Cmd</I-SIGNAL-TRIGGERING-REF>
+                            </I-SIGNAL-TRIGGERING-REF-CONDITIONAL>
+                            <I-SIGNAL-TRIGGERING-REF-CONDITIONAL>
+                              <I-SIGNAL-TRIGGERING-REF DEST="I-SIGNAL-TRIGGERING">/CAN7/Cluster/CAN7/CAN7/ST_CAN7_FDC_BCM_DVRSignalR_Cmd</I-SIGNAL-TRIGGERING-REF>
+                            </I-SIGNAL-TRIGGERING-REF-CONDITIONAL>
+                            <I-SIGNAL-TRIGGERING-REF-CONDITIONAL>
+                              <I-SIGNAL-TRIGGERING-REF DEST="I-SIGNAL-TRIGGERING">/CAN7/Cluster/CAN7/CAN7/ST_CAN7_FDC_BCM_FDoor_Sta</I-SIGNAL-TRIGGERING-REF>
+                            </I-SIGNAL-TRIGGERING-REF-CONDITIONAL>
+                            <I-SIGNAL-TRIGGERING-REF-CONDITIONAL>
+                              <I-SIGNAL-TRIGGERING-REF DEST="I-SIGNAL-TRIGGERING">/CAN7/Cluster/CAN7/CAN7/ST_CAN7_FDC_BCM_HBeam_Cmd</I-SIGNAL-TRIGGERING-REF>
+                            </I-SIGNAL-TRIGGERING-REF-CONDITIONAL>
+                            <I-SIGNAL-TRIGGERING-REF-CONDITIONAL>
+                              <I-SIGNAL-TRIGGERING-REF DEST="I-SIGNAL-TRIGGERING">/CAN7/Cluster/CAN7/CAN7/ST_CAN7_FDC_BCM_LBeam_Cmd</I-SIGNAL-TRIGGERING-REF>
+                            </I-SIGNAL-TRIGGERING-REF-CONDITIONAL>
+                            <I-SIGNAL-TRIGGERING-REF-CONDITIONAL>
+                              <I-SIGNAL-TRIGGERING-REF DEST="I-SIGNAL-TRIGGERING">/CAN7/Cluster/CAN7/CAN7/ST_CAN7_FDC_BCM_MDoor_Sta</I-SIGNAL-TRIGGERING-REF>
+                            </I-SIGNAL-TRIGGERING-REF-CONDITIONAL>
+                            <I-SIGNAL-TRIGGERING-REF-CONDITIONAL>
+                              <I-SIGNAL-TRIGGERING-REF DEST="I-SIGNAL-TRIGGERING">/CAN7/Cluster/CAN7/CAN7/ST_CAN7_FDC_BCM_PLamp_Cmd</I-SIGNAL-TRIGGERING-REF>
+                            </I-SIGNAL-TRIGGERING-REF-CONDITIONAL>
+						  </I-SIGNAL-TRIGGERINGS>
+                        </PDU-TRIGGERING>
+                        <PDU-TRIGGERING>
+                          <SHORT-NAME>PT_CAN7_NMm_FUSION_TX</SHORT-NAME>
+                          <I-PDU-PORT-REFS>
+                            <I-PDU-PORT-REF DEST="I-PDU-PORT">/ECU/FUSION/ConnCAN7/PP_CAN7_NMm_FUSION_TX_OUT</I-PDU-PORT-REF>
+                          </I-PDU-PORT-REFS>
+                          <I-PDU-REF DEST="NM-PDU">/CAN7/PDU/CAN7_NMm_FUSION_TX</I-PDU-REF>
+                        </PDU-TRIGGERING>
+                        <PDU-TRIGGERING>
+                          <SHORT-NAME>PT_CAN7_NMm_FUSION_RX</SHORT-NAME>
+                          <I-PDU-PORT-REFS>
+                            <I-PDU-PORT-REF DEST="I-PDU-PORT">/ECU/FUSION/ConnCAN7/PP_CAN7_NMm_FUSION_RX_IN</I-PDU-PORT-REF>
+                          </I-PDU-PORT-REFS>
+                          <I-PDU-REF DEST="NM-PDU">/CAN7/PDU/CAN7_NMm_FUSION_RX</I-PDU-REF>
+                        </PDU-TRIGGERING>
+					  </PDU-TRIGGERINGS>
+                    </CAN-PHYSICAL-CHANNEL>
+                  </PHYSICAL-CHANNELS>
+                </CAN-CLUSTER-CONDITIONAL>
+              </CAN-CLUSTER-VARIANTS>
+            </CAN-CLUSTER>
+          </ELEMENTS>
+        </AR-PACKAGE>
+		<AR-PACKAGE>
+          <SHORT-NAME>ConstantSpecification</SHORT-NAME>
+          <ELEMENTS>
+            <CONSTANT-SPECIFICATION>
+              <SHORT-NAME>Init_CAN7_VCUKeyStatus</SHORT-NAME>
+              <VALUE-SPEC>
+                <NUMERICAL-VALUE-SPECIFICATION>
+                  <VALUE>0</VALUE>
+                </NUMERICAL-VALUE-SPECIFICATION>
+              </VALUE-SPEC>
+            </CONSTANT-SPECIFICATION>
+            <CONSTANT-SPECIFICATION>
+              <SHORT-NAME>Init_CAN7_EMotorSpd</SHORT-NAME>
+              <VALUE-SPEC>
+                <NUMERICAL-VALUE-SPECIFICATION>
+                  <VALUE>0</VALUE>
+                </NUMERICAL-VALUE-SPECIFICATION>
+              </VALUE-SPEC>
+            </CONSTANT-SPECIFICATION>
+            <CONSTANT-SPECIFICATION>
+              <SHORT-NAME>Init_CAN7_SysPowerMode</SHORT-NAME>
+              <VALUE-SPEC>
+                <NUMERICAL-VALUE-SPECIFICATION>
+                  <VALUE>0</VALUE>
+                </NUMERICAL-VALUE-SPECIFICATION>
+              </VALUE-SPEC>
+            </CONSTANT-SPECIFICATION>
+            <CONSTANT-SPECIFICATION>
+              <SHORT-NAME>Init_CAN7_AccPedalPos1</SHORT-NAME>
+              <VALUE-SPEC>
+                <NUMERICAL-VALUE-SPECIFICATION>
+                  <VALUE>0</VALUE>
+                </NUMERICAL-VALUE-SPECIFICATION>
+              </VALUE-SPEC>
+            </CONSTANT-SPECIFICATION>
+            <CONSTANT-SPECIFICATION>
+              <SHORT-NAME>Init_CAN7_FDC_BCM_DVRSignalL_Cmd</SHORT-NAME>
+              <VALUE-SPEC>
+                <NUMERICAL-VALUE-SPECIFICATION>
+                  <VALUE>0</VALUE>
+                </NUMERICAL-VALUE-SPECIFICATION>
+              </VALUE-SPEC>
+            </CONSTANT-SPECIFICATION>
+            <CONSTANT-SPECIFICATION>
+              <SHORT-NAME>Init_CAN7_FDC_BCM_DVRSignalR_Cmd</SHORT-NAME>
+              <VALUE-SPEC>
+                <NUMERICAL-VALUE-SPECIFICATION>
+                  <VALUE>0</VALUE>
+                </NUMERICAL-VALUE-SPECIFICATION>
+              </VALUE-SPEC>
+            </CONSTANT-SPECIFICATION>
+            <CONSTANT-SPECIFICATION>
+              <SHORT-NAME>Init_CAN7_FDC_BCM_FDoor_Sta</SHORT-NAME>
+              <VALUE-SPEC>
+                <NUMERICAL-VALUE-SPECIFICATION>
+                  <VALUE>0</VALUE>
+                </NUMERICAL-VALUE-SPECIFICATION>
+              </VALUE-SPEC>
+            </CONSTANT-SPECIFICATION>
+            <CONSTANT-SPECIFICATION>
+              <SHORT-NAME>Init_CAN7_FDC_BCM_HBeam_Cmd</SHORT-NAME>
+              <VALUE-SPEC>
+                <NUMERICAL-VALUE-SPECIFICATION>
+                  <VALUE>0</VALUE>
+                </NUMERICAL-VALUE-SPECIFICATION>
+              </VALUE-SPEC>
+            </CONSTANT-SPECIFICATION>
+            <CONSTANT-SPECIFICATION>
+              <SHORT-NAME>Init_CAN7_FDC_BCM_LBeam_Cmd</SHORT-NAME>
+              <VALUE-SPEC>
+                <NUMERICAL-VALUE-SPECIFICATION>
+                  <VALUE>0</VALUE>
+                </NUMERICAL-VALUE-SPECIFICATION>
+              </VALUE-SPEC>
+            </CONSTANT-SPECIFICATION>
+            <CONSTANT-SPECIFICATION>
+              <SHORT-NAME>Init_CAN7_FDC_BCM_MDoor_Sta</SHORT-NAME>
+              <VALUE-SPEC>
+                <NUMERICAL-VALUE-SPECIFICATION>
+                  <VALUE>0</VALUE>
+                </NUMERICAL-VALUE-SPECIFICATION>
+              </VALUE-SPEC>
+            </CONSTANT-SPECIFICATION>
+            <CONSTANT-SPECIFICATION>
+              <SHORT-NAME>Init_CAN7_FDC_BCM_PLamp_Cmd</SHORT-NAME>
+              <VALUE-SPEC>
+                <NUMERICAL-VALUE-SPECIFICATION>
+                  <VALUE>0</VALUE>
+                </NUMERICAL-VALUE-SPECIFICATION>
+              </VALUE-SPEC>
+            </CONSTANT-SPECIFICATION>
+			<CONSTANT-SPECIFICATION>
+              <SHORT-NAME>Init_CAN7_SG_FD7_C100_0</SHORT-NAME>
+              <VALUE-SPEC>
+                <RECORD-VALUE-SPECIFICATION>
+                  <FIELDS>
+                    <CONSTANT-REFERENCE>
+                      <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/CAN7/ConstantSpecification/Init_CAN7_VCUKeyStatus</CONSTANT-REF>
+                    </CONSTANT-REFERENCE>
+				  </FIELDS>
+                </RECORD-VALUE-SPECIFICATION>
+              </VALUE-SPEC>
+            </CONSTANT-SPECIFICATION>
+			<CONSTANT-SPECIFICATION>
+              <SHORT-NAME>Init_CAN7_SG_FD7_C10_0</SHORT-NAME>
+              <VALUE-SPEC>
+                <RECORD-VALUE-SPECIFICATION>
+                  <FIELDS>
+                    <CONSTANT-REFERENCE>
+                      <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/CAN7/ConstantSpecification/Init_CAN7_EMotorSpd</CONSTANT-REF>
+                    </CONSTANT-REFERENCE>
+				  </FIELDS>
+                </RECORD-VALUE-SPECIFICATION>
+              </VALUE-SPEC>
+            </CONSTANT-SPECIFICATION>
+			<CONSTANT-SPECIFICATION>
+              <SHORT-NAME>Init_CAN7_SG_FD7_C200_0</SHORT-NAME>
+              <VALUE-SPEC>
+                <RECORD-VALUE-SPECIFICATION>
+                  <FIELDS>
+                    <CONSTANT-REFERENCE>
+                      <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/CAN7/ConstantSpecification/Init_CAN7_SysPowerMode</CONSTANT-REF>
+                    </CONSTANT-REFERENCE>
+				  </FIELDS>
+                </RECORD-VALUE-SPECIFICATION>
+              </VALUE-SPEC>
+            </CONSTANT-SPECIFICATION>
+			<CONSTANT-SPECIFICATION>
+              <SHORT-NAME>Init_CAN7_SG_FD7_C50_0</SHORT-NAME>
+              <VALUE-SPEC>
+                <RECORD-VALUE-SPECIFICATION>
+                  <FIELDS>
+                    <CONSTANT-REFERENCE>
+                      <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/CAN7/ConstantSpecification/Init_CAN7_AccPedalPos1</CONSTANT-REF>
+                    </CONSTANT-REFERENCE>
+				  </FIELDS>
+                </RECORD-VALUE-SPECIFICATION>
+              </VALUE-SPEC>
+            </CONSTANT-SPECIFICATION>
+			<CONSTANT-SPECIFICATION>
+              <SHORT-NAME>Init_CAN7_SG_FD7_CE100_0</SHORT-NAME>
+              <VALUE-SPEC>
+                <RECORD-VALUE-SPECIFICATION>
+                  <FIELDS>
+                    <CONSTANT-REFERENCE>
+                      <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/CAN7/ConstantSpecification/Init_CAN7_FDC_BCM_DVRSignalL_Cmd</CONSTANT-REF>
+                    </CONSTANT-REFERENCE>
+                    <CONSTANT-REFERENCE>
+                      <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/CAN7/ConstantSpecification/Init_CAN7_FDC_BCM_DVRSignalR_Cmd</CONSTANT-REF>
+                    </CONSTANT-REFERENCE>
+                    <CONSTANT-REFERENCE>
+                      <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/CAN7/ConstantSpecification/Init_CAN7_FDC_BCM_FDoor_Sta</CONSTANT-REF>
+                    </CONSTANT-REFERENCE>
+                    <CONSTANT-REFERENCE>
+                      <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/CAN7/ConstantSpecification/Init_CAN7_FDC_BCM_HBeam_Cmd</CONSTANT-REF>
+                    </CONSTANT-REFERENCE>
+                    <CONSTANT-REFERENCE>
+                      <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/CAN7/ConstantSpecification/Init_CAN7_FDC_BCM_LBeam_Cmd</CONSTANT-REF>
+                    </CONSTANT-REFERENCE>
+                    <CONSTANT-REFERENCE>
+                      <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/CAN7/ConstantSpecification/Init_CAN7_FDC_BCM_MDoor_Sta</CONSTANT-REF>
+                    </CONSTANT-REFERENCE>
+                    <CONSTANT-REFERENCE>
+                      <CONSTANT-REF DEST="CONSTANT-SPECIFICATION">/CAN7/ConstantSpecification/Init_CAN7_FDC_BCM_PLamp_Cmd</CONSTANT-REF>
+                    </CONSTANT-REFERENCE>
+				  </FIELDS>
+                </RECORD-VALUE-SPECIFICATION>
+              </VALUE-SPEC>
+            </CONSTANT-SPECIFICATION>
+		   </ELEMENTS>
+        </AR-PACKAGE>
+		<AR-PACKAGE>
+          <SHORT-NAME>ImplementationDataTypes</SHORT-NAME>
+          <ELEMENTS>
+			<IMPLEMENTATION-DATA-TYPE>
+              <SHORT-NAME>DT_CAN7_SG_FD7_C100_0</SHORT-NAME>
+              <CATEGORY>STRUCTURE</CATEGORY>
+              <SUB-ELEMENTS>
+                <IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                  <SHORT-NAME>CAN7_VCUKeyStatus</SHORT-NAME>
+                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint8</IMPLEMENTATION-DATA-TYPE-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+			  </SUB-ELEMENTS>
+            </IMPLEMENTATION-DATA-TYPE>
+			<IMPLEMENTATION-DATA-TYPE>
+              <SHORT-NAME>DT_CAN7_SG_FD7_C10_0</SHORT-NAME>
+              <CATEGORY>STRUCTURE</CATEGORY>
+              <SUB-ELEMENTS>
+                <IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                  <SHORT-NAME>CAN7_EMotorSpd</SHORT-NAME>
+                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint16</IMPLEMENTATION-DATA-TYPE-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+			  </SUB-ELEMENTS>
+            </IMPLEMENTATION-DATA-TYPE>
+			<IMPLEMENTATION-DATA-TYPE>
+              <SHORT-NAME>DT_CAN7_SG_FD7_C200_0</SHORT-NAME>
+              <CATEGORY>STRUCTURE</CATEGORY>
+              <SUB-ELEMENTS>
+                <IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                  <SHORT-NAME>CAN7_SysPowerMode</SHORT-NAME>
+                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint8</IMPLEMENTATION-DATA-TYPE-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+			  </SUB-ELEMENTS>
+            </IMPLEMENTATION-DATA-TYPE>
+			<IMPLEMENTATION-DATA-TYPE>
+              <SHORT-NAME>DT_CAN7_SG_FD7_C50_0</SHORT-NAME>
+              <CATEGORY>STRUCTURE</CATEGORY>
+              <SUB-ELEMENTS>
+                <IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                  <SHORT-NAME>CAN7_AccPedalPos1</SHORT-NAME>
+                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint8</IMPLEMENTATION-DATA-TYPE-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+			  </SUB-ELEMENTS>
+            </IMPLEMENTATION-DATA-TYPE>
+			<IMPLEMENTATION-DATA-TYPE>
+              <SHORT-NAME>DT_CAN7_SG_FD7_CE100_0</SHORT-NAME>
+              <CATEGORY>STRUCTURE</CATEGORY>
+              <SUB-ELEMENTS>
+                <IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                  <SHORT-NAME>CAN7_FDC_BCM_DVRSignalL_Cmd</SHORT-NAME>
+                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint8</IMPLEMENTATION-DATA-TYPE-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                <IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                  <SHORT-NAME>CAN7_FDC_BCM_DVRSignalR_Cmd</SHORT-NAME>
+                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint8</IMPLEMENTATION-DATA-TYPE-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                <IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                  <SHORT-NAME>CAN7_FDC_BCM_FDoor_Sta</SHORT-NAME>
+                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint8</IMPLEMENTATION-DATA-TYPE-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                <IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                  <SHORT-NAME>CAN7_FDC_BCM_HBeam_Cmd</SHORT-NAME>
+                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint8</IMPLEMENTATION-DATA-TYPE-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                <IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                  <SHORT-NAME>CAN7_FDC_BCM_LBeam_Cmd</SHORT-NAME>
+                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint8</IMPLEMENTATION-DATA-TYPE-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                <IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                  <SHORT-NAME>CAN7_FDC_BCM_MDoor_Sta</SHORT-NAME>
+                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint8</IMPLEMENTATION-DATA-TYPE-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                <IMPLEMENTATION-DATA-TYPE-ELEMENT>
+                  <SHORT-NAME>CAN7_FDC_BCM_PLamp_Cmd</SHORT-NAME>
+                  <CATEGORY>TYPE_REFERENCE</CATEGORY>
+                  <SW-DATA-DEF-PROPS>
+                    <SW-DATA-DEF-PROPS-VARIANTS>
+                      <SW-DATA-DEF-PROPS-CONDITIONAL>
+                        <IMPLEMENTATION-DATA-TYPE-REF DEST="IMPLEMENTATION-DATA-TYPE">/AUTOSAR_Platform/ImplementationDataTypes/uint8</IMPLEMENTATION-DATA-TYPE-REF>
+                      </SW-DATA-DEF-PROPS-CONDITIONAL>
+                    </SW-DATA-DEF-PROPS-VARIANTS>
+                  </SW-DATA-DEF-PROPS>
+                </IMPLEMENTATION-DATA-TYPE-ELEMENT>
+			  </SUB-ELEMENTS>
+            </IMPLEMENTATION-DATA-TYPE>
+		  </ELEMENTS>
+        </AR-PACKAGE>
+	  </AR-PACKAGES>
+    </AR-PACKAGE>
+  </AR-PACKAGES>
+</AUTOSAR>
+            
+            

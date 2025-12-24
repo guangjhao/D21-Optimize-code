@@ -1,0 +1,367 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: FUSION T1_CMS_R_CMS T1_DMS_FMS Door_Fr
+
+
+BO_ 2566522297 FD7_CE100_0: 8 FUSION
+ SG_ LTurnLP : 13|1@1+ (1,0) [0|1] "" T1_CMS_R_CMS
+ SG_ RTurnLP : 14|1@1+ (1,0) [0|1] "" T1_CMS_R_CMS
+ SG_ FDC_BCM_FDDoorOpen_Sta : 62|2@1+ (1,0) [0|3] "" Vector__XXX
+
+BO_ 2566831883 EBC2: 8 FUSION
+ SG_ FASpeed : 0|16@1+ (0.00390625,0) [0|250.99609375] "km/h" T1_CMS_R_CMS,T1_DMS_FMS
+ SG_ RelaSpdFALWheel : 16|8@1+ (0.0625,-7.8125) [-7.8125|7.8125] "km/h" Vector__XXX
+ SG_ RelaSpdFARWheel : 24|8@1+ (0.0625,-7.8125) [-7.8125|7.8125] "km/h" Vector__XXX
+ SG_ RelaSpdRA1LWheel : 32|8@1+ (0.0625,-7.8125) [-7.8125|7.8125] "km/h" Vector__XXX
+ SG_ RelaSpdRA1RWheel : 40|8@1+ (0.0625,-7.8125) [-7.8125|7.8125] "km/h" Vector__XXX
+ SG_ RelaSpdRA2LWheel : 48|8@1+ (0.0625,-7.8125) [-7.8125|7.8125] "km/h" Vector__XXX
+ SG_ RelaSpdRA2RWheel : 56|8@1+ (0.0625,-7.8125) [-7.8125|7.8125] "km/h" Vector__XXX
+
+BO_ 2566887584 IVI4: 8 FUSION
+ SG_ IVI_D_ACSwitch_cmd : 25|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ IVI_D_AirflowUpControl_cmd : 63|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ IVI_D_AirflowDownControl_cmd : 62|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ IVI_D_TemperatureUpControl_cmd : 61|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ IVI_D_TempDownControl_cmd : 60|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ IVI_D_AutoSwitch_cmd : 29|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ IVI_D_MaxAirflowSwitch_cmd : 30|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ IVI_D_PowerSwitch_cmd : 24|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ IVI_RMirrorHeatSta_cmd : 3|4@0+ (1,0) [0|15] "" T1_CMS_R_CMS
+
+BO_ 2566838066 Door_Fr1: 8 Door_Fr
+ SG_ Door_Fr_DoorEmergency_sta : 4|2@1+ (1,0) [0|3] "" FUSION
+ SG_ Door_Fr_Doorposition_sta : 8|2@1+ (1,0) [0|3] "" FUSION
+ SG_ Door_Fr_Dooroperation_sta : 10|2@1+ (1,0) [0|3] "" FUSION
+
+BO_ 2365580850 FD7_CE100_1: 8 FUSION
+ SG_ FDC_BCM_FRHaltBrake_Sta : 6|2@1+ (1,0) [0|3] "" Door_Fr
+ SG_ FDC_BCM_FROpenClosePB_Cmd : 8|2@1+ (1,0) [0|3] "" Door_Fr
+ SG_ FDC_BCM_PosLamp_Cmd : 14|1@1+ (1,0) [0|1] "" Door_Fr
+ SG_ FDC_BCM_FROpendoor_Cmd : 20|2@1+ (1,0) [0|3] "" Door_Fr
+ SG_ FDC_BCM_FRClosedoor_Cmd : 22|2@1+ (1,0) [0|3] "" Door_Fr
+ SG_ FDC_FRDisIntEm_Cmd : 2|2@1+ (1,0) [0|3] "" Door_Fr
+
+
+CM_ SG_ 2566522297 LTurnLP "Left Turn Lamp";
+CM_ SG_ 2566522297 RTurnLP "Right Turn Lamp";
+CM_ SG_ 2566522297 FDC_BCM_FDDoorOpen_Sta "Fusion BCM Rebuild Door Open";
+CM_ SG_ 2566831883 FASpeed "Front Axle Vehicle Speed(64256~65535=Error)";
+CM_ SG_ 2566831883 RelaSpdFALWheel "The speed of the front axle, left wheel relative to the front axle speed, SPN 904.";
+CM_ SG_ 2566831883 RelaSpdFARWheel "The speed of the front axle, right wheel relative to the front axle speed, SPN 904.";
+CM_ SG_ 2566831883 RelaSpdRA1LWheel "The speed of the rear axle #1, left wheel relative to the front axle speed, SPN 904.";
+CM_ SG_ 2566831883 RelaSpdRA1RWheel "The speed of the rear axle #1, right wheel relative to the front axle speed, SPN 904.";
+CM_ SG_ 2566831883 RelaSpdRA2LWheel "The speed of the rear axle #2, left wheel relative to the front axle speed, SPN 904.";
+CM_ SG_ 2566831883 RelaSpdRA2RWheel "The speed of the rear axle #2, right wheel relative to the front axle speed, SPN 904.";
+CM_ SG_ 2566887584 IVI_D_ACSwitch_cmd "compressor on/off";
+CM_ SG_ 2566887584 IVI_D_AirflowUpControl_cmd "Airflow upcontrol";
+CM_ SG_ 2566887584 IVI_D_AirflowDownControl_cmd "Airflow Downcontrol";
+CM_ SG_ 2566887584 IVI_D_TemperatureUpControl_cmd "Temperature up control";
+CM_ SG_ 2566887584 IVI_D_TempDownControl_cmd "Temperature down control";
+CM_ SG_ 2566887584 IVI_D_AutoSwitch_cmd "Auto switch";
+CM_ SG_ 2566887584 IVI_D_MaxAirflowSwitch_cmd "Max Airflow Switch";
+CM_ SG_ 2566887584 IVI_D_PowerSwitch_cmd "AC PowerSwitch";
+CM_ SG_ 2566887584 IVI_RMirrorHeatSta_cmd "Mirror Heat start ";
+CM_ SG_ 2566838066 Door_Fr_DoorEmergency_sta "Door Emergency";
+CM_ SG_ 2566838066 Door_Fr_Doorposition_sta "Door position";
+CM_ SG_ 2566838066 Door_Fr_Dooroperation_sta "Door operation";
+CM_ SG_ 2365580850 FDC_BCM_FRHaltBrake_Sta "Hand brake";
+CM_ SG_ 2365580850 FDC_BCM_FROpenClosePB_Cmd "Open/Close Push-Button";
+CM_ SG_ 2365580850 FDC_BCM_PosLamp_Cmd "Position lights";
+CM_ SG_ 2365580850 FDC_BCM_FROpendoor_Cmd "Open Push-Button";
+CM_ SG_ 2365580850 FDC_BCM_FRClosedoor_Cmd "Close Push-Button";
+CM_ SG_ 2365580850 FDC_FRDisIntEm_Cmd "Speed Information";
+
+BA_DEF_ BO_ "StartDelay" INT 0 0;
+BA_DEF_ BO_ "GenMsgStartDelayTime" INT 0 0;
+BA_DEF_ BO_ "GenMsgSendType" ENUM "Cycle","NoMsgSendType","IfActive","Event","CA","CE";
+BA_DEF_ BO_ "GenMsgNrOfRepetition" INT 0 0;
+BA_DEF_ BO_ "GenMsgILSupport" ENUM "No","Yes";
+BA_DEF_ BO_ "GenMsgDelayTime" INT 0 0;
+BA_DEF_ BO_ "GenMsgCycleTimeFast" INT 0 0;
+BA_DEF_ BO_ "GenMsgCycleTime" INT 0 0;
+BA_DEF_ BO_ "DiagState" ENUM "No","Yes";
+BA_DEF_ BO_ "DiagResponse" ENUM "No","Yes";
+BA_DEF_ BO_ "DiagRequest" ENUM "No","Yes";
+BA_DEF_ BO_ "NmMessage" ENUM "No","Yes";
+BA_DEF_ BO_ "VFrameFormat" ENUM "StandardCAN","ExtendedCAN","StandardCAN_FD","ExtendedCAN_FD","reserved","J1939PG";
+BA_DEF_ BO_ "DataID" STRING ;
+BA_DEF_ BO_ "DoIPLogicalAddress" STRING ;
+BA_DEF_ BO_ "CANFD_BRS" ENUM "0","1";
+BA_DEF_ BO_ "GenMsgFastOnStart" INT 0 100000;
+BA_DEF_ BO_ "GenMsgRequestable" INT 0 1;
+BA_DEF_ BO_ "NmAsrMessage" ENUM "No","Yes";
+BA_DEF_ "NmType" STRING ;
+BA_DEF_ "VersionYear" INT 2010 2999;
+BA_DEF_ "VersionNumber" INT 0 99;
+BA_DEF_ "VersionMonth" INT 0 12;
+BA_DEF_ "VersionDay" INT 0 31;
+BA_DEF_ "ProtocolType" STRING ;
+BA_DEF_ "NmMessageCount" INT 0 255;
+BA_DEF_ "NmBaseAddress" HEX 1280 1407;
+BA_DEF_ "Manufacturer" STRING ;
+BA_DEF_ "ILTxTimeout" INT 0 100;
+BA_DEF_ "DBName" STRING ;
+BA_DEF_ "BusType" STRING ;
+BA_DEF_ "Baudrate" INT 0 1000000;
+BA_DEF_ "DatabaseVersion" STRING ;
+BA_DEF_ "Datarate" INT 0 2000000;
+BA_DEF_ "NmAsrWaitBusSleepTime" INT 0 0;
+BA_DEF_ "NmAsrTimeoutTime" INT 0 0;
+BA_DEF_ "NmAsrRepeatMessageTime" INT 0 0;
+BA_DEF_ "NmAsrMessageCount" INT 1 128;
+BA_DEF_ "NmAsrCanMsgCycleTime" INT 0 0;
+BA_DEF_ "NmAsrBaseAddress" HEX 0 536870911;
+BA_DEF_ "GenNWMSleepTime" INT 0 1000000;
+BA_DEF_ BU_ "TerminalNode" ENUM "No","Yes";
+BA_DEF_ BU_ "NodeLayerModules" STRING ;
+BA_DEF_ BU_ "NmNode" ENUM "Yes","No";
+BA_DEF_ BU_ "ILUsed" ENUM "No","Yes";
+BA_DEF_ BU_ "NmNodeAddress" HEX 0 127;
+BA_DEF_ BU_ "NmCAN" INT 1 2;
+BA_DEF_ BU_ "CANoeStartDelay" INT 0 10;
+BA_DEF_ BU_ "CANoeDrift" INT 0 0;
+BA_DEF_ BU_ "CANoeJitterMin" INT 0 0;
+BA_DEF_ BU_ "NmStationAddress" HEX 0 127;
+BA_DEF_ BU_ "CANoeJitterMax" INT 0 0;
+BA_DEF_ BU_ "ECU" STRING ;
+BA_DEF_ BU_ "NmAsrNodeIdentifier" HEX 0 255;
+BA_DEF_ BU_ "NmAsrCanMsgReducedTime" INT 0 0;
+BA_DEF_ BU_ "NmAsrCanMsgCycleOffset" INT 0 0;
+BA_DEF_ BU_ "GenNodSleepTime" INT 0 1000000;
+BA_DEF_ BU_ "CANFD_CANFD_Gateway" ENUM "Yes","No";
+BA_DEF_ BU_ "CAN_CANFD_Gateway" ENUM "Yes","No";
+BA_DEF_ BU_ "CANFD_LIN_Gateway" ENUM "Yes","No";
+BA_DEF_ BU_ "CAN_LIN_Gateway" ENUM "Yes","No";
+BA_DEF_ BU_ "CAN_CAN_Gateway" ENUM "Yes","No";
+BA_DEF_ BU_ "BootloaderNode" ENUM "No","Yes";
+BA_DEF_ BU_ "ECUDisplayName" STRING ;
+BA_DEF_ SG_ "GenSigInvalidValue" HEX 0 0;
+BA_DEF_ SG_ "GenSigStartValue" HEX 0 0;
+BA_DEF_ SG_ "GenSigInactiveValue" HEX 0 0;
+BA_DEF_ SG_ "GenSigRoutingTimeoutValue_String" STRING ;
+BA_DEF_ SG_ "GenSigRoutingTimeoutValue" HEX 0 0;
+BA_DEF_ SG_ "GenSigSendType" ENUM "Cycle","OnWrite","OnWriteWithRepetition","OnChange","OnChangeWithRepetition","IfActive","IfActiveWithRepetition","NoSigSendType","vector_leerstring";
+BA_DEF_ SG_ "E2EProfile" STRING ;
+BA_DEF_ SG_ "GenSigDataID" STRING ;
+BA_DEF_ SG_ "SigType" ENUM "Default","Range","RangeSigned","ASCII","Discrete","Control","ReferencePGN","DTC","StringDelimiter","StringLength","StringLengthControl","MessageCounter","MessageChecksum";
+BA_DEF_ SG_ "GenSigILSupport" ENUM "No","Yes";
+BA_DEF_ SG_ "GenSigLongName" STRING ;
+BA_DEF_ SG_ "NWM-WakeupAllowed" ENUM "No","Yes";
+BA_DEF_ SG_ "SPN" INT 0 0;
+BA_DEF_DEF_ "StartDelay" 0;
+BA_DEF_DEF_ "GenMsgStartDelayTime" 0;
+BA_DEF_DEF_ "GenMsgSendType" "Cycle";
+BA_DEF_DEF_ "GenMsgNrOfRepetition" 0;
+BA_DEF_DEF_ "GenMsgILSupport" "Yes";
+BA_DEF_DEF_ "GenMsgDelayTime" 0;
+BA_DEF_DEF_ "GenMsgCycleTimeFast" 0;
+BA_DEF_DEF_ "GenMsgCycleTime" 100;
+BA_DEF_DEF_ "DiagState" "No";
+BA_DEF_DEF_ "DiagResponse" "No";
+BA_DEF_DEF_ "DiagRequest" "No";
+BA_DEF_DEF_ "NmMessage" "No";
+BA_DEF_DEF_ "VFrameFormat" "StandardCAN";
+BA_DEF_DEF_ "DataID" "";
+BA_DEF_DEF_ "DoIPLogicalAddress" "";
+BA_DEF_DEF_ "CANFD_BRS" "1";
+BA_DEF_DEF_ "GenMsgFastOnStart" 0;
+BA_DEF_DEF_ "GenMsgRequestable" 1;
+BA_DEF_DEF_ "NmAsrMessage" "No";
+BA_DEF_DEF_ "NmType" "AUTOSAR";
+BA_DEF_DEF_ "VersionYear" 2024;
+BA_DEF_DEF_ "VersionNumber" 0;
+BA_DEF_DEF_ "VersionMonth" 0;
+BA_DEF_DEF_ "VersionDay" 0;
+BA_DEF_DEF_ "ProtocolType" "CAN";
+BA_DEF_DEF_ "NmMessageCount" 128;
+BA_DEF_DEF_ "NmBaseAddress" 1280;
+BA_DEF_DEF_ "Manufacturer" "";
+BA_DEF_DEF_ "ILTxTimeout" 0;
+BA_DEF_DEF_ "DBName" "";
+BA_DEF_DEF_ "BusType" "";
+BA_DEF_DEF_ "Baudrate" 500000;
+BA_DEF_DEF_ "DatabaseVersion" "";
+BA_DEF_DEF_ "Datarate" 2000000;
+BA_DEF_DEF_ "NmAsrWaitBusSleepTime" 1500;
+BA_DEF_DEF_ "NmAsrTimeoutTime" 2000;
+BA_DEF_DEF_ "NmAsrRepeatMessageTime" 3200;
+BA_DEF_DEF_ "NmAsrMessageCount" 64;
+BA_DEF_DEF_ "NmAsrCanMsgCycleTime" 640;
+BA_DEF_DEF_ "NmAsrBaseAddress" 1024;
+BA_DEF_DEF_ "GenNWMSleepTime" 0;
+BA_DEF_DEF_ "TerminalNode" "No";
+BA_DEF_DEF_ "NodeLayerModules" "CANoeILNLVector.dll";
+BA_DEF_DEF_ "NmNode" "No";
+BA_DEF_DEF_ "ILUsed" "Yes";
+BA_DEF_DEF_ "NmNodeAddress" 0;
+BA_DEF_DEF_ "NmCAN" 2;
+BA_DEF_DEF_ "CANoeStartDelay" 0;
+BA_DEF_DEF_ "CANoeDrift" 0;
+BA_DEF_DEF_ "CANoeJitterMin" 0;
+BA_DEF_DEF_ "NmStationAddress" 0;
+BA_DEF_DEF_ "CANoeJitterMax" 0;
+BA_DEF_DEF_ "ECU" "";
+BA_DEF_DEF_ "NmAsrNodeIdentifier" 0;
+BA_DEF_DEF_ "NmAsrCanMsgReducedTime" 6400;
+BA_DEF_DEF_ "NmAsrCanMsgCycleOffset" 0;
+BA_DEF_DEF_ "GenNodSleepTime" 0;
+BA_DEF_DEF_ "CANFD_CANFD_Gateway" "No";
+BA_DEF_DEF_ "CAN_CANFD_Gateway" "No";
+BA_DEF_DEF_ "CANFD_LIN_Gateway" "No";
+BA_DEF_DEF_ "CAN_LIN_Gateway" "No";
+BA_DEF_DEF_ "CAN_CAN_Gateway" "No";
+BA_DEF_DEF_ "BootloaderNode" "No";
+BA_DEF_DEF_ "ECUDisplayName" "";
+BA_DEF_DEF_ "GenSigInvalidValue" 0;
+BA_DEF_DEF_ "GenSigStartValue" 0;
+BA_DEF_DEF_ "GenSigInactiveValue" 0;
+BA_DEF_DEF_ "GenSigRoutingTimeoutValue_String" "";
+BA_DEF_DEF_ "GenSigRoutingTimeoutValue" 0;
+BA_DEF_DEF_ "GenSigSendType" "Cycle";
+BA_DEF_DEF_ "E2EProfile" "";
+BA_DEF_DEF_ "GenSigDataID" "";
+BA_DEF_DEF_ "SigType" "Default";
+BA_DEF_DEF_ "GenSigILSupport" "Yes";
+BA_DEF_DEF_ "GenSigLongName" "";
+BA_DEF_DEF_ "NWM-WakeupAllowed" "No";
+BA_DEF_DEF_ "SPN" 0;
+BA_ "BusType" "CAN";
+BA_ "Manufacturer" "FVT";
+BA_ "DBName" "CAN7";
+BA_ "Baudrate" 250000;
+BA_ "CAN_CAN_Gateway" BU_ FUSION 0;
+BA_ "CANFD_CANFD_Gateway" BU_ FUSION 0;
+BA_ "CAN_CANFD_Gateway" BU_ FUSION 0;
+BA_ "CANFD_LIN_Gateway" BU_ FUSION 0;
+BA_ "GenMsgNrOfRepetition" BO_ 2566522297 1;
+BA_ "GenMsgCycleTimeFast" BO_ 2566522297 10;
+BA_ "GenMsgSendType" BO_ 2566522297 5;
+BA_ "VFrameFormat" BO_ 2566522297 1;
+BA_ "VFrameFormat" BO_ 2566831883 1;
+BA_ "GenMsgCycleTime" BO_ 2566887584 50;
+BA_ "VFrameFormat" BO_ 2566887584 1;
+BA_ "GenMsgNrOfRepetition" BO_ 2566838066 10;
+BA_ "GenMsgCycleTimeFast" BO_ 2566838066 10;
+BA_ "GenMsgSendType" BO_ 2566838066 5;
+BA_ "VFrameFormat" BO_ 2566838066 1;
+BA_ "GenMsgNrOfRepetition" BO_ 2365580850 10;
+BA_ "GenMsgSendType" BO_ 2365580850 5;
+BA_ "VFrameFormat" BO_ 2365580850 1;
+BA_ "GenSigSendType" SG_ 2566522297 LTurnLP 3;
+BA_ "GenSigSendType" SG_ 2566522297 RTurnLP 3;
+BA_ "GenSigInvalidValue" SG_ 2566522297 FDC_BCM_FDDoorOpen_Sta 3;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 2566522297 FDC_BCM_FDDoorOpen_Sta "0x2";
+BA_ "GenSigRoutingTimeoutValue" SG_ 2566522297 FDC_BCM_FDDoorOpen_Sta 2;
+BA_ "GenSigSendType" SG_ 2566522297 FDC_BCM_FDDoorOpen_Sta 3;
+BA_ "GenSigInvalidValue" SG_ 2566831883 FASpeed 64256;
+BA_ "GenSigStartValue" SG_ 2566831883 FASpeed 0;
+BA_ "GenSigInactiveValue" SG_ 2566831883 FASpeed 0;
+BA_ "GenSigInvalidValue" SG_ 2566831883 RelaSpdFALWheel 251;
+BA_ "GenSigStartValue" SG_ 2566831883 RelaSpdFALWheel 0;
+BA_ "GenSigInactiveValue" SG_ 2566831883 RelaSpdFALWheel 0;
+BA_ "GenSigInvalidValue" SG_ 2566831883 RelaSpdFARWheel 251;
+BA_ "GenSigStartValue" SG_ 2566831883 RelaSpdFARWheel 0;
+BA_ "GenSigInactiveValue" SG_ 2566831883 RelaSpdFARWheel 0;
+BA_ "GenSigInvalidValue" SG_ 2566831883 RelaSpdRA1LWheel 251;
+BA_ "GenSigStartValue" SG_ 2566831883 RelaSpdRA1LWheel 0;
+BA_ "GenSigInactiveValue" SG_ 2566831883 RelaSpdRA1LWheel 0;
+BA_ "GenSigInvalidValue" SG_ 2566831883 RelaSpdRA1RWheel 251;
+BA_ "GenSigStartValue" SG_ 2566831883 RelaSpdRA1RWheel 0;
+BA_ "GenSigInactiveValue" SG_ 2566831883 RelaSpdRA1RWheel 0;
+BA_ "GenSigInvalidValue" SG_ 2566831883 RelaSpdRA2LWheel 251;
+BA_ "GenSigStartValue" SG_ 2566831883 RelaSpdRA2LWheel 0;
+BA_ "GenSigInactiveValue" SG_ 2566831883 RelaSpdRA2LWheel 0;
+BA_ "GenSigInvalidValue" SG_ 2566831883 RelaSpdRA2RWheel 251;
+BA_ "GenSigStartValue" SG_ 2566831883 RelaSpdRA2RWheel 0;
+BA_ "GenSigInactiveValue" SG_ 2566831883 RelaSpdRA2RWheel 0;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 2566838066 Door_Fr_DoorEmergency_sta "0x1";
+BA_ "GenSigRoutingTimeoutValue" SG_ 2566838066 Door_Fr_DoorEmergency_sta 1;
+BA_ "GenSigSendType" SG_ 2566838066 Door_Fr_DoorEmergency_sta 3;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 2566838066 Door_Fr_Doorposition_sta "0x1";
+BA_ "GenSigRoutingTimeoutValue" SG_ 2566838066 Door_Fr_Doorposition_sta 1;
+BA_ "GenSigSendType" SG_ 2566838066 Door_Fr_Doorposition_sta 3;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 2566838066 Door_Fr_Dooroperation_sta "0x1";
+BA_ "GenSigRoutingTimeoutValue" SG_ 2566838066 Door_Fr_Dooroperation_sta 1;
+BA_ "GenSigSendType" SG_ 2566838066 Door_Fr_Dooroperation_sta 3;
+BA_ "GenSigStartValue" SG_ 2365580850 FDC_BCM_FRHaltBrake_Sta 0;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 2365580850 FDC_BCM_FRHaltBrake_Sta "0x1";
+BA_ "GenSigInactiveValue" SG_ 2365580850 FDC_BCM_FRHaltBrake_Sta 0;
+BA_ "GenSigRoutingTimeoutValue" SG_ 2365580850 FDC_BCM_FRHaltBrake_Sta 1;
+BA_ "GenSigSendType" SG_ 2365580850 FDC_BCM_FRHaltBrake_Sta 3;
+BA_ "GenSigStartValue" SG_ 2365580850 FDC_BCM_FROpenClosePB_Cmd 0;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 2365580850 FDC_BCM_FROpenClosePB_Cmd "0x1";
+BA_ "GenSigInactiveValue" SG_ 2365580850 FDC_BCM_FROpenClosePB_Cmd 0;
+BA_ "GenSigRoutingTimeoutValue" SG_ 2365580850 FDC_BCM_FROpenClosePB_Cmd 1;
+BA_ "GenSigSendType" SG_ 2365580850 FDC_BCM_FROpenClosePB_Cmd 3;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 2365580850 FDC_BCM_PosLamp_Cmd "0x1";
+BA_ "GenSigRoutingTimeoutValue" SG_ 2365580850 FDC_BCM_PosLamp_Cmd 1;
+BA_ "GenSigSendType" SG_ 2365580850 FDC_BCM_PosLamp_Cmd 3;
+BA_ "GenSigStartValue" SG_ 2365580850 FDC_BCM_FROpendoor_Cmd 0;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 2365580850 FDC_BCM_FROpendoor_Cmd "0x1";
+BA_ "GenSigInactiveValue" SG_ 2365580850 FDC_BCM_FROpendoor_Cmd 0;
+BA_ "GenSigRoutingTimeoutValue" SG_ 2365580850 FDC_BCM_FROpendoor_Cmd 1;
+BA_ "GenSigSendType" SG_ 2365580850 FDC_BCM_FROpendoor_Cmd 3;
+BA_ "GenSigStartValue" SG_ 2365580850 FDC_BCM_FRClosedoor_Cmd 0;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 2365580850 FDC_BCM_FRClosedoor_Cmd "0x1";
+BA_ "GenSigInactiveValue" SG_ 2365580850 FDC_BCM_FRClosedoor_Cmd 0;
+BA_ "GenSigRoutingTimeoutValue" SG_ 2365580850 FDC_BCM_FRClosedoor_Cmd 1;
+BA_ "GenSigSendType" SG_ 2365580850 FDC_BCM_FRClosedoor_Cmd 3;
+BA_ "GenSigStartValue" SG_ 2365580850 FDC_FRDisIntEm_Cmd 0;
+BA_ "GenSigRoutingTimeoutValue_String" SG_ 2365580850 FDC_FRDisIntEm_Cmd "0x2";
+BA_ "GenSigInactiveValue" SG_ 2365580850 FDC_FRDisIntEm_Cmd 0;
+BA_ "GenSigRoutingTimeoutValue" SG_ 2365580850 FDC_FRDisIntEm_Cmd 2;
+BA_ "GenSigSendType" SG_ 2365580850 FDC_FRDisIntEm_Cmd 3;
+VAL_ 2566522297 LTurnLP 1 "On" 0 "Off";
+VAL_ 2566522297 RTurnLP 1 "On" 0 "Off";
+VAL_ 2566522297 FDC_BCM_FDDoorOpen_Sta 3 "not available" 2 "Error" 1 "Open" 0 "Closed";
+VAL_ 2566887584 IVI_D_ACSwitch_cmd 1 "ON" 0 "OFF";
+VAL_ 2566887584 IVI_D_AirflowUpControl_cmd 1 "ON" 0 "OFF";
+VAL_ 2566887584 IVI_D_AirflowDownControl_cmd 1 "ON" 0 "OFF";
+VAL_ 2566887584 IVI_D_TemperatureUpControl_cmd 1 "ON" 0 "OFF";
+VAL_ 2566887584 IVI_D_TempDownControl_cmd 1 "ON" 0 "OFF";
+VAL_ 2566887584 IVI_D_AutoSwitch_cmd 1 "Manual" 0 "Auto";
+VAL_ 2566887584 IVI_D_MaxAirflowSwitch_cmd 1 "MAX OFF" 0 "MAX ON";
+VAL_ 2566887584 IVI_D_PowerSwitch_cmd 1 "AC Power OFF" 0 "AC Power 0N";
+VAL_ 2566887584 IVI_RMirrorHeatSta_cmd 1 "Press" 0 "Release";
+VAL_ 2566838066 Door_Fr_DoorEmergency_sta 3 "Not defined" 2 "Not defined" 1 "Emergency" 0 "No Emergency";
+VAL_ 2566838066 Door_Fr_Doorposition_sta 3 "Not defined" 2 "Partial opening" 1 "Open" 0 "Closed";
+VAL_ 2566838066 Door_Fr_Dooroperation_sta 3 "Not defined" 2 "Opening" 1 "Opening" 0 "Door stopped";
+VAL_ 2365580850 FDC_BCM_FRHaltBrake_Sta 3 "Not defined" 2 "Not defined" 1 "On" 0 "Off";
+VAL_ 2365580850 FDC_BCM_FROpenClosePB_Cmd 3 "Not defined" 2 "Not defined" 1 "On" 0 "Off";
+VAL_ 2365580850 FDC_BCM_PosLamp_Cmd 1 "On" 0 "Off";
+VAL_ 2365580850 FDC_BCM_FROpendoor_Cmd 3 "Not defined" 2 "Not defined" 1 "On" 0 "Off";
+VAL_ 2365580850 FDC_BCM_FRClosedoor_Cmd 3 "Not defined" 2 "Not defined" 1 "On" 0 "Off";
+VAL_ 2365580850 FDC_FRDisIntEm_Cmd 3 "Not defined" 2 "Not defined" 1 "Speed<3Km/h" 0 "Speed>3Km/h";
